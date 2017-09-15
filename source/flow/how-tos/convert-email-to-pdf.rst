@@ -14,7 +14,7 @@ You can use different Microsoft Flow connectors to receive messages. Some exampl
 
 - Office 365 Outlook
 - Outlook.com
-- Gmail123ddd
+- Gmail
 
 In this example, we will convert email messages to PDF when they arrive in Office 365 Outlook inbox. Then we will store PDF files to a SharePoint document library. You can configure your Flow to store documents in any other location. For example, in Dropbox.
 
