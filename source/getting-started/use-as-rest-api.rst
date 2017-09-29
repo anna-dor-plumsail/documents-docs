@@ -19,7 +19,7 @@ Just follow the steps described in `this topic <sign-up.html#generate-api-key>`_
 Use API from your programming language
 ---------------------------------------------
 
-Our API is REST based. Thus, you can use any programming languge that is able to execute web requests. For example you would use C#, PowerShell, node.js, Python, PHP.
+Our API is REST based. Thus, you can use any programming language that is able to execute web requests. For example, you would use C#, PowerShell, node.js, Python, PHP.
 
 There are a lot of ready to use helper REST API clients for those languges. Here are just a few of them:
 
@@ -39,24 +39,24 @@ There are two ways to work with API:
 1. :ref:`call-a-method-and-get-the-result`
 2. :ref:`start-a-job-and-get-the-results-once-the-job-finished`
 
-The first way is good for light operations. When execution of method doesn't take a lot of time. You just call an API method and receive responce with results.
+The first way is good for light operations. When execution of method doesn't take a lot of time. You just call an API method and receive a response with results.
 
-The second way is good if you want to perform long running operation. For example convert large file. You just start a conversion job and then download the result once the job is finished.
+The second way is good if you want to perform a long-running operation. For example, convert a large file. You just start a conversion job and then download the result once the job is finished.
 
-You can find description of all available methods in `API reference <https://api.plumsail.com/swagger/#!/DocumentsAPI>`_
+You can find descriptions of all available methods in `API reference <https://api.plumsail.com/swagger/#!/DocumentsAPI>`_
 
 .. _call-a-method-and-get-the-result:
 
 Call a method and get the result immediately
 ````````````````````````````````````````````
 
-This approach is good for processig small amount of data and for testing purposes. If your request is can't be processed in 30 seconds our service will return an error. Thus, if you want to process large amount of data it is better to use the second option with jobs.
+This approach is good for processing of a small amount of data and for testing purposes. If your request is can't be processed in 30 seconds our service will return an error. Thus, if you want to process a large amount of data it is better to use the second option with jobs.
 
 Some of the methods in the API are not mirrored in jobs. Those methods are designed to work with quick operations. They just don't need any jobs.
 
-All jobs are placed under /jobs/ you may noticed in `API reference <https://api.plumsail.com/swagger/#!/DocumentsAPI>`_. The rest of methods return you results right in the responce.
+All jobs are placed under *'/jobs/'* path. You may notice it in `API reference <https://api.plumsail.com/swagger/#!/DocumentsAPI>`_. The rest of methods return results right in the response.
 
-This is an example of raw request to to convert DOCX to PDF:
+This is an example of a raw request to convert DOCX to PDF:
 
 ::
 
@@ -79,9 +79,9 @@ And this is cURL representation for it:
       "fileContent": "BASE64_FILE_CONTENT" \ 
     }' ' https://api.plumsail.com/api/v1/Documents/Docx2Pdf'
 
-You have to pass *'Authorization'* with API access key and specify send the rest of parameters in body of the request. You can find description of parameters in API reference.
+You have to pass *'Authorization'* header with an API access key and specify send the rest of parameters in the body of the request. You can find the description of parameters in API reference.
 
-You will receive results of conversion in the responce for your request. It will return *'OK'* status with the code *'200'*. It means coversion succeed. This is the example responce:
+You will receive results of conversion in the response for your request. It will return *'OK'* status with the code *'200'*. It means conversion succeed. This is the example response:
 
 ::
 
@@ -91,16 +91,16 @@ You will receive results of conversion in the responce for your request. It will
 
 .. _start-a-job-and-get-the-results-once-the-job-finished:
 
-Start a job and get the results once the job is finished
+Start a job and get the result once the job is finished
 ````````````````````````````````````````````````````````
 
-You may notice that some methods in `API reference <https://api.plumsail.com/swagger/#!/DocumentsAPI>`_ are located under *'/jobs/'* path. For example the method below starts DOCX to PDF conversion job:
+You may notice that some methods in `API reference <https://api.plumsail.com/swagger/#!/DocumentsAPI>`_ are located under *'/jobs/'* path. For example, the method below starts DOCX to PDF conversion job:
 
 ::
 
     /api/v1/Documents/jobs/Docx2Pdf
 
-This is an example of raw request to start the job:
+This is an example of a raw request to start the job:
 
 ::
 
@@ -123,9 +123,9 @@ And this is cURL representation for it:
       "fileContent": "BASE64_FILE_CONTENT" \ 
     }' ' https://api.plumsail.com/api/v1/Documents/jobs/Docx2Pdf'
 
-You have to pass *'Authorization'* with API access key and specify send the rest of parameters in body of the request. You can find description of parameters in API reference.
+You have to pass *'Authorization'* header with an API access key and specify send the rest of parameters in the body of the request. You can find the description of parameters in API reference.
 
-Once job is created the mothod returns responce message *'Accepted'* with the code *'202'*. It means the job has been created and conversion operation is in progress. There is *'Location'* header present in the responce. It contans URL where result of job execution will be available. This is the example responce:
+Once the job is created the method returns response message *'Accepted'* with the code *'202'*. It means the job has been created and conversion operation is in progress. There is *'Location'* header present in the response. It contains URL where the result of job execution will be available. This is the example response:
 
 ::
 
@@ -139,10 +139,12 @@ Once job is created the mothod returns responce message *'Accepted'* with the co
         "content-length": "0"        
     }
 
-A URL with result is usually the same as URL of original job plus identificator of job. Example:
+A URL with the result is usually the same as URL of the original job plus identificator of the job. Example:
 
 ::
 
     http://api.plumsail.com/api/v1/Documents/jobs/Docx2Pdf/0HL80VGO2DC6N
+
+Where *'0HL80VGO2DC6N'* is an ID of the job.
 
 All you need to do now is to execute GET request for the URL from the *'Location'* header. If the result is not ready yet, it returns *'Accepted'* message and *'202'* code again with the same "'Location'" header.
