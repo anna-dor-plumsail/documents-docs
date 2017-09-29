@@ -67,3 +67,14 @@ All documentation articles
       general/security-policy      
       Privicy policy <https://plumsail.com/privacy-policy/actions-privacy-policy/>
       Refund policy <https://plumsail.com/store/refund-policy/>  
+
+   .. toctree::
+      :caption: Stay in touch 
+      :name: communitytoc
+      :maxdepth: 1
+      
+      Community <https://plumsail.com/forum/viewforum.php?f=37>
+      Official blog <https://medium.com/plumsail>
+      Twitter <https://twitter.com/plumsail_sp>
+      Google Plus <https://plus.google.com/b/112093525198664117371/+PlumsailSharePointTeam?hl=ru>
+      LinkedIn <https://www.linkedin.com/company/plumsail>      
