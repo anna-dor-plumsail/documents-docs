@@ -1,5 +1,5 @@
-Create DOCX template
-====================
+DOCX template creation
+======================
 
 This article demonstrates how to create .docx Word template. This template can be used document generation actions. For example, in the `Create document from DOCX template <../actions/document-processing.html#convert-html-document-to-pdf>`_ action.
 

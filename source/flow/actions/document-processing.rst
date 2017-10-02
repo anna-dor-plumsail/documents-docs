@@ -70,7 +70,115 @@ Example
 .. image:: ../../_static/img/flow/how-tos/create-document-from-docx-template-example.png
    :alt: Create document from DOCX template Example
 
-Convert DOCX document to PDF
+Create HTML from template
+----------------------------------
+
+Generates raw HTML from a raw HTML template. You can find more examples in `this article <../how-tos/create-html-from-template.html>`_.
+
+Output Parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Result HTML
+       -  Raw HTML result created from a source HTML template.
+       -  .. code-block:: html
+
+            <!doctype html>
+            <html>
+            <head>
+                <meta charset="utf-8">
+                <title>HTML from template</title>  
+            </head>
+            <body>
+                <ul>                            
+                    <li>David Navarro </li>                    
+                    <li>Jessica Adams</li>                    
+                    <li>Derek Clark</li>                    
+                </ul>    
+            </body>
+            </html>                    
+
+Input Parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Source HTML
+       -  HTML content of a source template. You can specify raw HTML here or extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System          
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+
+          This parameter expects raw HTML. If you extract file content from a connector you may need to decode base64 file content to HTML with the help of *base64ToString* operation from `Workflow Definition Language <https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-workflow-definition-language#conversion-functions>`_ like this:
+
+          .. image:: ../../_static/img/flow/how-tos/base64-to-string.png
+            :alt: Base64 to string example         
+
+       -  .. code-block:: html
+
+            <!doctype html>
+            <html>
+            <head>
+                <meta charset="utf-8">
+                <title>HTML from template</title>  
+            </head>
+            <body>
+                <ul>        
+                    {{#each data}}
+                    <li>{{name}}</li>
+                    {{/each}}
+                </ul>    
+            </body>
+            </html>
+
+    *  -  Template data
+       -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
+       -  .. code-block:: json
+
+            {
+                "data": [
+                    {
+                        "name": "David Navarro "
+                    },
+                    {
+                        "name": "Jessica Adams"
+                    },
+                    {
+                        "name": "Derek Clark"
+                    }
+                ]
+            }  
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example with template from a file from another connector:
+
+.. image:: ../../_static/img/flow/how-tos/html-from-template-file.png
+   :alt: Convert HTML document to PDF Example
+
+Example with raw HTML template:
+
+.. image:: ../../_static/img/flow/how-tos/html-from-template-raw.png
+   :alt: Convert HTML document to PDF Example
+
+Convert DOCX to PDF
 ----------------------------
 
 Converts .docx document to PDF document. You can find more examples in `this article <../how-tos/convert-word-to-pdf.html>`_.
@@ -118,7 +226,7 @@ Example
 .. image:: ../../_static/img/flow/how-tos/convert-docx-to-pdf-example.png
    :alt: Convert DOCX document to PDF Example
 
-Convert HTML document to PDF
+Convert HTML to PDF
 ----------------------------
 
 Converts HTML document to PDF document. You can find more examples in `this article <../how-tos/convert-html-to-pdf.html>`_.
@@ -226,112 +334,4 @@ Example with HTML file content from some other Microsoft Flow connector:
 Example with raw HTML source code:
 
 .. image:: ../../_static/img/flow/how-tos/convert-html-to-pdf-example.png
-   :alt: Convert HTML document to PDF Example
-
-Create document from HTML template
-----------------------------------
-
-Generates raw HTML from a raw HTML template. You can find more examples in `this article <../how-tos/create-html-from-template.html>`_.
-
-Output Parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  Result HTML
-       -  Raw HTML result created from a source HTML template.
-       -  .. code-block:: html
-
-            <!doctype html>
-            <html>
-            <head>
-                <meta charset="utf-8">
-                <title>HTML from template</title>  
-            </head>
-            <body>
-                <ul>                            
-                    <li>David Navarro </li>                    
-                    <li>Jessica Adams</li>                    
-                    <li>Derek Clark</li>                    
-                </ul>    
-            </body>
-            </html>                    
-
-Input Parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  Source HTML
-       -  HTML content of a source template. You can specify raw HTML here or extract file content from other connectors like:
-
-          - SharePoint
-          - Salesforce
-          - Box
-          - OneDrive
-          - Google Drive
-          - Dropbox
-          - SFTP
-          - File System          
-
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
-
-          This parameter expects raw HTML. If you extract file content from a connector you may need to decode base64 file content to HTML with the help of *base64ToString* operation from `Workflow Definition Language <https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-workflow-definition-language#conversion-functions>`_ like this:
-
-          .. image:: ../../_static/img/flow/how-tos/base64-to-string.png
-            :alt: Base64 to string example         
-
-       -  .. code-block:: html
-
-            <!doctype html>
-            <html>
-            <head>
-                <meta charset="utf-8">
-                <title>HTML from template</title>  
-            </head>
-            <body>
-                <ul>        
-                    {{#each data}}
-                    <li>{{name}}</li>
-                    {{/each}}
-                </ul>    
-            </body>
-            </html>
-
-    *  -  Template data
-       -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
-       -  .. code-block:: json
-
-            {
-                "data": [
-                    {
-                        "name": "David Navarro "
-                    },
-                    {
-                        "name": "Jessica Adams"
-                    },
-                    {
-                        "name": "Derek Clark"
-                    }
-                ]
-            }  
-
-Example
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Example with template from a file from another connector:
-
-.. image:: ../../_static/img/flow/how-tos/html-from-template-file.png
-   :alt: Convert HTML document to PDF Example
-
-Example with raw HTML template:
-
-.. image:: ../../_static/img/flow/how-tos/html-from-template-raw.png
    :alt: Convert HTML document to PDF Example

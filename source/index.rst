@@ -50,8 +50,7 @@ All documentation articles
       flow/how-tos/create-pdf-from-html-template
       flow/how-tos/convert-word-to-pdf
       flow/how-tos/convert-html-to-pdf
-      flow/how-tos/convert-email-to-pdf
-      flow/how-tos/create-docx-template
+      flow/how-tos/convert-email-to-pdf   
 
 .. container:: pl-right-column
 
@@ -77,4 +76,12 @@ All documentation articles
       Official blog <https://medium.com/plumsail>
       Twitter <https://twitter.com/plumsail_sp>
       Google Plus <https://plus.google.com/b/112093525198664117371/+PlumsailSharePointTeam?hl=ru>
-      LinkedIn <https://www.linkedin.com/company/plumsail>      
+      LinkedIn <https://www.linkedin.com/company/plumsail>     
+
+   .. toctree::
+      :caption: Advanced
+      :name: toc-advanced
+      :maxdepth: 1
+         
+      advanced/create-docx-template
+      advanced/html-template-syntax 
