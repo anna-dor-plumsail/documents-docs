@@ -44,7 +44,7 @@ Input Parameters
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  You can find insturctions about creation of a template file in `this article <../how-tos/create-docx-template.html>`_. 
+       -  You can find insturctions about creation of a template file in `this article <../../advanced/create-docx-template.html>`_. 
        
           Use `this link <../../_static/files/flow/how-tos/Hiring%20Contract%20Template.docx>`_ to download the sample template.
 
@@ -126,12 +126,11 @@ Input Parameters
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-          This parameter expects raw HTML. If you extract file content from a connector you may need to decode base64 file content to HTML with the help of *base64ToString* operation from `Workflow Definition Language <https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-workflow-definition-language#conversion-functions>`_ like this:
+          This parameter can handle both raw HTML of file content from other connector.
 
-          .. image:: ../../_static/img/flow/how-tos/base64-to-string.png
-            :alt: Base64 to string example         
-
-       -  .. code-block:: html
+       -  You can find description of template syntax in `this article <../../advanced/html-template-syntax.html>`_. 
+       
+          .. code-block:: html
 
             <!doctype html>
             <html>
@@ -168,12 +167,6 @@ Input Parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Example with template from a file from another connector:
-
-.. image:: ../../_static/img/flow/how-tos/html-from-template-file.png
-   :alt: Convert HTML document to PDF Example
-
-Example with raw HTML template:
 
 .. image:: ../../_static/img/flow/how-tos/html-from-template-raw.png
    :alt: Convert HTML document to PDF Example
@@ -267,10 +260,7 @@ Input Parameters
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-          This parameter expects raw HTML. If you extract file content from a connector you may need to decode base64 file content to HTML with the help of *base64ToString* operation from `Workflow Definition Language <https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-workflow-definition-language#conversion-functions>`_ like this:
-
-          .. image:: ../../_static/img/flow/how-tos/base64-to-string.png
-            :alt: Base64 to string example
+          This parameter can handle both raw HTML and file content as an output from other action.
 
        -  .. code-block:: html
 
@@ -326,12 +316,6 @@ Input Parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Example with HTML file content from some other Microsoft Flow connector:
-
-.. image:: ../../_static/img/flow/how-tos/convert-html-to-pdf-example-2.png
-   :alt: Convert HTML document to PDF Example
-
-Example with raw HTML source code:
 
 .. image:: ../../_static/img/flow/how-tos/convert-html-to-pdf-example.png
    :alt: Convert HTML document to PDF Example
