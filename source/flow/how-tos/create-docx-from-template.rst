@@ -18,7 +18,7 @@ We will generate a hiring contract from a template. Our template and result docu
 
 You can store your source file anywhere. In this example, we will store our documents in SharePoint. Our Flow will get a template from a SharePoint document library, generate a new document based on this template and on some data. The result document will be stored back to SharePoint document library.
 
-Firstly, we have to prepare the template file. Pleas follow `this instruction to prepare your template <create-docx-template.html>`_.
+Firstly, we have to prepare the template file. Pleas follow `this instruction to prepare your template <../../advanced/create-docx-template.html>`_.
 
 Now we need to create a Microsoft Flow that will get the template from the SharePoint document library, apply data to this template and save result document back to the document library. This is how complete flow looks:
 
