@@ -23,7 +23,7 @@ Our resulting document has to be stored somewhere. Microsoft Flow has a lot of c
 
 You can store your file anywhere. In this example, we will store our document in SharePoint. Our flow will use JSON object as a source data for the template, but you can get data from other sources, for example query list items from SharePoint or from Salesforce.
 
-The same is about source HTML template. You can store it somewhere as an HTML file and reuse it. In this example we will put raw HTML code into the Flow action.
+The same is about source text template. You can store it somewhere as an HTML file and reuse it. In this example we will put raw HTML code into the Flow action.
 
 This is how our flow looks: 
 
