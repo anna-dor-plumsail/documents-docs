@@ -1,47 +1,18 @@
 Convert HTML to PDF
 ==================================
 
-This article demonstrates how to convert DOCX Word document to PDF with the help of `Microsoft Flow <https://flow.microsoft.com>`_. 
+This article demonstrates how to convert an HTML document or an HTML string to PDF with the help of `Microsoft Flow <https://flow.microsoft.com>`_. 
 
-Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../getting-started/use-from-flow.html>`_.
+Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../getting-started/use-from-flow.html>`_.
 
-We will take a hiring contract as a sample Word document:
+We will take an invoice as a sample HTML document:
 
-.. code-block:: html
-   
-  <table id="invoice-amount">
-    <thead>
-      <tr id="header_row">
-        <th class="index_th">#</th>
-        <th class="left details_th">Title</th>
-        <th class="quantity_th">Quantity</th>
-        <th class="unitprice_th">Unit Price ($)</th>
-        <th class="subtotal_th">Subtotal ($)</th>
-      </tr>
-    </thead>
-    <tfoot>
-    <tr id="total_tr">
-      <td colspan="2">&amp;nbsp;</td>
-      <td colspan="2" class="total" id="total_currency"><span class="currency">$ </span> Total</td>
-      <td class="total">${{Total}}</td>
-    </tr>
-    </tfoot>
-    <tbody>
-      {{#each Items}}
-      {{#with FieldValues}}
-      <tr class="item">
-        <td class="item_l">{{#index}}</td>
-        <td class="item_l">{{Title}} </td>
-        <td class="item_r">{{Quantity}}</td>
-        <td class="item_r">{{UnitPrice}}</td>
-        <td class="item_r">{{SubTotal}}</td>
-      </tr>
-      {{/with}}
-      {{/each}}
-    </tbody>
-  </table>
+.. image:: ../../_static/img/flow/how-tos/pdf-file-from-html-example.png
+   :alt: Select fields
 
-Our document has to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
+Use `this link <../../_static/files/flow/how-tos/invoice-html-example.txt>`_ to download it.
+
+Our documents have to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
 
 - SharePoint
 - Salesforce
@@ -52,18 +23,18 @@ Our document has to be stored somewhere. Microsoft Flow has a lot of connectors 
 - SFTP
 - File System
 
-You can store your source file anywhere. In this example, we will store our document in SharePoint. Our Flow will get a file from a SharePoint document library, convert it to PDF and store generated file back to SharePoint document library. 
+You can store your files anywhere. In this example, we will store our documents in SharePoint. Our Flow will get an HTML file from a SharePoint document library, convert it to PDF and store generated file back to SharePoint document library. 
 
 This is how complete flow looks:
 
-.. image:: ../../_static/img/flow/how-tos/convert-docx-to-pdf-flow.png
-   :alt: Select fields
+.. image:: ../../_static/img/flow/how-tos/html-to-pdf-flow-example.png
+   :alt: HTML to PDF flow example
 
 Here is step by step description for the flow.
 
 **Flow trigger**
 
-You can actually pick any trigger. For example, you can start conversion of file creation in a SharePoint document library. We use "Manually trigger a flow" trigger here to simplify the Flow.
+You can actually pick any trigger. For example, you can start Flow on file creation in a SharePoint document library. We use "Manually trigger a flow" trigger here to simplify the Flow.
 
 **Get file content**
 
@@ -71,21 +42,21 @@ This action gets file content of specified file from a SharePoint document libra
 
 You can use any other connector to get files from your system.
 
-**Convert DOCX to PDF**
+**Convert HTML to PDF**
 
 This is an action from Plumasail Documents connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
-Just put DOCX file content from the output of the previous action and receive PDF file content as an output of this action.
+Just put HTML file content from the output of the previous action and receive PDF file content as an output of this action. You can also use raw HTML string as a source HTML.
 
-You can find more information about this action `here <../actions/document-processing.html#convert-docx-to-pdf>`_.
+You can find more information about this action `here <../actions/document-processing.html#convert-html-to-pdf>`_.
 
-**Create PDF file**
+**Create file**
 
-Now you need to store PDF file somewhere. In our example, we use "Create file" action from SharePoint connector to store the PDF document into SharePoint document library.
+Now you need to store the HTML file somewhere. In our example, we use "Create file" action from SharePoint connector to store the PDF document into SharePoint document library.
 
 .. image:: ../../_static/img/flow/how-tos/generated-pdf-sp-library.png
    :alt: Select fields
 
 You can use any other connector to store PDF document into your system.
 
-.. hint:: There is also `Create document from DOCX template <../actions/document-processing.html#create-document-from-docx-template>`_ action available. You can use it in conjunction with `Convert DOCX to PDF <../actions/document-processing.html#convert-docx-document-to-pdf>`_ action to `create PDF documents from a template <create-pdf-from-docx-template.html>`_.
+.. hint:: There is also `Create HTML from template <../actions/document-processing.html#create-html-from-template>`_ action available. You can use it in conjunction with `Convert HTML to PDF <../actions/document-processing.html#convert-html-to-pdf>`_ action to `create PDF documents from a template <create-pdf-from-html-template.html>`_.
