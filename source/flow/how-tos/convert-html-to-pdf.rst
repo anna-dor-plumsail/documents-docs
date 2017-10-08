@@ -54,7 +54,7 @@ You can find more information about this action `here <../actions/document-proce
 
 Now you need to store the HTML file somewhere. In our example, we use "Create file" action from SharePoint connector to store the PDF document into SharePoint document library.
 
-.. image:: ../../_static/img/flow/how-tos/generated-pdf-sp-library.png
+.. image:: ../../_static/img/flow/how-tos/html-to-pdf-file.png
    :alt: Select fields
 
 You can use any other connector to store PDF document into your system.

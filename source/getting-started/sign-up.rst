@@ -4,9 +4,19 @@ Register account and get API key
 Register account
 ----------------
 
-Test
+First of all you need to `register Plumsail Account <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/actions/intro>`_. This account is used to manage Plumsail Acitons and Plumsail Forms products.
+
+It is better to use your active email address. Subsription will be linked to this address.
 
 Generate API key
 ----------------
 
-Test
+Once you registered your account, navigate to the "API Keys" section. You will see your key right in the "Secret" column.
+
+.. image:: ../_static/img/getting-started/create-api-key.png
+   :alt: API keys
+
+Now you can use your new API Key in:
+
+- `Microsoft Flow <use-from-flow.html>`_
+- `REST API calls <use-as-rest-api.html>`_

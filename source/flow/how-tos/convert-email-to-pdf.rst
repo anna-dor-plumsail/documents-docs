@@ -3,7 +3,7 @@ Convert email message to PDF
 
 This article demonstrates how to convert an email message to PDF with the help of  `Microsoft Flow <https://flow.microsoft.com>`_. 
 
-Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../getting-started/use-from-flow.html>`_.
+Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../getting-started/use-from-flow.html>`_.
 
 We will take a hiring contract text as a body of our message:
 
@@ -27,13 +27,13 @@ Here is step by step description for the flow.
 
 **Flow trigger to receive email messages**
 
-Firstly you need to add a trigger to start Frow when a new email arrives. We use Office 365 Outlook trigger called "When a new email arrives".
+Firstly you need to add a trigger to start Flow when a new email arrives. We use Office 365 Outlook trigger called "When a new email arrives".
 
 **Convert HTML to PDF**
 
 This is an action from Plumasail Documents connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
-Just put body variable from trigger output into "Source HTML" parameter of the action and receive PDF file content as an output.
+Just put body variable from trigger output into "Source HTML" parameter of the action. You can use email subject as a file name. Then you can receive PDF file content as an output of the action.
 
 You can find more information about this action `here <../actions/document-processing.html#convert-html-to-pdf>`_.
 
@@ -46,4 +46,4 @@ Now you need to store PDF file somewhere. In our example, we use "Create file" a
 
 You can use any other connector to store PDF document into your system.
 
-.. hint:: You can use `Convert HTML to PDF <../actions/document-processing.html#convert-html-document-to-pdf>`_ action in a different scenario. For example, you can `generate HTML document from a template and then convert it to PDF <create-pdf-from-html-template.html>`_. This is useful for automatic generation of invoices, contracts, etc.
+.. hint:: You can use `Convert HTML to PDF <../actions/document-processing.html#convert-html-to-pdf>`_ action in a different scenario. For example, you can `generate HTML document from a template and then convert it to PDF <create-pdf-from-html-template.html>`_. This is useful for automatic generation of invoices, contracts, etc.

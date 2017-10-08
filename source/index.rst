@@ -28,7 +28,7 @@ All documentation articles
       :name: toc-test-api
       :maxdepth: 2
       
-      Document processing API specification <https://api.plumsail.com/swagger/#!/DocumentProcessing>        
+      Document processing API specification <https://api.plumsail.com/swagger/#!/DocumentsAPI>        
       
 
    .. toctree::

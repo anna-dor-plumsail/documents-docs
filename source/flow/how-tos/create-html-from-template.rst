@@ -51,7 +51,9 @@ There are two parameters:
 1. Source HTML
 2. JSON
 
-In the first parameter *'Source HTML'* you can put raw HTML/text of a template or file content of a template from some other action. We specified output of the previous action as a template. The internal file is quite large because of CSS styles. The template below is just a part of the template with snippet for invoice items. Use `this link <../../_static/files/flow/how-tos/html-template.txt>`_ to download complete template.
+In the first parameter *'Source HTML'* you can put raw HTML/text of a template or file content of a template from some other action. We specified output of the previous action as a template. The internal file is quite large because of CSS styles. The template below is just a part of the template with snippet for invoice items. 
+
+Use `this link <../../_static/files/flow/how-tos/html-template.txt>`_ to download complete template.
 
 .. code:: html
 
@@ -125,7 +127,7 @@ In the second parameter we specified data to apply to the template in JSON forma
 
 Now you need to store text file somewhere. In our example, we use *'Create file'* action from SharePoint connector to store the HTML document into SharePoint document library.
 
-.. image:: ../../_static/img/flow/how-tos/flow-text-file-result.png
+.. image:: ../../_static/img/flow/how-tos/html-from-template-file.png
    :alt: Select fields
 
 You can use any other connector to store text document into your system.

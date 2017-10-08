@@ -124,9 +124,7 @@ Input Parameters
           - SFTP
           - File System          
 
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
-
-          This parameter can handle both raw HTML of file content from other connector.
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
 
        -  You can find description of template syntax in `this article <../../advanced/html-template-syntax.html>`_. 
        
@@ -258,9 +256,7 @@ Input Parameters
           - SFTP
           - File System          
 
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
-
-          This parameter can handle both raw HTML and file content as an output from other action.
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
 
        -  .. code-block:: html
 
