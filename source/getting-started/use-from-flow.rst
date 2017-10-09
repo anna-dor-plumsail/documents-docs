@@ -6,18 +6,40 @@ Use in Microsoft Flow
 Add custom connector
 --------------------
 
-First of all, you need to add a custom connector to Microsoft Flow. Open Microsoft Flow account then navigate to *'Custom Connectors'* and click add:
+First of all, you need to add a custom connector to Microsoft Flow. Open Microsoft Flow account then navigate to *'Custom Connectors'*:
 
 .. image:: ../_static/img/getting-started/1-flow-custom-connectors.png
    :alt: Microsoft Flow custom connectors menu
 
-Fill in swagger definition URL:
+Click *'Create custom connector → Import an OpenAPI from URL'*:
+
+.. image:: ../_static/img/getting-started/connector-from-url.png
+   :alt: Connector from URL
+
+Fill in name *'Plumsail Documents'* and swagger definition URL:
 
 ::
 
   https://api.plumsail.com/swagger/DocumentsFlow/swagger.json
 
-After click *'Continue'*, you should see authentication type screen:
+Once you clicked *'Continue'* you will see *'General'* step of connector configuration:
+
+.. image:: ../_static/img/getting-started/general-connector-step.png
+   :alt: General connector configuration
+
+You may want to differenciate this connector from others. In this case you can assign custom icon and custom color for it. We suggest this icon:
+
+.. image:: ../_static/img/getting-started/actions-connector-icon.png
+   :alt: Connector icon
+   :target: ../_static/img/getting-started/actions-connector-icon.png
+
+And this color:
+
+::
+
+  #ce2d7d
+
+Then click *'Continue'*. You should see authentication type screen:
 
 .. image:: ../_static/img/getting-started/2-flow-accesskey-label.png
    :alt: Microsoft Flow access key
