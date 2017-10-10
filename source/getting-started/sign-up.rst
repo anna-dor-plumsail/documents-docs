@@ -8,7 +8,7 @@ First of all you need to `register Plumsail Account <https://auth.plumsail.com/a
 
 It is better to use your active email address. Subsription will be linked to this address.
 
-If you already have account, just `sign in <https://auth.plumsail.com/account/login?returnUrl=https://account.plumsail.com/actions/intro>`_.
+If you already have account, just sign in to `account.plumsail.com <https://auth.plumsail.com/account/login?returnUrl=https://account.plumsail.com/actions/intro>`_.
 
 Generate API key
 ----------------

@@ -123,7 +123,7 @@ In the second parameter we specified data to apply to the template in JSON forma
 
 **Convert HTML to PDF**
 
-This is an action from Plumasail Documents connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+This is also an action from Plumasail Documents connector.
 
 Just put HTML file content from the output of the previous action and receive PDF file content as an output of this action. You can also use raw HTML string as a source HTML.
 
