@@ -21,7 +21,7 @@ Use API from your programming language
 
 Our API is REST based. Thus, you can use any programming language that is able to execute web requests. For example, you would use C#, PowerShell, node.js, Python, PHP.
 
-There are a lot of ready to use helper REST API clients for those languges. Here are just a few of them:
+There are a lot of ready to use helper REST API clients for those languages. Here are just a few of them:
 
 - `RestSharp <http://restsharp.org/>`_ for C#
 - `Invoke-RestMethod <https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod?view=powershell-5.1>`_ cmdlets for PowerShell

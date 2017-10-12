@@ -1,11 +1,11 @@
 Create text document from template
 ==================================
 
-This article demonstrates how to generate text document from template with the help of `Microsoft Flow <https://flow.microsoft.com>`_.
+This article demonstrates how to generate text document from a template with the help of `Microsoft Flow <https://flow.microsoft.com>`_.
 
 Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../getting-started/use-from-flow.html>`_.
 
-This approach is sutable for text files generation as well as for plain text generation. In this article we will generate simple text file with the list based on some data. This is how our final file looks:
+This approach is suitable  for text files generation as well as for plain text generation. In this article, we will generate a simple text file with the list based on some data. This is how our final file looks:
 
 .. image:: ../../_static/img/flow/how-tos/result-text-file.png
    :alt: Result text file
@@ -21,9 +21,9 @@ Our resulting document has to be stored somewhere. Microsoft Flow has a lot of c
 - SFTP
 - File System
 
-You can store your file anywhere. In this example, we will store our document in SharePoint. Our flow will use JSON object as a source data for the template, but you can get data from other sources, for example query list items from SharePoint or from Salesforce.
+You can store your file anywhere. In this example, we will store our document in SharePoint. Our flow will use JSON object as a source data for the template, but you can get data from other sources. For example, query list items from SharePoint or from Salesforce.
 
-The same is about source text template. You can store it somewhere as an HTML file and reuse it. In this example we will put raw HTML code into the Flow action.
+The same is about source text template. You can store it somewhere as an HTML file and reuse it. In this example, we will put raw HTML code into the Flow action.
 
 This is how our flow looks: 
 
@@ -38,7 +38,7 @@ You can actually pick any trigger. For example, you can start Flow on file creat
 
 **Create HTML from template**
 
-This is an action from Plumasail Documents connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_. This action is sutable for generation of HTML and text documents.
+This is an action from Plumasail Documents connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_. This action is suitable for generation of HTML and text documents.
 
 You can find more information about this action `here <../actions/document-processing.html#create-html-from-template>`_.
 
@@ -57,7 +57,7 @@ In the first parameter *'Source HTML'* you can put raw HTML/text of a template o
 
 This action supports rich templates with conditions, iterators and nested placeholders. Please read `syntax description <../../advanced/html-template-syntax.html>`_ for more information.
 
-In the second parameter we specified data to apply to the template in JSON format. This is a list of department names:
+In the second parameter, we specified data to apply to the template in JSON format. This is a list of department names:
 
 .. code:: json
 

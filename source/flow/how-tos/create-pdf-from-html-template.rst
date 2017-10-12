@@ -5,7 +5,7 @@ This article demonstrates how to generate PDF document from an HTML template wit
 
 Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../getting-started/use-from-flow.html>`_.
 
-We will firstly generate HTML document from a template. Then we will convert it to PDF. In this article we will generate PDF invoice based on some data. This is how our final PDF file looks:
+We will firstly generate HTML document from a template. Then we will convert it to PDF. In this article, we will generate PDF invoice based on some data. This is how our final PDF file looks:
 
 .. image:: ../../_static/img/flow/how-tos/html-and-pdf-result.png
    :alt: Result PDF file
@@ -21,7 +21,7 @@ Our template and result document have to be stored somewhere. Microsoft Flow has
 - SFTP
 - File System
 
-You can store your files anywhere. In this example, we will store our documents in SharePoint. Our flow will use JSON object as a source data for the template, but you can get data from other sources, for example query list items from SharePoint or from Salesforce.
+You can store your files anywhere. In this example, we will store our documents in SharePoint. Our flow will use JSON object as a source data for the template, but you can get data from other sources. For example, query list items from SharePoint or from Salesforce.
 
 This is how our flow looks:
 
@@ -36,13 +36,13 @@ You can actually pick any trigger. For example, you can start Flow on file creat
 
 **Get file content**
 
-This action gets file content of specified file from a SharePoint document library. You just specify SharePoint site URL and path to your file. We use this action to read HTML template. 
+This action gets file content of the specified file from a SharePoint document library. You just specify SharePoint site URL and path to your file. We use this action to read HTML template. 
 
 You can use any other connector to get files from your system.
 
 **Create HTML from template**
 
-This is an action from Plumasail Documents connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_. This action is sutable for generation of HTML and text documents.
+This is an action from Plumasail Documents connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_. This action is suitable for generation of HTML and text documents.
 
 You can find more information about this action `here <../actions/document-processing.html#create-html-from-template>`_.
 
@@ -51,7 +51,7 @@ There are two parameters:
 1. Source HTML
 2. JSON
 
-In the first parameter *'Source HTML'* you can put raw HTML/text of a template or file content of a template from some other action. We specified output of the previous action as a template. The internal file is quite large because of CSS styles. The template below is just a part of the template with snippet for invoice items. Use `this link <../../_static/files/flow/how-tos/html-template.txt>`_ to download complete template.
+In the first parameter *'Source HTML'* you can put raw HTML/text of a template or file content of a template from some other action. We specified the output of the previous action as a template. The internal file is quite large because of CSS styles. The template below is just a part of the template with a snippet for invoice items. Use `this link <../../_static/files/flow/how-tos/html-template.txt>`_ to download the complete template.
 
 .. code:: html
 
@@ -87,7 +87,7 @@ In the first parameter *'Source HTML'* you can put raw HTML/text of a template o
 
 You may see that there are placeholders like :code:`{{Total}}` and :code:`{{Quantity}}` in the template. There is also :code:`#{{each}}` iterator for rendering invoice items. Please read `template syntax description <../../advanced/html-template-syntax.html>`_ for more information.
 
-In the second parameter we specified data to apply to the template in JSON format. This object contains information for invoice header and for invoice items:
+In the second parameter, we specified data to apply to the template in JSON format. This object contains information for invoice header and for invoice items:
 
 .. code:: json
 

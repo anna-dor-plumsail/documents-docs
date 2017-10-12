@@ -27,7 +27,7 @@ Once you clicked *'Continue'* you will see *'General'* step of connector configu
 .. image:: ../_static/img/getting-started/general-connector-step.png
    :alt: General connector configuration
 
-You may want to differenciate this connector from others. In this case you can assign custom icon and custom color for it. We suggest this icon:
+You may want to differentiate this connector from others. In this case, you can assign a custom icon and custom color for it. We suggest this icon:
 
 .. image:: ../_static/img/getting-started/actions-connector-icon.png
    :alt: Connector icon

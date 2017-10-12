@@ -64,7 +64,7 @@ All documentation articles
       How to renew subscription <https://plumsail.com/how-to-renew-maintenance-or-subscription/>            
       Support plans <https://plumsail.com/support-plans/>
       general/security-policy      
-      Privicy policy <https://plumsail.com/privacy-policy/actions-privacy-policy/>
+      Privacy policy <https://plumsail.com/privacy-policy/actions-privacy-policy/>
       Refund policy <https://plumsail.com/store/refund-policy/>  
 
    .. toctree::

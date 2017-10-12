@@ -38,7 +38,7 @@ You can actually pick any trigger. For example, you can start Flow on file creat
 
 **Get file content**
 
-This action gets file content of specified file from a SharePoint document library. You just specify SharePoint site URL and path to your file.
+This action gets file content of the specified file from a SharePoint document library. You just specify SharePoint site URL and path to your file.
 
 You can use any other connector to get files from your system.
 

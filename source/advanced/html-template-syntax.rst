@@ -43,9 +43,9 @@ The identifier is used to find a property with a matching name. If you want to p
 
 Some tags, such as **each** and **with**, change which object the values will be retrieved from.
 
-If a property with the placeholder name can't be found at the current scope, the name will be searched for at the next highest level.
+If a property with the placeholder name can't be found in the current scope, the name will be searched for at the next highest level.
 
-Engine will automatically detect when an object is a dictionary and search for a matching key. In this case, it still needs to be a valid identifier name.
+The engine will automatically detect when an object is a dictionary and search for a matching key. In this case, it still needs to be a valid identifier name.
 
 Nested Placeholders
 -------------------

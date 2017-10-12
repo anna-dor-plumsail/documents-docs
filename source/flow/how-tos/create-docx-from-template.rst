@@ -16,7 +16,7 @@ We will generate a hiring contract from a template. Our template and result docu
 - SFTP
 - File System
 
-You can store your source file anywhere. In this example, we will store our documents in SharePoint. Our Flow will get a template from a SharePoint document library, generate a new document based on this template and on some data. The result document will be stored back to SharePoint document library.
+You can store your source file anywhere. In this example, we will store our documents in SharePoint. Our Flow will get a template from a SharePoint document library, generate a new document based on this template and on some data. The resulting document will be stored back to SharePoint document library.
 
 Firstly, we have to prepare the template file. Please follow `this instruction to prepare your template <../../advanced/create-docx-template.html>`_.
 
@@ -33,7 +33,7 @@ You can actually pick any trigger. For example, you can start Flow on file creat
 
 **Get file content**
 
-This action gets file content of specified file from a SharePoint document library. You just specify SharePoint site URL and path to your file. We use this action to read .docx template.
+This action gets file content of the specified file from a SharePoint document library. You just specify SharePoint site URL and path to your file. We use this action to read .docx template.
 
 You can use any other connector to get files from your system.
 
@@ -48,7 +48,7 @@ There are two parameters:
 
 In the first parameter *'DOCX document content'* we specified file content of a template from the output of the previous action. Use `this link <../../_static/files/flow/how-tos/Hiring%20Contract%20Template.docx>`_ to download it.
 
-In the second parameter we specified data to apply to the template in JSON format. This is information about a sample employee. You can actually request this information from external system with the help of another Microsoft Flow action.
+In the second parameter, we specified data to apply to the template in JSON format. This is information about a sample employee. You can actually request this information from an external system with the help of another Microsoft Flow action.
 
 This is our sample data:
 
@@ -71,7 +71,7 @@ You can find more information about this action `here <../actions/document-proce
 
 **Create file**
 
-Once the result document is generated, we need to store the Word file somewhere. In our example, we use "Create file" action from SharePoint connector to store the document into SharePoint document library.
+Once the result document is generated, we need to store the Word file somewhere. In our example, we use "Create file" action from SharePoint connector to store the document in SharePoint document library.
 
 .. image:: ../../_static/img/flow/how-tos/generated-docx-from-template-sp-library.png
    :alt: Select fields

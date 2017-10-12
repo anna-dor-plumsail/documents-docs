@@ -4,11 +4,11 @@ Register account and get API key
 Register account
 ----------------
 
-First of all you need to `register Plumsail Account <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/actions/intro>`_. This account is used to manage Plumsail Acitons and Plumsail Forms products.
+First of all, you need to `register Plumsail Account <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/actions/intro>`_. This account is used to manage Plumsail Actions and Plumsail Forms products.
 
-It is better to use your active email address. Subsription will be linked to this address.
+It is better to use your active email address. The subscription will be linked to this address.
 
-If you already have account, just sign in to `account.plumsail.com <https://auth.plumsail.com/account/login?returnUrl=https://account.plumsail.com/actions/intro>`_.
+If you already have an account, just sign in to `account.plumsail.com <https://auth.plumsail.com/account/login?returnUrl=https://account.plumsail.com/actions/intro>`_.
 
 Generate API key
 ----------------
