@@ -20,4 +20,4 @@ After adding all required placeholders, the document should look like this:
 .. image:: ../_static/img/flow/how-tos/hiring-contract-docx-template.png
    :alt: Sample document
 
-Use `this link <../_static/files/flow/how-tos/Hiring Contract Template.docx>`_ to download it.
+Use `this link <../_static/files/flow/how-tos/Hiring%20Contract%20Template.docx>`_ to download it.
