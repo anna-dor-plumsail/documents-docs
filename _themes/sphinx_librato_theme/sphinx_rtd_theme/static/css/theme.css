@@ -5126,7 +5126,8 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 }
 .rst-content p.rubric {
   margin-bottom: 12px;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 24px;
 }
 .rst-content tt.download, .rst-content code.download {
   background: inherit;

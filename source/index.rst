@@ -28,29 +28,24 @@ All documentation articles
       :name: toc-test-api
       :maxdepth: 2
       
-      Document processing API specification <https://api.plumsail.com/swagger/#!/DocumentsAPI>        
+      Document processing API specification <https://api.plumsail.com/swagger/#!/DocumentsAPI> 
+      Sharepoint API specification <https://api.plumsail.com/swagger/#!/SharePointAPI>       
       
 
    .. toctree::
       :caption: Microsoft Flow actions
       :name: toc-microsoft-flow-actions
-      :maxdepth: 2
+      :maxdepth: 3
       
       flow/actions/document-processing
+      flow/actions/sharepoint-processing
 
    .. toctree::
       :caption: Microsoft Flow examples
       :name: toc-microsoft-flow-examples
-      :maxdepth: 1
+      :maxdepth: 2
       
-      flow/how-tos/create-docx-from-template
-      flow/how-tos/create-html-from-template
-      flow/how-tos/create-text-from-template
-      flow/how-tos/create-pdf-from-docx-template
-      flow/how-tos/create-pdf-from-html-template
-      flow/how-tos/convert-word-to-pdf
-      flow/how-tos/convert-html-to-pdf
-      flow/how-tos/convert-email-to-pdf   
+      flow/how-tos/index  
 
 .. container:: pl-right-column
 

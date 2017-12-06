@@ -8,8 +8,8 @@ Create document from DOCX template
 
 Creates .docx document from .docx template. You can find more examples in `this article <../how-tos/create-docx-from-template.html>`_.
 
-Output Parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Output Parameters
+
 .. list-table::
     :header-rows: 1
     :widths: 10 30 20
@@ -21,8 +21,8 @@ Output Parameters
        -  The content of the result .docx file.
        -  It is a Base64 encoded content of the result file.
 
-Input Parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Input Parameters
+
 .. list-table::
     :header-rows: 1
     :widths: 10 30 20
@@ -65,8 +65,8 @@ Input Parameters
                 "State": "New York"
             }    
 
-Example
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Example
+
 .. image:: ../../_static/img/flow/how-tos/create-document-from-docx-template-example.png
    :alt: Create document from DOCX template Example
 
@@ -75,8 +75,8 @@ Create HTML from template
 
 Generates raw HTML from a raw HTML template. You can find more examples in `this article <../how-tos/create-html-from-template.html>`_.
 
-Output Parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Output Parameters
+
 .. list-table::
     :header-rows: 1
     :widths: 10 30 20
@@ -103,8 +103,8 @@ Output Parameters
             </body>
             </html>                    
 
-Input Parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Input Parameters
+
 .. list-table::
     :header-rows: 1
     :widths: 10 30 20
@@ -163,8 +163,8 @@ Input Parameters
                 ]
             }  
 
-Example
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Example
+
 
 .. image:: ../../_static/img/flow/how-tos/html-from-template-raw.png
    :alt: Convert HTML document to PDF Example
@@ -174,8 +174,8 @@ Convert DOCX to PDF
 
 Converts .docx document to PDF document. You can find more examples in `this article <../how-tos/convert-word-to-pdf.html>`_.
 
-Output Parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Output Parameters
+
 .. list-table::
     :header-rows: 1
     :widths: 10 30 20
@@ -187,8 +187,8 @@ Output Parameters
        -  The content of the result PDF file.
        -  It is a Base64 encoded content of the result file.
 
-Input Parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Input Parameters
+
 .. list-table::
     :header-rows: 1
     :widths: 10 30 20
@@ -212,8 +212,8 @@ Input Parameters
 
        -  It is a Base64 encoded content of the source template file.          
 
-Example
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Example
+
 .. image:: ../../_static/img/flow/how-tos/convert-docx-to-pdf-example.png
    :alt: Convert DOCX document to PDF Example
 
@@ -222,8 +222,8 @@ Convert HTML to PDF
 
 Converts HTML document to PDF document. You can find more examples in `this article <../how-tos/convert-html-to-pdf.html>`_.
 
-Output Parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Output Parameters
+
 .. list-table::
     :header-rows: 1
     :widths: 10 30 20
@@ -235,8 +235,8 @@ Output Parameters
        -  The content of the result PDF file.
        -  It is a Base64 encoded content of the result file.
 
-Input Parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Input Parameters
+
 .. list-table::
     :header-rows: 1
     :widths: 10 30 20
@@ -310,8 +310,7 @@ Input Parameters
           - Portrait
           - Landscape          
 
-Example
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Example
 
 .. image:: ../../_static/img/flow/how-tos/convert-html-to-pdf-example.png
    :alt: Convert HTML document to PDF Example

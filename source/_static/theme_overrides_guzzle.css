@@ -111,3 +111,8 @@ a{
     margin: 24px auto 24px 300px;
     padding: 30px;
 }
+
+p.rubric {
+  font-weight: normal;
+  font-size: 24px;
+}

@@ -3,11 +3,11 @@ Convert email message to PDF
 
 This article demonstrates how to convert an email message to PDF with the help of  `Microsoft Flow <https://flow.microsoft.com>`_. 
 
-Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../getting-started/use-from-flow.html>`_.
+Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../../getting-started/use-from-flow.html>`_.
 
 We will take a hiring contract text as a body of our message:
 
-.. image:: ../../_static/img/flow/how-tos/email-to-pdf-example.png
+.. image:: ../../../_static/img/flow/how-tos/email-to-pdf-example.png
    :alt: Select fields
 
 You can use different Microsoft Flow connectors to receive messages. Some examples:
@@ -20,7 +20,7 @@ In this example, we will convert email messages to PDF when they arrive in Offic
 
 This is how complete flow looks:
 
-.. image:: ../../_static/img/flow/how-tos/email-to-pdf-flow-example.png
+.. image:: ../../../_static/img/flow/how-tos/email-to-pdf-flow-example.png
    :alt: Select fields
 
 Here is step by step description for the flow.
@@ -35,15 +35,15 @@ This is an action from Plumasail Documents connector, which is a part of `Plumsa
 
 Just put body variable from trigger output into "Source HTML" parameter of the action. You can use email subject as a file name. Then you can receive PDF file content as an output of the action.
 
-You can find more information about this action `here <../actions/document-processing.html#convert-html-to-pdf>`_.
+You can find more information about this action `here <../../actions/document-processing.html#convert-html-to-pdf>`_.
 
 **Create PDF file**
 
 Now you need to store PDF file somewhere. In our example, we use "Create file" action from SharePoint connector to store the PDF document into SharePoint document library. We use email subject as a file name.
 
-.. image:: ../../_static/img/flow/how-tos/generated-pdf-from-email.png
+.. image:: ../../../_static/img/flow/how-tos/generated-pdf-from-email.png
    :alt: Select fields
 
 You can use any other connector to store PDF document into your system.
 
-.. hint:: You can use `Convert HTML to PDF <../actions/document-processing.html#convert-html-to-pdf>`_ action in a different scenario. For example, you can `generate HTML document from a template and then convert it to PDF <create-pdf-from-html-template.html>`_. This is useful for automatic generation of invoices, contracts, etc.
+.. hint:: You can use `Convert HTML to PDF <../../actions/document-processing.html#convert-html-to-pdf>`_ action in a different scenario. For example, you can `generate HTML document from a template and then convert it to PDF <create-pdf-from-html-template.html>`_. This is useful for automatic generation of invoices, contracts, etc.

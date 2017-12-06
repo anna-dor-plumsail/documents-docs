@@ -32,7 +32,7 @@ There are a lot of ready to use helper REST API clients for those languages. Her
 .. _two-ways-to-call-api:
 
 Learn two ways to call API
---------------------
+----------------------------
 
 There are two ways to work with API:
 

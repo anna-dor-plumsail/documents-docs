@@ -1,14 +1,14 @@
-Create PDF from HTML template
+Create HTML document from template
 ==================================
 
-This article demonstrates how to generate PDF document from an HTML template with the help of `Microsoft Flow <https://flow.microsoft.com>`_.
+This article demonstrates how to generate HTML document from a template with the help of `Microsoft Flow <https://flow.microsoft.com>`_.
 
-Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../getting-started/use-from-flow.html>`_.
+Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../../getting-started/use-from-flow.html>`_.
 
-We will firstly generate HTML document from a template. Then we will convert it to PDF. In this article, we will generate PDF invoice based on some data. This is how our final PDF file looks:
+In this article, we will generate HTML invoice based on some data. This is how our final HTML file looks:
 
-.. image:: ../../_static/img/flow/how-tos/html-and-pdf-result.png
-   :alt: Result PDF file
+.. image:: ../../../_static/img/flow/how-tos/html-and-pdf-result.png
+   :alt: Result HTML file
 
 Our template and result document have to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
 
@@ -21,11 +21,11 @@ Our template and result document have to be stored somewhere. Microsoft Flow has
 - SFTP
 - File System
 
-You can store your files anywhere. In this example, we will store our documents in SharePoint. Our flow will use JSON object as a source data for the template, but you can get data from other sources. For example, query list items from SharePoint or from Salesforce.
+You can store your file anywhere. In this example, we will store our documents in SharePoint. Our flow will use JSON object as a source data for the template, but you can get data from other sources. For example query list items from SharePoint or from Salesforce.
 
 This is how our flow looks:
 
-.. image:: ../../_static/img/flow/how-tos/pdf-from-html-template-flow-example.png
+.. image:: ../../../_static/img/flow/how-tos/flow-html-from-template-example.png
    :alt: Result text file
 
 Here is step by step description for the flow.
@@ -44,14 +44,16 @@ You can use any other connector to get files from your system.
 
 This is an action from Plumasail Documents connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_. This action is suitable for generation of HTML and text documents.
 
-You can find more information about this action `here <../actions/document-processing.html#create-html-from-template>`_.
+You can find more information about this action `here <../../actions/document-processing.html#create-html-from-template>`_.
 
 There are two parameters:
 
 1. Source HTML
 2. JSON
 
-In the first parameter *'Source HTML'* you can put raw HTML/text of a template or file content of a template from some other action. We specified the output of the previous action as a template. The internal file is quite large because of CSS styles. The template below is just a part of the template with a snippet for invoice items. Use `this link <../../_static/files/flow/how-tos/html-template.txt>`_ to download the complete template.
+In the first parameter *'Source HTML'* you can put raw HTML/text of a template or file content of a template from some other action. We specified the output of the previous action as a template. The internal file is quite large because of CSS styles. The template below is just a part of the template with a snippet for invoice items. 
+
+Use `this link <../../../_static/files/flow/how-tos/html-template.txt>`_ to download the complete template.
 
 .. code:: html
 
@@ -85,7 +87,7 @@ In the first parameter *'Source HTML'* you can put raw HTML/text of a template o
             </tbody>
     </table>
 
-You may see that there are placeholders like :code:`{{Total}}` and :code:`{{Quantity}}` in the template. There is also :code:`#{{each}}` iterator for rendering invoice items. Please read `template syntax description <../../advanced/html-template-syntax.html>`_ for more information.
+You may see that there are placeholders like :code:`{{Total}}` and :code:`{{Quantity}}` in the template. There is also :code:`#{{each}}` iterator for rendering invoice items. Please read `template syntax description <../../../advanced/html-template-syntax.html>`_ for more information.
 
 In the second parameter, we specified data to apply to the template in JSON format. This object contains information for invoice header and for invoice items:
 
@@ -121,21 +123,13 @@ In the second parameter, we specified data to apply to the template in JSON form
         ]
     }
 
-**Convert HTML to PDF**
-
-This is also an action from Plumasail Documents connector.
-
-Just put HTML file content from the output of the previous action and receive PDF file content as an output of this action. You can also use raw HTML string as a source HTML.
-
-You can find more information about this action `here <../actions/document-processing.html#convert-html-to-pdf>`_.
-
 **Create file**
 
-Now you need to store text file somewhere. In our example, we use *'Create file'* action from SharePoint connector to store the PDF document into SharePoint document library.
+Now you need to store text file somewhere. In our example, we use *'Create file'* action from SharePoint connector to store the HTML document into SharePoint document library.
 
-.. image:: ../../_static/img/flow/how-tos/pdf-from-html-template-lib-file.png
+.. image:: ../../../_static/img/flow/how-tos/html-from-template-file.png
    :alt: Select fields
 
 You can use any other connector to store text document into your system.
 
-.. hint:: You can also `generate PDF from DOCX Word template <create-pdf-from-docx-template.html>`_.
+.. hint:: This action also can be used in conjunction with `Convert HTML to PDF <../../actions/document-processing.html#convert-html-to-pdf>`_ action to `create PDF documents from an HTML template <create-pdf-from-html-template.html>`_.

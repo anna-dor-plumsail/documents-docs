@@ -3,14 +3,14 @@ Convert HTML to PDF
 
 This article demonstrates how to convert an HTML document or an HTML string to PDF with the help of `Microsoft Flow <https://flow.microsoft.com>`_. 
 
-Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../getting-started/use-from-flow.html>`_.
+Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../../getting-started/use-from-flow.html>`_.
 
 We will take an invoice as a sample HTML document:
 
-.. image:: ../../_static/img/flow/how-tos/pdf-file-from-html-example.png
+.. image:: ../../../_static/img/flow/how-tos/pdf-file-from-html-example.png
    :alt: Select fields
 
-Use `this link <../../_static/files/flow/how-tos/invoice-html-example.txt>`_ to download it.
+Use `this link <../../../_static/files/flow/how-tos/invoice-html-example.txt>`_ to download it.
 
 Our documents have to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
 
@@ -27,7 +27,7 @@ You can store your files anywhere. In this example, we will store our documents 
 
 This is how complete flow looks:
 
-.. image:: ../../_static/img/flow/how-tos/html-to-pdf-flow-example.png
+.. image:: ../../../_static/img/flow/how-tos/html-to-pdf-flow-example.png
    :alt: HTML to PDF flow example
 
 Here is step by step description for the flow.
@@ -48,15 +48,15 @@ This is an action from Plumasail Documents connector, which is a part of `Plumsa
 
 Just put HTML file content from the output of the previous action and receive PDF file content as an output of this action. You can also use raw HTML string as a source HTML.
 
-You can find more information about this action `here <../actions/document-processing.html#convert-html-to-pdf>`_.
+You can find more information about this action `here <../../actions/document-processing.html#convert-html-to-pdf>`_.
 
 **Create file**
 
 Now you need to store the HTML file somewhere. In our example, we use "Create file" action from SharePoint connector to store the PDF document into SharePoint document library.
 
-.. image:: ../../_static/img/flow/how-tos/html-to-pdf-file.png
+.. image:: ../../../_static/img/flow/how-tos/html-to-pdf-file.png
    :alt: Select fields
 
 You can use any other connector to store PDF document into your system.
 
-.. hint:: There is also `Create HTML from template <../actions/document-processing.html#create-html-from-template>`_ action available. You can use it in conjunction with `Convert HTML to PDF <../actions/document-processing.html#convert-html-to-pdf>`_ action to `create PDF documents from a template <create-pdf-from-html-template.html>`_.
+.. hint:: There is also `Create HTML from template <../../actions/document-processing.html#create-html-from-template>`_ action available. You can use it in conjunction with `Convert HTML to PDF <../../actions/document-processing.html#convert-html-to-pdf>`_ action to `create PDF documents from a template <create-pdf-from-html-template.html>`_.
