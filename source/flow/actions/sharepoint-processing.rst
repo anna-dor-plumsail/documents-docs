@@ -1,7 +1,7 @@
 SharePoint connector
 ==================================
 
-Before starting, ensure that you `added Plumsail connector to Microsoft Flow <../getting-started/use-from-flow.html>`_.
+Before starting, ensure that you `added Plumsail connector to Microsoft Flow <../../getting-started/use-from-flow.html>`_.
 
 Change Permissions
 ----------------------------------
