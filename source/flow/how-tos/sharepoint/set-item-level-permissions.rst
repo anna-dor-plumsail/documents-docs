@@ -4,7 +4,7 @@ Set item level permissions (break role inheritance and assign permissions)
 This article will show how to use Microsoft Flow to break role inheritance and grant permissions on the list item for the user and for specific SharePoint group.
 
 This example will show a simple case of business traveling system when a user can create a new request on the business travel as the item in SharePoint list (*‘Business Travel Requests‘*), specify the requester of the business trip the locations of his business trip, the date of departure and the date of return. 
-Once it is done, the flow breaks the permissions inheritance for the new item and grant permissions for the user which was specified as the requester and for *‘Travel Managers‘* SharePoint group which contains managers who response for business trips.
+Once it is done, the flow breaks the permissions inheritance for the new item and grant permissions for the user that was specified as the requester and for *‘Travel Managers‘* SharePoint group that contains managers who response for business trips.
 
 This article is divided to stages:
 
@@ -61,7 +61,7 @@ After that, I specified value of *‘Item ID‘* field as *‘ID‘* parameter f
 Grant permissions on item for Requester
 ++++++++++++++++++++++++++++++++++++++++
 
-It is another *‘Change Permissions’* action for granting permissions on the new item for user which was specified as the requester.
+It is another *‘Change Permissions’* action for granting permissions on the new item for user that was specified as the requester.
 
 In this action, I firstly choose *‘Grant’* value for *‘Action type’* field and *‘Item’* value for *‘Target’* field.
 
@@ -73,7 +73,7 @@ Next, I specified *‘Role type‘* field as *‘Contribute’* and the value of
 Grant permissions on item to "Travel Managers" group
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-It is another *‘Change Permissions’* action for granting permissions on the new item for *‘Travel Managers‘* SharePoint group which contains managers who response for business trips.
+It is another *‘Change Permissions’* action for granting permissions on the new item for *‘Travel Managers‘* SharePoint group that contains managers who response for business trips.
 
 In this action, I firstly choose *‘Grant’* value for *‘Action type’* field and *‘Item’* value for *‘Target’* field.
 

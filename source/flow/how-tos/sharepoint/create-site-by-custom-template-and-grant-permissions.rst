@@ -25,7 +25,7 @@ This is how the new form looks like:
 .. image:: ../../../_static/img/flow/how-tos/create-site-list-new-item.png
    :alt: Create site
 
-As I mentioned above I simplified this example to keep it clear. You can add more fields to this list to work with your projects. For example, you can add field *‘Project Template’*  and use it to create new SharePoint site from the template which name will be specified in this field.
+As I mentioned above I simplified this example to keep it clear. You can add more fields to this list to work with your projects. For example, you can add field *‘Project Template’*  and use it for specifying the name of the template to create new SharePoint site.
 
 .. _saveSiteAsTemplate:
 

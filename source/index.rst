@@ -45,7 +45,8 @@ All documentation articles
       :name: toc-microsoft-flow-examples
       :maxdepth: 2
       
-      flow/how-tos/index  
+      flow/how-tos/documents/index 
+      flow/how-tos/sharepoint/index  
 
 .. container:: pl-right-column
 

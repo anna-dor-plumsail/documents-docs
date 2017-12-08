@@ -1,23 +1,23 @@
 SharePoint connector
 ==================================
 
-This connector helps you to automatically generate and convert documents. Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../getting-started/use-from-flow.html>`_.
+Before starting, ensure that you `added Plumsail connector to Microsoft Flow <../getting-started/use-from-flow.html>`_.
 
 Change Permissions
 ----------------------------------
 
-It is a complex action which include 12 actions for changing permissions for your SharePoint objects: sites, lists, and items.
+It is a complex action that includes 12 actions for changing permissions for your SharePoint objects: sites, lists, and items.
 On the first step of working with this action you need to specify two parameters:
 
 * Actions type - The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance
-* Target - the target of action: Site, List, Item
+* Target - The target of action: Site, List, Item
 
 .. image:: ../../_static/img/flow/sharepoint/ChangePermissionsExample.png
    :alt: Change Permissions Example
 
 After that, others fields of the form will be generated automatically based on these parameters.
 
-You may find the documentation of all actions which included in "Change Permissions" below:
+You may find the documentation of all actions included in "Change Permissions" below:
 
 - :ref:`grant-permissions-site`
 - :ref:`remove-permissions-site`
@@ -49,6 +49,12 @@ Grant specific permissions to an user site
     *  -  Parameter
        -  Description
        -  Example
+    *  -  Actions type
+       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'Grant' for this case.
+       -  Grant
+    *  -  Target
+       -  The target of action: Site, List, Item. You should pick 'Site' for this case.
+       -  Site
     *  -  User or group
        -  Login, Email or Name of the User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  :code:`user@contoso.com`
@@ -63,7 +69,7 @@ Grant specific permissions to an user site
                 
        -  Read
     *  -  SharePoint Site Url
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
 .. rubric:: Example
@@ -87,6 +93,12 @@ Delete specific permissions from Site for specified user or group
     *  -  Parameter
        -  Description
        -  Example
+    *  -  Actions type
+       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'Remove' for this case.
+       -  Remove
+    *  -  Target
+       -  The target of action: Site, List, Item. You should pick 'Site' for this case.
+       -  Site
     *  -  User or group
        -  Login, Email or Name of the User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  :code:`user@contoso.com`
@@ -101,7 +113,7 @@ Delete specific permissions from Site for specified user or group
                 
        -  Read
     *  -  SharePoint Site Url
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
 .. rubric:: Example
@@ -125,8 +137,14 @@ Removing all user permissions from a SharePoint Site
     *  -  Parameter
        -  Description
        -  Example
+    *  -  Actions type
+       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'RemoveAll' for this case.
+       -  RemoveAll
+    *  -  Target
+       -  The target of action: Site, List, Item. You should pick 'Site' for this case.
+       -  Site
     *  -  SharePoint Site Url
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
 .. rubric:: Example
@@ -150,8 +168,14 @@ Remove unique permissions and restore permission inheritance on current SharePoi
     *  -  Parameter
        -  Description
        -  Example
+    *  -  Actions type
+       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'RestoreInheritance' for this case.
+       -  RestoreInheritance
+    *  -  Target
+       -  The target of action: Site, List, Item. You should pick 'Site' for this case.
+       -  Site
     *  -  SharePoint Site Url
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
 .. rubric:: Example
@@ -175,6 +199,12 @@ Grant specific permissions to a user on a list
     *  -  Parameter
        -  Description
        -  Example
+    *  -  Actions type
+       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'Grant' for this case.
+       -  Grant
+    *  -  Target
+       -  The target of action: Site, List, Item. You should pick 'List' for this case.
+       -  List
     *  -  List name
        -  Title or Url of the list
        -  Sales
@@ -192,7 +222,7 @@ Grant specific permissions to a user on a list
                 
        -  Read
     *  -  SharePoint Site Url
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
 .. rubric:: Example
@@ -216,6 +246,12 @@ Delete specific permissions from a user on a list
     *  -  Parameter
        -  Description
        -  Example
+    *  -  Actions type
+       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'Remove' for this case.
+       -  Remove
+    *  -  Target
+       -  The target of action: Site, List, Item. You should pick 'List' for this case.
+       -  List
     *  -  List name
        -  Title or Url of the list
        -  Sales
@@ -233,7 +269,7 @@ Delete specific permissions from a user on a list
                 
        -  Read
     *  -  SharePoint Site Url
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
 .. rubric:: Example
@@ -257,11 +293,17 @@ Removing all user permissions from a SharePoint List
     *  -  Parameter
        -  Description
        -  Example
+    *  -  Actions type
+       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'RemoveAll' for this case.
+       -  RemoveAll
+    *  -  Target
+       -  The target of action: Site, List, Item. You should pick 'List' for this case.
+       -  List
     *  -  List name
        -  Title or Url of the list
        -  Sales
     *  -  SharePoint Site Url
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
 .. rubric:: Example
@@ -285,11 +327,17 @@ Remove unique permissions and restore permission inheritance on a SharePoint lis
     *  -  Parameter
        -  Description
        -  Example
+    *  -  Actions type
+       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'RestoreInheritance' for this case.
+       -  RestoreInheritance
+    *  -  Target
+       -  The target of action: Site, List, Item. You should pick 'List' for this case.
+       -  List
     *  -  List name
        -  Title or Url of the list
        -  Sales
     *  -  SharePoint Site Url
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
 .. rubric:: Example
@@ -313,6 +361,12 @@ Grant specific permissions to a user on an item
     *  -  Parameter
        -  Description
        -  Example
+    *  -  Actions type
+       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'Grant' for this case.
+       -  Grant
+    *  -  Target
+       -  The target of action: Site, List, Item. You should pick 'Item' for this case.
+       -  Item
     *  -  Item ID
        -  ID of the item
        -  7
@@ -333,7 +387,7 @@ Grant specific permissions to a user on an item
                 
        -  Read
     *  -  SharePoint Site Url
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
 .. rubric:: Example
@@ -357,6 +411,12 @@ Delete specific permissions from a user on an item
     *  -  Parameter
        -  Description
        -  Example
+    *  -  Actions type
+       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'Remove' for this case.
+       -  Remove
+    *  -  Target
+       -  The target of action: Site, List, Item. You should pick 'Item' for this case.
+       -  Item
     *  -  Item ID
        -  ID of the item
        -  7
@@ -377,7 +437,7 @@ Delete specific permissions from a user on an item
                 
        -  Read
     *  -  SharePoint Site Url
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
 .. rubric:: Example
@@ -401,6 +461,12 @@ Removing all user permissions from a SharePoint Item
     *  -  Parameter
        -  Description
        -  Example
+    *  -  Actions type
+       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'RemoveAll' for this case.
+       -  RemoveAll
+    *  -  Target
+       -  The target of action: Site, List, Item. You should pick 'Item' for this case.
+       -  Item
     *  -  Item ID
        -  ID of the item
        -  7
@@ -408,7 +474,7 @@ Removing all user permissions from a SharePoint Item
        -  Title or Url of the list
        -  Sales
     *  -  SharePoint Site Url
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
 .. rubric:: Example
@@ -432,6 +498,12 @@ Remove unique permissions and restore permission inheritance on a SharePoint Ite
     *  -  Parameter
        -  Description
        -  Example
+    *  -  Actions type
+       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'RestoreInheritance' for this case.
+       -  RestoreInheritance
+    *  -  Target
+       -  The target of action: Site, List, Item. You should pick 'Item' for this case.
+       -  Item
     *  -  Item ID
        -  ID of the item
        -  7
@@ -439,7 +511,7 @@ Remove unique permissions and restore permission inheritance on a SharePoint Ite
        -  Title or Url of the list
        -  Sales
     *  -  SharePoint Site Url
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
 .. rubric:: Example
@@ -474,7 +546,7 @@ Activate a feature with specific ID
        -  Yes
 
     *  -  SharePoint Site Url
-       -  The URL of the current SharePoint site. This property defines the context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site.
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
 .. rubric:: Example
@@ -517,7 +589,7 @@ Create list by template.
        -  Yes
 
     *  -  SharePoint Site Url
-       -  The URL of the current SharePoint site. This property defines the context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site.
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
 .. rubric:: Example
@@ -541,7 +613,7 @@ Create a new SharePoint site based on specific template.
        -  Example
     *  -  Web URL
        -  URL of the created SharePoint site.
-       -  :code:`https://contoso/sites/newSubSite`
+       -  :code:`https://contoso/sites/subSite/Sales_Department`
 
 .. rubric:: Input Parameters
 
@@ -589,7 +661,7 @@ Create a new SharePoint site based on specific template.
        -  No
 
     *  -  SharePoint Site Url
-       -  The URL of the current SharePoint site. This property defines the context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site.
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
 .. rubric:: Example
@@ -620,7 +692,7 @@ Configure default groups for the site it is analog of the permsetup.aspx page.
        -  Sales owners
 
     *  -  SharePoint Site Url
-       -  The URL of the current SharePoint site. This property defines the context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site.
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`         
 
 .. rubric:: Example
