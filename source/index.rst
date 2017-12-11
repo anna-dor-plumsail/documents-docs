@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 All documentation articles
-=================================================
+==========================
 
 .. toctree::
    :hidden:
@@ -28,14 +28,13 @@ All documentation articles
       :name: toc-test-api
       :maxdepth: 2
       
-      Document processing API specification <https://api.plumsail.com/swagger/#!/DocumentsAPI> 
-      Sharepoint API specification <https://api.plumsail.com/swagger/#!/SharePointAPI>       
+      rest-api/index
       
 
    .. toctree::
       :caption: Microsoft Flow actions
       :name: toc-microsoft-flow-actions
-      :maxdepth: 3
+      :maxdepth: 2
       
       flow/actions/document-processing
       flow/actions/sharepoint-processing

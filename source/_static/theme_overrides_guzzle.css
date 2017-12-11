@@ -148,3 +148,7 @@ a:hover, a:focus {
 .mega-subcat__links a:hover{
     color: #ee8400;
 }
+
+.section img {    
+    margin: 0 0 10px;
+}

@@ -1,8 +1,7 @@
 SharePoint connector
 =====================
 
-.. toctree::
-      :caption: SharePoint connector
+.. toctree::      
       :name: toc-sharepoint-examples
       :maxdepth: 1
       

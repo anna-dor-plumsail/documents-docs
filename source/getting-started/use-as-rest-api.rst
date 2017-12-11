@@ -4,8 +4,9 @@ Use as REST API
 This tutorial shows how to use Plumsail Actions API. There are just a few steps to get started:
 
 1. :ref:`create-api-key`
-2. :ref:`use-own-language`
-3. :ref:`two-ways-to-call-api`
+2. :ref:`review-api-reference`
+3. :ref:`use-own-language`
+4. :ref:`two-ways-to-call-api`
 
 .. _create-api-key:
 
@@ -13,6 +14,13 @@ Create an API key
 -----------------
 
 Just follow the steps described in `this topic <sign-up.html#generate-api-key>`_.
+
+.. _review-api-reference:
+
+Review reference for API that you want to call
+----------------------------------------------
+
+You can find links to references fro all Actions APIs on `this page <../rest-api/index.html>`_.
 
 .. _use-own-language:
 
@@ -33,6 +41,8 @@ There are a lot of ready to use helper REST API clients for those languages. Her
 
 Learn two ways to call API
 ----------------------------
+
+In this section we will show examples for `Documents processing API <../rest-api/index.html>`_, but it is actual for other our APIs as well.
 
 There are two ways to work with API:
 

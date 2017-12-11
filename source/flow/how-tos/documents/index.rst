@@ -1,8 +1,7 @@
 Documents connector
 =====================
 
-.. toctree::
-      :caption: Documents connector
+.. toctree::      
       :name: toc-documents-examples
       :maxdepth: 1
       

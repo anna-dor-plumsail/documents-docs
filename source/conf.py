@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Workflow Actions Pack documentation build configuration file, created by
+# Plumsail Actions documentation build configuration file, created by
 # sphinx-quickstart on Tue Apr 12 16:52:35 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -51,8 +51,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Workflow Actions Pack'
-copyright = '2016, Plumsail'
+project = 'Plumsail Actions'
+copyright = '2017, Plumsail'
 author = 'Plumsail'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -141,7 +141,7 @@ extensions.append("guzzle_sphinx_theme")
 # Guzzle theme options (see theme.conf for more information)
 html_theme_options = {
     # Set the name of the project to appear in the sidebar
-    "project_nav_name": "Workflow Actions Pack",
+    "project_nav_name": "Plumsail Actions",
      # Set your Disqus short name to enable comments
     "disqus_comments_shortname": "plumsail",
 
@@ -161,7 +161,7 @@ html_theme_options = {
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
-#html_title = 'Workflow Actions Pack v1.0'
+#html_title = 'Plumsail Actions'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -271,7 +271,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'WorkflowActionsPack.tex', 'Workflow Actions Pack Documentation',
+    (master_doc, 'WorkflowActionsPack.tex', 'Plumsail Actions Documentation',
      'Plumsail', 'manual'),
 ]
 
@@ -301,7 +301,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'workflowactionspack', 'Workflow Actions Pack Documentation',
+    (master_doc, 'workflowactionspack', 'Plumsail Actions Documentation',
      [author], 1)
 ]
 
@@ -315,7 +315,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'WorkflowActionsPack', 'Workflow Actions Pack Documentation',
+    (master_doc, 'WorkflowActionsPack', 'Plumsail Actions Documentation',
      author, 'WorkflowActionsPack', 'One line description of project.',
      'Miscellaneous'),
 ]

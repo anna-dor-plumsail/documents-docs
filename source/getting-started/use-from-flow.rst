@@ -16,11 +16,18 @@ Click *'Create custom connector → Import an OpenAPI from URL'*:
 .. image:: ../_static/img/getting-started/connector-from-url.png
    :alt: Connector from URL
 
-Fill in name *'Plumsail Documents'* and swagger definition URL:
+There are two connectors available in Plumsail Actions:
 
-::
+- `Plumsail Documents <../flow/actions/document-processing.html>`_ - provides a set of actions for operations with Documents
+- `Plumsail SharePoint <../flow/actions/sharepoint-processing.html>`_ - provides a set of actions for operations with SharePoint
+
+If you want to use *'Plumsail Documents'*, fill in name *'Plumsail Documents'* and swagger definition URL:
 
   https://api.plumsail.com/swagger/DocumentsFlow/swagger.json
+
+If you want to use *'Plumsail SharePoint'*, fill in name *'Plumsail SharePoint'* and swagger definition URL:
+
+  https://api.plumsail.com/swagger/SharePointFlow/swagger.json
 
 Once you clicked *'Continue'* you will see *'General'* step of connector configuration:
 
@@ -64,4 +71,14 @@ You can type any name for the connection. For example, *'Plumsail Documents'*. T
 .. image:: ../_static/img/getting-started/create-flow-connection.png
    :alt: Screen of Plumsail Actions
 
-Once you clicked *'Create'* you can use Plumsail Actions in your Microsoft Flows. Review *'Microsoft Flow examples'* section in `the root of documentation <../index.html>`_.
+Review examples of Flows
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Once you clicked *'Create'* you can use Plumsail Actions in your Microsoft Flows. Review *'Microsoft Flow examples'* to learn how to use them:
+
+.. toctree::      
+      :name: toc-microsoft-flow-examples
+      :maxdepth: 2
+      
+      ../flow/how-tos/documents/index 
+      ../flow/how-tos/sharepoint/index 

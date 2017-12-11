@@ -1,23 +1,26 @@
 SharePoint connector
 ==================================
 
+Provides advanced set of Microsoft Flow actions for SharePoint. It allows you to change permissions on sites, lists, list items. You can create sites from templates and many more. 
+
 Before starting, ensure that you `added Plumsail connector to Microsoft Flow <../../getting-started/use-from-flow.html>`_.
 
-Change Permissions
-----------------------------------
+Change Permissions on site, list or list item
+---------------------------------------------
 
-It is a complex action that includes 12 actions for changing permissions for your SharePoint objects: sites, lists, and items.
-On the first step of working with this action you need to specify two parameters:
+"Change Permissions" is a complex action that includes 12 different operations for granting, removing or restoring permissions on sites, lists, and list items.
 
-* Actions type - The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance
-* Target - The target of action: Site, List, Item
+Once you added this action to your Flow, you need to specify to initial parameters:
+
+* Action type - type of action for changing permissions: Grant, Remove, RemoveAll, RestoreInheritance
+* Target - target of action: Site, List, Item
 
 .. image:: ../../_static/img/flow/sharepoint/ChangePermissionsExample.png
    :alt: Change Permissions Example
 
-After that, others fields of the form will be generated automatically based on these parameters.
+Once you did this, you will see the rest of parameters for this particular operation.
 
-You may find the documentation of all actions included in "Change Permissions" below:
+You can find the documentation for all operations included in "Change Permissions" action below:
 
 - :ref:`grant-permissions-site`
 - :ref:`remove-permissions-site`
@@ -38,7 +41,7 @@ You may find the documentation of all actions included in "Change Permissions" b
 Grant Permissions on Site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Grant specific permissions to an user site
+Grant specific permissions on site to a SharePoint user or Group
 
 .. rubric:: Input Parameters
 
@@ -49,14 +52,14 @@ Grant specific permissions to an user site
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Actions type
-       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'Grant' for this case.
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'Grant' for this case.
        -  Grant
     *  -  Target
        -  The target of action: Site, List, Item. You should pick 'Site' for this case.
        -  Site
     *  -  User or group
-       -  Login, Email or Name of the User or Group. Also you can specify multiple items using semicolon ';' delimited
+       -  Login, Email or Name of a User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  :code:`user@contoso.com`
     *  -  Role Type
        -  permission levels:
@@ -82,7 +85,7 @@ Grant specific permissions to an user site
 Remove Permissions from Site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Delete specific permissions from Site for specified user or group
+Delete specific permissions from site for specified SharePoint user or group
 
 .. rubric:: Input Parameters
 
@@ -93,14 +96,14 @@ Delete specific permissions from Site for specified user or group
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Actions type
-       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'Remove' for this case.
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'Remove' for this case.
        -  Remove
     *  -  Target
        -  The target of action: Site, List, Item. You should pick 'Site' for this case.
        -  Site
     *  -  User or group
-       -  Login, Email or Name of the User or Group. Also you can specify multiple items using semicolon ';' delimited
+       -  Login, Email or Name of a User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  :code:`user@contoso.com`
     *  -  Role Type
        -  permission levels:
@@ -126,7 +129,7 @@ Delete specific permissions from Site for specified user or group
 Remove All Permissions from Site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removing all user permissions from a SharePoint Site
+Removing all user permissions from a SharePoint site
 
 .. rubric:: Input Parameters
 
@@ -137,8 +140,8 @@ Removing all user permissions from a SharePoint Site
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Actions type
-       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'RemoveAll' for this case.
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'RemoveAll' for this case.
        -  RemoveAll
     *  -  Target
        -  The target of action: Site, List, Item. You should pick 'Site' for this case.
@@ -157,7 +160,7 @@ Removing all user permissions from a SharePoint Site
 Restore Permissions Inheritance for Site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Remove unique permissions and restore permission inheritance on current SharePoint Site
+Remove unique permissions and restore permission inheritance on current SharePoint site
 
 .. rubric:: Input Parameters
 
@@ -168,8 +171,8 @@ Remove unique permissions and restore permission inheritance on current SharePoi
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Actions type
-       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'RestoreInheritance' for this case.
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'RestoreInheritance' for this case.
        -  RestoreInheritance
     *  -  Target
        -  The target of action: Site, List, Item. You should pick 'Site' for this case.
@@ -188,7 +191,7 @@ Remove unique permissions and restore permission inheritance on current SharePoi
 Grant Permissions on List
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Grant specific permissions to a user on a list
+Grant specific permissions to a user on a SharePoint list
 
 .. rubric:: Input Parameters
 
@@ -199,17 +202,17 @@ Grant specific permissions to a user on a list
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Actions type
-       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'Grant' for this case.
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'Grant' for this case.
        -  Grant
     *  -  Target
        -  The target of action: Site, List, Item. You should pick 'List' for this case.
        -  List
     *  -  List name
-       -  Title or Url of the list
+       -  Title or Url of a list
        -  Sales
     *  -  User or group
-       -  Login, Email or Name of the User or Group. Also you can specify multiple items using semicolon ';' delimited
+       -  Login, Email or Name of a User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  :code:`user@contoso.com`
     *  -  Role Type
        -  permission levels:
@@ -235,7 +238,7 @@ Grant specific permissions to a user on a list
 Remove Permissions from List
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Delete specific permissions from a user on a list
+Delete specific permissions from a user on a SharePoint list
 
 .. rubric:: Input Parameters
 
@@ -246,17 +249,17 @@ Delete specific permissions from a user on a list
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Actions type
-       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'Remove' for this case.
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'Remove' for this case.
        -  Remove
     *  -  Target
        -  The target of action: Site, List, Item. You should pick 'List' for this case.
        -  List
     *  -  List name
-       -  Title or Url of the list
+       -  Title or Url of a list
        -  Sales
     *  -  User or group
-       -  Login, Email or Name of the User or Group. Also you can specify multiple items using semicolon ';' delimited
+       -  Login, Email or Name of a User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  :code:`user@contoso.com`
     *  -  Role Type
        -  permission levels:
@@ -282,7 +285,7 @@ Delete specific permissions from a user on a list
 Remove All Permissions from List
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removing all user permissions from a SharePoint List
+Remove all user permissions from a SharePoint list
 
 .. rubric:: Input Parameters
 
@@ -293,14 +296,14 @@ Removing all user permissions from a SharePoint List
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Actions type
-       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'RemoveAll' for this case.
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'RemoveAll' for this case.
        -  RemoveAll
     *  -  Target
        -  The target of action: Site, List, Item. You should pick 'List' for this case.
        -  List
     *  -  List name
-       -  Title or Url of the list
+       -  Title or Url of a list
        -  Sales
     *  -  SharePoint Site Url
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
@@ -327,14 +330,14 @@ Remove unique permissions and restore permission inheritance on a SharePoint lis
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Actions type
-       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'RestoreInheritance' for this case.
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'RestoreInheritance' for this case.
        -  RestoreInheritance
     *  -  Target
        -  The target of action: Site, List, Item. You should pick 'List' for this case.
        -  List
     *  -  List name
-       -  Title or Url of the list
+       -  Title or Url of a list
        -  Sales
     *  -  SharePoint Site Url
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
@@ -350,7 +353,7 @@ Remove unique permissions and restore permission inheritance on a SharePoint lis
 Grant Permissions on Item
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Grant specific permissions to a user on an item
+Grant specific permissions to a user on a SharePoint list item
 
 .. rubric:: Input Parameters
 
@@ -361,8 +364,8 @@ Grant specific permissions to a user on an item
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Actions type
-       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'Grant' for this case.
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'Grant' for this case.
        -  Grant
     *  -  Target
        -  The target of action: Site, List, Item. You should pick 'Item' for this case.
@@ -371,10 +374,10 @@ Grant specific permissions to a user on an item
        -  ID of the item
        -  7
     *  -  List name
-       -  Title or Url of the list
+       -  Title or Url of a list
        -  Sales
     *  -  User or group
-       -  Login, Email or Name of the User or Group. Also you can specify multiple items using semicolon ';' delimited
+       -  Login, Email or Name of a User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  :code:`user@contoso.com`
     *  -  Role Type
        -  permission levels:
@@ -400,7 +403,7 @@ Grant specific permissions to a user on an item
 Remove Permissions from Item
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Delete specific permissions from a user on an item
+Delete specific permissions from a user on a SharePoint list item
 
 .. rubric:: Input Parameters
 
@@ -411,8 +414,8 @@ Delete specific permissions from a user on an item
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Actions type
-       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'Remove' for this case.
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'Remove' for this case.
        -  Remove
     *  -  Target
        -  The target of action: Site, List, Item. You should pick 'Item' for this case.
@@ -421,10 +424,10 @@ Delete specific permissions from a user on an item
        -  ID of the item
        -  7
     *  -  List name
-       -  Title or Url of the list
+       -  Title or Url of a list
        -  Sales
     *  -  User or group
-       -  Login, Email or Name of the User or Group. Also you can specify multiple items using semicolon ';' delimited
+       -  Login, Email or Name of a User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  :code:`user@contoso.com`
     *  -  Role Type
        -  permission levels:
@@ -461,8 +464,8 @@ Removing all user permissions from a SharePoint Item
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Actions type
-       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'RemoveAll' for this case.
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'RemoveAll' for this case.
        -  RemoveAll
     *  -  Target
        -  The target of action: Site, List, Item. You should pick 'Item' for this case.
@@ -471,7 +474,7 @@ Removing all user permissions from a SharePoint Item
        -  ID of the item
        -  7
     *  -  List name
-       -  Title or Url of the list
+       -  Title or Url of a list
        -  Sales
     *  -  SharePoint Site Url
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
@@ -487,7 +490,7 @@ Removing all user permissions from a SharePoint Item
 Restore Permissions Inheritance for Item
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Remove unique permissions and restore permission inheritance on a SharePoint Item
+Remove unique permissions and restore permission inheritance on a SharePoint list item
 
 .. rubric:: Input Parameters
 
@@ -498,8 +501,8 @@ Remove unique permissions and restore permission inheritance on a SharePoint Ite
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Actions type
-       -  The type of action on changing permissions: Grant, Remove, RemoveAll, RestoreInheritance. You should pick 'RestoreInheritance' for this case.
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'RestoreInheritance' for this case.
        -  RestoreInheritance
     *  -  Target
        -  The target of action: Site, List, Item. You should pick 'Item' for this case.
@@ -508,7 +511,7 @@ Remove unique permissions and restore permission inheritance on a SharePoint Ite
        -  ID of the item
        -  7
     *  -  List name
-       -  Title or Url of the list
+       -  Title or Url of a list
        -  Sales
     *  -  SharePoint Site Url
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
@@ -569,7 +572,7 @@ Create list by template.
        -  Description
        -  Example
     *  -  Title
-       -  Title of the list.
+       -  Title of a list.
        -  Sales reports
 
     *  -  Template
@@ -581,7 +584,7 @@ Create list by template.
        -  Sales_Department
 
     *  -  Description
-       -  Description of the list.
+       -  Description of a list.
        -  Library contains sales reports
 
     *  -  On Quick Nav
@@ -598,7 +601,7 @@ Create list by template.
    :alt: Create List or Library Example
 
 Create Site from Template
-----------------------------
+-------------------------
 
 Create a new SharePoint site based on specific template.
 
@@ -672,7 +675,7 @@ Create a new SharePoint site based on specific template.
 Set Default Site Group
 ----------------------------
 
-Configure default groups for the site it is analog of the permsetup.aspx page.
+Configure default groups for a site. It is alternative of the permsetup.aspx page in SharePoint UI.
 
 .. rubric:: Input Parameters
 
