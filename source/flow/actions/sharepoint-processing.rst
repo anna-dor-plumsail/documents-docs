@@ -10,7 +10,7 @@ Change Permissions on site, list or list item
 
 "Change Permissions" is a complex action that includes 12 different operations for granting, removing or restoring permissions on sites, lists, and list items.
 
-Once you added this action to your Flow, you need to specify to initial parameters:
+Once you added this action to your Flow, you need to specify two initial parameters:
 
 * Action type - type of action for changing permissions: Grant, Remove, RemoveAll, RestoreInheritance
 * Target - target of action: Site, List, Item
