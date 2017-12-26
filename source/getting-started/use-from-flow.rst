@@ -11,7 +11,7 @@ There are two connectors available in Plumsail Actions:
 
 .. important:: 
 
-  If you use *'Plumsail SharePoint'* connector, `you need to add it manually <../flow/create-custom-connector.html>`_. It is not available in global directory yet. 
+  If you use *'Plumsail SharePoint'* connector, `you need to add it manually <../flow/create-custom-connector.html>`_. It is not available in the global directory yet. 
 
   It is not required for *'Plumsail Documents'* connector.
 
