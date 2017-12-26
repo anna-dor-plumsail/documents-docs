@@ -1,78 +1,34 @@
 Use in Microsoft Flow
 =======================================
 
-.. note:: You will need an API key that you can `create in your Plumsail Account page <sign-up.html#generate-api-key>`_.
-
-Add custom connector
---------------------
-
-First of all, you need to add a custom connector to Microsoft Flow. Open Microsoft Flow account then navigate to *'Custom Connectors'*:
-
-.. image:: ../_static/img/getting-started/1-flow-custom-connectors.png
-   :alt: Microsoft Flow custom connectors menu
-
-Click *'Create custom connector → Import an OpenAPI from URL'*:
-
-.. image:: ../_static/img/getting-started/connector-from-url.png
-   :alt: Connector from URL
-
 There are two connectors available in Plumsail Actions:
 
-- `Plumsail Documents <../flow/actions/document-processing.html>`_ - provides a set of actions for operations with Documents
-- `Plumsail SharePoint <../flow/actions/sharepoint-processing.html>`_ - provides a set of actions for operations with SharePoint
+- :ref:`plumsail-documents-getting-started` - provides `a set of actions <../flow/actions/document-processing.html>`_ for operations with Documents.
+- :ref:`plumsail-sharepoint-getting-started` - provides `a set of actions <../flow/actions/sharepoint-processing.html>`_ for operations with SharePoint.
 
-If you want to use *'Plumsail Documents'*, fill in name *'Plumsail Documents'* and swagger definition URL:
+If you want to use Plumsail Documents connector, just create a new Flow and search for "Plumsail Documents".
 
-  https://api.plumsail.com/swagger/DocumentsFlow/swagger.json
+You need to `add Plumsail Documents connector <../flow/create-custom-connector.html>`_ manually. It is not available in global directory yet.
 
-If you want to use *'Plumsail SharePoint'*, fill in name *'Plumsail SharePoint'* and swagger definition URL:
+.. _plumsail-documents-getting-started:
 
-  https://api.plumsail.com/swagger/SharePointFlow/swagger.json
+Plumsail Documents connector
+----------------------------------------
 
-Once you clicked *'Continue'* you will see *'General'* step of connector configuration:
-
-.. image:: ../_static/img/getting-started/general-connector-step.png
-   :alt: General connector configuration
-
-You may want to differentiate this connector from others. In this case, you can assign a custom icon and custom color for it. We suggest this icon:
-
-.. image:: ../_static/img/getting-started/actions-connector-icon.png
-   :alt: Connector icon
-   :target: ../_static/img/getting-started/actions-connector-icon.png
-
-And this color:
-
-::
-
-  #ce2d7d
-
-Then click *'Continue'*. You should see authentication type screen:
-
-.. image:: ../_static/img/getting-started/2-flow-accesskey-label.png
-   :alt: Microsoft Flow access key
-
-Fill in *'Label'* with the value *'Access Key'* and click *'Create connector'*:
-
-.. image:: ../_static/img/getting-started/create-connector-link.png
-   :alt: Create Connector link
-
-Create your first flow
-----------------------
-
-Once you added a connector, the new actions will be available in your flows:
+Just search for "Plumsail" and add appropriate action:
 
 .. image:: ../_static/img/getting-started/3-plumsail-flow.png
    :alt: Screen of Plumsail Actions
 
 When you add an action for the first time you will be asked for *'Connection Name'* and for *'Access Key'*. 
 
-You can type any name for the connection. For example, *'Plumsail Documents'*. Then copy and paste API key that you `create in your Plumsail Account page <sign-up.html#generate-api-key>`_ to *'Access Key'* input.
+You can type any name for the connection. For example, *'Plumsail Documents'*. Then copy and paste API key that you `created in your Plumsail Account page <sign-up.html#generate-api-key>`_ to *'Access Key'* input.
 
 .. image:: ../_static/img/getting-started/create-flow-connection.png
    :alt: Screen of Plumsail Actions
 
-Review examples of Flows
-~~~~~~~~~~~~~~~~~~~~~~~~
+Examples of Flows
+~~~~~~~~~~~~~~~~~
 
 Once you clicked *'Create'* you can use Plumsail Actions in your Microsoft Flows. Review *'Microsoft Flow examples'* to learn how to use them:
 
@@ -80,5 +36,36 @@ Once you clicked *'Create'* you can use Plumsail Actions in your Microsoft Flows
       :name: toc-microsoft-flow-examples
       :maxdepth: 2
       
-      ../flow/how-tos/documents/index 
+      ../flow/how-tos/documents/index        
+
+|
+
+.. _plumsail-sharepoint-getting-started:
+
+Plumsail SharePoint connector
+-----------------------------------------
+
+.. note:: You need to `add Plumsail Documents connector <../flow/create-custom-connector.html>`_ firstly. It is not available in global directory yet.
+
+Then you can search for "Plumsail" in you Flow and add appropriate action:
+
+.. image:: ../_static/img/getting-started/sp-actions-list.png
+   :alt: Screen of Plumsail Actions
+
+When you add an action for the first time you will be asked for *'Connection Name'* and for *'Access Key'*.
+
+You can type any name for the connection. For example, *'Plumsail SharePoint'*. Then copy and paste API key that you `created in your Plumsail Account page <sign-up.html#generate-api-key>`_ to *'Access Key'* input.
+
+.. image:: ../_static/img/getting-started/sp-create-flow-connection.png
+   :alt: Screen of Plumsail Actions
+
+Examples of Flows
+~~~~~~~~~~~~~~~~~
+
+Once you clicked *'Create'* you can use Plumsail Actions in your Microsoft Flows. Review *'Microsoft Flow examples'* to learn how to use them:
+
+.. toctree::      
+      :name: toc-microsoft-flow-examples
+      :maxdepth: 2
+            
       ../flow/how-tos/sharepoint/index 
