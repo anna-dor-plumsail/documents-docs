@@ -1,7 +1,11 @@
 Set item level permissions (break role inheritance and assign permissions)
-############################################################################
+=============================================================================
 
 This article will show how to use Microsoft Flow to break role inheritance and grant permissions on the list item for the user and for specific SharePoint group.
+
+In this case, I'm using a few variant of the *‘Change Permissions’* action from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+
+So, before starting, ensure that you `added Plumsail SP connector to Microsoft Flow <../../../getting-started/use-from-flow.html>`_.
 
 This example will show a simple case of business traveling system when a user can create a new request on the business travel as the item in SharePoint list (*‘Business Travel Requests‘*), specify the requester of the business trip the locations of his business trip, the date of departure and the date of return. 
 Once it is done, the flow breaks the permissions inheritance for the new item and grant permissions for the user that was specified as the requester and for *‘Travel Managers‘* SharePoint group that contains managers who response for business trips.
@@ -43,12 +47,12 @@ The complete flow is below:
 As you can see I used *‘When an item is created’* trigger from *‘SharePoint’* connector and three *‘Change Permissions’* actions.
 
 When an item is created
-++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 At this step I specify values for *‘Site Address’* and *‘List Name’* fields to bind the flow to the *‘Business Travel Requests‘* list.
 
 Remove all permissions from item
-++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 It is a *‘Change Permissions’* action.
 
@@ -59,7 +63,7 @@ Then others fields of the form generated automatically based on my parameters.
 After that, I specified value of *‘Item ID‘* field as *‘ID‘* parameter from *‘When an item is created‘*, *‘List name’* as the name of my list with business travel requests (*‘Business Travel Requests‘*) and specify the URL of the site as the value for *‘SharePoint Site URL‘* field.
 
 Grant permissions on item for Requester
-++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 It is another *‘Change Permissions’* action for granting permissions on the new item for user that was specified as the requester.
 
@@ -71,7 +75,7 @@ After that, I specified value of *‘Item ID‘* field as *‘ID‘* parameter f
 Next, I specified *‘Role type‘* field as *‘Contribute’* and the value of the parameter *‘Requester Email’* from *‘When an item is created‘* as the value of *‘User or group’* field. Also, I specified the URL of the site as the value for *‘SharePoint Site URL‘* field.
 
 Grant permissions on item to "Travel Managers" group
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 It is another *‘Change Permissions’* action for granting permissions on the new item for *‘Travel Managers‘* SharePoint group that contains managers who response for business trips.
 
@@ -84,4 +88,4 @@ Next, I specified *‘Role type‘* field as *‘Contribute’* and the name of 
 
 That is all, the flow is configured.
 
-.. hint:: You are may using the actions for setting variables with your site URL and the name of the list and then use it in Plumsail Actions in *‘SharePoint Site URL‘* and *‘List Name‘* fields for more convenient using of actions.
+.. hint:: You are may using actions for setting variables with your site URL and the name of the list and then use it in Plumsail Actions in *‘SharePoint Site URL‘* and *‘List Name‘* fields for more convenient using of actions.

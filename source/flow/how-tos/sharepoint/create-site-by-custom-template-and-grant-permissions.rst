@@ -1,7 +1,11 @@
 Create site by custom template and grant permissions
-####################################################
+======================================================
 
 This article will show how to use Microsoft Flow to create a new site by the custom template and then grant permissions to this site for specific SharePoint group. As an example I configured the flow for SharePoint list to automatically create new sites.
+
+In this case, I'm using *‘Create Site from Template’* and *‘Change Permissions’* actions from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+
+So, before starting, ensure that you `added Plumsail SP connector to Microsoft Flow <../../../getting-started/use-from-flow.html>`_.
 
 This example will show a simple case of project management system when an administrator can create a new list item for a project in SharePoint list, specify project participants and URL for a new project workspace. Once it is done, the flow has to create the project workspace (SharePoint site). It will automatically break permissions inheritance for the new site and include the site to the top navigation. Then you can grant permissions to sensitive information in the project for any SharePoint group. To simplify this use case I have one Sharepoint group and contributors role only.
 
@@ -56,12 +60,12 @@ The complete flow is below:
 As you can see I used *‘When an item is created’* trigger from *‘SharePoint’* connector and two actions: *‘Create Site from Template’* and *‘Change Permissions’*
 
 When an item is created
-++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 At this step I specify values for *‘Site Address’* and *‘List Name’* fields to bind the flow to the *‘Project‘* list.
 
 Create Site from Template
-+++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this flow action I used *‘Title’* field of current list item as the title for SharePoint site.
 
@@ -76,7 +80,7 @@ Additionally in the setting of the flow action was switched *‘Inherit Permissi
 Also, pay attention to the property *‘On top navigation‘*, it has *‘Yes’*  value by default. It allows to add new sites to the top navigation of the parent site automatically. Thus, you will be able to start working with project site without adding it to navigation manually.
 
 Change Permissions
-+++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~
 
 In the *‘Change permissions’* action, I firstly choose *‘Grant’* value for *‘Action type’* field and *‘Site’* value for *‘Target’* field.
 
@@ -86,4 +90,4 @@ And after that, I specified *‘Role type‘* field as *‘Contribute’* and th
 
 That is all, the flow is configured.
 
-.. hint:: You are may using the actions for setting variables with your site URL and the name of the list and then use it in Plumsail Actions in *‘SharePoint Site URL‘* and *‘List Name‘* fields for more convenient using of actions.
+.. hint:: You are may using actions for setting variables with your site URL and the name of the list and then use it in Plumsail Actions in *‘SharePoint Site URL‘* and *‘List Name‘* fields for more convenient using of actions.

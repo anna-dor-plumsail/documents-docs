@@ -1,12 +1,12 @@
-SharePoint connector
+SP connector (SharePoint)
 ==================================
 
 Provides advanced set of Microsoft Flow actions for SharePoint. It allows you to change permissions on sites, lists, list items. You can create sites from templates and many more. 
 
 Before starting, ensure that you `added Plumsail connector to Microsoft Flow <../../getting-started/use-from-flow.html>`_.
 
-Change Permissions on site, list or list item
----------------------------------------------
+Change Permissions on SharePoint site, list or list item
+-----------------------------------------------------------
 
 "Change Permissions" is a complex action that includes 12 different operations for granting, removing or restoring permissions on sites, lists, and list items.
 
@@ -16,7 +16,7 @@ Once you added this action to your Flow, you need to specify two initial paramet
 * Target - target of action: Site, List, Item
 
 .. image:: ../../_static/img/flow/sharepoint/ChangePermissionsExample.png
-   :alt: Change Permissions Example
+   :alt: Change SharePoint Permissions Example
 
 Once you did this, you will see the rest of parameters for this particular operation.
 
@@ -38,7 +38,7 @@ You can find the documentation for all operations included in "Change Permission
 
 .. _grant-permissions-site:
 
-Grant Permissions on Site
+Grant Permissions on SharePoint Site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Grant specific permissions on site to a SharePoint user or Group
@@ -78,11 +78,11 @@ Grant specific permissions on site to a SharePoint user or Group
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/GrantPermissionsOnSiteExample.png
-   :alt: Grant Permissions on Site Example
+   :alt: Grant Permissions on SharePoint Site Example
 
 .. _remove-permissions-site:
 
-Remove Permissions from Site
+Remove Permissions from SharePoint Site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Delete specific permissions from site for specified SharePoint user or group
@@ -122,11 +122,11 @@ Delete specific permissions from site for specified SharePoint user or group
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/RemovePermissionsOnSiteExample.png
-   :alt: Remove Permissions from Site Example   
+   :alt: Remove Permissions from SharePoint Site Example   
 
 .. _remove-all-permissions-site:
 
-Remove All Permissions from Site
+Remove All Permissions from SharePoint Site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removing all user permissions from a SharePoint site
@@ -153,12 +153,12 @@ Removing all user permissions from a SharePoint site
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/RemoveAllPermissionsOnSiteExample.png
-   :alt: Remove All Permissions from Site Example    
+   :alt: Remove All Permissions from SharePoint Site Example    
 
 .. _restore-inheritance-permissions-site:
 
-Restore Permissions Inheritance for Site
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Restore Permissions Inheritance for SharePoint Site
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Remove unique permissions and restore permission inheritance on current SharePoint site
 
@@ -184,11 +184,11 @@ Remove unique permissions and restore permission inheritance on current SharePoi
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/RestorePermissionsOnSiteExample.png
-   :alt: Restore Permissions Inheritance for Site Example  
+   :alt: Restore Permissions Inheritance for SharePoint Site Example  
 
 .. _grant-permissions-list:
 
-Grant Permissions on List
+Grant Permissions on SharePoint List
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Grant specific permissions to a user on a SharePoint list
@@ -231,11 +231,11 @@ Grant specific permissions to a user on a SharePoint list
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/GrantPermissionsOnListExample.png
-   :alt: Grant Permissions on List Example
+   :alt: Grant Permissions on SharePoint List Example
 
 .. _remove-permissions-list:
 
-Remove Permissions from List
+Remove Permissions from SharePoint List
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Delete specific permissions from a user on a SharePoint list
@@ -278,11 +278,11 @@ Delete specific permissions from a user on a SharePoint list
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/RemovePermissionsOnListExample.png
-   :alt: Remove Permissions from List Example   
+   :alt: Remove Permissions from SharePoint List Example   
 
 .. _remove-all-permissions-list:
 
-Remove All Permissions from List
+Remove All Permissions from SharePoint List
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Remove all user permissions from a SharePoint list
@@ -312,12 +312,12 @@ Remove all user permissions from a SharePoint list
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/RemoveAllPermissionsOnListExample.png
-   :alt: Remove All Permissions from List Example    
+   :alt: Remove All Permissions from SharePoint List Example    
 
 .. _restore-inheritance-permissions-list:
 
-Restore Permissions Inheritance for List
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Restore Permissions Inheritance for SharePoint List
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Remove unique permissions and restore permission inheritance on a SharePoint list
 
@@ -346,11 +346,11 @@ Remove unique permissions and restore permission inheritance on a SharePoint lis
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/RestorePermissionsOnListExample.png
-   :alt: Restore Permissions Inheritance for List Example  
+   :alt: Restore Permissions Inheritance for SharePoint List Example  
 
 .. _grant-permissions-item:
 
-Grant Permissions on Item
+Grant Permissions on SharePoint Item
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Grant specific permissions to a user on a SharePoint list item
@@ -396,11 +396,11 @@ Grant specific permissions to a user on a SharePoint list item
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/GrantPermissionsOnItemExample.png
-   :alt: Grant Permissions on Item Example
+   :alt: Grant Permissions on SharePoint Item Example
 
 .. _remove-permissions-item:
 
-Remove Permissions from Item
+Remove Permissions from SharePoint Item
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Delete specific permissions from a user on a SharePoint list item
@@ -446,11 +446,11 @@ Delete specific permissions from a user on a SharePoint list item
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/RemovePermissionsOnItemExample.png
-   :alt: Remove Permissions from Item Example   
+   :alt: Remove Permissions from SharePoint Item Example   
 
 .. _remove-all-permissions-item:
 
-Remove All Permissions from Item
+Remove All Permissions from SharePoint Item
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removing all user permissions from a SharePoint Item
@@ -483,12 +483,12 @@ Removing all user permissions from a SharePoint Item
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/RemoveAllPermissionsOnItemExample.png
-   :alt: Remove All Permissions from Item Example    
+   :alt: Remove All Permissions from SharePoint Item Example    
 
 .. _restore-inheritance-permissions-item:
 
-Restore Permissions Inheritance for Item
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Restore Permissions Inheritance for SharePoint Item
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Remove unique permissions and restore permission inheritance on a SharePoint list item
 
@@ -520,9 +520,9 @@ Remove unique permissions and restore permission inheritance on a SharePoint lis
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/RestorePermissionsOnItemExample.png
-   :alt: Restore Permissions Inheritance for Item Example
+   :alt: Restore Permissions Inheritance for SharePoint Item Example
 
-Activate Feature
+Activate SharePoint Feature
 ----------------------------------
 
 Activate a feature with specific ID
@@ -555,10 +555,10 @@ Activate a feature with specific ID
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/ActivateFeatureExample.png
-   :alt: Activate Feature Example
+   :alt: Activate SharePoint Feature Example
 
-Create List or Library
-----------------------------------
+Create SharePoint List or Library
+------------------------------------
 
 Create list by template.
 
@@ -598,10 +598,10 @@ Create list by template.
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/CreateListOrLibraryExample.png
-   :alt: Create List or Library Example
+   :alt: Create SharePoint List or Library Example
 
-Create Site from Template
--------------------------
+Create SharePoint Site from Template
+---------------------------------------
 
 Create a new SharePoint site based on specific template.
 
@@ -670,10 +670,10 @@ Create a new SharePoint site based on specific template.
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/CreateSiteFromTemplateExample.png
-   :alt: Create Site from Template Example
+   :alt: Create SharePoint Site from Template Example
 
-Set Default Site Group
-----------------------------
+Set Default SharePoint Site Group
+----------------------------------
 
 Configure default groups for a site. It is alternative of the permsetup.aspx page in SharePoint UI.
 
@@ -701,4 +701,566 @@ Configure default groups for a site. It is alternative of the permsetup.aspx pag
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/SetDefaultSiteGroupExample.png
-   :alt: Set Default Site Group Example
+   :alt: Set Default SharePoint Site Group Example
+
+Copy SharePoint Document from Library
+-----------------------------------------
+Copies the document from the document library to the specified URL. You can copy the document to another document library cross-site or to another folder.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document ID
+       -  The ID of the copied document
+       -  ``1024``
+    *  -  Document URL
+       -  The URL of the copied document
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/NewDocumentName.docx`
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Source URL
+       -  The URL of the document to be copied. You can use full URL as well as domain relative URL.
+       -  ::
+       
+            /sites/subSite/LibraryName/FolderName/DocumentName.docx
+            https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentName.docx
+
+    *  -  Destination URL
+       -  The URL where the source document will be copied. You can use full URL as well as domain relative URL.
+       -  ::
+
+            https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/
+            https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/NewDocumentName.docx
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/CopyDocumentFromLibraryExample.png
+   :alt: Copy SharePoint Document from Library Example
+
+Move SharePoint Document from Library
+-----------------------------------------
+Moves the document from the document library to the specified URL. You can move the document to another document library cross-site or to another folder.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document ID
+       -  The ID of the moved document
+       -  ``1024``
+    *  -  Document URL
+       -  The URL of the moved document
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/NewDocumentName.docx`
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Source URL
+       -  The URL of the document to be moved. You can use full URL as well as domain relative URL.
+       -  ::
+       
+            /sites/subSite/LibraryName/FolderName/DocumentName.docx
+            https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentName.docx
+
+    *  -  Destination URL
+       -  The URL where the source document will be moved. You can use full URL as well as domain relative URL.
+       -  ::
+
+            https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/
+            https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/NewDocumentName.docx
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/MoveDocumentFromLibraryExample.png
+   :alt: Move SharePoint Document from Library Example   
+
+Remove SharePoint Document by URL
+-----------------------------------------
+Remove the document by a specific URL
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document URL
+       -  The URL of the document to be removed. You can use full URL as well as domain relative URL.
+       -  ::
+
+            /sites/subSite/LibraryName/FolderName/DocumentName.docx
+            https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentName.docx
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/RemoveDocumentByURLExample.png
+   :alt: Remove SharePoint Document by URL Example   
+
+Copy SharePoint Document Set
+-----------------------------------------
+Copies the document set from the document library to the specified URL. You can copy the document sets to another document library cross-site or to another folder.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document set ID
+       -  The ID of the copied document set
+       -  ``1024``
+    *  -  Document set URL
+       -  The URL of the copied document set
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/NewDocumentSet`
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Source URL
+       -  The URL of the document set to be copied. You can use full URL as well as domain relative URL.
+       -  ::
+       
+            /sites/subSite/LibraryName/FolderName/DocumentSet
+            https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentSet
+
+    *  -  Destination URL
+       -  The URL where the source document set will be copied. You can use full URL as well as domain relative URL. If the url ends with slash '/' the document sets will be placed in this folder without name changes. Otherwise, the document set will be renamed.
+       -  ::
+
+            https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/
+            https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/NewDocumentSet
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/CopyDocumentSetExample.png
+   :alt: Copy SharePoint Document Set Example
+   
+Move SharePoint Document Set
+-----------------------------------------
+Moves the document set from the document library to the specified URL. You can move the document sets to another document library cross-site or to another folder.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document set ID
+       -  The ID of the moved document set
+       -  ``1024``
+    *  -  Document set URL
+       -  The URL of the moved document set
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/NewDocumentSet`
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Source URL
+       -  The URL of the document set to be moved. You can use full URL as well as domain relative URL.
+       -  ::
+       
+            /sites/subSite/LibraryName/FolderName/DocumentSet
+            https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentSet
+
+    *  -  Destination URL
+       -  The URL where the source document set will be moved. You can use full URL as well as domain relative URL. If the url ends with slash '/' the document sets will be placed in this folder without name changes. Otherwise, the document set will be renamed.
+       -  ::
+
+            https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/
+            https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/NewDocumentSet
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/MoveDocumentSetExample.png
+   :alt: Move SharePoint Document Set Example
+
+Create SharePoint Folder by URL
+-----------------------------------------
+Creates a new folder in the document library by the specified URL.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Folder ID
+       -  The ID of the created folder
+       -  ``1024``
+    *  -  Folder URL
+       -  The URL of the created folder
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/FolderName2`
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Folder URL
+       -  The URL of the folder. If you specify full path, you can create several folders.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/FolderName2`
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/CreateFolderByURLExample.png
+   :alt: Create SharePoint Folder by URL Example
+
+Create SharePoint Folder in List
+-----------------------------------------
+Creates a new folder in the document library or list using the specified path.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Folder ID
+       -  The ID of the created folder
+       -  ``1024``
+    *  -  Folder URL
+       -  The URL of the created folder
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/FolderName2`
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Target List
+       -  The name or the URL of the library or the list where the folder will be created. You can use full URL as well as domain relative URL.
+       -  ::
+
+            LibraryName
+            /sites/subSite/LibraryName
+            https://contoso.sharepoint.com/sites/subSite/LibraryName
+
+    *  -  Folder Path
+       -  The path where the folder will be created. The action will create all folders included into the path.
+       -  :code:`FolderName/FolderName2`
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/CreateFolderInListExample.png
+   :alt: Create SharePoint Folder in List Example
+
+Remove SharePoint Folder by URL
+-----------------------------------------
+Removes the folder from the document library or list by the specified URL.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Folder URL
+       -  The URL of the library where the source folder will be removed. You can use full URL as well as domain relative URL.
+       -  ::
+
+            /sites/subSite/LibraryName/FolderName
+            https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/RemoveFolderByURLExample.png
+   :alt: Remove SharePoint Folder by URL Example
+
+Copy SharePoint Folder from Library
+-----------------------------------------
+Copies the folder from the document library to the specified URL. You can copy the folder to another document library cross-site or to another folder.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Folder ID
+       -  The ID of the copied folder
+       -  ``1024``
+    *  -  Folder URL
+       -  The URL of the copied folder
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/AnotherLibraryName/AnotherFolderName`
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Source URL
+       -  The URL of the folder to be copied. You can use full URL as well as domain relative URL.
+       -  ::
+            
+            /sites/subSite/LibraryName/FolderName
+            https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName
+
+    *  -  Destination URL
+       -  The URL where the source folder will be copied. You can use full URL as well as domain relative URL
+       -  ::
+
+            https://contoso.sharepoint.com/sites/subSite/AnotherLibraryName
+            https://contoso.sharepoint.com/sites/subSite/AnotherLibraryName/AnotherFolderName
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/CopyFolderFromLibraryExample.png
+   :alt: Copy SharePoint Folder from Library Example
+
+Move SharePoint Folder from Library
+-----------------------------------------
+Moves the folder from the document library to the specified URL. You can move the folder to another document library cross-site or to another folder.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Folder ID
+       -  The ID of the moved folder
+       -  ``1024``
+    *  -  Folder URL
+       -  The URL of the moved folder
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/AnotherLibraryName/AnotherFolderName`
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Source URL
+       -  The URL of the folder to be moved. You can use full URL as well as domain relative URL.
+       -  ::
+            
+            /sites/subSite/LibraryName/FolderName
+            https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName
+
+    *  -  Destination URL
+       -  The URL where the source folder will be moved. You can use full URL as well as domain relative URL
+       -  ::
+
+            https://contoso.sharepoint.com/sites/subSite/AnotherLibraryName
+            https://contoso.sharepoint.com/sites/subSite/AnotherLibraryName/AnotherFolderName
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/MoveFolderFromLibraryExample.png
+   :alt: Move SharePoint Folder from Library Example
+
+Check In SharePoint Document
+-----------------------------------------
+Check-in the document at the specified URL with the specified comment.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document ID
+       -  The ID of the document which was check in
+       -  ``1024``
+    *  -  Document URL
+       -  The URL of the document which was check in
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentName.docx`
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document URL
+       -  The URL of the document to check in.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentName.docx`
+
+    *  -  Comment
+       -  The comment to accompany document check in.
+       -  Comment to the document
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/CheckInDocumentExample.png
+   :alt: Check In SharePoint Document Example
+
+Check Out SharePoint Document
+-----------------------------------------
+Check-out the document at the specified URL with the specified comment.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document ID
+       -  The ID of the document which was check out
+       -  ``1024``
+    *  -  Document URL
+       -  The URL of the document which was check out
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentName.docx`
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document URL
+       -  The URL of the document to check out.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentName.docx`
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/CheckOutDocumentExample.png
+   :alt: Check Out SharePoint Document Example
