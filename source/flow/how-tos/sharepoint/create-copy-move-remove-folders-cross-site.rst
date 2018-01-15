@@ -30,7 +30,7 @@ You can find more information about specific parameters of the flow actions in `
 
 The complete flow is below:
  
-.. image:: ../../../_static/img/flow/how-tos/create-folder-by-url-move.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/create-folder-by-url-move.png
    :alt: Creating folder by URL and moving it to another site
 
 Manually trigger a flow
@@ -56,7 +56,7 @@ Move SharePoint Folder from Library
 
 As value for *‘Source URL‘* I'm using the value of *‘Folder URL‘* parameter from *‘Create SharePoint Folder by URL‘* response:
 
-.. image:: ../../../_static/img/flow/how-tos/move-folder-dynamic-content.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/move-folder-dynamic-content.png
    :alt: Folder Info Dynamic Content
 
 *‘Destination URL‘* I specified as :code:`"https://contoso.sharepoint.com/sites/secondSubSite/Shared%20Documents/"` - The URL of *‘Shared Documents‘* library on *‘secondSubSite‘* site (different from the source *‘firstSubSite‘*)
@@ -75,7 +75,7 @@ You can find more information about specific parameters of the flow actions in `
 
 The complete flow is below:
 
-.. image:: ../../../_static/img/flow/how-tos/create-folder-in-list-copy-remove.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/create-folder-in-list-copy-remove.png
    :alt: Creating a folder in a list, copying it to another site and remove the source folder
 
 Manually trigger a flow
@@ -104,7 +104,7 @@ Copy SharePoint Folder from Library
 
 As in previous case, I'm using the value of *‘Folder URL‘* parameter from *‘Create SharePoint Folder in List‘* response as the value for *‘Source URL‘*:
 
-.. image:: ../../../_static/img/flow/how-tos/copy-folder-dynamic-content.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/copy-folder-dynamic-content.png
    :alt: Folder Info Dynamic Content
 
 *‘Destination URL‘* I specified as :code:`"https://contoso.sharepoint.com/sites/secondSubSite/Shared%20Documents/"` - The URL of *‘Shared Documents‘* library on *‘secondSubSite‘* site (different from the source *‘firstSubSite‘*)
@@ -118,7 +118,7 @@ Remove SharePoint Folder by URL
 
 In this actions I'm also using the value of *‘Folder URL‘* parameter from *‘Create SharePoint Folder in List‘* response as the value for *‘Source URL‘*:
 
-.. image:: ../../../_static/img/flow/how-tos/remove-folder-dynamic-content.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/remove-folder-dynamic-content.png
    :alt: Folder Info Dynamic Content
 
 *‘SharePoint Site URL‘* as :code:`"https://contoso.sharepoint.com/sites/firstSubSite"` - The URL of the site for the source folder.

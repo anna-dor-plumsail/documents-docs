@@ -28,7 +28,7 @@ At this stage it was created the new SharePoint list *‘Business Travel Request
 
 This is how the new form looks like:
  
-.. image:: ../../../_static/img/flow/how-tos/set-permissions-list-new-item.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/set-permissions-list-new-item.png
    :alt: Create site
 
 .. _configureFlow:
@@ -41,7 +41,7 @@ You can find more information about specific parameters of the flow actions in `
 
 The complete flow is below:
 
-.. image:: ../../../_static/img/flow/how-tos/set-permissions-for-item-flow.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/set-permissions-for-item-flow.png
    :alt: Microsoft Flow
 
 As you can see I used *‘When an item is created’* trigger from *‘SharePoint’* connector and three *‘Change Permissions’* actions.

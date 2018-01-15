@@ -41,7 +41,7 @@ You can find the documentation for all operations included in "Change Permission
 Grant Permissions on SharePoint Site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Grant specific permissions on site to a SharePoint user or Group
+Grant specific permissions on site to a SharePoint user or Group with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -85,7 +85,7 @@ Grant specific permissions on site to a SharePoint user or Group
 Remove Permissions from SharePoint Site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Delete specific permissions from site for specified SharePoint user or group
+Delete specific permissions from site for specified SharePoint user or group with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -129,7 +129,7 @@ Delete specific permissions from site for specified SharePoint user or group
 Remove All Permissions from SharePoint Site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removing all user permissions from a SharePoint site
+Removing all user permissions from a SharePoint site with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -160,7 +160,7 @@ Removing all user permissions from a SharePoint site
 Restore Permissions Inheritance for SharePoint Site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Remove unique permissions and restore permission inheritance on current SharePoint site
+Remove unique permissions and restore permission inheritance on current SharePoint site with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -191,7 +191,7 @@ Remove unique permissions and restore permission inheritance on current SharePoi
 Grant Permissions on SharePoint List
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Grant specific permissions to a user on a SharePoint list
+Grant specific permissions to a user on a SharePoint list with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -238,7 +238,7 @@ Grant specific permissions to a user on a SharePoint list
 Remove Permissions from SharePoint List
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Delete specific permissions from a user on a SharePoint list
+Delete specific permissions from a user on a SharePoint list with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -285,7 +285,7 @@ Delete specific permissions from a user on a SharePoint list
 Remove All Permissions from SharePoint List
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Remove all user permissions from a SharePoint list
+Remove all user permissions from a SharePoint list with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -319,7 +319,7 @@ Remove all user permissions from a SharePoint list
 Restore Permissions Inheritance for SharePoint List
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Remove unique permissions and restore permission inheritance on a SharePoint list
+Remove unique permissions and restore permission inheritance on a SharePoint list with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -353,7 +353,7 @@ Remove unique permissions and restore permission inheritance on a SharePoint lis
 Grant Permissions on SharePoint Item
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Grant specific permissions to a user on a SharePoint list item
+Grant specific permissions to a user on a SharePoint list item with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -403,7 +403,7 @@ Grant specific permissions to a user on a SharePoint list item
 Remove Permissions from SharePoint Item
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Delete specific permissions from a user on a SharePoint list item
+Delete specific permissions from a user on a SharePoint list item with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -453,7 +453,7 @@ Delete specific permissions from a user on a SharePoint list item
 Remove All Permissions from SharePoint Item
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removing all user permissions from a SharePoint Item
+Removing all user permissions from a SharePoint Item with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -490,7 +490,7 @@ Removing all user permissions from a SharePoint Item
 Restore Permissions Inheritance for SharePoint Item
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Remove unique permissions and restore permission inheritance on a SharePoint list item
+Remove unique permissions and restore permission inheritance on a SharePoint list item with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -525,7 +525,7 @@ Remove unique permissions and restore permission inheritance on a SharePoint lis
 Activate SharePoint Feature
 ----------------------------------
 
-Activate a feature with specific ID
+Activate a SharePoint feature with specific ID with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -560,7 +560,7 @@ Activate a feature with specific ID
 Create SharePoint List or Library
 ------------------------------------
 
-Create list by template.
+Create SharePoint list by template with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -603,7 +603,7 @@ Create list by template.
 Create SharePoint Site from Template
 ---------------------------------------
 
-Create a new SharePoint site based on specific template.
+Create a new SharePoint site based on specific template  with the help of Microsoft Flow.
 
 .. rubric:: Output Parameters
 
@@ -675,7 +675,7 @@ Create a new SharePoint site based on specific template.
 Set Default SharePoint Site Group
 ----------------------------------
 
-Configure default groups for a site. It is alternative of the permsetup.aspx page in SharePoint UI.
+Configure default groups for a site with the help of Microsoft Flow. It is alternative of the permsetup.aspx page in SharePoint UI.
 
 .. rubric:: Input Parameters
 
@@ -705,7 +705,7 @@ Configure default groups for a site. It is alternative of the permsetup.aspx pag
 
 Copy SharePoint Document from Library
 -----------------------------------------
-Copies the document from the document library to the specified URL. You can copy the document to another document library cross-site or to another folder.
+Copies the document from the document library to the specified URL with the help of Microsoft Flow. You can copy the document to another document library cross-site or to another folder.
 
 .. rubric:: Output Parameters
 
@@ -758,7 +758,7 @@ Copies the document from the document library to the specified URL. You can copy
 
 Move SharePoint Document from Library
 -----------------------------------------
-Moves the document from the document library to the specified URL. You can move the document to another document library cross-site or to another folder.
+Moves the document from the document library to the specified URL with the help of Microsoft Flow. You can move the document to another document library cross-site or to another folder.
 
 .. rubric:: Output Parameters
 
@@ -811,7 +811,7 @@ Moves the document from the document library to the specified URL. You can move 
 
 Remove SharePoint Document by URL
 -----------------------------------------
-Remove the document by a specific URL
+Remove a SharePoint document by a specific URL with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -841,7 +841,7 @@ Remove the document by a specific URL
 
 Copy SharePoint Document Set
 -----------------------------------------
-Copies the document set from the document library to the specified URL. You can copy the document sets to another document library cross-site or to another folder.
+Copies a SharePoint document set from the document library to the specified URL with the help of Microsoft Flow. You can copy the document sets to another document library cross-site or to another folder.
 
 .. rubric:: Output Parameters
 
@@ -894,7 +894,7 @@ Copies the document set from the document library to the specified URL. You can 
    
 Move SharePoint Document Set
 -----------------------------------------
-Moves the document set from the document library to the specified URL. You can move the document sets to another document library cross-site or to another folder.
+Moves a SharePoint document set from the document library to the specified URL with the help of Microsoft Flow. You can move the document sets to another document library cross-site or to another folder.
 
 .. rubric:: Output Parameters
 
@@ -947,7 +947,7 @@ Moves the document set from the document library to the specified URL. You can m
 
 Create SharePoint Folder by URL
 -----------------------------------------
-Creates a new folder in the document library by the specified URL.
+Creates a new SharePoint folder in the document library by the specified URL with the help of Microsoft Flow.
 
 .. rubric:: Output Parameters
 
@@ -990,7 +990,7 @@ Creates a new folder in the document library by the specified URL.
 
 Create SharePoint Folder in List
 -----------------------------------------
-Creates a new folder in the document library or list using the specified path.
+Creates a new SharePoint folder in the document library or list using the specified path with the help of Microsoft Flow.
 
 .. rubric:: Output Parameters
 
@@ -1041,7 +1041,7 @@ Creates a new folder in the document library or list using the specified path.
 
 Remove SharePoint Folder by URL
 -----------------------------------------
-Removes the folder from the document library or list by the specified URL.
+Removes a SharePoint folder from the document library or list by the specified URL with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -1071,7 +1071,7 @@ Removes the folder from the document library or list by the specified URL.
 
 Copy SharePoint Folder from Library
 -----------------------------------------
-Copies the folder from the document library to the specified URL. You can copy the folder to another document library cross-site or to another folder.
+Copies a SharePoint folder from the document library to the specified URL with the help of Microsoft Flow. You can copy the folder to another document library cross-site or to another folder.
 
 .. rubric:: Output Parameters
 
@@ -1124,7 +1124,7 @@ Copies the folder from the document library to the specified URL. You can copy t
 
 Move SharePoint Folder from Library
 -----------------------------------------
-Moves the folder from the document library to the specified URL. You can move the folder to another document library cross-site or to another folder.
+Moves a SharePoint folder from the document library to the specified URL with the help of Microsoft Flow. You can move the folder to another document library cross-site or to another folder.
 
 .. rubric:: Output Parameters
 
@@ -1177,7 +1177,7 @@ Moves the folder from the document library to the specified URL. You can move th
 
 Check In SharePoint Document
 -----------------------------------------
-Check-in the document at the specified URL with the specified comment.
+Check-in a SharePoint document at the specified URL with the specified comment with the help of Microsoft Flow.
 
 .. rubric:: Output Parameters
 
@@ -1224,7 +1224,7 @@ Check-in the document at the specified URL with the specified comment.
 
 Check Out SharePoint Document
 -----------------------------------------
-Check-out the document at the specified URL with the specified comment.
+Check-out a SharePoint document at the specified URL with the specified comment with the help of Microsoft Flow.
 
 .. rubric:: Output Parameters
 

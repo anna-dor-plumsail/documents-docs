@@ -13,7 +13,7 @@ Before starting, ensure that you `added Plumsail SP connector to Microsoft Flow 
 
 The complete flow is below:
 
-.. image:: ../../../_static/img/flow/how-tos/copy-document-set-with-approve.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/copy-document-set-with-approve.png
    :alt: Copy Document Set With Approve
 
 Manually trigger a flow

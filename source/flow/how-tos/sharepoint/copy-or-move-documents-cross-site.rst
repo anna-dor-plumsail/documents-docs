@@ -12,7 +12,7 @@ Before starting, ensure that you `added Plumsail SP connector to Microsoft Flow 
 
 The complete flow is below:
 
-.. image:: ../../../_static/img/flow/how-tos/move-documents-to-archive.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/move-documents-to-archive.png
    :alt: Move Documents To Archive
 
 Recurrence
@@ -29,7 +29,7 @@ I specify next parameters for running every day:
 Get files (properties only)
 ------------------------------
 
-.. image:: ../../../_static/img/flow/how-tos/get-files-preporties-with-expression.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/get-files-preporties-with-expression.png
    :alt: Get Files Preporties With Expression
 
 On this step, I get all documents that older than 30 days from source folder:
@@ -48,7 +48,7 @@ This action is using in "each" cycle that based on results of :ref:`getFiles` ac
 
 As value for *‘Source URL‘* I'm using the value of *‘Link to item‘* parameter from *‘Get files (properties only)‘* response:
 
-.. image:: ../../../_static/img/flow/how-tos/move-documents-from-library.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/move-documents-from-library.png
    :alt: Move Documents From Library
 
 *‘Destination URL‘* I specified as :code:`"https://contoso.sharepoint.com/sites/secondSubSite/Archive/"` - The URL of *‘Archive‘* library on *‘secondSubSite‘* site (different from the source *‘firstSubSite‘*)
