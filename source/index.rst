@@ -37,15 +37,7 @@ All documentation articles
       :maxdepth: 2
       
       flow/actions/document-processing
-      flow/actions/sharepoint-processing
-
-   .. toctree::
-      :caption: Microsoft Flow examples
-      :name: toc-microsoft-flow-examples
-      :maxdepth: 2
-      
-      flow/how-tos/documents/index 
-      flow/how-tos/sharepoint/index  
+      flow/actions/sharepoint-processing      
 
 .. container:: pl-right-column
 
@@ -54,24 +46,12 @@ All documentation articles
       :name: generaltoc
       :maxdepth: 1
 
+      Support <https://plumsail.com/actions/support/>      
       general/version-history
       general/licensing-details
-      How to renew subscription <https://plumsail.com/how-to-renew-maintenance-or-subscription/>            
-      Support plans <https://plumsail.com/support-plans/>
+      How to renew subscription <https://plumsail.com/how-to-renew-maintenance-or-subscription/>                  
       general/security-policy      
       Privacy policy <https://plumsail.com/privacy-policy/actions-privacy-policy/>
-      Refund policy <https://plumsail.com/store/refund-policy/>  
-
-   .. toctree::
-      :caption: Stay in touch 
-      :name: communitytoc
-      :maxdepth: 1
-      
-      Community <https://plumsail.com/forum/viewforum.php?f=37>
-      Official blog <https://medium.com/plumsail>
-      Twitter <https://twitter.com/plumsail_sp>
-      Google Plus <https://plus.google.com/b/112093525198664117371/+PlumsailSharePointTeam?hl=ru>
-      LinkedIn <https://www.linkedin.com/company/plumsail>     
 
    .. toctree::
       :caption: Advanced
@@ -80,3 +60,12 @@ All documentation articles
          
       advanced/create-docx-template
       advanced/html-template-syntax 
+
+   .. toctree::
+      :caption: Microsoft Flow examples
+      :name: toc-microsoft-flow-examples
+      :maxdepth: 2
+      
+      flow/how-tos/documents/index 
+      flow/how-tos/sharepoint/index    
+

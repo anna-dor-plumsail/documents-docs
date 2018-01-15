@@ -5,11 +5,11 @@ This article will show how to check-in multiple documents using Microsoft Flow.
 
 For example, we have a situation where during a day people work with documents in SharePoint Document library. To work with some document a user takes it to work and mark it as check-out, but at the end of the day, every document should be checked-in back.
 
-For this case, I will use *‘Get files (properties only)‘* from SharePoint Connector for getting properties of documents that need to be checked-in and *‘Check In SharePoint Document‘* from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_ for each document that will found on the firts step.
+For this case, I will use *‘Get files (properties only)‘* from SharePoint Connector for getting properties of documents that need to be checked-in. I will also use `Check In SharePoint Document <../../actions/sharepoint-processing.html#check-in-sharepoint-document>`_ from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_ for each document that will be found on the first step.
 
 Before starting, ensure that you `added Plumsail SP connector to Microsoft Flow <../../../getting-started/use-from-flow.html>`_.
 
-Below you can find an example of a small flow that gets all documents in check-out status and does check-in for each one:
+Below you can find an example of the small flow that gets all documents in check-out status and does check-in for each one:
 
 .. image:: ../../../_static/img/flow/how-tos/check-in-multiple-documents.png
    :alt: Check-in Multiple Documents
@@ -17,7 +17,7 @@ Below you can find an example of a small flow that gets all documents in check-o
 Manually trigger a flow
 ------------------------
 
-For this case, I'm using the trigger to manual start of the flow.
+For this case, I'm using the trigger to manual start of the flow. You can use any other trigger available in Microsoft Flow.
 
 .. _getFilesProperties:
 
@@ -25,7 +25,7 @@ Get files (properties only)
 ------------------------------
 
 .. image:: ../../../_static/img/flow/how-tos/get-files-preporties-check-in.png
-   :alt: Get Files Preporties
+   :alt: Get Files Properties
 
 On this step, I get all documents in check-out status:
 
@@ -38,7 +38,7 @@ The action is using `OData filter <http://www.odata.org/documentation/odata-vers
 Check In SharePoint Document
 -----------------------------
 
-This action is using in "each" cycle that based on results of :ref:`getFilesProperties` action.
+The action `Check In SharePoint Document <../../actions/sharepoint-processing.html#check-in-sharepoint-document>`_ is used in "each" cycle that based on results of :ref:`getFilesProperties` action.
 
 As value for *Document URL‘* I'm using the value of *‘Link to item‘* parameter from *‘Get files (properties only)‘* response:
 
