@@ -12,7 +12,7 @@ Before starting, ensure that you `added Plumsail SP connector to Microsoft Flow 
 
 The complete flow is below. You can find step by step description next to the picture.
 
-.. image:: ../../../_static/img/flow/how-tos/move-documents-to-archive.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/move-documents-to-archive.png
    :alt: Move Documents To Archive
 
 Recurrence
@@ -39,8 +39,8 @@ I use following parameter values:
 The action uses `OData filter <http://www.odata.org/documentation/odata-version-3-0/url-conventions/>`_ as a value of *‘Filter Query‘* field. I compare "Created" field from document's properties and the next expression:
 :code:`DateTime'addDays(utcNow(), -30)'`. As you can see, I use dynamic expression for getting 30-day offset for the current date. This allows me to query all documents older than 30 days.
 
-.. image:: ../../../_static/img/flow/how-tos/get-files-preporties-with-expression.png
-   :alt: Get Files Properties With Expression
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/get-files-preporties-with-expression.png
+   :alt: Get Files Preporties With Expression
 
 Move SharePoint Document from Library
 ---------------------------------------
@@ -51,7 +51,7 @@ I use following parameters:
 
 As value for *‘Source URL‘* I use the value of *‘Link to item‘* parameter from *‘Get files (properties only)‘* response:
 
-.. image:: ../../../_static/img/flow/how-tos/move-documents-from-library.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/move-documents-from-library.png
    :alt: Move Documents From Library
 
 *‘Destination URL‘* is specified as :code:`"https://contoso.sharepoint.com/sites/secondSubSite/Archive/"` - The URL of *‘Archive‘* library on the *‘secondSubSite‘* site (it is a site with archive library)

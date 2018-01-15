@@ -11,7 +11,7 @@ Before starting, ensure that you `added Plumsail SP connector to Microsoft Flow 
 
 Below you can find an example of the small flow that gets all documents in check-out status and does check-in for each one:
 
-.. image:: ../../../_static/img/flow/how-tos/check-in-multiple-documents.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/check-in-multiple-documents.png
    :alt: Check-in Multiple Documents
 
 Manually trigger a flow
@@ -24,7 +24,7 @@ For this case, I'm using the trigger to manual start of the flow. You can use an
 Get files (properties only)
 ------------------------------
 
-.. image:: ../../../_static/img/flow/how-tos/get-files-preporties-check-in.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/get-files-preporties-check-in.png
    :alt: Get Files Properties
 
 On this step, I get all documents in check-out status:
@@ -42,7 +42,7 @@ The action `Check In SharePoint Document <../../actions/sharepoint-processing.ht
 
 As value for *Document URL‘* I'm using the value of *‘Link to item‘* parameter from *‘Get files (properties only)‘* response:
 
-.. image:: ../../../_static/img/flow/how-tos/check-in-document.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/check-in-document.png
    :alt: Check-in Document
 
 *‘SharePoint Site URL‘* I specified as :code:`"https://contoso.sharepoint.com/sites/subSite"` - The URL of the site.

@@ -26,7 +26,7 @@ At this stage it was created the new SharePoint list *‘Projects’*  with foll
 
 This is how the new form looks like:
  
-.. image:: ../../../_static/img/flow/how-tos/create-site-list-new-item.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/create-site-list-new-item.png
    :alt: Create site
 
 As I mentioned above I simplified this example to keep it clear. You can add more fields to this list to work with your projects. For example, you can add field *‘Project Template’*  and use it for specifying the name of the template to create new SharePoint site.
@@ -37,7 +37,7 @@ Save site as template
 ---------------------
 For demo purposes was customized SharePoint team site to use it as a project workspace. I added some web parts to the main page and changed style of the site. You can see my project site below:
  
-.. image:: ../../../_static/img/flow/how-tos/create-site-template.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/create-site-template.png
    :alt: Site template   
  
 Then it was saved as template. To save a site as template navigate to *‘Site Settings’* and click at *‘Save site as template’*. You can read official `Microsoft documentation <http://msdn.microsoft.com/en-us/library/office/jj938033%28v=office.15%29.aspx#bkmk_SaveTemplate>`_ for more information.
@@ -54,7 +54,7 @@ You can find more information about specific parameters of the flow actions in `
 
 The complete flow is below:
 
-.. image:: ../../../_static/img/flow/how-tos/create-site-from-template-flow.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/create-site-from-template-flow.png
    :alt: Microsoft Flow
 
 As you can see I used *‘When an item is created’* trigger from *‘SharePoint’* connector and two actions: *‘Create Site from Template’* and *‘Change Permissions’*
