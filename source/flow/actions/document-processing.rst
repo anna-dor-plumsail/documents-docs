@@ -6,7 +6,7 @@ This connector helps you to automatically generate and convert documents with th
 Create document from DOCX template
 ----------------------------------
 
-Creates .docx document from .docx template with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/create-docx-from-template.html>`_.
+Creates .docx document from .docx template with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/create-docx-from-template.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -73,7 +73,7 @@ Creates .docx document from .docx template with the help of Microsoft Flow. You 
 Create HTML from template
 ----------------------------------
 
-Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/create-html-from-template.html>`_.
+Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/create-html-from-template.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -172,7 +172,7 @@ Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You
 Convert DOCX to PDF
 ----------------------------
 
-Converts .docx document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/convert-word-to-pdf.html>`_.
+Converts .docx document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-word-to-pdf.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -220,7 +220,7 @@ Converts .docx document to PDF document with the help of Microsoft Flow. You can
 Convert HTML to PDF
 ----------------------------
 
-Converts HTML document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/convert-html-to-pdf.html>`_.
+Converts HTML document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-html-to-pdf.html>`_.
 
 .. rubric:: Output Parameters
 
