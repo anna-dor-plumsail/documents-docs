@@ -49,7 +49,7 @@ All documentation articles
       Support <https://plumsail.com/actions/support/>      
       general/version-history
       general/licensing-details
-      How to renew subscription <https://plumsail.com/how-to-renew-maintenance-or-subscription/>                  
+      general/upgrade-renew
       general/security-policy      
       Privacy policy <https://plumsail.com/privacy-policy/actions-privacy-policy/>
 
