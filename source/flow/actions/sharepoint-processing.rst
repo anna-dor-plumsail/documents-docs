@@ -5,6 +5,10 @@ Provides advanced set of Microsoft Flow actions for SharePoint. It allows you to
 
 Before starting, ensure that you `added Plumsail connector to Microsoft Flow <../../getting-started/use-from-flow.html>`_.
 
+.. contents:: List of actions in this connector
+   :local:
+   :depth: 1
+
 Change Permissions on SharePoint site, list or list item
 -----------------------------------------------------------
 

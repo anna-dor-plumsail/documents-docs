@@ -3,6 +3,10 @@ Documents connector
 
 This connector helps you to automatically generate and convert documents with the help of Microsoft Flow. Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../getting-started/use-from-flow.html>`_.
 
+.. contents:: List of actions in this connector
+   :local:
+   :depth: 1
+
 Create document from DOCX template
 ----------------------------------
 
