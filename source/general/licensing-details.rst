@@ -23,6 +23,8 @@ What happens when credits are spent?
 
 When you will get close to spent 70% of your monthly credits, we will send you a notification about it. Thus, you will have enough time to purchase `additional 1000 credits <https://secure.avangate.com/order/product.php?PRODS=4724468&QTY=1&ORDERSTYLE=nLWonJWpmHI=&SHOPURL=https%3A%2F%2Fplumsail.com%2Factions%2Fstore%2F>`_ or pay a differential cost to `start using another plan <upgrade-renew.html>`_. 
 
+The credits amount will be reset at 1st day in a month according to your current plan. 
+
 Trial license
 -------------
 
