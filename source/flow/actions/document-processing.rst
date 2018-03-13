@@ -331,7 +331,7 @@ Split PDF document with the help of Microsoft Flow.
        -  Example
     *  -  Result Files Contents
        -  The array of raw content of result files.
-       -  It is an array of Base64 encoded contents of result files.
+       -  It is an array of Base64 encoded files. You can iterate through them and save them somewhere.
 
 .. rubric:: Input Parameters
 
@@ -342,25 +342,25 @@ Split PDF document with the help of Microsoft Flow.
     *  -  Parameter
        -  Description
        -  Example
-    *  -  PDF document content
+    *  -  PDF Document Content
        -  Raw content of PDF document.       
 
-       -  You are may getting the content from the source PDF file via "Get file content" action from "SharePoint" connector.
+       -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
 
     *  -  Start Page
-       -  The first page to start split (1 based).
+       -  Index of the first page to start split from (indexes start from 1).
        -  3
 
     *  -  End Page
-       -  The last page to split (inclusive). By default will use the last page of the source document.
+       -  Index of the last page to split (inclusive). By default will use the last page of the source document.
        -  7 
 
-    *  -  Split At Page
+    *  -  Split at Page
        -  Number of pages per partition.
        -  2
 
     *  -  Password
-       -  The password to decrypt the source document.
+       -  The password to decrypt the source document. If it was encrypted earlier.
        -  PAs$word       
 
 .. rubric:: Example
@@ -398,7 +398,7 @@ Merge PDF document with the help of Microsoft Flow.
     *  -  PDF documents content
        -  The array of raw content of PDF documents.       
 
-       -  You are may getting the content from the source PDF file via "Get file content" action from "SharePoint" connector.
+       -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
 
 .. rubric:: Example
 
@@ -478,17 +478,17 @@ Extracts text from PDF document to Raw or HTML format with the help of Microsoft
     *  -  Parameter
        -  Description
        -  Example
-    *  -  PDF document content
+    *  -  PDF Document Content
        -  Raw content of PDF document.       
 
-       -  You are may getting the content from the source PDF file via "Get file content" action from "SharePoint" connector.
+       -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
 
     *  -  Start Page
-       -  The first page to start extraction (1 based).
+       -  Index of the first page to start extraction (indexes start from 1).
        -  3
 
     *  -  End Page
-       -  The last page to extract (inclusive). By default will use the last page of the source document.
+       -  Index of the last page to extract (inclusive). By default we will use the last page of the source document.
        -  7 
 
     *  -  Result Type
@@ -496,7 +496,7 @@ Extracts text from PDF document to Raw or HTML format with the help of Microsoft
        -  HTML
 
     *  -  Password
-       -  The password to decrypt the source document.
+       -  The password to decrypt the source document. If it was encrypted earlier.
        -  PAs$word       
 
 .. rubric:: Example
@@ -520,7 +520,7 @@ Converts PDF document to image (jpeg, png, gif, bmp) with the help of Microsoft 
        -  Example
     *  -  Result Files Contents
        -  The array of raw content of result image files.
-       -  It is an array of Base64 encoded contents of result image files.
+       -  It is an array of Base64 encoded contents of result image files. You can iterate through them and save somewhere.
 
 .. rubric:: Input Parameters
 
@@ -531,21 +531,21 @@ Converts PDF document to image (jpeg, png, gif, bmp) with the help of Microsoft 
     *  -  Parameter
        -  Description
        -  Example
-    *  -  PDF document content
+    *  -  PDF Document Content
        -  Raw content of PDF document.       
 
-       -  You are may getting the content from the source PDF file via "Get file content" action from "SharePoint" connector.
+       -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
 
     *  -  Start Page
-       -  The first page to start extraction (1 based).
+       -  Index of the first page to start extraction (indexes start from 1).
        -  3
 
     *  -  End Page
-       -  The last page to extract (inclusive). By default will use the last page of the source document.
+       -  Index of the last page to extract (inclusive). By default we will use the last page of the source document.
        -  7 
 
     *  -  Pages
-       -  Page numbers for extraction separated by ';' (only this pages will be extracted).
+       -  Page numbers for extraction separated by ';' (only these pages will be extracted).
        -  4;6;7
 
     *  -  Image Format
@@ -562,7 +562,7 @@ Converts PDF document to image (jpeg, png, gif, bmp) with the help of Microsoft 
        -  300
 
     *  -  Password
-       -  The password to decrypt the source document.
+       -  The password to decrypt the source document. If it was encrypted earlier.
        -  PAs$word       
 
 .. rubric:: Example
@@ -573,7 +573,7 @@ Converts PDF document to image (jpeg, png, gif, bmp) with the help of Microsoft 
 Fill in PDF Form
 ----------------------------
 
-Filling out PDF form by provided data with the help of Microsoft Flow.
+Fills in PDF form by provided data with the help of Microsoft Flow.
 
 .. rubric:: Output Parameters
 
@@ -597,13 +597,13 @@ Filling out PDF form by provided data with the help of Microsoft Flow.
     *  -  Parameter
        -  Description
        -  Example
-    *  -  PDF document content
+    *  -  PDF Document Content
        -  Raw content of PDF document.       
 
-       -  You are may getting the content from the source PDF file via "Get file content" action from "SharePoint" connector.
+       -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
 
-    *  -  JSON data
-       -  The data that will be used to fill out the form.
+    *  -  JSON Data
+       -  The data that will be used to fill in the form.
        -  .. code-block:: json
 
             {
@@ -621,7 +621,7 @@ Filling out PDF form by provided data with the help of Microsoft Flow.
 Get Form from PDF
 ----------------------------
 
-Returns fillable form data from PDF as JSON with the help of Microsoft Flow.
+Returns data from fillable PDF as JSON with the help of Microsoft Flow.
 
 .. rubric:: Output Parameters
 
@@ -633,7 +633,7 @@ Returns fillable form data from PDF as JSON with the help of Microsoft Flow.
        -  Description
        -  Example
     *  -  Form Data
-       -  Fillable form data as JSON.
+       -  Data from fillable PDF form as JSON.
        -  .. code-block:: json
 
             {
@@ -652,13 +652,13 @@ Returns fillable form data from PDF as JSON with the help of Microsoft Flow.
     *  -  Parameter
        -  Description
        -  Example
-    *  -  PDF document content
+    *  -  PDF Document Content
        -  Raw content of PDF document.       
 
-       -  You are may getting the content from the source PDF file via "Get file content" action from "SharePoint" connector.
+       -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
 
     *  -  Password
-       -  The password to decrypt the source document.
+       -  The password to decrypt the source document. If it was encrypted earlier.
        -  PAs$word       
 
 .. rubric:: Example
@@ -669,7 +669,7 @@ Returns fillable form data from PDF as JSON with the help of Microsoft Flow.
 Protect PDF document
 ----------------------------
 
-Adds passwords, copy-, printing-, and other protections to PDF file with the help of Microsoft Flow.
+Protects PDF by adding passwords, copy-, printing-, and other protections to PDF file with the help of Microsoft Flow.
 
 .. rubric:: Output Parameters
 
@@ -693,10 +693,10 @@ Adds passwords, copy-, printing-, and other protections to PDF file with the hel
     *  -  Parameter
        -  Description
        -  Example
-    *  -  PDF document content
+    *  -  PDF Document Content
        -  Raw content of PDF document.       
 
-       -  You are may getting the content from the source PDF file via "Get file content" action from "SharePoint" connector.
+       -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
 
     *  -  Enable printing
        -  Protect the PDF file from being printed out.
@@ -723,7 +723,7 @@ Adds passwords, copy-, printing-, and other protections to PDF file with the hel
        -  U$er_PAs$word  
 
     *  -  Password
-       -  The password to decrypt the source document.
+       -  The password to decrypt the source document. If it was encrypted earlier.
        -  PAs$word 
 
 .. rubric:: Example
@@ -734,7 +734,7 @@ Adds passwords, copy-, printing-, and other protections to PDF file with the hel
 Regular Expression Match
 ----------------------------
 
-Searches an input string for all occurrences of a regular expression and returns all the matches with the help of Microsoft Flow. We would recommend you to use Regex Hero to test your expressions. It supports the same syntax as actions.
+Searches an input string for all occurrences of a regular expression and returns all the matches with the help of Microsoft Flow. We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
 
 .. rubric:: Output Parameters
 
@@ -745,12 +745,12 @@ Searches an input string for all occurrences of a regular expression and returns
     *  -  Parameter
        -  Description
        -  Example
-    *  -  IsSuccess
+    *  -  Is Success
        -  True if the input string has at least one occurrences of a regular expression, otherwise false.
        -  true
 
     *  -  Matches
-       -  The dynamic response based on a pattern that used in this action. Contains all matches groups that included in the pattern (named or unnamed).
+       -  The dynamic response based on a pattern that is used in this action. Contains all matches groups that included in the pattern (named or unnamed).
        -  Match0, TaskId, status
 
 .. rubric:: Input Parameters
@@ -779,7 +779,7 @@ Searches an input string for all occurrences of a regular expression and returns
 Regular Expression Replace
 ----------------------------
 
-In a specified input string, replaces all strings that match a regular expression pattern with a specified replacement string. We would recommend you to use Regex Hero to test your expressions. It supports the same syntax as actions.
+In a specified input string, replaces all strings that match a regular expression pattern with a specified replacement string. We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
 
 .. rubric:: Output Parameters
 
@@ -824,7 +824,7 @@ In a specified input string, replaces all strings that match a regular expressio
 Regular Expression Test
 ----------------------------
 
-Indicates whether the regular expression specified in the Regex constructor finds a match in a specified input string. We would recommend you to use Regex Hero to test your expressions. It supports the same syntax as actions.
+Indicates whether the regular expression specified in the Regex constructor finds a match in a specified input string. We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
 
 .. rubric:: Output Parameters
 
@@ -836,7 +836,7 @@ Indicates whether the regular expression specified in the Regex constructor find
        -  Description
        -  Example
 
-    *  -  IsSuccess
+    *  -  Is Success
        -  True if the input string has at least one occurrences of a regular expression, otherwise false.
        -  true
 
