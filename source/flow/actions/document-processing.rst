@@ -320,6 +320,10 @@ Split PDF
 
 Split PDF document with the help of Microsoft Flow.
 
+.. important:: 
+
+  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
+
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -373,6 +377,10 @@ Merge PDF
 
 Merge PDF document with the help of Microsoft Flow.
 
+.. important:: 
+
+  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
+
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -409,6 +417,10 @@ Extract text from PDF document
 ---------------------------------
 
 Extracts text from PDF document to Raw or HTML format with the help of Microsoft Flow.
+
+.. important:: 
+
+  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -509,6 +521,10 @@ Convert PDF to Image
 
 Converts PDF document to image (jpeg, png, gif, bmp) with the help of Microsoft Flow.
 
+.. important:: 
+
+  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
+
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -575,6 +591,10 @@ Fill in PDF Form
 
 Fills in PDF form by provided data with the help of Microsoft Flow.
 
+.. important:: 
+
+  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
+
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -623,6 +643,10 @@ Get Form from PDF
 
 Returns data from fillable PDF as JSON with the help of Microsoft Flow.
 
+.. important:: 
+
+  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
+
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -670,6 +694,10 @@ Protect PDF document
 ----------------------------
 
 Protects PDF by adding passwords, copy-, printing-, and other protections to PDF file with the help of Microsoft Flow.
+
+.. important:: 
+
+  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -736,6 +764,10 @@ Regular Expression Match
 
 Searches an input string for all occurrences of a regular expression and returns all the matches with the help of Microsoft Flow. We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
 
+.. important:: 
+
+  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
+
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -781,6 +813,10 @@ Regular Expression Replace
 
 In a specified input string, replaces all strings that match a regular expression pattern with a specified replacement string. We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
 
+.. important:: 
+
+  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
+
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -825,6 +861,10 @@ Regular Expression Test
 ----------------------------
 
 Indicates whether the regular expression specified in the Regex constructor finds a match in a specified input string. We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
+
+.. important:: 
+
+  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
 
 .. rubric:: Output Parameters
 

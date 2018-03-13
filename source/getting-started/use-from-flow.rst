@@ -9,13 +9,6 @@ There are two connectors available in Plumsail Actions:
 - `Plumsail Documents connector <../flow/actions/document-processing.html>`_ - provides a set of actions for operations with Documents.
 - `Plumsail SharePoint connector <../flow/actions/sharepoint-processing.html>`_ - provides a set of actions for operations with SharePoint.
 
-.. important:: 
-
-  If you use *'Plumsail SharePoint'* connector, `you need to add it manually <../flow/create-custom-connector.html>`_. It is not available in the global directory yet. 
-
-  It is not required for *'Plumsail Documents'* connector.
-
-
 Create your first Flow
 ----------------------
 
