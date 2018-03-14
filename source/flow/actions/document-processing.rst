@@ -407,7 +407,7 @@ Merge PDF document with the help of Microsoft Flow.
     *  -  Parameter
        -  Description
        -  Example
-    *  -  PDF documents content
+    *  -  PDF Documents Content
        -  The array of raw content of PDF documents.       
 
        -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
@@ -730,27 +730,27 @@ Protects PDF by adding passwords, copy-, printing-, and other protections to PDF
 
        -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
 
-    *  -  Enable printing
+    *  -  Enable Printing
        -  Protect the PDF file from being printed out.
        -  Yes    
 
-    *  -  Enable modification
+    *  -  Enable Modification
        -  Protect the PDF file from being edited.
        -  Yes     
 
-    *  -  Enable extract data
+    *  -  Enable Extract Data
        -  Allows extraction of text, images, and other media from the PDF file.
        -  Yes     
 
-    *  -  Enable annotate
+    *  -  Enable Annotate
        -  Allows annotation (e.g. comments, form fill-in, signing) of the PDF file.
        -  Yes     
 
-    *  -  PDF owner password
+    *  -  PDF Owner Password
        -  Enter an optional owner password here. This password can be used to disable document restrictions.
        -  OwNEr_PAs$word     
 
-    *  -  PDF user password
+    *  -  PDF User Password
        -  Enter an optional user password here. Each time an user opens the PDF he will be asked for this password. If you do not want a password prompt then leave this field blank.
        -  U$er_PAs$word  
 
