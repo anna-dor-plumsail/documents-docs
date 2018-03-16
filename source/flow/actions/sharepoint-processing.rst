@@ -709,7 +709,7 @@ Configure default groups for a site with the help of Microsoft Flow. It is alter
 
 Copy SharePoint Document from Library
 -----------------------------------------
-Copies the document from the document library to the specified URL with the help of Microsoft Flow. You can copy the document to another document library cross-site or to another folder.
+Copies the document from the document library to the specified URL with the help of Microsoft Flow. You can copy the document to another document library cross-site, to another cross-site collection or to another folder.
 
 .. rubric:: Output Parameters
 
@@ -762,7 +762,7 @@ Copies the document from the document library to the specified URL with the help
 
 Move SharePoint Document from Library
 -----------------------------------------
-Moves the document from the document library to the specified URL with the help of Microsoft Flow. You can move the document to another document library cross-site or to another folder.
+Moves the document from the document library to the specified URL with the help of Microsoft Flow. You can move the document to another document library cross-site, to another cross-site collection or to another folder.
 
 .. rubric:: Output Parameters
 
@@ -845,7 +845,7 @@ Remove a SharePoint document by a specific URL with the help of Microsoft Flow.
 
 Copy SharePoint Document Set
 -----------------------------------------
-Copies a SharePoint document set from the document library to the specified URL with the help of Microsoft Flow. You can copy the document sets to another document library cross-site or to another folder.
+Copies a SharePoint document set from the document library to the specified URL with the help of Microsoft Flow. You can copy the document sets to another document library cross-site, to another cross-site collection or to another folder.
 
 .. rubric:: Output Parameters
 
@@ -898,7 +898,7 @@ Copies a SharePoint document set from the document library to the specified URL 
    
 Move SharePoint Document Set
 -----------------------------------------
-Moves a SharePoint document set from the document library to the specified URL with the help of Microsoft Flow. You can move the document sets to another document library cross-site or to another folder.
+Moves a SharePoint document set from the document library to the specified URL with the help of Microsoft Flow. You can move the document sets to another document library cross-site, to another cross-site collection or to another folder.
 
 .. rubric:: Output Parameters
 
@@ -1075,7 +1075,7 @@ Removes a SharePoint folder from the document library or list by the specified U
 
 Copy SharePoint Folder from Library
 -----------------------------------------
-Copies a SharePoint folder from the document library to the specified URL with the help of Microsoft Flow. You can copy the folder to another document library cross-site or to another folder.
+Copies a SharePoint folder from the document library to the specified URL with the help of Microsoft Flow. You can copy the folder to another document library cross-site, to another cross-site collection or to another folder.
 
 .. rubric:: Output Parameters
 
@@ -1128,7 +1128,7 @@ Copies a SharePoint folder from the document library to the specified URL with t
 
 Move SharePoint Folder from Library
 -----------------------------------------
-Moves a SharePoint folder from the document library to the specified URL with the help of Microsoft Flow. You can move the folder to another document library cross-site or to another folder.
+Moves a SharePoint folder from the document library to the specified URL with the help of Microsoft Flow. You can move the folder to another document library cross-site, to another cross-site collection or to another folder.
 
 .. rubric:: Output Parameters
 
