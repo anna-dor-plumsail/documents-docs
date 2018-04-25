@@ -44,6 +44,6 @@ Now you need to store PDF file somewhere. In our example, we use "Create file" a
 .. image:: ../../../_static/img/flow/how-tos/generated-pdf-from-email.png
    :alt: Select fields
 
-You can use any other connector to store PDF document into your system.
+You can use any other connector to store PDF document into your system..
 
 .. hint:: You can use `Convert HTML to PDF <../../actions/document-processing.html#convert-html-to-pdf>`_ action in a different scenario. For example, you can `generate HTML document from a template and then convert it to PDF <create-pdf-from-html-template.html>`_. This is useful for automatic generation of invoices, contracts, etc.
