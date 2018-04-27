@@ -54,11 +54,11 @@ All documentation articles
       Privacy policy <https://plumsail.com/privacy-policy/actions-privacy-policy/>
 
    .. toctree::
-      :caption: Advanced
-      :name: toc-advanced
+      :caption: Template Engine
+      :name: toc-template-engine
       :maxdepth: 1
          
-      advanced/create-docx-template
+      template-engine/docx/create-simple-document
       advanced/html-template-syntax 
 
    .. toctree::

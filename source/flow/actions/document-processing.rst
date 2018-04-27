@@ -7,8 +7,8 @@ This connector helps you to automatically generate and convert documents with th
    :local:
    :depth: 1
 
-Create document from DOCX template
-----------------------------------
+Fill Merge Fields in DOCX
+-------------------------
 
 Creates .docx document from .docx template with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/create-docx-from-template.html>`_.
 
