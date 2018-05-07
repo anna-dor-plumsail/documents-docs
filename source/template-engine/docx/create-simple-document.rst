@@ -71,9 +71,10 @@ Tables
    :alt: binding data to tables
 
 It the example we have got duplicated Customers header, to understand why this was happen, we need to explain term - *Context*. 
-*Context* - it is a block of the document related to current item. 
+*Context* - it is a region of the document related to the current item. 
 *Context* can be the whole document (like in the example), a single row in a table or item in a list. 
 *Context* can be a lot more complex, for example multiple rows in a table, nested range inside nested range, etc.
+When we work with an array, *Context* will be duplicated for each element in the array.
 
 We are creating a new context when paste content in a table, for example we can insert our data to table with one cell without borders
 
