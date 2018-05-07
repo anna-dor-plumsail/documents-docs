@@ -7,8 +7,85 @@ This connector helps you to automatically generate and convert documents with th
    :local:
    :depth: 1
 
-Create document from DOCX template
-----------------------------------
+Create Document from Template
+-----------------------------
+
+Creates .docx or .xlsx documents from template with the help of Microsoft Flow. You can find more examples in `this article <../../template-engine/docx/create-simple-document.html>`_.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  The content of the result .docx file.
+       -  It is the content of the result file.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document content
+       -  The raw content of the source .docx or .xlsx template file. You can extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+
+       -  You can find insturctions about creation of a template file in `this article <../../template-engine/docx/create-simple-document.html>`_.      
+
+          Use `this link <../../_static/files/template-engine/simple-document.docx>`_ to download the sample template.
+
+    *  -  Template data
+       -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
+       -  .. code-block:: json
+
+            [
+                {
+                    "id": 1,
+                    "first_name": "Efren",
+                    "last_name": "Gaskill",
+                    "email": "egaskill0@opensource.org",
+                    "gender": "Male",
+                    "photo": "https://robohash.org/omnisquiquo.jpg?size=50x50&set=set1",
+                    "birth_date": "8/20/1985",
+                    "payments": [
+                    {
+                        "date": "3/10/2018",
+                        "amount": "$8.91"
+                    },
+                    {
+                        "date": "1/29/2018",
+                        "amount": "$1.14"
+                    }
+                    ]
+                }
+            ]
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/create-from-template.png
+   :alt: Create document from DOCX template Example
+
+
+Fill Merge Fields in DOCX
+-------------------------
 
 Creates .docx document from .docx template with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/create-docx-from-template.html>`_.
 
