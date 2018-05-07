@@ -13,3 +13,4 @@ Documents connector
       convert-word-to-pdf
       convert-html-to-pdf
       convert-email-to-pdf
+      split-pdf-files

@@ -1,44 +1,68 @@
 Split PDF files
 ==================================
 
-This article demonstrates how to split a PDF file with the help of `Microsoft Flow<https://medium.com/r/?url=https%3A%2F%2Fflow.microsoft.com%2F>`_.
+This article demonstrates how to split a PDF file with the help of `Microsoft Flow <https://emea.flow.microsoft.com/>`_.
 
-Before starting, ensure that you added Plumsail Documents connector to Microsoft Flow.
+Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <https://plumsail.com/docs/actions/v1.x/getting-started/use-from-flow.html>`_.
 
-You can use different Microsoft Flow connectors to receive messages. Some examples:
+In this example, we will read a PDF file, split the file to get a specific page and send this page by email. 
 
-- Office 365 Outlook
-- Outlook.com
-- Gmail
+This approach can be used to extract a page or a section of a document. For example, you may extract specific pages from a contract and send it for approval to the responsible person.
 
-In this example, we will convert email messages to PDF when they arrive in Office 365 Outlook inbox. Then we will store PDF files to a SharePoint document library. You can configure your Flow to store documents in any other location. For example, in Dropbox.
+Our source PDF file have to be stored somewhere. Microsoft Flow has a lot of connectors for different systems.
 
-This is how complete flow looks:
+Here are just a few of them:
+- SharePoint
+- Salesforce
+- Box
+- OneDrive
+- Google Drive
+- Dropbox
+- SFTP
+- File System
 
-.. image:: ../../../_static/img/flow/how-tos/email-to-pdf-flow-example.png
-   :alt: Select fields
+You can store your files anywhere. In this example, we will store our source PDF file in SharePoint, but you can get data from other sources. 
 
-Here is step by step description for the flow.
+This is how our flow looks:
 
-**Flow trigger to receive email messages**
+.. image:: ../../../_static/img/flow/how-tos/split.jpg
+   :alt: Split PDF flow
 
-Firstly you need to add a trigger to start Flow when a new email arrives. We use Office 365 Outlook trigger called "When a new email arrives".
+Below is a step by step description for the flow.
 
-**Convert HTML to PDF**
+Flow trigger
+~~~~~~~~~~~~~
 
-This is an action from Plumasail Documents connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+You can actually pick any trigger. For example, you can start Flow on file creation in a SharePoint document library. We use *Manually trigger a flow* trigger here to simplify the Flow.
 
-Just put body variable from trigger output into "Source HTML" parameter of the action. You can use email subject as a file name. Then you can receive PDF file content as an output of the action.
+Get file content
+~~~~~~~~~~~~~~~~~
 
-You can find more information about this action `here <../../actions/document-processing.html#convert-html-to-pdf>`_.
+This action gets file content of the specified file from a SharePoint document library. You just specify **SharePoint site URL** and **path** to your file. We use this action to read our sample PDF file.
 
-**Create PDF file**
+You can use any other connector to get files from your system.
 
-Now you need to store PDF file somewhere. In our example, we use "Create file" action from SharePoint connector to store the PDF document into SharePoint document library. We use email subject as a file name.
+You may use `this link <../../../_static/img/flow/how-tos/file-to-split.pdf>`_ to download our sample 10 pages PDF file.
 
-.. image:: ../../../_static/img/flow/how-tos/generated-pdf-from-email.png
-   :alt: Select fields
+Split PDF
+~~~~~~~~~~~~~~~~
 
-You can use any other connector to store PDF document into your system.
+This is an action from `Plumsail Documents connector <https://plumsail.com/docs/actions/v1.x/flow/actions/document-processing.html>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
-.. hint:: You can use `Convert HTML to PDF <../../actions/document-processing.html#convert-html-to-pdf>`_ action in a different scenario. For example, you can `generate HTML document from a template and then convert it to PDF <create-pdf-from-html-template.html>`_. This is useful for automatic generation of invoices, contracts, etc.
+Put PDF file content from the output of the previous action. In the **Start Page** field specify the first page to start the split, in the **End Page** field specify the last page to split (inclusive) and enter a number of pages per partition into the **Split At Page** field. In our example, we extract just one page of the document, to do that we set the fields as shown in the screenshot below:
+
+.. image:: ../../../_static/img/flow/how-tos/split-action.jpg
+:alt: Split PDF action
+
+As an output of this action we receive an array of Result files. In our case we have just one file in the array.
+
+You can find more detailed information about *Split PDF* action `here <https://plumsail.com/docs/actions/v1.x/flow/actions/document-processing.html#split-pdf>`_.
+
+Send an email
+~~~~~~~~~~~~~~~~
+
+Once the result file is generated, we send an email  using Send email action from Office 365 Outlook connector. We fill in the **email fields**; in the **Attachments** section, we add a name for the new PDF file and choose **ResultFileContents - Item** as an output from previous steps. This will automatically transform this action into repeating one which will be performed for each Result file. In our case, there is just one file.
+
+Conclusion
+
+That is all, the flow is configured. These few simple steps can help to ease the work with documents.
