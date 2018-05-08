@@ -12,6 +12,7 @@ This approach can be used to extract a page or a section of a document. For exam
 Our source PDF file have to be stored somewhere. Microsoft Flow has a lot of connectors for different systems.
 
 Here are just a few of them:
+
 - SharePoint
 - Salesforce
 - Box
@@ -29,6 +30,9 @@ This is how our flow looks:
    :alt: Split PDF flow
 
 Below is a step by step description for the flow.
+
+Splitting PDF file
+-------------------
 
 Flow trigger
 ~~~~~~~~~~~~~
@@ -52,7 +56,7 @@ This is an action from `Plumsail Documents connector <https://plumsail.com/docs/
 Put PDF file content from the output of the previous action. In the **Start Page** field specify the first page to start the split, in the **End Page** field specify the last page to split (inclusive) and enter a number of pages per partition into the **Split At Page** field. In our example, we extract just one page of the document, to do that we set the fields as shown in the screenshot below:
 
 .. image:: ../../../_static/img/flow/how-tos/split-action.jpg
-:alt: Split PDF action
+   :alt: Split PDF action
 
 As an output of this action we receive an array of Result files. In our case we have just one file in the array.
 
@@ -64,5 +68,6 @@ Send an email
 Once the result file is generated, we send an email  using Send email action from Office 365 Outlook connector. We fill in the **email fields**; in the **Attachments** section, we add a name for the new PDF file and choose **ResultFileContents - Item** as an output from previous steps. This will automatically transform this action into repeating one which will be performed for each Result file. In our case, there is just one file.
 
 Conclusion
+-------------------
 
 That is all, the flow is configured. These few simple steps can help to ease the work with documents.
