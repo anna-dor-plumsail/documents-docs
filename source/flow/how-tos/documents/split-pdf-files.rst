@@ -1,5 +1,5 @@
-Split PDF files
-==================================
+How to split PDF files in Microsoft Flow and Azure Logic Apps
+=============================================================
 
 This article demonstrates how to split a PDF file with the help of `Microsoft Flow <https://emea.flow.microsoft.com/>`_.
 

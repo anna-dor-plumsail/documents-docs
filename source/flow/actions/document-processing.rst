@@ -399,7 +399,7 @@ Converts HTML document to PDF document with the help of Microsoft Flow. You can 
 Split PDF
 ----------------------------
 
-Split PDF document with the help of Microsoft Flow.
+Split PDF document with the help of Microsoft Flow. You can find more examples in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/split-pdf-files.html>`_.
 
 .. important:: 
 
@@ -431,6 +431,8 @@ Split PDF document with the help of Microsoft Flow.
        -  Raw content of PDF document.       
 
        -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
+
+          You may use `this link <../../../_static/img/flow/how-tos/file-to-split.pdf>`_ to download a sample 10 pages PDF file.
 
     *  -  Start Page
        -  Index of the first page to start split from (indexes start from 1).
