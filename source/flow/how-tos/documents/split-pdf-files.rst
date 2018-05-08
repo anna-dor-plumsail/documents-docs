@@ -31,7 +31,7 @@ This is how our flow looks:
 
 Below is a step by step description for the flow.
 
-Splitting PDF file
+Splitting a PDF file
 -------------------
 
 Flow trigger
