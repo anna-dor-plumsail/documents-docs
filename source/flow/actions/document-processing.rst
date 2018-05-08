@@ -432,7 +432,7 @@ Split PDF document with the help of Microsoft Flow. You can find more examples i
 
        -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
 
-          You may use `this link <../../../_static/img/flow/how-tos/file-to-split.pdf>`_ to download a sample 10 pages PDF file.
+          You may use `this link <../../_static/img/flow/how-tos/file-to-split.pdf>`_ to download a sample 10 pages PDF file.
 
     *  -  Start Page
        -  Index of the first page to start split from (indexes start from 1).
