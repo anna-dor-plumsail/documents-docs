@@ -46,7 +46,7 @@ This action gets file content of the specified file from a SharePoint document l
 
 You can use any other connector to get files from your system.
 
-You may use `this link <../../../_static/img/flow/how-tos/file-to-split.pdf>`_ to download our sample 10 pages PDF file.
+You may use `this link <../../../_static/files/flow/how-tos/file-to-split.pdf>`_ to download our sample 10 pages PDF file.
 
 Split PDF
 ~~~~~~~~~~~~~~~~
@@ -71,3 +71,6 @@ Conclusion
 -------------------
 
 That is all, the flow is configured. These few simple steps can help to ease the work with documents.
+
+.. hint::
+  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/merge-pdf-files.html>`_ explaining how to Merge PDF files in Microsoft Flow and Azure Logic Apps.

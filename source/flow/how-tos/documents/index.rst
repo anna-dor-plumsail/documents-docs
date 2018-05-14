@@ -14,3 +14,4 @@ Documents connector
       convert-html-to-pdf
       convert-email-to-pdf
       Split PDF files <split-pdf-files>
+      Merge PDF files <merge-pdf-files>
