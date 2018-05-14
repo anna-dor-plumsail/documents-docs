@@ -51,7 +51,7 @@ Initialize variable
 
 We need to prepare an array of files, that we will put in *Plumsail Documents  -  Merge PDF action* when composing the final document.
 
-Add a new action and search for *Variables  -  Initialaze variable* action. Enter a name for the variable and choose the Array type for it.
+Add a new action and search for *Variables  -  Initialaze variable* action. Enter a name for the variable and choose the **Array** type for it.
 
 .. image:: ../../../_static/img/flow/how-tos/initialize-variable.png
    :alt: Initialize variable
@@ -86,7 +86,7 @@ Now, add *Variables  -  Append to array variable* action, enter an element o
 .. image:: ../../../_static/img/flow/how-tos/append-to-array.png
    :alt: Append to array variable
 
-The array of PDF files is ready, now we can move to the  main step - merging PDFs into the final document.
+The array of PDF files is ready, now we can move to the  main step  -  merging PDFs into the final document.
 
 Merge PDF
 ~~~~~~~~~
