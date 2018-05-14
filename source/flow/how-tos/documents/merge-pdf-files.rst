@@ -34,7 +34,7 @@ Flow trigger
 You can actually pick any trigger. For example, you can start Flow on file creation in a SharePoint document library. We use *Manually trigger a flow* trigger here to simplify the Flow.
 
 .. image:: ../../../_static/img/flow/how-tos/trigger-a-flow.png
-:alt: Flow trigger
+   :alt: Flow trigger
 
 Get files (properties only)
 ~~~~~~~~~~~~~~~~~
@@ -42,7 +42,7 @@ Get files (properties only)
 We start with getting properties of all our DOCX files stored in a specific folder  - * Source Files Library*. In the next step, we will iterate though the output from this action to get those files contents.
 
 .. image:: ../../../_static/img/flow/how-tos/Get-files-properties-only.png
-:alt: Get files (properties only) action
+   :alt: Get files (properties only) action
 
 You can use any other connector to get files from your system.
 
@@ -54,7 +54,7 @@ We need to prepare an array of files, that we will put in *Plumsail Documents �
 Add a new action and search for *Variables  -  Initialaze variable* action. Enter a name for the variable and choose the Array type for it.
 
 .. image:: ../../../_static/img/flow/how-tos/initialize-variable.png
-:alt: Initialize variable
+   :alt: Initialize variable
 
 Get file content using path
 ~~~~~~~~~~~~~~~~~
@@ -64,7 +64,7 @@ Now, you need to add *Get file content using path* action to get source DOCX fil
 Click **File Path** field and add there **Folder Path** and **File name with extension** from a menu on the right. This will automatically transform this action into repeating one which will be performed for each file from the source folder.
 
 .. image:: ../../../_static/img/flow/how-tos/Get-file-content-using-path.png
-:alt: Get file content using path
+   :alt: Get file content using path
 
 Convert DOCX to PDF
 ~~~~~~~~~~~~~~~~~
@@ -74,7 +74,7 @@ This is an action from `Plumsail Documents connector <https://plumsail.com/docs/
 Put here **File content** from the output of the previous action.
 
 .. image:: ../../../_static/img/flow/how-tos/convert-DOCX-to-PDF.png
-:alt: Convert DOCX to PDF
+   :alt: Convert DOCX to PDF
 
 You can find more detailed information about *Convert DOCX to PDF* action `here <You can find more detailed information about Convert DOCX to PDF action here.>`_.
 
@@ -84,7 +84,7 @@ Append to array variable
 Now, add *Variables  -  Append to array variable* action, enter an element of the array into the **Value field** as shown in the screenshot below. **Result file** here is the output from the previous  operation:
 
 .. image:: ../../../_static/img/flow/how-tos/append-to-array.png
-:alt: Append to array variable
+   :alt: Append to array variable
 
 The array of PDF files is ready, now we can move to the  main step - merging PDFs into the final document.
 
@@ -96,7 +96,7 @@ This is an action from `Plumsail Documents connector <https://plumsail.com/docs/
 Click a small array icon on the right to switch to the view where you can input an entire array. Add the **Array of the PDF files** you received in the loop to the **Content of PDF documents** field:
 
 .. image:: ../../../_static/img/flow/how-tos/merge-PDF.png
-:alt: Merge PDF
+   :alt: Merge PDF
 
 Send an Email
 ~~~~~~~~~
@@ -104,12 +104,12 @@ Send an Email
 Once the result file is generated, we send an email using *Office 365 Outlook  -  Send email action*. In the **Attachments** section, we add **a name** and **the extension** for the merged PDF file and choose **Result file** output from the previous *Merge PDF* action.
 
 .. image:: ../../../_static/img/flow/how-tos/send-an-email-mwith-merged-PDF.png
-:alt: Send an Email
+   :alt: Send an Email
 
 So, here is the complete flow:
 
 .. image:: ../../../_static/img/flow/how-tos/merge-flow.png
-:alt: Complete flow
+   :alt: Complete flow
 
 Conclusion
 -------------------
