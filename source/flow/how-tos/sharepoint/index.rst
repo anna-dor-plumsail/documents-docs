@@ -5,9 +5,9 @@ SharePoint connector
       :name: toc-sharepoint-examples
       :maxdepth: 1
       
-      set-item-level-permissions
-      create-site-by-custom-template-and-grant-permissions
-      create-copy-move-remove-folders-cross-site
-      copy-or-move-documents-cross-site
-      how-to-check-in-multiple-documents
-      copy-document-set-to-another-library
+      Set item level permissions (break role inheritance and assign permissions) <set-item-level-permissions>
+      Create site by custom template and grant permissions <create-site-by-custom-template-and-grant-permissions>
+      Create, copy, move and remove folders cross-site <create-copy-move-remove-folders-cross-site>
+      Copy or move documents cross-site <copy-or-move-documents-cross-site>
+      How to check-in multiple documents <how-to-check-in-multiple-documents>
+      Copy document set to another library <copy-document-set-to-another-library>

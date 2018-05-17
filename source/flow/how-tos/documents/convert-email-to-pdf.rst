@@ -1,5 +1,5 @@
-Convert email message to PDF
-==================================
+Convert email message to PDF in Microsoft Flow and Azure Logic Apps
+==================================================================
 
 This article demonstrates how to convert an email message to PDF with the help of  `Microsoft Flow <https://flow.microsoft.com>`_. 
 

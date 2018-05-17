@@ -1,5 +1,5 @@
-How to check-in multiple SharePoint documents
-===============================================
+How to check-in multiple SharePoint documents in Microsoft Flow and Azure Logic Apps
+===================================================================================
 
 This article will show how to check-in multiple documents using Microsoft Flow. 
 

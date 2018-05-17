@@ -1,5 +1,5 @@
-Create, copy, move and remove SharePoint folders cross-site
-==============================================================
+Create, copy, move and remove SharePoint folders cross-site in Microsoft Flow and Azure Logic Apps
+=================================================================================================
 
 This article will show how to use Microsoft Flow to create SharePoint folders in two ways, copy, move these folders to another site and remove the source folder after copying.
 

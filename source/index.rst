@@ -54,12 +54,12 @@ All documentation articles
       Privacy policy <https://plumsail.com/privacy-policy/actions-privacy-policy/>
 
    .. toctree::
-      :caption: Template Engine
-      :name: toc-template-engine
+      :caption: Document generation
+      :name: toc-document-generation
       :maxdepth: 1
          
-      template-engine/docx/create-simple-document
-      advanced/html-template-syntax 
+      document-generation/docx/index
+      document-generation/html/index      
 
    .. toctree::
       :caption: Microsoft Flow examples

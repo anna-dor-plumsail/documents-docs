@@ -1,5 +1,5 @@
-Convert HTML to PDF
-==================================
+Convert HTML to PDF in Microsoft Flow and Azure Logic Apps
+=========================================================
 
 This article demonstrates how to convert an HTML document or an HTML string to PDF with the help of `Microsoft Flow <https://flow.microsoft.com>`_. 
 

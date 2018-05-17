@@ -1,5 +1,5 @@
-Create site by custom template and grant permissions
-======================================================
+Create SharePoint site by custom template and grant permissions in Microsoft Flow and Azure Logic Apps
+=====================================================================================================
 
 This article will show how to use Microsoft Flow to create a new site by the custom template and then grant permissions to this site for specific SharePoint group. As an example I configured the flow for SharePoint list to automatically create new sites.
 

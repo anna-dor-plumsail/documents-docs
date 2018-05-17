@@ -84,10 +84,10 @@ Creates .docx or .xlsx documents from template with the help of Microsoft Flow. 
    :alt: Create document from DOCX template Example
 
 
-Fill Merge Fields in DOCX
--------------------------
+Fill Merge Fields in DOCX document
+----------------------------------
 
-Creates .docx document from .docx template with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/create-docx-from-template.html>`_.
+Creates .docx document by filling merge fields in a .docx document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/create-docx-from-template.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -112,7 +112,7 @@ Creates .docx document from .docx template with the help of Microsoft Flow. You 
        -  Description
        -  Example
     *  -  DOCX document content
-       -  The raw content of the source .docx template file. You can extract file content from other connectors like:
+       -  The raw content of the source .docx file with merge fields. You can extract file content from other connectors like:
 
           - SharePoint
           - Salesforce
@@ -125,12 +125,12 @@ Creates .docx document from .docx template with the help of Microsoft Flow. You 
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  You can find insturctions about creation of a template file in `this article <../../advanced/create-docx-template.html>`_. 
+       -  You can find insturctions about creation of a document with merge fields in `this article <../../document-generation/docx/create-docx-with-merge-fields.html>`_. 
        
-          Use `this link <../../_static/files/flow/how-tos/Hiring%20Contract%20Template.docx>`_ to download the sample template.
+          Use `this link <../../_static/files/flow/how-tos/Hiring%20Contract%20Template.docx>`_ to download the sample document.
 
     *  -  Template data
-       -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
+       -  Data in JSON format that will be used to fill merge fields in the source document. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
        -  .. code-block:: json
 
             {
@@ -148,7 +148,7 @@ Creates .docx document from .docx template with the help of Microsoft Flow. You 
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/how-tos/create-document-from-docx-template-example.png
+.. image:: ../../_static/img/flow/how-tos/fill-docx-merge-fields.png
    :alt: Create document from DOCX template Example
 
 Create HTML from template

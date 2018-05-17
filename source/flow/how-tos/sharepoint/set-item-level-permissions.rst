@@ -1,5 +1,5 @@
-Set item level permissions (break role inheritance and assign permissions)
-=============================================================================
+Set SharePoint item level permissions (break role inheritance and assign permissions) in Microsoft Flow and Azure Logic Apps
+===========================================================================================================================
 
 This article will show how to use Microsoft Flow to break role inheritance and grant permissions on the list item for the user and for specific SharePoint group.
 

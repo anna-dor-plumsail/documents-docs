@@ -1,5 +1,5 @@
-Create HTML document from template
-==================================
+Create HTML document from template in Microsoft Flow and Azure Logic Apps
+========================================================================
 
 This article demonstrates how to generate HTML document from a template with the help of `Microsoft Flow <https://flow.microsoft.com>`_.
 

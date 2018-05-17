@@ -1,5 +1,5 @@
-Copy document set to another library
-=====================================
+Copy SharePoint document set to another library in Microsoft Flow and Azure Logic Apps
+=====================================================================================
 
 This article will show how to copy a document set to another library on a SharePoint site using Microsoft Flow.
 

@@ -1,9 +1,9 @@
-HTML template syntax
-====================
+HTML templates
+==============
 
 This article explains HTML templates syntax. It can be used in HTML generation Microsoft Flow actions and in Documents API calls. For example, in the `Create HTML from template <../flow/actions/document-processing.html#create-html-from-template>`_ action.
 
-Template syntax is quite similar to syntax of popula JavaScript framework `Handlebars <http://handlebarsjs.com/>`_. It supports **if** and **each** tag. It also makes it easy to reference nested values. Example: 
+Template syntax is quite similar to syntax of popular JavaScript framework `Handlebars <http://handlebarsjs.com/>`_. It supports **if** and **each** tag. It also makes it easy to reference nested values. Example: 
 
 .. code:: 
 
