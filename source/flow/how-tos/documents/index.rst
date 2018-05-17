@@ -4,7 +4,7 @@ Documents connector
 .. toctree::      
       :name: toc-documents-examples
       :maxdepth: 1
-            
+    
       Convert email message to PDF <create-html-from-template>
       Create text document from template <create-text-from-template>
       Create PDF from DOCX template <create-pdf-from-docx-template>
@@ -14,3 +14,4 @@ Documents connector
       Convert HTML to PDF <convert-html-to-pdf>
       Convert email message to PDF <convert-email-to-pdf>
       Split PDF files <split-pdf-files>
+      Merge PDF files <merge-pdf-files>
