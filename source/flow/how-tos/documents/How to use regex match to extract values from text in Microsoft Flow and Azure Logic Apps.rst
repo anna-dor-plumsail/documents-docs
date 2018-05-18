@@ -52,7 +52,7 @@ There is "Match0" is a full match for the whole regular expression. There are al
 You can learn more about named groups `on this page`_. The action is smart enough to create separate output value in Microsoft Flow for each named regular expression group that is used in it. 
 It dramatically simplifies extraction of values from text strings. You just write a regular expression with named groups and then use them across your flow.
 
-You can easily put match regex into a named group like this:  (?<Title>.+|). The name of this group will be "Title", everything that matches regular expression ".+|" will be returned as a separate output of the action.
+You can easily put match regex into a named group like this:  ``(?<Title>.+|)``. The name of this group will be "Title", everything that matches regular expression ``.+|`` will be returned as a separate output of the action.
 
 Note, the action returns array of matches, because you may have multiple matches in your text. This is how JSON representation of result may look with multiple matches:
 
