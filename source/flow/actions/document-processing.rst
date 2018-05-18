@@ -882,7 +882,7 @@ Also we have `a how-to article`_ describing working process with this action.
     *  -  Pattern
        -  Regular expression pattern. This pattern can contain inline options to modify behavior of the regular expression. Such options have to be placed in the beginning of the expression inside brackets with question mark: ``(?YOUR_OPTIONS)``. For example options ``(?mi)`` will allow to process multi line text with case insensitivity.   
           You can find additional information about inline options in the `MSDN article <http://msdn.microsoft.com/en-us/library/yd1hzczs%28v=vs.110%29.aspx>`_.
-          Also you can find an example in `this article <../../flow/how-tos/documents/How to use regex match to extract values from text in Microsoft Flow and Azure Logic Apps.html>`_.
+          Also you can find an example in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/How%20to%20use%20regex%20match%20to%20extract%20values%20from%20text%20in%20Microsoft%20Flow%20and%20Azure%20Logic%20Apps.html>`_.
        -  ``Task (?<TaskId>\d+):(?<status>Approve|Reject)``
 
     *  -  Text
@@ -891,7 +891,7 @@ Also we have `a how-to article`_ describing working process with this action.
 
 .. rubric:: Example
 
-.. _a how-to article: ../../flow/how-tos/documents/How to use regex match to extract values from text in Microsoft Flow and Azure Logic Apps.html
+.. _a how-to article: https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/How%20to%20use%20regex%20match%20to%20extract%20values%20from%20text%20in%20Microsoft%20Flow%20and%20Azure%20Logic%20Apps.html
 
 .. image:: ../../_static/img/flow/how-tos/regexp-match-example.png
    :alt: Regular Expression Match Example     
