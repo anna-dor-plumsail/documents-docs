@@ -9,7 +9,7 @@ In this example, we will read a PDF file, split the file to get a specific page 
 
 This approach can be used to extract a page or a section of a document. For example, you may extract specific pages from a contract and send it for approval to the responsible person.
 
-Our source PDF file have to be stored somewhere. Microsoft Flow has a lot of connectors for different systems.
+Our source PDF file has to be stored somewhere. Microsoft Flow has a lot of connectors for different systems.
 
 Here are just a few of them:
 
@@ -29,7 +29,7 @@ This is how our flow looks:
 .. image:: ../../../_static/img/flow/how-tos/split.jpg
    :alt: Split PDF flow
 
-Below is a step by step description for the flow.
+Below is a step by step description of the flow.
 
 Splitting a PDF file
 -------------------
@@ -53,12 +53,12 @@ Split PDF
 
 This is an action from `Plumsail Documents connector <https://plumsail.com/docs/actions/v1.x/flow/actions/document-processing.html>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
-Put PDF file content from the output of the previous action. In the **Start Page** field specify the first page to start the split, in the **End Page** field specify the last page to split (inclusive) and enter a number of pages per partition into the **Split At Page** field. In our example, we extract just one page of the document, to do that we set the fields as shown in the screenshot below:
+Put PDF file content from the output of the previous action. In the **Start Page** field, specify the first page to start the split, in the **End Page** field, specify the last page to split (inclusive) and enter a number of pages per partition into the **Split At Page** field. In our example, we extract just one page of the document, to do that we set the fields as shown in the screenshot below:
 
 .. image:: ../../../_static/img/flow/how-tos/split-action.jpg
    :alt: Split PDF action
 
-As an output of this action we receive an array of Result files. In our case we have just one file in the array.
+As an output of this action, we receive an array of Result files. In our case, we have just one file in the array.
 
 You can find more detailed information about *Split PDF* action `here <https://plumsail.com/docs/actions/v1.x/flow/actions/document-processing.html#split-pdf>`_.
 
