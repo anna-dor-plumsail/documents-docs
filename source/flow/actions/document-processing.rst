@@ -7,10 +7,10 @@ This connector helps you to automatically generate and convert documents with th
    :local:
    :depth: 1
 
-Create Document from Template
------------------------------
+Create DOCX document from template
+----------------------------------
 
-Creates .docx or .xlsx documents from template with the help of Microsoft Flow. You can find more examples in `this article <../../template-engine/docx/create-simple-document.html>`_.
+Created Word DOCX document from template. Review `Word DOCX templates <../../document-generation/docx/index.html>`_ section for more information about template syntax.
 
 .. rubric:: Output Parameters
 
@@ -35,7 +35,7 @@ Creates .docx or .xlsx documents from template with the help of Microsoft Flow. 
        -  Description
        -  Example
     *  -  Document content
-       -  The raw content of the source .docx or .xlsx template file. You can extract file content from other connectors like:
+       -  The raw content of the source .docx template file. You can extract file content from other connectors like:
 
           - SharePoint
           - Salesforce
@@ -48,46 +48,44 @@ Creates .docx or .xlsx documents from template with the help of Microsoft Flow. 
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  You can find insturctions about creation of a template file in `this article <../../template-engine/docx/create-simple-document.html>`_.      
+       -  Review `Word DOCX templates <../../document-generation/docx/index.html>`_ section for more information about template syntax.          
 
-          Use `this link <../../_static/files/template-engine/simple-document.docx>`_ to download the sample template.
+          Example of simple table template:
+
+          .. image:: ../../_static/img/flow/documents/simple-table-template.png
+             :alt: Simple table template         
 
     *  -  Template data
        -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
        -  .. code-block:: json
 
             [
-                {
-                    "id": 1,
-                    "first_name": "Efren",
-                    "last_name": "Gaskill",
-                    "email": "egaskill0@opensource.org",
-                    "gender": "Male",
-                    "photo": "https://robohash.org/omnisquiquo.jpg?size=50x50&set=set1",
-                    "birth_date": "8/20/1985",
+                {        
+                    "firstName": "Efren",
+                    "lastName": "Gaskill",
+                    "email": "egaskill0@opensource.org",                        
                     "payments": [
-                    {
-                        "date": "3/10/2018",
-                        "amount": "$8.91"
-                    },
-                    {
-                        "date": "1/29/2018",
-                        "amount": "$1.14"
-                    }
+                        {
+                            "date": "3/10/2018",
+                            "amount": "$8.91"
+                        },
+                        {
+                            "date": "1/7/2018",
+                            "amount": "$0.56"
+                        }
                     ]
                 }
             ]
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/documents/create-from-template.png
+.. image:: ../../_static/img/flow/documents/create-docx-from-template-example.png
    :alt: Create document from DOCX template Example
 
-
-Fill Merge Fields in DOCX document
+Create XLSX document from template
 ----------------------------------
 
-Creates .docx document by filling merge fields in a .docx document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/create-docx-from-template.html>`_.
+Created Word XLSX document from template. Review `Excel XLSX templates <../../document-generation/xlsx/index.html>`_ section for more information about template syntax.
 
 .. rubric:: Output Parameters
 
@@ -99,8 +97,8 @@ Creates .docx document by filling merge fields in a .docx document with the help
        -  Description
        -  Example
     *  -  File Content
-       -  The content of the result .docx file.
-       -  It is a Base64 encoded content of the result file.
+       -  The content of the result .xlsx file.
+       -  It is the content of the result file.
 
 .. rubric:: Input Parameters
 
@@ -111,8 +109,8 @@ Creates .docx document by filling merge fields in a .docx document with the help
     *  -  Parameter
        -  Description
        -  Example
-    *  -  DOCX document content
-       -  The raw content of the source .docx file with merge fields. You can extract file content from other connectors like:
+    *  -  Document content
+       -  The raw content of the source .xlsx template file. You can extract file content from other connectors like:
 
           - SharePoint
           - Salesforce
@@ -125,31 +123,39 @@ Creates .docx document by filling merge fields in a .docx document with the help
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  You can find insturctions about creation of a document with merge fields in `this article <../../document-generation/docx/create-docx-with-merge-fields.html>`_. 
-       
-          Use `this link <../../_static/files/flow/how-tos/Hiring%20Contract%20Template.docx>`_ to download the sample document.
+       -  Review `Word XLSX templates <../../document-generation/xlsx/index.html>`_ section for more information about template syntax.          
+
+          Example of simple table template:
+
+          .. image:: ../../_static/img/flow/documents/simple-xlsx-table-template.png
+             :alt: Simple table template         
 
     *  -  Template data
-       -  Data in JSON format that will be used to fill merge fields in the source document. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
+       -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
        -  .. code-block:: json
 
-            {
-                "EmployerFullName": "David Navarro",
-                "EmployeeFullName": "Anil Mittal",
-                "CompanyName": "Contoso LLC",
-                "Position": "Marketing manager",
-                "SalaryAmount": 5000,
-                "ListOfBenefits": "list of any benefits that come with employment",
-                "BonusesPolicyDescription": "annual evaluation",
-                "EffectiveDate": "10/27/2017",
-                "TerminationDate": "10/27/2018",
-                "State": "New York"
-            }    
+            [
+                {        
+                    "firstName": "Efren",
+                    "lastName": "Gaskill",
+                    "email": "egaskill0@opensource.org",                        
+                    "payments": [
+                        {
+                            "date": "3/10/2018",
+                            "amount": "$8.91"
+                        },
+                        {
+                            "date": "1/7/2018",
+                            "amount": "$0.56"
+                        }
+                    ]
+                }
+            ]
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/how-tos/fill-docx-merge-fields.png
-   :alt: Create document from DOCX template Example
+.. image:: ../../_static/img/flow/documents/create-xlsx-from-template-example.png
+   :alt: Create document from XLSX template Example
 
 Create HTML from template
 ----------------------------------
@@ -247,8 +253,75 @@ Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You
 .. rubric:: Example
 
 
-.. image:: ../../_static/img/flow/how-tos/html-from-template-raw.png
+.. image:: ../../_static/img/flow/documents/html-from-template-raw.png
    :alt: Convert HTML document to PDF Example
+
+Fill Merge Fields in DOCX document
+----------------------------------
+
+Creates .docx document by filling merge fields in a .docx document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/create-docx-from-template.html>`_.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  The content of the result .docx file.
+       -  It is a Base64 encoded content of the result file.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  DOCX document content
+       -  The raw content of the source .docx file with merge fields. You can extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+
+       -  You can find insturctions about creation of a document with merge fields in `this article <../../document-generation/docx/create-docx-with-merge-fields.html>`_. 
+       
+          Use `this link <../../_static/files/flow/how-tos/Hiring%20Contract%20Template.docx>`_ to download the sample document.
+
+    *  -  Template data
+       -  Data in JSON format that will be used to fill merge fields in the source document. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
+       -  .. code-block:: json
+
+            {
+                "EmployerFullName": "David Navarro",
+                "EmployeeFullName": "Anil Mittal",
+                "CompanyName": "Contoso LLC",
+                "Position": "Marketing manager",
+                "SalaryAmount": 5000,
+                "ListOfBenefits": "list of any benefits that come with employment",
+                "BonusesPolicyDescription": "annual evaluation",
+                "EffectiveDate": "10/27/2017",
+                "TerminationDate": "10/27/2018",
+                "State": "New York"
+            }    
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/fill-docx-merge-fields.png
+   :alt: Create document from DOCX template Example
 
 Convert DOCX to PDF
 ----------------------------
@@ -295,7 +368,7 @@ Converts .docx document to PDF document with the help of Microsoft Flow. You can
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/how-tos/convert-docx-to-pdf-example.png
+.. image:: ../../_static/img/flow/documents/convert-docx-to-pdf-example.png
    :alt: Convert DOCX document to PDF Example
 
 Convert HTML to PDF
@@ -393,7 +466,7 @@ Converts HTML document to PDF document with the help of Microsoft Flow. You can 
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/how-tos/convert-html-to-pdf-example.png
+.. image:: ../../_static/img/flow/documents/convert-html-to-pdf-example.png
    :alt: Convert HTML document to PDF Example
 
 Split PDF
@@ -452,7 +525,7 @@ Split PDF document with the help of Microsoft Flow. You can find more examples i
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/how-tos/split-pdf-example.png
+.. image:: ../../_static/img/flow/documents/split-pdf-example.png
    :alt: Split PDF Example
 
 Merge PDF
@@ -493,7 +566,7 @@ Merge PDF document with the help of Microsoft Flow.
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/how-tos/merge-pdf-example.png
+.. image:: ../../_static/img/flow/documents/merge-pdf-example.png
    :alt: Merge PDF Example
 
 Extract text from PDF document
@@ -596,7 +669,7 @@ Extracts text from PDF document to Raw or HTML format with the help of Microsoft
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/how-tos/extract-pdf-text-example.png
+.. image:: ../../_static/img/flow/documents/extract-pdf-text-example.png
    :alt: Extract text from PDF Example
 
 Convert PDF to Image
@@ -666,7 +739,7 @@ Converts PDF document to image (jpeg, png, gif, bmp) with the help of Microsoft 
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/how-tos/pdf-to-image-example.png
+.. image:: ../../_static/img/flow/documents/pdf-to-image-example.png
    :alt: Convert PDF to Image Example
 
 Fill in PDF Form
@@ -718,7 +791,7 @@ Fills in PDF form by provided data with the help of Microsoft Flow.
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/how-tos/fill-pdf-form-example.png
+.. image:: ../../_static/img/flow/documents/fill-pdf-form-example.png
    :alt: Fill in PDF Form Example
 
 Get Form from PDF
@@ -770,7 +843,7 @@ Returns data from fillable PDF as JSON with the help of Microsoft Flow.
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/how-tos/get-form-pdf-example.png
+.. image:: ../../_static/img/flow/documents/get-form-pdf-example.png
    :alt: Get Form from PDF Example  
 
 Protect PDF document
@@ -839,7 +912,7 @@ Protects PDF by adding passwords, copy-, printing-, and other protections to PDF
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/how-tos/protect-pdf-example.png
+.. image:: ../../_static/img/flow/documents/protect-pdf-example.png
    :alt: Protect PDF Example  
 
 Regular Expression Match
@@ -888,7 +961,7 @@ Searches an input string for all occurrences of a regular expression and returns
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/how-tos/regexp-match-example.png
+.. image:: ../../_static/img/flow/documents/regexp-match-example.png
    :alt: Regular Expression Match Example     
 
 Regular Expression Replace
@@ -937,7 +1010,7 @@ In a specified input string, replaces all strings that match a regular expressio
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/how-tos/regexp-replace-example.png
+.. image:: ../../_static/img/flow/documents/regexp-replace-example.png
    :alt: Regular Expression Replace Example
 
 Regular Expression Test
@@ -983,5 +1056,5 @@ Indicates whether the regular expression specified in the Regex constructor find
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/how-tos/regexp-test-example.png
+.. image:: ../../_static/img/flow/documents/regexp-test-example.png
    :alt: Regular Expression Test Example     

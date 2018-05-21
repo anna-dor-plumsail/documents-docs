@@ -50,8 +50,6 @@ We will work with the following data set::
             }
         ]
 
-
-
 Simple data binding
 --------------------
 

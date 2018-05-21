@@ -59,6 +59,7 @@ All documentation articles
       :maxdepth: 1
          
       document-generation/docx/index
+      document-generation/xlsx/index     
       document-generation/html/index      
 
    .. toctree::
