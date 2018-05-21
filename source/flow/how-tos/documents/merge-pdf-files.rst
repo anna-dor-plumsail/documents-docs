@@ -20,7 +20,7 @@ So, our source DOCX files have to be stored somewhere. Microsoft Flow has a lot 
 - SFTP
 - File System
 
-In this example, we will store our source DOCX files in SharePoint in a library that we named *Source Files Library*, but you can get data from other sources. You may use these links to download 3 sample DOCX files: `1 <https://static.plumsail.com/docs/actions/v1.x/_static/files/flow/how-tos/file1.docx>`_, `2 <https://static.plumsail.com/docs/actions/v1.x/_static/files/flow/how-tos/file2.docx>`_, `3 <https://static.plumsail.com/docs/actions/v1.x/_static/files/flow/how-tos/file3.docx>`_.
+In this example, we will store our source DOCX files in SharePoint in a library that we named *Source Files Library*, but you can get data from other sources. You may use these links to download 3 sample DOCX files: `1 <../../../_static/files/flow/how-tos/file1.docx>`_, `2 <../../../_static/files/flow/how-tos/file2.docx>`_, `3 <../../../_static/files/flow/how-tos/file3.docx>`_.
 
 
 Merging PDF files

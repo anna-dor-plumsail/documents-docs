@@ -46,7 +46,7 @@ This action gets file content of the specified file from a SharePoint document l
 
 You can use any other connector to get files from your system.
 
-You may use `this link <https://static.plumsail.com/docs/actions/v1.x/_static/files/flow/how-tos/file-to-split.pdf>`_ to download our sample 10 pages PDF file.
+You may use `this link <../../../_static/files/flow/how-tos/file-to-split.pdf>`_ to download our sample 10 pages PDF file.
 
 Split PDF
 ~~~~~~~~~~~~~~~~
