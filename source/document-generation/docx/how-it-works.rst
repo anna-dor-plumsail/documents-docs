@@ -3,7 +3,7 @@ How Word DOCX templates work
 
 Plumsail Word DOCX templates use different approach than most other templating solutions. It uses minimal amount of syntax to make your work done. Let us start from basics and move to more advanced scenarios.
 
-Templating syntax described here can be used in `Create DOCX document from template <link here>`_ action for Microsoft Flow or in `REST API <../../getting-started/use-as-rest-api.html>`_.
+Templating syntax described here can be used in `Create DOCX document from template <../../flow/actions/document-processing.html#create-docx-document-from-template>`_ action for Microsoft Flow or in `REST API <../../getting-started/use-as-rest-api.html>`_.
 
 Basic syntax
 ------------
@@ -50,14 +50,14 @@ The template on the left site will result into the document on the left side:
 .. image:: ../../_static/img/document-generation/simple-bullet-list-template-result.png
    :alt: Simple table template
 
-Review `Lists <link>`_ for more complex scenarios.
+Review `Lists <./lists.html>`_ for more complex scenarios.
 
 The same approach works for tables:
 
 .. image:: ../../_static/img/document-generation/simple-table-template-result.png
    :alt: Simple table template
 
-Review `Tables <link>`_ for more complex scenarios.
+Review `Tables <./tables.html>`_ for more complex scenarios.
 
 Advanced scenarios
 ------------------
@@ -65,8 +65,9 @@ Advanced scenarios
 Now, when you now how to create basic templates, it is time to review more advanced scenarios:
 
 .. toctree::      
-    :name: toc-templating-syntax
+    :name: toc-advanced-scenraios
     :maxdepth: 1
                               
     Lists <lists>
     Tables <tables>
+    Loops and nesting <loops-and-nesting>

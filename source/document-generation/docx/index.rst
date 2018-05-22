@@ -10,7 +10,7 @@ Word DOCX templates
                   
             How it works <how-it-works>
             Lists <lists>
-      
+            Loops and nesting <loops-and-nesting>            
 
 .. container:: pl-right-column
 
