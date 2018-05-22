@@ -56,8 +56,9 @@ You can refer a property inside collection in your template. You can even refer 
 
 Examples:
 
+- The :code:`{{name}}` tag lets the engine know that we want to render list of employee names.
 - The :code:`{{companies.name}}` tag lets the engine know that we want to render list of company names.
-- The :code:`{{companies.projects.name}}` tag lets templater know that we want to render bullet list of project names under the list of companies.
+- The :code:`{{companies.projects.name}}` tag lets engine know that we want to render bullet list of project names under the list of companies.
 
 Actually all tags in the template above refer properties inside collecitons. The templating engine understands it and iterates through all objects in those nested collecitons to render them. It is smart enought to understand what content needs to be duplicated.
 
