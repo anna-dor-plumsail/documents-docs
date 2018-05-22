@@ -10,7 +10,7 @@ Demos
 Loops and nesting
 -----------------
 
-This demo demonstrates how to create complex nested documents based on nested objects and collections.
+This demo demonstrates how to create complex nested documents based on nested objects and collections. You can find descriptin of this case in the `loops and nesting <loops-and-nesting.html>`_ documentation.
 
 .. list-table::
     :header-rows: 1
