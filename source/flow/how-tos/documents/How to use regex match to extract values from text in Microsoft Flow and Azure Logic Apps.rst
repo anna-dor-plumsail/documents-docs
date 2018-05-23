@@ -11,9 +11,31 @@ Your email might look like this:
 
 .. code::
 
+    *** Order information ***
+    Time zone: GMT+00:00
+    Reference: 4563452
+    Order number: 1400
+    Payment method: Visa/MasterCard
+    Order status: Credit card payment authorized
+    *** Ordered products ***
+    Product code: D3F13B23B0
     Title: Tires
     Price: 150
     Quantity: 4
+    Product code: FD3423DE
+    Title: Cookies
+    Price: 30
+    Quantity: 20
+    Product code: KFG45GK445
+    Title: Tools
+    Price: 50
+    Quantity: 10
+    *** Delivery information ***
+    First name: John
+    Last name: Doe
+    Company: Happy Company Ltd
+    Country: Australia
+    Phone: 01 2345 6780
 
 To achieve this we will be using Regular Expression Match action.
 
