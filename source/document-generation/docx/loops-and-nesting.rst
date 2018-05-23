@@ -76,8 +76,3 @@ You can see the result of rendering below. There are all possible types of repea
    :alt: Loops and nesting result
 
 .. note:: If you need to repeat some content that is not table, bullet list or chapter, just create a single table cell and put content that you want to repeat inside. This approach is used in the example above to to repeat companies with tag :code:`{{companies.name}}`.
-
-Advanced scenarios
-------------------
-
-I will describe here the case with repeating multiple rows for single object...
