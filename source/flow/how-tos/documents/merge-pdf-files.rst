@@ -81,7 +81,7 @@ You can find more detailed information about *Convert DOCX to PDF* action `here 
 Append to array variable
 ~~~~~~~~~~~~~~~~~
 
-Now, add *Variables  -  Append to array variable* action, enter an element of the array into the **Value field** as shown in the screenshot below. **Result file** here is the output from the previous  operation:
+Now, add *Variables  -  Append to array variable* action. Into the **Value** field, put **Result file** from the output of the previous operation:
 
 .. image:: ../../../_static/img/flow/how-tos/append-to-array.png
    :alt: Append to array variable
