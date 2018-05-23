@@ -1,5 +1,5 @@
-Lists in DOCX templates
-=======================
+Tables in DOCX templates
+========================
 
 .. _repeat-multiple-table-rows:
 

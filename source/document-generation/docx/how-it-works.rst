@@ -34,7 +34,7 @@ Let us assume we have information about customer names. JSON representation of t
 
     [
         {        
-            "firstName": "Efren ",
+            "firstName": "Efren",
             "lastName": "Gaskill"
         }, {        
             "firstName": "Sanly",

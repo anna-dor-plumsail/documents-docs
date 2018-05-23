@@ -10,7 +10,8 @@ Word DOCX templates
                   
             How it works <how-it-works>
             Lists <lists>
-            Loops and nesting <loops-and-nesting>            
+            Tables <tables>
+            Loops and nesting <loops-and-nesting>
             Conditionally hide content <conditionally-hide-content>
 
 .. container:: pl-right-column
