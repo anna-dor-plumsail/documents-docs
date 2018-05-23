@@ -6,6 +6,7 @@ Demos
    :depth: 1
 
 .. _loops-and-nesting:
+.. _tables:
 
 Loops and nesting
 -----------------
@@ -169,3 +170,63 @@ This demo demonstrates how to create complex nested documents based on nested ob
             ]
         }
     ]
+
+Tables
+------
+
+This demo demonstrates how to create tables based on nested objects and collections. You can find description of this case in the `tables <tables.html>`_ documentation.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/table-template.docx>`_
+
+          .. image:: ../../_static/img/document-generation/table-template.png
+                :alt: Table template
+        - `Download result document <../../_static/files/document-generation/demos/table-result.docx>`_
+
+          .. image:: ../../_static/img/document-generation/table-result.png
+                :alt: Table template result
+
+.. rubric:: Template data
+
+.. code:: json
+
+    {
+	"company": {
+		"name": "Plumsail",
+		"email": "contact@plumsail.com"
+	},
+	"employees": [
+		{
+			"name": "Derek Clark",
+			"jobTitle": "Marketing director",
+			"department": "Marketing Department",
+			"office": "Room 18",
+			"phone": "(206) 854-9798",
+		},
+		{
+			"name": "Xue Li",
+			"jobTitle": "Financial director",
+			"department": "Financial Department",
+			"office": "Room 19",
+			"phone": "(206) 598-1259",
+		},
+		{
+			"name": "Jessica Adams",
+			"jobTitle": "Marketing manager",
+			"department": "Marketing Department",
+			"office": "Room 23",
+			"phone": "(206) 789-1598",
+		},
+		{
+			"name": "Katsuko Kawakami",
+			"jobTitle": "Analyst",
+			"department": "Financial Department",
+			"office": "Room 26",
+			"phone": "(206) 784-1258"
+		}
+	]
+}
