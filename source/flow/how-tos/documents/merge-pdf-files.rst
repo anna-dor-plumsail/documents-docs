@@ -39,7 +39,7 @@ You can actually pick any trigger. For example, you can start Flow on file creat
 Get files (properties only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We start with getting properties of all our DOCX files stored in a specific folder  - * Source Files Library*. In the next step, we will iterate though the output from this action to get those files contents.
+We start with getting properties of all our DOCX files stored in a specific folder  - * Source Files Library*. In the next step, we will iterate through the output from this action to get those files contents.
 
 .. image:: ../../../_static/img/flow/how-tos/Get-files-properties-only.png
    :alt: Get files (properties only) action
@@ -51,7 +51,7 @@ Initialize variable
 
 We need to prepare an array of files, that we will put in *Plumsail Documents  -  Merge PDF action* when composing the final document.
 
-Add a new action and search for *Variables  -  Initialaze variable* action. Enter a name for the variable and choose the **Array** type for it.
+Add a new action and search for *Variables  -  Initialize variable* action. Enter a name for the variable and choose the **Array** type for it.
 
 .. image:: ../../../_static/img/flow/how-tos/initialize-variable.png
    :alt: Initialize variable
@@ -81,7 +81,7 @@ You can find more detailed information about *Convert DOCX to PDF* action `here 
 Append to array variable
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Now, add *Variables  -  Append to array variable* action, enter an element of the array into the **Value field** as shown in the screenshot below. **Result file** here is the output from the previous  operation:
+Now, add *Variables  -  Append to array variable* action. Into the **Value** field, put **Result file** from the output of the previous operation:
 
 .. image:: ../../../_static/img/flow/how-tos/append-to-array.png
    :alt: Append to array variable

@@ -2,8 +2,10 @@ How to use regular expression match to extract values from text in Microsoft Flo
 #########################################################################################################
 In this article we will be talking about using `Regular Expression Match`_ action from our `Actions`_ product for `Microsoft Flow`_ and `Azure Logic Apps`_.
 
-Please make sure that you added `Plumsail Documents connector to Microsoft Flow`_ because this action is not available in public connector in Microsoft Flow yet. 
-It will become available soon.
+.. important:: 
+
+  This action is not available in public connector in Microsoft Flow yet. It will become available soon. 
+  If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
 
 Let’s suppose you are getting a new email after someone made a purchase and you need to extract information from this email and create a new item in your orders SharePoint list.
 
@@ -11,11 +13,37 @@ Your email might look like this:
 
 .. code::
 
+    *** Order information ***
+    Time zone: GMT+00:00
+    Reference: 4563452
+    Order number: 1400
+    Payment method: Visa/MasterCard
+    Order status: Credit card payment authorized
+
+    *** Ordered products ***
+    Product code: D3F13B23B0
     Title: Tires
     Price: 150
     Quantity: 4
 
-To achieve this we will be using Regular Expression Match action.
+    Product code: FD3423DE
+    Title: Cookies
+    Price: 30
+    Quantity: 20
+
+    Product code: KFG45GK445
+    Title: Tools
+    Price: 50
+    Quantity: 10
+
+    *** Delivery information ***
+    First name: John
+    Last name: Doe
+    Company: Happy Company Ltd
+    Country: Australia
+    Phone: 01 2345 6780
+
+To achieve this we will be using `Regular Expression Match`_ action.
 
 So your flow might look like this:
 
@@ -52,7 +80,7 @@ There is "Match0" is a full match for the whole regular expression. There are al
 You can learn more about named groups `on this page`_. The action is smart enough to create separate output value in Microsoft Flow for each named regular expression group that is used in it. 
 It dramatically simplifies extraction of values from text strings. You just write a regular expression with named groups and then use them across your flow.
 
-You can easily put match regex into a named group like this:  (?<Title>.+|). The name of this group will be "Title", everything that matches regular expression ".+|" will be returned as a separate output of the action.
+You can easily put match regex into a named group like this:  ``(?<Title>.+|)``. The name of this group will be "Title", everything that matches regular expression ``.+|`` will be returned as a separate output of the action.
 
 Note, the action returns array of matches, because you may have multiple matches in your text. This is how JSON representation of result may look with multiple matches:
 
@@ -65,10 +93,15 @@ Note, the action returns array of matches, because you may have multiple matches
             "Price": "150",
             "Quantity": "4"
         }, {
-            "Match0": " Title: Wheel disk\r\nPrice: 200\r\nQuantity: 4",
-            "Title": "Wheel disk",
-            "Price": "200",
-            "Quantity": "4"
+            "Match0": " Title: Cookies\r\nPrice: 30\r\nQuantity: 20",
+            "Title": "Cookies",
+            "Price": "30",
+            "Quantity": "20"
+        }, {
+            "Match0": " Title: Tools\r\nPrice: 50\r\nQuantity: 10",
+            "Title": "Tools",
+            "Price": "50",
+            "Quantity": "10"
         }
     ]
 
