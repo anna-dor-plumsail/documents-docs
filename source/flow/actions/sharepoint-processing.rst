@@ -676,6 +676,312 @@ Create a new SharePoint site based on specific template  with the help of Micros
 .. image:: ../../_static/img/flow/sharepoint/CreateSiteFromTemplateExample.png
    :alt: Create SharePoint Site from Template Example
 
+Create Modern SharePoint Site
+---------------------------------------
+Creates a modern SharePoint Team or Communication site with the help of Microsoft Flow.
+
+"Create Modern SharePoint Site" is a complex action that includes 2 different operations for creating Team's or Communication's sites.
+
+Once you added this action to your Flow, you need to specify the initial parameter:
+
+* Site type - the type of the site for create: TeamSite, CommunicationSite
+
+.. image:: ../../_static/img/flow/sharepoint/CreateModernSiteExample.png
+   :alt: Create Modern SharePoint Site Example
+
+Once you did this, you will see the rest of parameters for this particular operation.
+
+You can find the documentation for all operations included in "Create Modern SharePoint Site" action below:
+
+- :ref:`create-team-site`
+- :ref:`create-communication-site`
+
+
+.. _create-team-site:
+
+Create Team SharePoint Site
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Web URL
+       -  The URL of a new site.
+       -  :code:`https://contoso.sharepoint.com/sites/team-site`
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  URL
+       -  The full qualified URL (e.g. :code:`https://yourtenant.sharepoint.com/sites/team-site`).
+       -  :code:`https://contoso.sharepoint.com/sites/team-site`
+       
+    *  -  Display Name
+       -  The title of the site to create.
+       -  Team site
+
+    *  -  Classification
+       -  The Site classification to use.
+       -  HR
+
+    *  -  Description
+       -  The description to use for the site.
+       -  Site for HR
+
+    *  -  Is Public
+       -  Defines whether the Office 365 Group will be public (default), or private.
+       -  Yes
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/CreateTeamSharePointSiteExample.png
+   :alt: Create Team SharePoint Site Example   
+
+.. _create-communication-site:
+
+Create Communication SharePoint Site
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Web URL
+       -  The URL of a new site.
+       -  :code:`https://contoso.sharepoint.com/sites/communication-site`
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  URL
+       -  The full qualified URL (e.g. :code:`https://yourtenant.sharepoint.com/sites/communication-site` or :code:`https://yourtenant.sharepoint.com/teams/communication-site`).
+       -  :code:`https://contoso.sharepoint.com/sites/communication-site`
+       
+    *  -  Title
+       -  The title of the site to create.
+       -  Communication site
+
+    *  -  Description
+       -  The description to use for the site.
+       -  Site for HR
+
+    *  -  Site Design
+       -  The built-in site design to used.
+       -  ::
+
+            Topic
+            Showcase
+            Blank
+
+    *  -  LCID
+       -  The language to use for the site. If not specified will default to the language setting of the clientcontext.
+       -  1033
+
+    *  -  Allow File Sharing For Guest Users
+       -  If set to true, file sharing for guest users will be allowed.
+       -  Yes
+
+    *  -  Classification
+       -  The site classification to use.
+       -  HR
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/CreateCommunicationSiteExample.png
+   :alt: Create Communication SharePoint Site Example 
+
+Get SharePoint Site Option Value  
+----------------------------------
+Reads a value from SharePoint Site Options (Property Bag) with the help of Microsoft Flow.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Option Value
+       -  A value of a specific SharePoint site option.
+       -  SPOStandard
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Option Name
+       -  Name of the option.
+       -  sharepointhelpoverride
+
+    *  -  SharePoint Site Url
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/GetSharePointSiteOptionValueExample.png
+   :alt: Get SharePoint Site Option Value Example 
+
+Update SharePoint Site Properties
+----------------------------------
+Updates web properties with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  SharePoint Site Url
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`  
+
+    *  -  Title
+       -  The title for the website.     
+       -  Sales  
+         
+    *  -  Description
+       -  The description for the site.   
+       -  The site for Sales department
+         
+    *  -  Quick Launch Enabled
+       -  A value that specifies whether the Quick Launch area is enabled on the website.
+       -  Yes 
+         
+    *  -  Tree View Enabled
+       -  A value that specifies whether the SharePoint Foundation TreeView is enabled in the left navigational area of website pages.
+       -  Yes 
+         
+    *  -  Site Logo URL
+       -  The absolute URL of the website logo.     
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/pics/logo.png` 
+         
+    *  -  Alternate CSS URL
+       -  The URL for an alternate cascading style sheet (CSS) to use in the website.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/css/alternate_css.css`
+         
+    *  -  Associated Member Group
+       -  The users who have been given contribute permissions to the website.
+       -  SalesMembersGroup 
+         
+    *  -  Associated Owner Group
+       -  The associated owner groups of the website.
+       -  SalesOwnersGroup
+         
+    *  -  Associated Visitor Group
+       -  The associated visitor group of the website.
+       -  SalesVisitorsGroup 
+         
+    *  -  Contains Confidential Info
+       -  A value that specifies whether the SharePoint site contain a confidential information.
+       -  Yes 
+         
+    *  -  Custom Master URL
+       -  The URL for a custom master page file to apply to the website.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/masterurl/custom.master` 
+
+    *  -  Enable Minimal Download
+       -  A value that specifies whether the Web site should use Minimal Download Strategy.
+       -  Yes  
+         
+    *  -  Is Multilingual
+       -  A value that indicates whether a multilingual user interface is enabled for the website.
+       -  Yes 
+         
+    *  -  Master URL
+       -  The URL of the master page that is used for the website.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/masterurl/master.master` 
+         
+    *  -  Members Can Share
+       -  Allow Members to share the site and invite others.
+       -  Yes 
+         
+    *  -  No Crawl
+       -  A value that specifies whether searching is enabled for the website.
+       -  Yes 
+         
+    *  -  Overwrite Translations on Change
+       -  A value that indicates whether changes made to user-specified text in the default language should automatically overwrite existing translations made in all alternate languages.
+       -  Yes 
+         
+    *  -  Request Access Email
+       -  The e-mail address to which requests for access are sent.
+       -  :code:`admin@contoso.onmicrosoft.com`
+         
+    *  -  Save Site as Template Enabled
+       -  A value that specifies whether the Web site can be saved as a site template.
+       -  Yes 
+         
+    *  -  Server Relative URL
+       -  The server-relative URL for the website.
+       -  Sales_Department 
+         
+    *  -  Syndication Enabled
+       -  A value that specifies whether Really Simple Syndication (RSS) is enabled in the website.
+       -  Yes 
+         
+    *  -  UI Version
+       -  The current version number of the user interface.
+       -  1
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/UpdateSharePointSitePropertiesExample.png
+   :alt: Update SharePoint Site Properties Example
+
+Delete SharePoint Site
+------------------------
+Deletes the SharePoint site by a specific URL with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  SharePoint Site Url
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`         
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/DeleteSharePointSiteExample.png
+   :alt: Delete SharePoint Site Example   
+
 Set Default SharePoint Site Group
 ----------------------------------
 
@@ -842,6 +1148,53 @@ Remove a SharePoint document by a specific URL with the help of Microsoft Flow.
 
 .. image:: ../../_static/img/flow/sharepoint/RemoveDocumentByURLExample.png
    :alt: Remove SharePoint Document by URL Example   
+
+Create SharePoint Document Set
+-----------------------------------------
+Creates a new document set in the document library by the specified URL with the help of Microsoft Flow.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document set ID
+       -  The ID of the created document set
+       -  ``1024``
+    *  -  Document set URL
+       -  The URL of the created document set
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/CreatedDocumentSet`
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  DocumentSet Name
+       -  The name of the document set.
+       -  CreatedDocumentSet
+
+    *  -  Target List
+       -  The name or the URL of a library or a list where the document set will be created. You can use full URL as well as domain relative URL.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/`
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/CreateSharePointDocumentSetExample.png
+   :alt: Create SharePoint Document Set Example
 
 Copy SharePoint Document Set
 -----------------------------------------
@@ -1240,10 +1593,10 @@ Check-out a SharePoint document at the specified URL with the specified comment 
        -  Description
        -  Example
     *  -  Document ID
-       -  The ID of the document which was check out
+       -  The ID of the document which was check out.
        -  ``1024``
     *  -  Document URL
-       -  The URL of the document which was check out
+       -  The URL of the document which was check out.
        -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentName.docx`
 
 .. rubric:: Input Parameters
@@ -1268,3 +1621,909 @@ Check-out a SharePoint document at the specified URL with the specified comment 
 
 .. image:: ../../_static/img/flow/sharepoint/CheckOutDocumentExample.png
    :alt: Check Out SharePoint Document Example
+
+Create SharePoint Group
+-----------------------------------------
+Creates the SharePoint group with a specified name with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Group Name
+       -  The name of the SharePoint group.
+       -  SharePointGroup
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+    *  -  Group Description
+       -  The description of the SharePoint group.
+       -  Can approve documents
+
+    *  -  Group Owner
+       -  The owner of the SharePoint group, can be email or the user login.
+       -  :code:`m.anderson@contoso.onmicrosoft.com`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/CreateSharePointGroupExample.png
+   :alt: Create SharePoint Group Example
+
+Update SharePoint Group Properties
+-----------------------------------------
+Updates SharePoint group properties with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Group Name
+       -  The name of the SharePoint group.
+       -  SharePointGroup
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+    *  -  Title
+       -  The title for the SharePoint group.
+       -  New SharePoint Group
+       
+    *  -  Description
+       -  The description of the SharePoint group.
+       -  Can approve documents
+       
+    *  -  Owner
+       -  The owner for the SharePoint group, which can be a user or another group.
+       -  :code:`m.anderson@contoso.onmicrosoft.com`
+       
+    *  -  Allow Members Edit Membership
+       -  A value that specifies whether group members can modify membership in the group.
+       -  Yes
+       
+    *  -  Allow Request to Join Leave
+       -  A value that specifies whether to allow users to request membership in the group and to allow users to request to leave the group.
+       -  Yes
+       
+    *  -  Auto Accept Request to Join Leave
+       -  A value that specifies whether users are automatically added or removed when they make a request.
+       -  Yes
+       
+    *  -  Only Allow Members View Membership
+       -  A value that specifies whether only group members are allowed to view the list of members in the group.
+       -  Yes
+       
+    *  -  Request to Join Leave Email Setting
+       -  The e-mail address to which membership requests are sent.
+       -  :code:`m.anderson@contoso.onmicrosoft.com`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/UpdateSharePointGroupPropertiesExample.png
+   :alt: Update SharePoint Group Properties Example
+
+Remove SharePoint Group
+-----------------------------------------
+Removes the SharePoint group by a specified name with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Group Name
+       -  The name of the SharePoint group.
+       -  SharePointGroup
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/RemoveSharePointGroupExample.png
+   :alt: Remove SharePoint Group Example
+
+Add User to SharePoint Group
+-----------------------------------------
+Adds a user to a specific SharePoint group with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Group Name
+       -  The name of the SharePoint group.
+       -  SharePointGroup
+
+    *  -  User
+       -  Login or email of the user which will be added to the specific group. Also you can specify multiple items using semicolon ';' delimited.
+       -  :code:`m.anderson@contoso.onmicrosoft.com`
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/AddUserSharePointGroupExample.png
+   :alt: Add User to SharePoint Group Example
+
+Is User Member of SharePoint Group
+-----------------------------------------
+Checks if a user is a member of a specifed SharePoint group with the help of Microsoft Flow.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  User Exists
+       -  Boolean result of checking.
+       -  True
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Group Name
+       -  The name of the SharePoint group.
+       -  SharePointGroup
+
+    *  -  User
+       -  Login or email of a user for checking if he is a member in the specified group.
+       -  :code:`m.anderson@contoso.onmicrosoft.com`
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/IsUserMemberSharePointGroupExample.png
+   :alt: Is User Member of SharePoint Group Example
+
+Get Members of SharePoint Group
+-----------------------------------------
+Gets members of a specific SharePoint group with the help of Microsoft Flow.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Users
+       -  The list of information about users that contain in a specified SharePoint group. Include Id, LoginName, Email.
+       -  ::
+
+              [{
+                  "Id": "25",
+                  "LoginName": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+                  "Email": "admin@contoso.onmicrosoft.com"
+              }, {
+                  "Id": "32",
+                  "LoginName": "i:0#.f|membership|m.anderson@contoso.onmicrosoft.com",
+                  "Email": "m.anderson@contoso.onmicrosoft.com"
+              }]
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Group Name
+       -  The name of the SharePoint group.
+       -  SharePointGroup
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/GetMembersSharePointGroupExample.png
+   :alt: Get Members of SharePoint Group Example
+
+Remove User from SharePoint Group
+-----------------------------------------
+Removes a user from a specific SharePoint group with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Group Name
+       -  The name of the SharePoint group.
+       -  SharePointGroup
+
+    *  -  User
+       -  Login or email of the user which will be removed from the specific group. Also you can specify multiple items using semicolon ';' delimited.
+       -  :code:`m.anderson@contoso.onmicrosoft.com`
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/RemoveUserSharePointGroupExample.png
+   :alt: Remove User from SharePoint Group Example
+
+Invite External User to SharePoint Site
+-----------------------------------------
+Invites external users with specific permission to an SharePoint site with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Email Addresses
+       -  Email addresses to send an invitation, you can specify multiple using semicolon as delimiter.
+       -  :code:`Chris@plumsail.com;John@plumsail.com`
+
+    *  -  Email Body
+       -  Body of the invitation message.
+       -  External Users
+
+    *  -  Permission Role
+       -  The permission role which will granted to the user. You may specify a custom value for this field. 
+       -  ::
+
+            Full Control
+            Design
+            Edit
+            Contribute
+            Read
+            Approve
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/InviteExternalUserSharePointSiteExample.png
+   :alt: Invite External User to SharePoint Site Example
+
+Invite External User to SharePoint Item
+-----------------------------------------
+Invites external users with specific permission to an item in a SharePoint list with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List URL
+       -  List name, URL or Guid.
+       -  Employees
+    
+    *  -  Item ID
+       -  ID of the item for which you want to grant the permission.
+       -  25
+    
+    *  -  Email Addresses
+       -  Email addresses to send an invitation, you can specify multiple using semicolon as delimiter.
+       -  :code:`Chris@plumsail.com;John@plumsail.com`
+
+    *  -  Email Body
+       -  Body of the invitation message.
+       -  External Users
+
+    *  -  Permission Role
+       -  The permission role which will granted to the user. You may specify a custom value for this field. 
+       -  ::
+
+            Full Control
+            Design
+            Edit
+            Contribute
+            Read
+            Approve
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/InviteExternalUserSharePointItemExample.png
+   :alt: Invite External User to SharePoint Item Example
+
+Invite External User to SharePoint Group
+-----------------------------------------
+Invites external users to an specific SharePoint group with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example    
+    *  -  Email Addresses
+       -  Email addresses to send an invitation, you can specify multiple using semicolon as delimiter.
+       -  :code:`Chris@plumsail.com;John@plumsail.com`
+
+    *  -  Email Body
+       -  Body of the invitation message.
+       -  External Users
+
+    *  -  Group Name
+       -  Name of the group which will include invited users. 
+       -  External Users
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/InviteExternalUserSharePointGroupExample.png
+   :alt: Invite External User to SharePoint Group Example
+
+Get SharePoint Items By CAML Query
+-----------------------------------------
+Executes a CAML query on a list or on a document library and returns the collection of elements with the help of Microsoft Flow.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Count Items
+       -  Count of items in the result.
+       -  21
+    *  -  Items
+       -  The output variable where the results will be saved. You may see the fields from found items as fields of "Items" in "Apply to each" action if you are used "ViewFields" tags in your CAML query and you will get JSON string as result of this action otherwise.
+       -  ::
+
+            {
+                "countItems": 14,
+                "items": [
+                    {
+                    "FileRef": "/sites/subSite/Shared Documents/Folder",
+                    "FileLeafRef": "Folder"
+                    },
+                    {
+                    "FileRef": "/sites/krios/Shared Documents/Folder/1.png",
+                    "FileLeafRef": "1.png"
+                    }
+                ]
+            }
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List URL
+       -  List name, URL or Guid.
+       -  Documents
+
+    *  -  Folder URL
+       -  The server relative URL of a list folder from which results will be returned.
+       -  :code:`/SiteUrl/Lists/ListName/Folder1/SubFolder`
+
+    *  -  CAML Query
+       -  CAML query that will be run.
+       -  ::
+
+            <View Scope="RecursiveAll">
+                <Query>
+                    <Where>
+                        <Contains>
+                            <FieldRef Name="FileLeafRef" />
+                            <Value Type="Text">Contract</Value>
+                        </Contains>
+                    </Where>
+                </Query>
+                <ViewFields>
+                    <FieldRef Name="FileRef"/>
+                    <FieldRef Name="FileLeafRef"/>
+                </ViewFields>
+            </View>
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/GetSharePointItemsCAMLQueryExample.png
+   :alt: Get SharePoint Items By CAML Query Example
+
+Get SharePoint Item Versions History
+-----------------------------------------
+Returns the changes history for the specific field from the SharePoint list item with the help of Microsoft Flow.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Count Versions
+       -  Count of versions.
+       -  2
+    *  -  Versions
+       -  The list of information about each version that includes Editor, Modified, and Value.
+       -  ::
+
+            [
+                {
+                    "Editor": "10;#John Smith,#i:0#.f|membership|john@plumsail.onmicrosoft.com,#john@plumsail.onmicrosoft.com,#john@plumsail.onmicrosoft.com,#John Smith",
+                    "Modified": "2016-04-15T16:48:00+00:00",
+                    "Value": "Test 3"
+                },
+                {
+                    "Editor": "10;#John Smith,#i:0#.f|membership|john@plumsail.onmicrosoft.com,#john@plumsail.onmicrosoft.com,#john@plumsail.onmicrosoft.com,#John Smith",
+                    "Modified": "2016-04-15T16:47:12+00:00",
+                    "Value": "Test 2"
+                }
+            ]
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List URL
+       -  List name, URL or Guid.
+       -  Documents
+
+    *  -  Item ID
+       -  Item ID of the item for which you want to get the version history.
+       -  10
+
+    *  -  Field Name
+       -  Name of the field for which you want to get the version history.
+       -  Title
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/GetSharePointItemVersionsHistoryExample.png
+   :alt: Get SharePoint Item Versions History Example
+
+Copy SharePoint Item Attachments to URL
+-----------------------------------------
+Copies attachments from the SharePoint list item to the library using the specified folder URL with the help of Microsoft Flow.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File URLs
+       -  The list of copied files URLs.
+       -  ::
+
+            [
+                'https://contoso.sharepoint.com/sites/subSite/SharedDocuments/Document1.docx',
+                'https://contoso.sharepoint.com/sites/subSite/SharedDocuments/Document2.docx'
+            ]
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List URL
+       -  List name, URL or Guid.
+       -  Issues
+
+    *  -  Item ID
+       -  The ID of the source item.
+       -  22
+
+    *  -  Destination Folder URL
+       -  The URL of the folder where the attachments will be copied.
+       -  https://contoso.sharepoint.com/sites/subSite/SharedDocuments/
+
+    *  -  Overwrite
+       -  Overwrite if a file with the same name already exists.
+       -  Yes
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/CopySharePointItemAttachmentsURLExample.png
+   :alt: Copy SharePoint Item Attachments to URL Example
+
+Move SharePoint Item Attachments to URL
+-----------------------------------------
+Moves attachments from the SharePoint list item to the library using the specified folder URL with the help of Microsoft Flow.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File URLs
+       -  The list of moved files URLs.
+       -  ::
+
+            [
+                'https://contoso.sharepoint.com/sites/subSite/SharedDocuments/Document1.docx',
+                'https://contoso.sharepoint.com/sites/subSite/SharedDocuments/Document2.docx'
+            ]
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List URL
+       -  List name, URL or Guid.
+       -  Issues
+
+    *  -  Item ID
+       -  The ID of the source item.
+       -  22
+
+    *  -  Destination Folder URL
+       -  The URL of the folder where the attachments will be moved.
+       -  https://contoso.sharepoint.com/sites/subSite/SharedDocuments/
+
+    *  -  Overwrite
+       -  Overwrite if a file with the same name already exists.
+       -  Yes
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/MoveSharePointItemAttachmentsURLExample.png
+   :alt: Move SharePoint Item Attachments to URL Example
+
+Add Content Type to SharePoint List
+-----------------------------------------
+Adds the specified content type to a SharePoint list with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List URL
+       -  List name, URL or Guid.
+       -  Employees
+
+    *  -  Content Type Name
+       -  Name of the content type.
+       -  Contact
+
+    *  -  Make It Default
+       -  Make the content type default for the list.
+       -  Yes
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/AddContentTypeSharePointListExample.png
+   :alt: Add Content Type to SharePoint List Example  
+
+Copy List Item to SharePoint List
+-----------------------------------------
+Copies the specified list item to another SharePoint list with the help of Microsoft Flow.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Result Item ID
+       -  The ID of the copied item in the new SharePoint list.
+       -  22
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List URL
+       -  List name, URL or Guid.
+       -  Issues
+
+    *  -  Item ID
+       -  The ID of the source item.
+       -  10
+
+    *  -  Destination List URL
+       -  The URL of the destination list. This list must contain same fields like in the source list.
+       -  https://contoso.sharepoint.com/sites/subSite/Lists/Problems
+
+    *  -  Copy Attachments
+       -  Copy the item with attached files or not.
+       -  Yes
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/CopyListItemSharePointListExample.png
+   :alt: Copy List Item to SharePoint List Example
+
+Move List Item to SharePoint List
+-----------------------------------------
+Moves the specified list item to another SharePoint list with the help of Microsoft Flow.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Result Item ID
+       -  The ID of the moved item in the new SharePoint list.
+       -  22
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List URL
+       -  List name, URL or Guid.
+       -  Issues
+
+    *  -  Item ID
+       -  The ID of the source item.
+       -  10
+
+    *  -  Destination List URL
+       -  The URL of the destination list. This list must contain same fields like in the source list.
+       -  https://contoso.sharepoint.com/sites/subSite/Lists/Problems
+
+    *  -  Move Attachments
+       -  Move the item with attached files or not.
+       -  Yes
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/MoveListItemSharePointListExample.png
+   :alt: Move List Item to SharePoint List Example
+
+Start SharePoint Site Workflow (2013)
+-----------------------------------------
+Starts a SharePoint site level workflow and pass input parameters, if they were specified. The action can run only 2013 workflows with the help of Microsoft Flow.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Workflow GUID
+       -  Guid of a site level workflow that was started.
+       -  {89823af6-95f8-4694-85ba-665abc180f1c}
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Workflow Name
+       -  Name of the workflow which will be started.
+       -  Send notifications
+
+    *  -  Input Parameters
+       -  JSON string that contains input parameters for workflow.
+       -  ::
+
+            {
+                "Address":"john@plumsail.com",
+                "Body":"Notification message"
+            }
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/StartSharePointSiteWorkflowExample.png
+   :alt: Start SharePoint Site Workflow Example
+
+Start SharePoint List Workflow (2013)
+-----------------------------------------
+Starts a SharePoint list level workflow and pass input parameters, if they were specified. The action can run only 2013 workflows with the help of Microsoft Flow.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Workflow GUID
+       -  Guid of a list level workflow that was started.
+       -  {89823af6-95f8-4694-85ba-665abc180f1c}
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List URL
+       -  List name, URL or Guid.
+       -  Notifications
+
+    *  -  Item ID
+       -  Item ID of the item for which you want to start the list workflow.
+       -  22
+
+    *  -  Workflow Name
+       -  Name of the workflow which will be started.
+       -  Send notifications
+
+    *  -  Input Parameters
+       -  JSON string that contains input parameters for workflow.
+       -  ::
+
+            {
+                "Address":"john@plumsail.com",
+                "Body":"Notification message"
+            }
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/StartSharePointListWorkflowExample.png
+   :alt: Start SharePoint List Workflow Example
