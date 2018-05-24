@@ -259,7 +259,7 @@ Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You
 Fill Merge Fields in DOCX document
 ----------------------------------
 
-Creates .docx document by filling merge fields in a .docx document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/create-docx-from-template.html>`_.
+Creates .docx document by filling merge fields in a .docx document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/fill-docx-merge-fields.html>`_.
 
 .. rubric:: Output Parameters
 
