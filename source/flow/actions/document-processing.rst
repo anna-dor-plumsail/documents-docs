@@ -922,7 +922,7 @@ Regular Expression Match
 
 Searches an input string for all occurrences of a regular expression and returns all the matches with the help of Microsoft Flow. We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
 
-Also we have `a how-to article`_ describing working process with this action.
+You can find more examples in `this article <../how-tos/documents/use-regex-match-to-extract-values.html>`_.
 
 .. important:: 
 
@@ -965,8 +965,6 @@ Also we have `a how-to article`_ describing working process with this action.
        -  ``Task 5:Approve\nTask 53:Reject\nTask 52:Approve``    
 
 .. rubric:: Example
-
-.. _a how-to article: https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/How%20to%20use%20regex%20match%20to%20extract%20values%20from%20text%20in%20Microsoft%20Flow%20and%20Azure%20Logic%20Apps.html
 
 .. image:: ../../_static/img/flow/how-tos/regexp-match-example.png
    :alt: Regular Expression Match Example     
