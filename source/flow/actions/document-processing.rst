@@ -7,10 +7,10 @@ This connector helps you to automatically generate and convert documents with th
    :local:
    :depth: 1
 
-Create Document from Template
------------------------------
+Create DOCX Document from Template
+--------------------------------------
 
-Creates .docx or .xlsx documents from template with the help of Microsoft Flow. You can find more examples in `this article <../../template-engine/docx/create-simple-document.html>`_.
+Created Word DOCX document from template with the help of Microsoft Flow. You can find more examples in `this article <../../template-engine/docx/create-simple-document.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -35,7 +35,83 @@ Creates .docx or .xlsx documents from template with the help of Microsoft Flow. 
        -  Description
        -  Example
     *  -  Document content
-       -  The raw content of the source .docx or .xlsx template file. You can extract file content from other connectors like:
+       -  The raw content of the source .docx template file. You can extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+
+       -  You can find insturctions about creation of a template file in `this article <../../template-engine/docx/create-simple-document.html>`_.      
+
+          Use `this link <../../_static/files/template-engine/simple-document.docx>`_ to download the sample template.
+
+    *  -  Template data
+       -  JSON data that should be applied to the template. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
+       -  .. code-block:: json
+
+            [
+                {
+                    "id": 1,
+                    "first_name": "Efren",
+                    "last_name": "Gaskill",
+                    "email": "egaskill0@opensource.org",
+                    "gender": "Male",
+                    "photo": "https://robohash.org/omnisquiquo.jpg?size=50x50&set=set1",
+                    "birth_date": "8/20/1985",
+                    "payments": [
+                    {
+                        "date": "3/10/2018",
+                        "amount": "$8.91"
+                    },
+                    {
+                        "date": "1/29/2018",
+                        "amount": "$1.14"
+                    }
+                    ]
+                }
+            ]
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/CreateDOCXDocumentFromTemplateExample.png
+   :alt: Create DOCX Document from Template Example
+
+
+Create XLSX Document from Template
+-----------------------------------
+Created Excel XLSX document from template with the help of Microsoft Flow. You can find more examples in `this article <../../template-engine/docx/create-simple-document.html>`_.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  The content of the result .xlsx file.
+       -  It is the content of the result file.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document content
+       -  The raw content of the source .xlsx template file. You can extract file content from other connectors like:
 
           - SharePoint
           - Salesforce
@@ -80,9 +156,8 @@ Creates .docx or .xlsx documents from template with the help of Microsoft Flow. 
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/documents/create-from-template.png
-   :alt: Create document from DOCX template Example
-
+.. image:: ../../_static/img/flow/documents/CreateXLSXDocumentFromTemplateExample.png
+   :alt: Create XLSX Document from Template Example
 
 Fill Merge Fields in DOCX
 -------------------------
