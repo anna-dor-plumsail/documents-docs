@@ -1,4 +1,4 @@
-Values formatting in DOCX templates
+Values formatters in DOCX templates
 ===================================
 
 You can add formatters to add additional formatting to values rendered in your templates.
@@ -38,6 +38,11 @@ bool(yes,no) - boolean value will be converted to yes or no
 
 bool(YES,NO,MAYBE) - boolean value will be converted to YES, NO or MAYBE
 
+empty
+-----
+
+empty(X) - if value is null or empty (IEnumerable.length = 0) it will replace value with X
+
 
 Not checked formatters
 ----------------------
@@ -65,7 +70,7 @@ padLeft(n,c) - append char c from left to create string of at least n length
 padRight(n) - append space from right to create string of at least n length
 padRight(n,c) - append char c from right to create string of at least n length
 
-empty(X) - if value is null or empty (IEnumerable.length = 0) it will replace value with X
+
 offset(D\:H:M) - DateTime value will be offsetted by parsed Timestamp (special sign : is escaped with \)
 collapse - if value is null or empty (IEnumerable.length = 0) current context will be collapsed; tag will be removed - resize(tag, 0) will be invoked
 collapse-nested - if value is null or empty (IEnumerable.length = 0) context matching all related tags will be collapsed; specified and all nested tags will be removed - resize(tags, 0) will be invoked
