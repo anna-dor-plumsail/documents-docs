@@ -12,13 +12,14 @@ Word DOCX templates
             Lists <lists>
             Tables <tables>
             Loops and nesting <loops-and-nesting>            
-            Values formatting <formatters>
+            Values formatters <formatters>
 
 .. container:: pl-right-column
 
-      .. toctree::  
-            :caption: Demos
+      .. toctree::              
             :name: toc-demos
-            :maxdepth: 1
-                  
+            :maxdepth: 2            
+
             demos
+                  
+            

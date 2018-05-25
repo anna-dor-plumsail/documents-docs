@@ -1,4 +1,4 @@
-Values formatting in DOCX templates
+Values formatters in DOCX templates
 ===================================
 
 You can add formatters to add additional formatting to values rendered in your templates.
@@ -10,52 +10,306 @@ You can add formatters to add additional formatting to values rendered in your t
 format
 ------
 
-format - if encountered on date value it will replace DateTime value with string value (short date string if time part is empty)
+This formatter formats value from tag. You can use it with or without parameters:
 
-format(X) - replaces current value formatted by X argument (for example N2 for number with two decimals)
+- :code:`format` - if encountered on date value it will forat it as short date string.
+- :code:`format(val)` - formats current value using specified format. For example, you can use :code:`N2` for number with two decimals.
 
+It uses standad format strings. You can find more information in Microsoft documentation:
+
+- `Numberic format strings <https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings>`_
+- `Date and time format strings <https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings>`_
+
+Examples
+~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. code-block:: json
+    
+            Date: {{date}:format(d MMM yyyy)}
+            Date: {{date}:format(MM/dd)}
+            Date: {{date}:format(U)}
+            Number: {{num}:format(C)}
+            Number: {{num}:format(P)}
+            Number: {{num}:format(N2)}
+
+        - .. code-block:: json
+
+            {                     
+                "date": "2012-04-21T18:25:43-05:00",
+                "num": 8
+            }        
+
+        - .. code-block:: json
+    
+            Date: 22 Apr 2012
+            Date: 04/22
+            Saturday, April 21, 2012 11:25:43 PM
+            Number: $8.00
+            Number: 800.00%
+            Number: 8.00
+   
 substring
 ---------
 
-substring(n) - returns substring of provided values after n chars
+Returns substring. You can use it with one or two parameters:
 
-substring(n,l) - returns substring of provided values after n chars with l length
+- :code:`substring(index)` - returns substring of provided values after :code:`index` chars
+- :code:`substring(index,length)` - returns substring of provided values after :code:`index` with :code:`length`.
+
+Examples
+~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. code-block:: json
+    
+            {{stringVal}:substring(6)}
+            {{stringVal}:substring(0, 5)}     
+
+        - .. code-block:: json
+
+            {                     
+                "stringVal" "Derek Clark"
+            }        
+
+        - .. code-block:: json
+    
+            Clark
+            Derek        
 
 join
 ----
 
-join(X) - flattens array to create a string with X between (for example {1,2,3}.join(-) becomes 1-2-3)
+:code:`join(separator)` - joins array values with an :code:`separator`.
+
+Examples
+~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. code-block:: json
+    
+            {{arr}:join(, )}
+            {{arr}:join(; )
+            {{arr}:join(-)}
+
+        - .. code-block:: json
+
+            {                     
+                "stringVal" "Derek Clark"
+            }        
+
+        - .. code-block:: json
+    
+            1, 2, 3
+            1; 2; 3
+            1-2-3      
+
+offset
+------
+
+:code:`offset(days)` - Date and time value will be offsetted by :code:`days` days.
+
+Examples
+~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. code-block:: json
+    
+            {{date}} – without offset
+            {{date}:offset(10)} – plus 10 days
+            {{date}:offset(-10)} – minus 10 days
+
+        - .. code-block:: json
+
+            {                     
+                "date" "2012-04-21T18:25:43-05:00"
+            }        
+
+        - .. code-block:: json
+    
+            4/22/2012 3:25:43 AM – without offset
+            5/2/2012 3:25:43 AM – plus 10 days
+            4/12/2012 3:25:43 AM – minus 10 days
 
 hide
 ----
 
-hide - replaces current value with empty string
+:code:`hide` - replaces current value with empty string.
+
+Examples
+~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. code-block:: json
+    
+            {{val1}}
+            {{val2}:hide}
+
+        - .. code-block:: json
+
+            {                     
+                "val1" "Derek Clark",
+                "val2" "Jessica Adams"
+            }         
+
+        - .. code-block:: json
+    
+            Derek Clark
 
 bool
 ----
 
-bool(yes,no) - boolean value will be converted to yes or no
+:code:`bool(yes,no,maybe)` - boolean value will be converted to :code:`yes`, :code:`no` or :code:`maybe`. You can specify your own value for each state. The last parameter is optional.
 
-bool(YES,NO,MAYBE) - boolean value will be converted to YES, NO or MAYBE
+Examples
+~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. code-block:: json
+    
+            {{boolVal1}:bool(yes,no,maybe)}
+            {{boolVal2}:bool(yes,no,maybe)}
+            {{boolVal3}:bool(yes,no,maybe)}
+
+        - .. code-block:: json
+
+            {                     
+                "boolVal1": true,
+                "boolVal2": false,
+                "boolVal3": null,
+            }         
+
+        - .. code-block:: json
+    
+            yes
+            no
+            maybe
+
+empty
+-----
+
+:code:`empty(val)` - if value in tag is null, empty or empty array it will replace value with :code:`val`. You can use this formatter to display default value. For example, "N/A".
+
+Examples
+~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. code-block:: json
+    
+            {{val1}:empty(N/A)}
+            {{val2}:empty(N/A)}
+            {{val3}:empty(N/A)}
+
+
+        - .. code-block:: json
+
+            {                     
+                "val1": "Jessica Adams",
+                "val2": "",
+                "val3": [],
+            }         
+
+        - .. code-block:: json
+    
+            Jessica Adams
+            N/A
+            N/A
+
+collapse
+--------
+
+collapse - if value is null or empty (IEnumerable.length = 0) current context will be collapsed; tag will be removed - resize(tag, 0) will be invoked
+
+all
+---
+
+all - replaces all instances of selected tag with provided values. Useful when there is same tag on various places in document and Templater is unable to conclude that they 
+
+page
+----
+
+:code:`page` - it used for changing logic of repeating collections. When tag is placed in table and you want to repeat entire page instead of a table cell, use page to override default repeating logic.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. image:: ../../_static/img/document-generation/page-formatter-template.png
+            :alt: page formatter template
+
+        - .. code-block:: json
+
+            {                     
+                "collection": [
+                    {
+                        "name": "Derek Clark",
+                        "sold": 10000
+                    },
+                    {
+                        "name": "Jessica Adams",
+                        "sold": 14000
+                    },
+                    {
+                        "name": "Xue Li",
+                        "sold": 9400
+                    }
+                ]
+            }         
+
+        - 
+        
+            New pages are added instead of new table rows:
+        
+            .. image:: ../../_static/img/document-generation/page-formatter-result.png
+                :alt: page formatter result
 
 
 Not checked formatters
 ----------------------
 
-
 clone - used for cloning entire document. Templater will append current document with current content.
 fixed - used in resizeable objects (like table) when you don't want to resize that object. For example, you have table with fixed number of rows and want Templater to replace those IEnumerable values and replace all others with empty string
-page - used for specifying resizing of the page range in docx. When tag is placed in table and you want to resize entire page, not number of rows in that table, use page to override default context resize
-sheet - used for specifying resizing of the sheet in xlsx. If you want to resize sheet range you can place tag in header or use sheet metadata on tag which is used for resizing.
-all - replaces all instances of selected tag with provided values. Useful when there is same tag on various places in document and Templater is unable to conclude that they should all be replaced with single value
-header - for DataTable/ResultSet data types, include header during dynamic resize
-horizontal-resize - in Excel resize context horizontally instead of vertically
 whole-column - use whole column instead of minimum spanning range during horizontal resize
 merge-nulls - special handling of null values in tables/cells. Cells will be horizontally merged if null value is detected
 span-nulls - special handling of null values in Word tables. Cells will be vertically merged if null value is detected
-remove-old-xml - when XElement/Element is provided, remove the XML tree where tag was detected. Useful for cleaning up whitespace garbage
-replace-xml - when XElement/Element is provided, remove the children of matching XML tree and replace it with the provided XML. Useful for setting color in Word tables
-merge-xml - when XElement/Element is provided, merge provided XML with the surounding XML of the detected tag. Useful for setting color without removing old XML
+
 page-break - when doing resize include page break between elements (probably should not be used)
 no-repeat - to invoke old behavior of processing only the first collection with matching tags (probably should not be used)
 
@@ -64,9 +318,3 @@ padLeft(n) - append space from left to create string of at least n length
 padLeft(n,c) - append char c from left to create string of at least n length
 padRight(n) - append space from right to create string of at least n length
 padRight(n,c) - append char c from right to create string of at least n length
-
-empty(X) - if value is null or empty (IEnumerable.length = 0) it will replace value with X
-offset(D\:H:M) - DateTime value will be offsetted by parsed Timestamp (special sign : is escaped with \)
-collapse - if value is null or empty (IEnumerable.length = 0) current context will be collapsed; tag will be removed - resize(tag, 0) will be invoked
-collapse-nested - if value is null or empty (IEnumerable.length = 0) context matching all related tags will be collapsed; specified and all nested tags will be removed - resize(tags, 0) will be invoked
-collapse-to(otherTag) - if value is null or empty (IEnumerable.length = 0) current context between original and otherTag will be collapsed; tags will be removed - resize(Array(tag, otherTag), 0) will be invoked. Other tag can have same value as original tag
