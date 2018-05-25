@@ -15,4 +15,4 @@ Documents connector
       convert-email-to-pdf
       Split PDF files <split-pdf-files>
       Merge PDF files <merge-pdf-files>
-      Use regex match to extract values from text <How to use regex match to extract values from text in Microsoft Flow and Azure Logic Apps>
+      Use regular expression match <use-regex-match-to-extract-values>
