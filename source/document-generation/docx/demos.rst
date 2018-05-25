@@ -6,7 +6,6 @@ Demos
    :depth: 1
 
 .. _loops-and-nesting:
-.. _tables:
 
 Loops and nesting
 -----------------
@@ -170,6 +169,8 @@ This demo demonstrates how to create complex nested documents based on nested ob
             ]
         }
     ]
+
+.. _tables:
 
 Tables
 ------

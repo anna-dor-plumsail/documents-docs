@@ -16,9 +16,10 @@ Word DOCX templates
 
 .. container:: pl-right-column
 
-      .. toctree::  
-            :caption: Demos
+      .. toctree::              
             :name: toc-demos
-            :maxdepth: 1
-                  
+            :maxdepth: 2            
+
             demos
+                  
+            
