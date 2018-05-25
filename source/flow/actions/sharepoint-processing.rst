@@ -984,7 +984,166 @@ Deletes the SharePoint site by a specific URL with the help of Microsoft Flow.
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/DeleteSharePointSiteExample.png
-   :alt: Delete SharePoint Site Example   
+   :alt: Delete SharePoint Site Example  
+
+Invite External User to SharePoint
+---------------------------------------
+Invites external users with specific permission to a SharePoint site, a specific SharePoint group or an item in a SharePoint list with the help of Microsoft Flow.
+
+.. important:: 
+
+  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
+
+"Invite External User to SharePoint" is a complex action that includes 3 different operations for inviting external users to a SharePoint site, a SharePoint list item or a SharePoint group.
+
+Once you added this action to your Flow, you need to specify the initial parameter:
+
+* Target - the target of the operation: Site, Item, Group
+
+.. image:: ../../_static/img/flow/sharepoint/InviteExternalUserSharePointExample.png
+   :alt: Invite External User to SharePoint Example
+
+Once you did this, you will see the rest of parameters for this particular operation.
+
+You can find the documentation for all operations included in "Create Modern SharePoint Site" action below:
+
+- :ref:`invite-external-user-site`
+- :ref:`invite-external-user-item`
+- :ref:`invite-external-user-group`
+
+
+.. _invite-external-user-site:
+
+Invite External User to SharePoint Site
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Invites external users with specific permission to an SharePoint site with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Email Addresses
+       -  Email addresses to send an invitation, you can specify multiple using semicolon as delimiter.
+       -  :code:`Chris@plumsail.com;John@plumsail.com`
+
+    *  -  Email Body
+       -  Body of the invitation message.
+       -  External Users
+
+    *  -  Permission Role
+       -  The permission role which will granted to the user. You may specify a custom value for this field. 
+       -  ::
+
+            Full Control
+            Design
+            Edit
+            Contribute
+            Read
+            Approve
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/InviteExternalUserSharePointSiteExample.png
+   :alt: Invite External User to SharePoint Site Example
+
+.. _invite-external-user-item:
+
+Invite External User to SharePoint Item
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Invites external users with specific permission to an item in a SharePoint list with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List URL
+       -  List name, URL or Guid.
+       -  Employees
+    
+    *  -  Item ID
+       -  ID of the item for which you want to grant the permission.
+       -  25
+    
+    *  -  Email Addresses
+       -  Email addresses to send an invitation, you can specify multiple using semicolon as delimiter.
+       -  :code:`Chris@plumsail.com;John@plumsail.com`
+
+    *  -  Email Body
+       -  Body of the invitation message.
+       -  External Users
+
+    *  -  Permission Role
+       -  The permission role which will granted to the user. You may specify a custom value for this field. 
+       -  ::
+
+            Full Control
+            Design
+            Edit
+            Contribute
+            Read
+            Approve
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/InviteExternalUserSharePointItemExample.png
+   :alt: Invite External User to SharePoint Item Example
+
+.. _invite-external-user-group:
+
+Invite External User to SharePoint Group
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Invites external users to an specific SharePoint group with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example    
+    *  -  Email Addresses
+       -  Email addresses to send an invitation, you can specify multiple using semicolon as delimiter.
+       -  :code:`Chris@plumsail.com;John@plumsail.com`
+
+    *  -  Email Body
+       -  Body of the invitation message.
+       -  External Users
+
+    *  -  Group Name
+       -  Name of the group which will include invited users. 
+       -  External Users
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/InviteExternalUserSharePointGroupExample.png
+   :alt: Invite External User to SharePoint Group Example   
 
 Set Default SharePoint Site Group
 ----------------------------------
