@@ -11,7 +11,8 @@ Word DOCX templates
             How it works <how-it-works>
             Lists <lists>
             Tables <tables>
-            Loops and nesting <loops-and-nesting>            
+            Loops and nesting <loops-and-nesting>
+            Conditionally hide blocks <conditionally-hide-blocks>
             Value formatters <formatters>
 
 .. container:: pl-right-column

@@ -5,6 +5,121 @@ Demos
    :local:
    :depth: 1
 
+.. _tables:
+
+Tables
+------
+
+This demo demonstrates how to create a table based on an array of objects. You can find description of this case in the `tables <tables.html#table>`_ documentation.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/table-template.docx>`_
+
+          .. image:: ../../_static/img/document-generation/table-template.png
+                :alt: Table template
+        - `Download result document <../../_static/files/document-generation/demos/table-result.docx>`_
+
+          .. image:: ../../_static/img/document-generation/table-result.png
+                :alt: Table template result
+
+.. rubric:: Template data
+
+.. code:: json
+
+    {
+        "company": {
+            "name": "Plumsail",
+            "email": "contact@plumsail.com"
+        },
+        "employees": [
+            {
+                "name": "Derek Clark",
+                "jobTitle": "Marketing director",
+                "department": "Marketing Department",
+                "office": "Room 18",
+                "phone": "(206) 854-9798",
+            },
+            {
+                "name": "Xue Li",
+                "jobTitle": "Financial director",
+                "department": "Financial Department",
+                "office": "Room 19",
+                "phone": "(206) 598-1259",
+            },
+            {
+                "name": "Jessica Adams",
+                "jobTitle": "Marketing manager",
+                "department": "Marketing Department",
+                "office": "Room 23",
+                "phone": "(206) 789-1598",
+            },
+            {
+                "name": "Katsuko Kawakami",
+                "jobTitle": "Analyst",
+                "department": "Financial Department",
+                "office": "Room 26",
+                "phone": "(206) 784-1258"
+            }
+        ]
+    }
+
+Dynamic tables
+--------------
+
+This demo demonstrates how to create tables based on arrays. You can find description of this case in the `tables <tables.html#table-from-array>`_ documentation.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/table-from-array-template.docx>`_
+
+          .. image:: ../../_static/img/document-generation/table-from-array-template.png
+                :alt: Table from array template
+        - `Download result document <../../_static/files/document-generation/demos/table-from-array-result.docx>`_
+
+          .. image:: ../../_static/img/document-generation/table-from-array-result.png
+                :alt: Table from array result
+
+.. rubric:: Template data
+
+.. code:: json
+
+    {
+        "myArray": [
+            [
+                "Meaning",
+                "Latin prefix",
+                "Greek prefix"
+            ],
+            [
+                "between",
+                "inter-",
+                "epi-"
+            ],
+            [
+                "above, excess",
+                "super-, ultra-",
+                "hyper-"
+            ],
+            [
+                "inside",
+                "intra-",
+                "endo-"
+            ],
+            [
+                "outside",
+                "extra-, extro-",
+                "ecto-, exo-"
+            ]
+        ]
+    }
+
 .. _loops-and-nesting:
 
 Loops and nesting
@@ -169,118 +284,3 @@ This demo demonstrates how to create complex nested documents based on nested ob
             ]
         }
     ]
-
-.. _tables:
-
-Tables
-------
-
-This demo demonstrates how to create a table based on an array of objects. You can find description of this case in the `tables <tables.html#table>`_ documentation.
-
-.. list-table::
-    :header-rows: 1
-
-    *   - Template
-        - Result
-    *   - `Download template document <../../_static/files/document-generation/demos/table-template.docx>`_
-
-          .. image:: ../../_static/img/document-generation/table-template.png
-                :alt: Table template
-        - `Download result document <../../_static/files/document-generation/demos/table-result.docx>`_
-
-          .. image:: ../../_static/img/document-generation/table-result.png
-                :alt: Table template result
-
-.. rubric:: Template data
-
-.. code:: json
-
-    {
-        "company": {
-            "name": "Plumsail",
-            "email": "contact@plumsail.com"
-        },
-        "employees": [
-            {
-                "name": "Derek Clark",
-                "jobTitle": "Marketing director",
-                "department": "Marketing Department",
-                "office": "Room 18",
-                "phone": "(206) 854-9798",
-            },
-            {
-                "name": "Xue Li",
-                "jobTitle": "Financial director",
-                "department": "Financial Department",
-                "office": "Room 19",
-                "phone": "(206) 598-1259",
-            },
-            {
-                "name": "Jessica Adams",
-                "jobTitle": "Marketing manager",
-                "department": "Marketing Department",
-                "office": "Room 23",
-                "phone": "(206) 789-1598",
-            },
-            {
-                "name": "Katsuko Kawakami",
-                "jobTitle": "Analyst",
-                "department": "Financial Department",
-                "office": "Room 26",
-                "phone": "(206) 784-1258"
-            }
-        ]
-    }
-
-Tables from array
-----------------
-
-This demo demonstrates how to create tables based on arrays. You can find description of this case in the `tables <tables.html#table-from-array>`_ documentation.
-
-.. list-table::
-    :header-rows: 1
-
-    *   - Template
-        - Result
-    *   - `Download template document <../../_static/files/document-generation/demos/table-from-array-template.docx>`_
-
-          .. image:: ../../_static/img/document-generation/table-from-array-template.png
-                :alt: Table from array template
-        - `Download result document <../../_static/files/document-generation/demos/table-from-array-result.docx>`_
-
-          .. image:: ../../_static/img/document-generation/table-from-array-result.png
-                :alt: Table from array result
-
-.. rubric:: Template data
-
-.. code:: json
-
-    {
-        "myArray": [
-            [
-                "Meaning",
-                "Latin prefix",
-                "Greek prefix"
-            ],
-            [
-                "between",
-                "inter-",
-                "epi-"
-            ],
-            [
-                "above, excess",
-                "super-, ultra-",
-                "hyper-"
-            ],
-            [
-                "inside",
-                "intra-",
-                "endo-"
-            ],
-            [
-                "outside",
-                "extra-, extro-",
-                "ecto-, exo-"
-            ]
-        ]
-    }

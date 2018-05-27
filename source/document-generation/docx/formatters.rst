@@ -184,7 +184,7 @@ Examples
 hide
 ----
 
-:code:`hide` - replaces current value with empty string.
+:code:`hide` - replaces current tag value with empty string. It can be used to hide content of a specific tag.
 
 Examples
 ~~~~~~~~
@@ -210,6 +210,51 @@ Examples
         - .. code-block:: json
     
             Derek Clark
+
+collapse
+--------
+
+:code:`collapse` - if value in tag is null, empty or empty array, it will hide block that contains this tag (table rows, bullet list item or chapter). It can be used to conditionaly hide blocks of document. If there are no table rows, bullet list items or chapters around this tag, you can wrap it into a table cell with invisible borders. Thus, you define borders of your block to hide. Then add tag with :code:`collapse` formatter to hide this table cell if value in the tag is empty. In most cases it is better to use this formatter with the `hide <#hide>`_ formatter as in the example below. It prevents the engine from displaying unnesessary tag value.
+
+Read the article describing `how to hide content blocks <conditionally-hide-blocks.html>`_ for additional information.
+
+The example below shows how to hide table row if employee job title is empty.
+
+Examples
+~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. image:: ../../_static/img/document-generation/collapse-formatter-template.png
+            :alt: collapse formatter template
+
+        - .. code-block:: json
+
+            {                     
+                "employees": [
+                    {
+                        "name": "Derek Clark",
+                        "title": "Manager"            
+                    },
+                    {
+                        "name": "Jessica Adams",
+                        "title": ""            
+                    },
+                    {
+                        "name": "Anil Mittal",
+                        "title": "Developer"            
+                    }
+                ]
+            }         
+
+        -                     
+        
+            .. image:: ../../_static/img/document-generation/collapse-formatter-result.png
+                :alt: collapse formatter result
 
 bool
 ----
@@ -280,15 +325,64 @@ Examples
             N/A
             N/A
 
-collapse
---------
+merge-nulls
+-----------
 
-collapse - if value is null or empty (IEnumerable.length = 0) current context will be collapsed; tag will be removed - resize(tag, 0) will be invoked
+:code:`merge-nulls` - use this formatter to merge table cells horizontally if there are null values.
+
+Examples
+~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. image:: ../../_static/img/document-generation/merge-nulls-template.png
+            :alt: merge nulls formatter template
+
+        - .. code-block:: json
+
+            {         
+                "collection": [
+                    {
+                        "name": "Derek Clark",
+                        "sold": null
+                    },
+                    {
+                        "name": "Jessica Adams",
+                        "sold": 14000
+                    },
+                    {
+                        "name": "Xue Li",
+                        "sold": null
+                    },
+                    {
+                        "name": "Martin Huston",
+                        "sold": 9400
+                    },
+                    {
+                        "name": "Anton Frolov",
+                        "sold": null
+                    }
+                ]
+            }        
+
+        - 
+        
+            Cells with null values were merged:
+        
+            .. image:: ../../_static/img/document-generation/merge-nulls-result.png
+                :alt: merge nulls fortammer result
 
 page
 ----
 
 :code:`page` - it can be used for changing logic of repeating collections. When tag is placed in table and you want to repeat entire page instead of a table cell, use page to override default repeating logic.
+
+Examples
+~~~~~~~~
 
 .. list-table::
     :header-rows: 1
@@ -324,22 +418,3 @@ page
         
             .. image:: ../../_static/img/document-generation/page-formatter-result.png
                 :alt: page formatter result
-
-
-Not checked formatters
-----------------------
-
-clone - used for cloning entire document. Templater will append current document with current content.
-fixed - used in resizeable objects (like table) when you don't want to resize that object. For example, you have table with fixed number of rows and want Templater to replace those IEnumerable values and replace all others with empty string
-whole-column - use whole column instead of minimum spanning range during horizontal resize
-merge-nulls - special handling of null values in tables/cells. Cells will be horizontally merged if null value is detected
-span-nulls - special handling of null values in Word tables. Cells will be vertically merged if null value is detected
-
-page-break - when doing resize include page break between elements (probably should not be used)
-no-repeat - to invoke old behavior of processing only the first collection with matching tags (probably should not be used)
-
-
-padLeft(n) - append space from left to create string of at least n length
-padLeft(n,c) - append char c from left to create string of at least n length
-padRight(n) - append space from right to create string of at least n length
-padRight(n,c) - append char c from right to create string of at least n length

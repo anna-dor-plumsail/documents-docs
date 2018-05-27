@@ -9,8 +9,8 @@ Tables in DOCX templates
 
 With help of **Plumsail Word DOCX templates** action you can create rich tables based on templates with minimal amount of syntax. In the templates, you can refer properties inside simple objects and collections, as well as properties in nested constructions. Let us check a few examples.
 
-Tables
-------
+Regular table
+-------------
 
 In this section, we will see how to create a table based on an array of objects.
 
@@ -83,8 +83,8 @@ You can see the result of rendering below. The templating engine automatically c
 .. image:: ../../_static/img/document-generation/table-result.png
     :alt: Table template result
 
-Tables from array
-----------------
+Dynamic table from array
+-------------------------
 
 You can create tables from arrays by just adding a single tag into the template document. The templating engine is smart enough to understand what content needs to be duplicated.
 
