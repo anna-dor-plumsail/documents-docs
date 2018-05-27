@@ -12,7 +12,7 @@ Word DOCX templates
             Lists <lists>
             Tables <tables>
             Loops and nesting <loops-and-nesting>            
-            Values formatters <formatters>
+            Value formatters <formatters>
 
 .. container:: pl-right-column
 
