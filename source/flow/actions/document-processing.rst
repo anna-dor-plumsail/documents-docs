@@ -920,6 +920,8 @@ Regular Expression Match
 
 Searches an input string for all occurrences of a regular expression and returns all the matches with the help of Microsoft Flow. We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
 
+You can find more examples in `this article <../how-tos/documents/use-regex-match-to-extract-values.html>`_.
+
 .. important:: 
 
   This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
@@ -952,7 +954,8 @@ Searches an input string for all occurrences of a regular expression and returns
        -  Example
     *  -  Pattern
        -  Regular expression pattern. This pattern can contain inline options to modify behavior of the regular expression. Such options have to be placed in the beginning of the expression inside brackets with question mark: ``(?YOUR_OPTIONS)``. For example options ``(?mi)`` will allow to process multi line text with case insensitivity.   
-          You can find additional information about inline options in the `MSDN article <http://msdn.microsoft.com/en-us/library/yd1hzczs%28v=vs.110%29.aspx>`_. 
+          You can find additional information about inline options in the `MSDN article <http://msdn.microsoft.com/en-us/library/yd1hzczs%28v=vs.110%29.aspx>`_.
+          Also you can find an example in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/How%20to%20use%20regex%20match%20to%20extract%20values%20from%20text%20in%20Microsoft%20Flow%20and%20Azure%20Logic%20Apps.html>`_.
        -  ``Task (?<TaskId>\d+):(?<status>Approve|Reject)``
 
     *  -  Text

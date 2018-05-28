@@ -15,3 +15,4 @@ Documents connector
       Convert email message to PDF <convert-email-to-pdf>
       Split PDF files <split-pdf-files>
       Merge PDF files <merge-pdf-files>
+      Use regular expression match <use-regex-match-to-extract-values>
