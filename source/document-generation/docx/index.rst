@@ -14,6 +14,7 @@ Word DOCX templates
             Loops and nesting <loops-and-nesting>
             Conditionally hide blocks <conditionally-hide-blocks>
             Value formatters <formatters>
+            Value properties <value-properties>
 
 .. container:: pl-right-column
 
