@@ -21,6 +21,6 @@ Word DOCX templates
             :name: toc-demos
             :maxdepth: 2            
 
-            demos
+            Demos <demos>
                   
             

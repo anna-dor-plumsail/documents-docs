@@ -5,8 +5,6 @@ Tables in DOCX templates
     :local:
     :depth: 1
 
-
-
 With help of **Plumsail Word DOCX templates** action you can create rich tables based on templates with minimal amount of syntax. In the templates, you can refer properties inside simple objects and collections, as well as properties in nested constructions. Let us check a few examples.
 
 Regular table

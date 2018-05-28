@@ -10,14 +10,14 @@ You can use formatters to add complex logic to values rendered in your templates
 format
 ------
 
-This formatter formats value from tag. You can use it with or without parameters:
+It formats a tag value. You can use it with or without parameters:
 
-- :code:`format` - if encountered on date value it will forat it as short date string.
-- :code:`format(val)` - formats current value using specified format. For example, you can use :code:`N2` for number with two decimals.
+- :code:`format` - if encountered on date value it will format it as short date string.
+- :code:`format(val)` - formats current value using specified format string. For example, you can use :code:`N2` for a numbers with two decimals.
 
-It uses standad format strings. You can find more information in Microsoft documentation:
+It uses standard format strings. You can find more information in Microsoft documentation:
 
-- `Numberic format strings <https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings>`_
+- `Numeric format strings <https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings>`_
 - `Date and time format strings <https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings>`_
 
 Examples
@@ -57,7 +57,7 @@ Examples
 substring
 ---------
 
-Returns substring. You can use it with one or two parameters:
+Returns substring. You can use the formatter with one or two parameters:
 
 - :code:`substring(index)` - returns substring of provided values after :code:`index` chars
 - :code:`substring(index,length)` - returns substring of provided values after :code:`index` with :code:`length`.
@@ -90,7 +90,7 @@ Examples
 join
 ----
 
-:code:`join(separator)` - joins array values with an :code:`separator`.
+:code:`join(separator)` - joins array values with a :code:`separator`.
 
 Examples
 ~~~~~~~~
@@ -122,11 +122,11 @@ Examples
 offset
 ------
 
-:code:`offset(d)` - date and time value will be offsetted by :code:`d` days. 
+:code:`offset(d)` - date and time value will be offset by :code:`d` days. 
 
 :code:`offset(d.hh\:mm\:ss)` - advanced approach for offsetting :code:`d` days, :code:`hh` hours, :code:`mm` minutes, :code:`ss` seconds. 
 
-Just replace :code:`d`, :code:`hh`, :code:`mm` and :code:`ss` by required number of days, hours, minutes and seconds in this string pattern :code:`d.hh\:mm\:ss`.
+Just replace :code:`d`, :code:`hh`, :code:`mm` and :code:`ss` by the required number of days, hours, minutes and seconds in this string pattern :code:`d.hh\:mm\:ss`.
 
 Examples
 ~~~~~~~~
@@ -184,7 +184,7 @@ Examples
 hide
 ----
 
-:code:`hide` - replaces current tag value with empty string. It can be used to hide content of a specific tag.
+:code:`hide` - replaces current tag value with an empty string. It can be used to hide the content of a specific tag.
 
 Examples
 ~~~~~~~~
@@ -214,7 +214,7 @@ Examples
 collapse
 --------
 
-:code:`collapse` - if value in tag is null, empty or empty array, it will hide block that contains this tag (table rows, bullet list item or chapter). It can be used to conditionaly hide blocks of document. If there are no table rows, bullet list items or chapters around this tag, you can wrap it into a table cell with invisible borders. Thus, you define borders of your block to hide. Then add tag with :code:`collapse` formatter to hide this table cell if value in the tag is empty. In most cases it is better to use this formatter with the `hide <#hide>`_ formatter as in the example below. It prevents the engine from displaying unnesessary tag value.
+:code:`collapse` - if value in tag is null, empty or empty array, it will hide block that contains this tag (table rows or bullet list item). It can be used to conditionaly hide blocks of document. If there are no table rows, bullet list items or chapters around this tag, you can wrap it into a table cell with invisible borders. Thus, you define borders of your block to hide. Then add tag with :code:`collapse` formatter to hide this table cell if value in the tag is empty. In most cases it is better to use this formatter with the `hide <#hide>`_ formatter as in the example below. It prevents the engine from displaying unnesessary tag value.
 
 Read the article describing `how to hide content blocks <conditionally-hide-blocks.html>`_ for additional information.
 
@@ -259,7 +259,7 @@ Examples
 bool
 ----
 
-:code:`bool(yes,no,maybe)` - boolean value will be converted to :code:`yes`, :code:`no` or :code:`maybe`. You can specify your own value for each state. The last parameter is optional.
+:code:`bool(yes,no,maybe)` - boolean value will be converted to :code:`yes`, :code:`no` or :code:`maybe`. You can specify your own value for each state. The last parameter is optional. You can use it if your bool value can be null.
 
 Examples
 ~~~~~~~~
@@ -293,7 +293,7 @@ Examples
 empty
 -----
 
-:code:`empty(val)` - if value in tag is null, empty or empty array it will replace value with :code:`val`. You can use this formatter to display default value. For example, "N/A".
+:code:`empty(val)` - if a value in a tag is null, empty or empty array it will replace the value with :code:`val`. You can use this formatter to display default value. For example, "N/A".
 
 Examples
 ~~~~~~~~
@@ -328,7 +328,7 @@ Examples
 merge-nulls
 -----------
 
-:code:`merge-nulls` - use this formatter to merge table cells horizontally if there are null values.
+:code:`merge-nulls` - use this formatter to merge table cells horizontally if there is null value.
 
 Examples
 ~~~~~~~~
@@ -379,7 +379,7 @@ Examples
 page
 ----
 
-:code:`page` - it can be used for changing logic of repeating collections. When tag is placed in table and you want to repeat entire page instead of a table cell, use page to override default repeating logic.
+:code:`page` - it can be used for changing the logic of repeating collections. When a tag is placed inside the table and you want to repeat entire page instead of a table cell, use page to override default repeating logic.
 
 Examples
 ~~~~~~~~

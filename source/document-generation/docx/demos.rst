@@ -1,5 +1,5 @@
-Demos
-=====
+Demos for DOCX templates
+========================
 
 .. contents:: List of demos
    :local:
@@ -11,6 +11,8 @@ Tables
 ------
 
 This demo demonstrates how to create a table based on an array of objects. You can find description of this case in the `tables <tables.html#table>`_ documentation.
+
+Scroll down to see source data for template in JSON format.
 
 .. list-table::
     :header-rows: 1
@@ -72,6 +74,8 @@ Dynamic tables
 
 This demo demonstrates how to create tables based on arrays. You can find description of this case in the `tables <tables.html#table-from-array>`_ documentation.
 
+Scroll down to see source data for template in JSON format.
+
 .. list-table::
     :header-rows: 1
 
@@ -126,6 +130,8 @@ Loops and nesting
 -----------------
 
 This demo demonstrates how to create complex nested documents based on nested objects and collections. You can find descriptin of this case in the `loops and nesting <loops-and-nesting.html>`_ documentation.
+
+Scroll down to see source data for template in JSON format.
 
 .. list-table::
     :header-rows: 1
@@ -284,3 +290,55 @@ This demo demonstrates how to create complex nested documents based on nested ob
             ]
         }
     ]
+
+.. _conditionally-hide-blocks:
+
+Conditionally hide blocks
+-------------------------
+
+This demo shows how hide table rows, bullet lists items and arbitrary sections of document if there is empty value in a tag.
+
+You can find descriptin of this case in the `conditionally hide blocks <conditionally-hide-blocks.html>`_ documentation.
+
+Scroll down to see source data for template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/conditionally-hide-blocks-template.docx>`_
+         
+          .. image:: ../../_static/img/document-generation/hide-blocks-demo-template.png
+                :alt: hide blocks template
+        - `Download result document <../../_static/files/document-generation/demos/conditionally-hide-blocks-result.docx>`_
+         
+          .. image:: ../../_static/img/document-generation/hide-blocks-demo-result.png
+                :alt: hide blocks result                    
+
+.. rubric:: Template data
+
+.. code:: json    
+
+    {       
+    "companyName": "Plumsail",    
+    "site": "http://plumsail.com",
+    "contacts": null,
+    "employees": [
+        {
+            "name": "Derek Clark",
+            "hireDate": "2012-04-21T18:25:43-05:00"
+        },
+        {
+            "name": "Jessica Adams",
+            "hireDate": null
+        },
+        {
+            "name": "Anil Mittal",
+            "hireDate": "2016-04-11T14:22:13-02:00"         
+        }
+    ]
+}
+
+Watermarks
+----------
