@@ -984,7 +984,166 @@ Deletes the SharePoint site by a specific URL with the help of Microsoft Flow.
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/DeleteSharePointSiteExample.png
-   :alt: Delete SharePoint Site Example   
+   :alt: Delete SharePoint Site Example  
+
+Invite External User to SharePoint
+---------------------------------------
+Invites external users with specific permission to a SharePoint site, a specific SharePoint group or an item in a SharePoint list with the help of Microsoft Flow.
+
+.. important:: 
+
+  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
+
+"Invite External User to SharePoint" is a complex action that includes 3 different operations for inviting external users to a SharePoint site, a SharePoint list item or a SharePoint group.
+
+Once you added this action to your Flow, you need to specify the initial parameter:
+
+* Target - the target of the operation: Site, Item, Group
+
+.. image:: ../../_static/img/flow/sharepoint/InviteExternalUserSharePointExample.png
+   :alt: Invite External User to SharePoint Example
+
+Once you did this, you will see the rest of parameters for this particular operation.
+
+You can find the documentation for all operations included in "Create Modern SharePoint Site" action below:
+
+- :ref:`invite-external-user-site`
+- :ref:`invite-external-user-item`
+- :ref:`invite-external-user-group`
+
+
+.. _invite-external-user-site:
+
+Invite External User to SharePoint Site
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Invites external users with specific permission to an SharePoint site with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Email Addresses
+       -  Email addresses to send an invitation, you can specify multiple using semicolon as delimiter.
+       -  :code:`Chris@plumsail.com;John@plumsail.com`
+
+    *  -  Email Body
+       -  Body of the invitation message.
+       -  External Users
+
+    *  -  Permission Role
+       -  The permission role which will granted to the user. You may specify a custom value for this field. 
+       -  ::
+
+            Full Control
+            Design
+            Edit
+            Contribute
+            Read
+            Approve
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/InviteExternalUserSharePointSiteExample.png
+   :alt: Invite External User to SharePoint Site Example
+
+.. _invite-external-user-item:
+
+Invite External User to SharePoint Item
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Invites external users with specific permission to an item in a SharePoint list with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List URL
+       -  List name, URL or Guid.
+       -  Employees
+    
+    *  -  Item ID
+       -  ID of the item for which you want to grant the permission.
+       -  25
+    
+    *  -  Email Addresses
+       -  Email addresses to send an invitation, you can specify multiple using semicolon as delimiter.
+       -  :code:`Chris@plumsail.com;John@plumsail.com`
+
+    *  -  Email Body
+       -  Body of the invitation message.
+       -  External Users
+
+    *  -  Permission Role
+       -  The permission role which will granted to the user. You may specify a custom value for this field. 
+       -  ::
+
+            Full Control
+            Design
+            Edit
+            Contribute
+            Read
+            Approve
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/InviteExternalUserSharePointItemExample.png
+   :alt: Invite External User to SharePoint Item Example
+
+.. _invite-external-user-group:
+
+Invite External User to SharePoint Group
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Invites external users to an specific SharePoint group with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example    
+    *  -  Email Addresses
+       -  Email addresses to send an invitation, you can specify multiple using semicolon as delimiter.
+       -  :code:`Chris@plumsail.com;John@plumsail.com`
+
+    *  -  Email Body
+       -  Body of the invitation message.
+       -  External Users
+
+    *  -  Group Name
+       -  Name of the group which will include invited users. 
+       -  External Users
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/InviteExternalUserSharePointGroupExample.png
+   :alt: Invite External User to SharePoint Group Example   
 
 Set Default SharePoint Site Group
 ----------------------------------
@@ -1035,7 +1194,7 @@ Copies the document from the document library to the specified URL with the help
        -  ``1024``
     *  -  Document URL
        -  The URL of the copied document
-       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/NewDocumentName.docx`
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/Folder2/NewDoc.docx`
 
 .. rubric:: Input Parameters
 
@@ -1050,15 +1209,15 @@ Copies the document from the document library to the specified URL with the help
        -  The URL of the document to be copied. You can use full URL as well as domain relative URL.
        -  ::
        
-            /sites/subSite/LibraryName/FolderName/DocumentName.docx
-            https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentName.docx
+            /sites/subSite/Folder1/Doc.docx
+            https://contoso.sharepoint.com/sites/subSite/Folder1/Doc.docx
 
     *  -  Destination URL
        -  The URL where the source document will be copied. You can use full URL as well as domain relative URL.
        -  ::
 
-            https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/
-            https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/NewDocumentName.docx
+            https://contoso.sharepoint.com/sites/subSite/Folder2/
+            https://contoso.sharepoint.com/sites/subSite/Folder2/NewDoc.docx
 
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
@@ -1088,7 +1247,7 @@ Moves the document from the document library to the specified URL with the help 
        -  ``1024``
     *  -  Document URL
        -  The URL of the moved document
-       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/NewDocumentName.docx`
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/Folder2/NewDoc.docx`
 
 .. rubric:: Input Parameters
 
@@ -1104,14 +1263,14 @@ Moves the document from the document library to the specified URL with the help 
        -  ::
        
             /sites/subSite/LibraryName/FolderName/DocumentName.docx
-            https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentName.docx
+            https://contoso.sharepoint.com/sites/subSite/Folder1/Doc.docx
 
     *  -  Destination URL
        -  The URL where the source document will be moved. You can use full URL as well as domain relative URL.
        -  ::
 
-            https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/
-            https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/NewDocumentName.docx
+            https://contoso.sharepoint.com/sites/subSite/Folder2/
+            https://contoso.sharepoint.com/sites/subSite/Folder2/NewDoc.docx
 
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
@@ -1141,7 +1300,7 @@ Remove a SharePoint document by a specific URL with the help of Microsoft Flow.
        -  ::
 
             /sites/subSite/LibraryName/FolderName/DocumentName.docx
-            https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentName.docx
+            https://contoso.sharepoint.com/sites/subSite/Folder/Doc.docx
 
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
@@ -1171,7 +1330,7 @@ Creates a new document set in the document library by the specified URL with the
        -  ``1024``
     *  -  Document set URL
        -  The URL of the created document set
-       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/CreatedDocumentSet`
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/Lib/DocSet`
 
 .. rubric:: Input Parameters
 
@@ -1184,11 +1343,11 @@ Creates a new document set in the document library by the specified URL with the
        -  Example
     *  -  DocumentSet Name
        -  The name of the document set.
-       -  CreatedDocumentSet
+       -  DocSet
 
     *  -  Target List
        -  The name or the URL of a library or a list where the document set will be created. You can use full URL as well as domain relative URL.
-       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/`
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/Lib/`
 
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
@@ -1218,7 +1377,7 @@ Copies a SharePoint document set from the document library to the specified URL 
        -  ``1024``
     *  -  Document set URL
        -  The URL of the copied document set
-       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/NewDocumentSet`
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/Folder2/NewDocSet`
 
 .. rubric:: Input Parameters
 
@@ -1234,14 +1393,14 @@ Copies a SharePoint document set from the document library to the specified URL 
        -  ::
        
             /sites/subSite/LibraryName/FolderName/DocumentSet
-            https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentSet
+            https://contoso.sharepoint.com/sites/subSite/Folder1/DocSet
 
     *  -  Destination URL
        -  The URL where the source document set will be copied. You can use full URL as well as domain relative URL. If the url ends with slash '/' the document sets will be placed in this folder without name changes. Otherwise, the document set will be renamed.
        -  ::
 
-            https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/
-            https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/NewDocumentSet
+            https://contoso.sharepoint.com/sites/subSite/Folder2/
+            https://contoso.sharepoint.com/sites/subSite/Folder2/NewDocSet
 
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
@@ -1271,7 +1430,7 @@ Moves a SharePoint document set from the document library to the specified URL w
        -  ``1024``
     *  -  Document set URL
        -  The URL of the moved document set
-       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/NewDocumentSet`
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/Folder2/NewDocSet`
 
 .. rubric:: Input Parameters
 
@@ -1287,14 +1446,14 @@ Moves a SharePoint document set from the document library to the specified URL w
        -  ::
        
             /sites/subSite/LibraryName/FolderName/DocumentSet
-            https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentSet
+            https://contoso.sharepoint.com/sites/subSite/Folder1/DocSet
 
     *  -  Destination URL
        -  The URL where the source document set will be moved. You can use full URL as well as domain relative URL. If the url ends with slash '/' the document sets will be placed in this folder without name changes. Otherwise, the document set will be renamed.
        -  ::
 
-            https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/
-            https://contoso.sharepoint.com/sites/subSite/LibraryName/AnotherFolderName/NewDocumentSet
+            https://contoso.sharepoint.com/sites/subSite/Folder2/
+            https://contoso.sharepoint.com/sites/subSite/Folder2/NewDocSet
 
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
@@ -1324,7 +1483,7 @@ Creates a new SharePoint folder in the document library by the specified URL wit
        -  ``1024``
     *  -  Folder URL
        -  The URL of the created folder
-       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/FolderName2`
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/Folder2/Folder`
 
 .. rubric:: Input Parameters
 
@@ -1337,7 +1496,7 @@ Creates a new SharePoint folder in the document library by the specified URL wit
        -  Example
     *  -  Folder URL
        -  The URL of the folder. If you specify full path, you can create several folders.
-       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/FolderName2`
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/Folder2/Folder`
 
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
@@ -1367,7 +1526,7 @@ Creates a new SharePoint folder in the document library or list using the specif
        -  ``1024``
     *  -  Folder URL
        -  The URL of the created folder
-       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/FolderName2`
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/Lib/Folder1/Folder2`
 
 .. rubric:: Input Parameters
 
@@ -1384,11 +1543,11 @@ Creates a new SharePoint folder in the document library or list using the specif
 
             LibraryName
             /sites/subSite/LibraryName
-            https://contoso.sharepoint.com/sites/subSite/LibraryName
+            https://contoso.sharepoint.com/sites/subSite/Lib
 
     *  -  Folder Path
        -  The path where the folder will be created. The action will create all folders included into the path.
-       -  :code:`FolderName/FolderName2`
+       -  :code:`Folder1/Folder2`
 
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
@@ -1418,7 +1577,7 @@ Removes a SharePoint folder from the document library or list by the specified U
        -  ::
 
             /sites/subSite/LibraryName/FolderName
-            https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName
+            https://contoso.sharepoint.com/sites/subSite/Lib/Folder
 
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
@@ -1448,7 +1607,7 @@ Copies a SharePoint folder from the document library to the specified URL with t
        -  ``1024``
     *  -  Folder URL
        -  The URL of the copied folder
-       -  :code:`https://contoso.sharepoint.com/sites/subSite/AnotherLibraryName/AnotherFolderName`
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/Lib2/Folder2`
 
 .. rubric:: Input Parameters
 
@@ -1464,14 +1623,14 @@ Copies a SharePoint folder from the document library to the specified URL with t
        -  ::
             
             /sites/subSite/LibraryName/FolderName
-            https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName
+            https://contoso.sharepoint.com/sites/subSite/Lib/Folder
 
     *  -  Destination URL
        -  The URL where the source folder will be copied. You can use full URL as well as domain relative URL
        -  ::
 
-            https://contoso.sharepoint.com/sites/subSite/AnotherLibraryName
-            https://contoso.sharepoint.com/sites/subSite/AnotherLibraryName/AnotherFolderName
+            https://contoso.sharepoint.com/sites/subSite/Lib2
+            https://contoso.sharepoint.com/sites/subSite/Lib2/Folder2
 
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
@@ -1501,7 +1660,7 @@ Moves a SharePoint folder from the document library to the specified URL with th
        -  ``1024``
     *  -  Folder URL
        -  The URL of the moved folder
-       -  :code:`https://contoso.sharepoint.com/sites/subSite/AnotherLibraryName/AnotherFolderName`
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/Lib2/Folder2`
 
 .. rubric:: Input Parameters
 
@@ -1517,14 +1676,14 @@ Moves a SharePoint folder from the document library to the specified URL with th
        -  ::
             
             /sites/subSite/LibraryName/FolderName
-            https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName
+            https://contoso.sharepoint.com/sites/subSite/Lib/Folder
 
     *  -  Destination URL
        -  The URL where the source folder will be moved. You can use full URL as well as domain relative URL
        -  ::
 
-            https://contoso.sharepoint.com/sites/subSite/AnotherLibraryName
-            https://contoso.sharepoint.com/sites/subSite/AnotherLibraryName/AnotherFolderName
+            https://contoso.sharepoint.com/sites/subSite/Lib2
+            https://contoso.sharepoint.com/sites/subSite/Lib2/Folder2
 
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
@@ -1554,7 +1713,7 @@ Check-in a SharePoint document at the specified URL with the specified comment w
        -  ``1024``
     *  -  Document URL
        -  The URL of the document which was check in
-       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentName.docx`
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/Lib/Doc.docx`
 
 .. rubric:: Input Parameters
 
@@ -1567,7 +1726,7 @@ Check-in a SharePoint document at the specified URL with the specified comment w
        -  Example
     *  -  Document URL
        -  The URL of the document to check in.
-       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentName.docx`
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/Lib/Doc.docx`
 
     *  -  Comment
        -  The comment to accompany document check in.
@@ -1601,7 +1760,7 @@ Check-out a SharePoint document at the specified URL with the specified comment 
        -  ``1024``
     *  -  Document URL
        -  The URL of the document which was check out.
-       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentName.docx`
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/Lib/Doc.docx`
 
 .. rubric:: Input Parameters
 
@@ -1614,7 +1773,7 @@ Check-out a SharePoint document at the specified URL with the specified comment 
        -  Example
     *  -  Document URL
        -  The URL of the document to check out.
-       -  :code:`https://contoso.sharepoint.com/sites/subSite/LibraryName/FolderName/DocumentName.docx`
+       -  :code:`https://contoso.sharepoint.com/sites/subSite/Lib/Doc.docx`
 
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
@@ -1930,145 +2089,6 @@ Removes a user from a specific SharePoint group with the help of Microsoft Flow.
 .. image:: ../../_static/img/flow/sharepoint/RemoveUserSharePointGroupExample.png
    :alt: Remove User from SharePoint Group Example
 
-Invite External User to SharePoint Site
------------------------------------------
-Invites external users with specific permission to an SharePoint site with the help of Microsoft Flow.
-
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
-
-.. rubric:: Input Parameters
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  Email Addresses
-       -  Email addresses to send an invitation, you can specify multiple using semicolon as delimiter.
-       -  :code:`Chris@plumsail.com;John@plumsail.com`
-
-    *  -  Email Body
-       -  Body of the invitation message.
-       -  External Users
-
-    *  -  Permission Role
-       -  The permission role which will granted to the user. You may specify a custom value for this field. 
-       -  ::
-
-            Full Control
-            Design
-            Edit
-            Contribute
-            Read
-            Approve
-
-    *  -  SharePoint Site URL
-       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
-       -  :code:`https://contoso.sharepoint.com/sites/subSite`
-
-
-.. rubric:: Example
-
-.. image:: ../../_static/img/flow/sharepoint/InviteExternalUserSharePointSiteExample.png
-   :alt: Invite External User to SharePoint Site Example
-
-Invite External User to SharePoint Item
------------------------------------------
-Invites external users with specific permission to an item in a SharePoint list with the help of Microsoft Flow.
-
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
-
-.. rubric:: Input Parameters
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  List URL
-       -  List name, URL or Guid.
-       -  Employees
-    
-    *  -  Item ID
-       -  ID of the item for which you want to grant the permission.
-       -  25
-    
-    *  -  Email Addresses
-       -  Email addresses to send an invitation, you can specify multiple using semicolon as delimiter.
-       -  :code:`Chris@plumsail.com;John@plumsail.com`
-
-    *  -  Email Body
-       -  Body of the invitation message.
-       -  External Users
-
-    *  -  Permission Role
-       -  The permission role which will granted to the user. You may specify a custom value for this field. 
-       -  ::
-
-            Full Control
-            Design
-            Edit
-            Contribute
-            Read
-            Approve
-
-    *  -  SharePoint Site URL
-       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
-       -  :code:`https://contoso.sharepoint.com/sites/subSite`
-
-
-.. rubric:: Example
-
-.. image:: ../../_static/img/flow/sharepoint/InviteExternalUserSharePointItemExample.png
-   :alt: Invite External User to SharePoint Item Example
-
-Invite External User to SharePoint Group
------------------------------------------
-Invites external users to an specific SharePoint group with the help of Microsoft Flow.
-
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
-
-.. rubric:: Input Parameters
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example    
-    *  -  Email Addresses
-       -  Email addresses to send an invitation, you can specify multiple using semicolon as delimiter.
-       -  :code:`Chris@plumsail.com;John@plumsail.com`
-
-    *  -  Email Body
-       -  Body of the invitation message.
-       -  External Users
-
-    *  -  Group Name
-       -  Name of the group which will include invited users. 
-       -  External Users
-
-    *  -  SharePoint Site URL
-       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
-       -  :code:`https://contoso.sharepoint.com/sites/subSite`
-
-
-.. rubric:: Example
-
-.. image:: ../../_static/img/flow/sharepoint/InviteExternalUserSharePointGroupExample.png
-   :alt: Invite External User to SharePoint Group Example
-
 Get SharePoint Items By CAML Query
 -----------------------------------------
 Executes a CAML query on a list or on a document library and returns the collection of elements with the help of Microsoft Flow.
@@ -2243,8 +2263,8 @@ Copies attachments from the SharePoint list item to the library using the specif
        -  ::
 
             [
-                'https://contoso.sharepoint.com/sites/subSite/SharedDocuments/Document1.docx',
-                'https://contoso.sharepoint.com/sites/subSite/SharedDocuments/Document2.docx'
+                'https://contoso.sharepoint.com/sites/subSite/SharedDocuments/Doc1.docx',
+                'https://contoso.sharepoint.com/sites/subSite/SharedDocuments/Doc2.docx'
             ]
 
 .. rubric:: Input Parameters
@@ -2304,8 +2324,8 @@ Moves attachments from the SharePoint list item to the library using the specifi
        -  ::
 
             [
-                'https://contoso.sharepoint.com/sites/subSite/SharedDocuments/Document1.docx',
-                'https://contoso.sharepoint.com/sites/subSite/SharedDocuments/Document2.docx'
+                'https://contoso.sharepoint.com/sites/subSite/SharedDocuments/Doc1.docx',
+                'https://contoso.sharepoint.com/sites/subSite/SharedDocuments/Doc2.docx'
             ]
 
 .. rubric:: Input Parameters
