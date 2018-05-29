@@ -67,5 +67,4 @@ All documentation articles
       :maxdepth: 2
       
       flow/how-tos/documents/index 
-      flow/how-tos/sharepoint/index    
-
+      flow/how-tos/sharepoint/index

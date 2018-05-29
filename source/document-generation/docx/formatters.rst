@@ -110,7 +110,7 @@ Examples
         - .. code-block:: json
 
             {                     
-                "stringVal" "Derek Clark"
+                "arr" [ 1, 2, 3]
             }        
 
         - .. code-block:: json
