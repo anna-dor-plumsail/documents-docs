@@ -58,8 +58,7 @@ All documentation articles
       :name: toc-document-generation
       :maxdepth: 1
          
-      document-generation/docx/index
-      document-generation/xlsx/index     
+      document-generation/docx/index      
       document-generation/html/index      
 
    .. toctree::
