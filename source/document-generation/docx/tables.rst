@@ -14,7 +14,7 @@ In this section, we will see how to create a table based on an array of objects.
 
 Let us take an object containing information about a company and a collection of employees working there. Each employee has a list of properties. We want to display the name of the company and its contact email at the top of the page and create a table with information about the employees.
 
-You can check `demo <./demos.html#tables>`_ of the example described below in another sections of this documentation.
+You can check `demo <./demos.html#regular-tables>`_ of the example described below in another sections of this documentation.
 
 JSON representation of the object:
 
@@ -86,7 +86,7 @@ Dynamic table from array
 
 You can create tables from arrays by just adding a single tag into the template document. The templating engine is smart enough to understand what content needs to be duplicated.
 
-You can check `demo <./demos.html#tables-from-array>`_ of the example described below in another sections of this documentation.
+You can check `demo <./demos.html#dynamic-tables>`_ of the example described below in another sections of this documentation.
 
 Let us take an object containing an array with a few nested arrays. JSON representation of the object:
 
@@ -154,6 +154,86 @@ The template on the top will result in the document at the bottom:
 Table columns from array
 ---------------------
 
+You can create table columns from arrays by just adding a single tag into the template document. The templating engine is smart enough to understand what content needs to be duplicated.
+
+You can check `demo <./demos.html#dynamic-table-columns>`_ of the example described below in another sections of this documentation.
+
+Let us take an object containing information about a company and a list of employees working there. Each employee object contains a name and an array with detailed information about the employee.
+
+We want to display the name of the company and contacts at the top of the page and create a table with information about the employees.
+
+JSON representation of the object:
+
+.. code:: json
+
+    {
+        "company": "Plumsail",
+        "contacts": {
+            "website": "http://plumsail.com",
+            "support": "contacts@plumsail.com",
+            "sales": "sales@plumsail.com"
+        },
+        "employees": [
+            {
+                "name": "Derek Clark",
+                "metadata": [
+                    [
+                        "Marketing director",
+                        "Room 18",
+                        "(206) 854-9798"
+                    ]
+                ]
+            },
+            {
+                "name": "Xue Li",
+                "metadata": [
+                    [
+                        "Financial director",
+                        "Room 19",
+                        "(206) 598-1259"
+                    ]
+                ]
+            },
+            {
+                "name": "Jessica Adams",
+                "metadata": [
+                    [
+                        "Marketing manager",
+                        "Room 23",
+                        "(206) 789-1598"
+                    ]
+                ]
+            },
+            {
+                "name": "Katsuko Kawakami",
+                "metadata": [
+                    [
+                        "Analyst",
+                        "Room 26",
+                        "(206) 784-1258"
+                    ]
+                ]
+            }
+        ]
+    }
+
+Now, let us take a look at the source template for this structure:
+
+.. image:: ../../_static/img/document-generation/table-columns-from-array-template.png
+    :alt: Table columns from array template
+
+To refer properties inside objects or collections we just use a dot operator:
+
+- The :code:`{{contacts.website}}`, :code:`{{employees.support}}`, :code:`{{employees.sales}}` tags let the engine know that we want to render properties of the contacts object.
+- The :code:`{{employees.name}}` tag lets the engine know that we want to render the list of employees names.
+- The :code:`{{employees.metadata}}` tag lets the engine know that we want to render the employees metadata.
+
+To render the array of employees we designed a very simple two cells table. The templating engine is smart enough to understand what content needs to be duplicated. It will iterate through all objects in the array to render them and add the rows and columns automatically.
+
+You can see the result of rendering below. The templating engine automatically created columns with information about the employees:
+
+.. image:: ../../_static/img/document-generation/table-columns-from-array-result.png
+    :alt: Table columns from array template result
 
 Repeat multiple table rows
 --------------------------
@@ -165,9 +245,14 @@ You may notice that in the example above we not just duplicate table rows. Singl
 
 Yes, the engine is smart enough to understand that you placed properties of the same object into two sibling table cells. Thus, it knows that we need to repeat two rows instead of one.
 
-Automatic table resizing
-------------------------
+Automatic tables and columns resizing
+-------------------------------------
 
-Automatic columns resizing
--------------------------
+Arrays in source objects can be used to achieve adding new columns and rows to tables. The templating engine processes data and split and populate tables accordingly.
 
+Let us check an example. Once the document is processed, :code:`{{myArray}}` tag will be replaced with corresponding data, as shown in the picture:
+
+.. image:: ../../_static/img/document-generation/table-array-header.png
+    :alt: A table from an array with header and banded rows
+
+Please, see more detailed description in `Dynamic table from array <tables.html#dynamic-table-from-array>`_ and `Table columns from array <tables.html#table-columns-from-array>`_ sections.

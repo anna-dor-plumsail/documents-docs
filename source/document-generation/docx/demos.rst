@@ -7,8 +7,8 @@ Demos for DOCX templates
 
 .. _tables:
 
-Tables
-------
+Regular tables
+--------------
 
 This demo demonstrates how to create a table based on an array of objects. You can find description of this case in the `tables <tables.html#table>`_ documentation.
 
@@ -125,6 +125,83 @@ Scroll down to see source data for template in JSON format.
     }
 
 .. _loops-and-nesting:
+
+
+Dynamic table columns
+--------------------
+
+This demo demonstrates how to dynamically add based on arrays columns to a table. You can find description of this case in the `tables <tables.html#table-columns-from-array>`_ documentation.
+
+Scroll down to see source data for template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/table-columns-from-array-template.docx>`_
+
+          .. image:: ../../_static/img/document-generation/table-columns-from-array-template.png
+                :alt: Table columns from array template
+        - `Download result document <../../_static/files/document-generation/demos/table-columns-from-array-result.docx>`_
+
+          .. image:: ../../_static/img/document-generation/table-columns-from-array-result.png
+                :alt: Table columns from array result
+
+.. rubric:: Template data
+
+.. code:: json
+
+    {
+        "company": "Plumsail",
+        "contacts": {
+            "website": "http://plumsail.com",
+            "support": "contacts@plumsail.com",
+            "sales": "sales@plumsail.com"
+        },
+        "employees": [
+            {
+                "name": "Derek Clark",
+                "metadata": [
+                    [
+                        "Marketing director",
+                        "Room 18",
+                        "(206) 854-9798"
+                    ]
+                ]
+            },
+            {
+                "name": "Xue Li",
+                "metadata": [
+                    [
+                        "Financial director",
+                        "Room 19",
+                        "(206) 598-1259"
+                    ]
+                ]
+            },
+            {
+                "name": "Jessica Adams",
+                "metadata": [
+                    [
+                        "Marketing manager",
+                        "Room 23",
+                        "(206) 789-1598"
+                    ]
+                ]
+            },
+            {
+                "name": "Katsuko Kawakami",
+                "metadata": [
+                    [
+                        "Analyst",
+                        "Room 26",
+                        "(206) 784-1258"
+                    ]
+                ]
+            }
+        ]
+    }
 
 Loops and nesting
 -----------------
