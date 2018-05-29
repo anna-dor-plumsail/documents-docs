@@ -214,9 +214,11 @@ Examples
 collapse
 --------
 
-:code:`collapse` - if value in tag is null, empty or empty array, it will hide block that contains this tag (table rows or bullet list item). It can be used to conditionaly hide blocks of document. If there are no table rows, bullet list items or chapters around this tag, you can wrap it into a table cell with invisible borders. Thus, you define borders of your block to hide. Then add tag with :code:`collapse` formatter to hide this table cell if value in the tag is empty. In most cases it is better to use this formatter with the `hide <#hide>`_ formatter as in the example below. It prevents the engine from displaying unnesessary tag value.
+:code:`collapse` - if a value in the tag is null, empty or empty array, it will hide block that contains this tag (table rows or bullet list item). 
 
-Read the article describing `how to hide content blocks <conditionally-hide-blocks.html>`_ for additional information.
+It can be used to conditionally hide blocks of a document. Read the article describing `how to hide content blocks <conditionally-hide-blocks.html>`_ for additional information.
+
+.. note:: The formatter searches for table rows or bullet list items to hide. If there are not any table rows, bullet list items or chapters around this tag, you can wrap it into a table cell with invisible borders. Thus, you define borders of your block to hide.
 
 The example below shows how to hide table row if employee job title is empty.
 

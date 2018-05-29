@@ -7,12 +7,12 @@ Demos for DOCX templates
 
 .. _tables:
 
-Regular tables
---------------
+Regular table
+-------------
 
-This demo demonstrates how to create a table based on an array of objects. You can find description of this case in the `tables <tables.html#table>`_ documentation.
+This demo shows how to create a table based on an array of objects. You can find the description of this case in the `tables <tables.html#table>`_ documentation.
 
-Scroll down to see source data for template in JSON format.
+Scroll down to see source data for the template in JSON format.
 
 .. list-table::
     :header-rows: 1
@@ -69,12 +69,14 @@ Scroll down to see source data for template in JSON format.
         ]
     }
 
-Dynamic tables
---------------
+.. _dynamic-table:
 
-This demo demonstrates how to create tables based on arrays. You can find description of this case in the `tables <tables.html#table-from-array>`_ documentation.
+Dynamic table
+-------------
 
-Scroll down to see source data for template in JSON format.
+This demo shows how to create dynamic tables from arrays by just adding a single tag into the template document. You can find the description of this case in the `tables <tables.html#dynamic-table>`_ documentation.
+
+Scroll down to see source data for the template in JSON format.
 
 .. list-table::
     :header-rows: 1
@@ -124,15 +126,14 @@ Scroll down to see source data for template in JSON format.
         ]
     }
 
-.. _loops-and-nesting:
-
+.. _dynamic-table-columns:
 
 Dynamic table columns
---------------------
+---------------------
 
-This demo demonstrates how to dynamically add based on arrays columns to a table. You can find description of this case in the `tables <tables.html#table-columns-from-array>`_ documentation.
+This demo shows how to dynamically add based on arrays columns to a table. You can find the description of this case in the `tables <tables.html#dynamic-table-columns>`_ documentation.
 
-Scroll down to see source data for template in JSON format.
+Scroll down to see source data for the template in JSON format.
 
 .. list-table::
     :header-rows: 1
@@ -203,12 +204,59 @@ Scroll down to see source data for template in JSON format.
         ]
     }
 
+.. _dynamic-table-columns:
+
+Repeat multiple table rows
+--------------------------
+
+This demo shows how to occupy multiple table rows by properties of a single object from your source array. You can find the description of this case in the `tables <tables.html#repeat-multiple-table-rows>`_ documentation.
+
+Scroll down to see source data for the template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/repeat-multiple-table-rows-result.docx>`_
+
+          .. image:: ../../_static/img/document-generation/repeat-multiple-table-rows-template.png
+                :alt: Repeat multiple table rows template
+        - `Download result document <../../_static/files/document-generation/demos/repeat-multiple-table-rows-template.docx>`_
+
+          .. image:: ../../_static/img/document-generation/repeat-multiple-table-rows-result.png
+                :alt: Repeat multiple table rows result
+
+.. rubric:: Template data
+
+.. code:: json
+
+    [
+        {
+            "name": "David Navarro",
+            "title": "Head of Marketing",
+            "aboutMe": "I like programming \nand good coffee."    
+        },
+        {
+            "name": "Jessica Adams",
+            "title": "HR",
+            "aboutMe": "I enjoy meeting new people and finding ways to help them have an uplifting experience."    
+        },
+        {
+            "name": "Anil Mittal",
+            "title": "Sales manager",
+            "aboutMe": "I am a dedicated person with a family of four."    
+        } 
+    ]      
+
+.. _loops-and-nesting:
+
 Loops and nesting
 -----------------
 
-This demo demonstrates how to create complex nested documents based on nested objects and collections. You can find descriptin of this case in the `loops and nesting <loops-and-nesting.html>`_ documentation.
+This demo demonstrates how to create complex nested documents based on nested objects and collections. You can find the description of this case in the `loops and nesting <loops-and-nesting.html>`_ documentation.
 
-Scroll down to see source data for template in JSON format.
+Scroll down to see source data for the template in JSON format.
 
 .. list-table::
     :header-rows: 1
@@ -375,9 +423,9 @@ Conditionally hide blocks
 
 This demo shows how hide table rows, bullet lists items and arbitrary sections of document if there is empty value in a tag.
 
-You can find descriptin of this case in the `conditionally hide blocks <conditionally-hide-blocks.html>`_ documentation.
+You can find the description  of this case in the `conditionally hide blocks <conditionally-hide-blocks.html>`_ documentation.
 
-Scroll down to see source data for template in JSON format.
+Scroll down to see source data for the template in JSON format.
 
 .. list-table::
     :header-rows: 1
@@ -416,6 +464,3 @@ Scroll down to see source data for template in JSON format.
         }
     ]
 }
-
-Watermarks
-----------

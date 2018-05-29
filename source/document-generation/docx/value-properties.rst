@@ -1,7 +1,7 @@
 Value properties in DOCX templates
 ========================================
 
-You can access different methods and properties on tag values. For example, you can bring a string to the lowercase, get day, month or year from a date, get number of items in array. 
+You can access different methods and properties on tag values. For example, you can bring a string to the lowercase, get a day, month or year from a date, get a number of items in an array. 
 
 Just use **dot** after tag value as in the example below:
 
@@ -31,7 +31,7 @@ Just use **dot** after tag value as in the example below:
             2012
             5
 
-There are three possible types of values you can call properties on. You can find list of properties for each of them below:
+There are three possible types of values you can call properties on. You can find the list of properties for each of them below:
 
 .. contents::
    :local:
@@ -100,4 +100,4 @@ Date and time
 Array
 -----
 
-:code:`Length` - cets the total number of elements in all the dimensions of the array.
+:code:`Length` - gets the total number of elements in all the dimensions of the array.

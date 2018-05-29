@@ -1,9 +1,9 @@
-Conditionally hide blocks in in DOCX templates
-===============================================
+Conditionally hide blocks in DOCX templates
+===========================================
 
 You can use `collapse formatter <formatters.html#collapse>`_ to hide parts of a document if some value or collection of values is null or empty.
 
-The formatter checks if value for current tag is empty, then finds closes collapsible block and hides it:
+The formatter checks if a value for current tag is empty, then finds closes collapsible block and hides it:
 
 - Table row
 - Bullet list item
@@ -21,7 +21,7 @@ Here we will learn how it works:
 Hide table rows
 ---------------
 
-Let us assume we have a collection of employees. We want to render table with information about them, but we want to hide employees without employment date (:code:`hideDate`).
+Let us assume we have a collection of employees. We want to render a table with information about them, but we want to hide employees without employment date (:code:`hideDate`).
 
 This is JSON representation of employees data:
 
@@ -44,14 +44,14 @@ This is JSON representation of employees data:
         ]
     }
 
-We will use template like this:
+We will use the template like this:
 
 .. image:: ../../_static/img/document-generation/hide-table-row-template.png
     :alt: hide table row template
 
-As you can see, we added this string into the template row: :code:`{{employees.hireDate}:collapse:hide}`. The :code:`collapse` formatter checks if hire date is empty and hides table row that contains this tag. The :code:`hide` formatter hides value of the tag if it is not empty.
+As you can see, we added this string to the template row: :code:`{{employees.hireDate}:collapse:hide}`. The :code:`collapse` formatter checks if hire date is empty and hides table row that contains this tag. The :code:`hide` formatter hides the value of the tag if it is not empty.
 
-The result table will lookw like this:
+The result table will look like this:
 
 .. image:: ../../_static/img/document-generation/hide-table-row-result.png
     :alt: hide table row result
@@ -62,14 +62,14 @@ The employee with the name "Jessica Adams" was hidden because of empty hire date
 Hide bullet list items
 ----------------------
 
-We will use the same JSON data as in example for table rows above.
+We will use the same JSON data as in the example for table rows above.
 
 Our template will look like this:
 
 .. image:: ../../_static/img/document-generation/hide-bullet-list-item-template.png
     :alt: hide bullet list template
 
-As you can see, we added this string into the bullet list item template: :code:`{{employees.hireDate}:collapse:hide}`. The :code:`collapse` formatter the same way as in `the example for table rows <#hide-table-rows>`_ above.
+As you can see, we added this string to the bullet list item template: :code:`{{employees.hireDate}:collapse:hide}`. The :code:`collapse` formatter works the same way as in `the example for table rows <#hide-table-rows>`_ above.
 
 The result table will look like this:
 
@@ -81,7 +81,7 @@ Hide arbitrary block
 
 If you want to hide arbitrary section that is not a table row or a bullet list item, we recommend you to wrap it into a table cell with invisible borders.
 
-In this examle we will use information about company as a source data for the template.
+In this example, we will use information about a company as a source data for the template.
 
 This is JSON representation of company data:
 
@@ -98,7 +98,7 @@ We want to display company name, site and contacts and hide contacts if they are
 .. image:: ../../_static/img/document-generation/hide-arbitrary-block-template.png
     :alt: hide arbitrary block template
 
-As you can see, we added this string into the template for contact information: :code:`{{contacts}:collapse:hide}`. The :code:`collapse` formatter the same way as in `the example for table rows <#hide-table-rows>`_ above.
+As you can see, we added this string to the template for contact information: :code:`{{contacts}:collapse:hide}`. The :code:`collapse` formatter works the same way as in `the example for table rows <#hide-table-rows>`_ above.
 
 The result will look like this:
 
