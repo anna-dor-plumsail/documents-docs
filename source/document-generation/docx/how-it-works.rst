@@ -18,7 +18,7 @@ JSON representation of the object:
         name: "Mark Nigma"
     }
 
-And we want to include the name in the generated document. We need to surround the property with braces. The template on the left side, the result is on the right side:
+And we want to include the name in the generated document. We need to surround the property with braces. The template is on the left side, the result is on the right side:
 
 .. image:: ../../_static/img/document-generation/simple-document-template-result.png
    :alt: Simple document template
