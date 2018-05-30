@@ -464,3 +464,95 @@ Scroll down to see source data for the template in JSON format.
         }
     ]
 }
+
+Table for invoice document
+--------------------------
+This demo demonstrates how to create a template for an invoice document using some of the techniques from the previous sections.
+
+Scroll down to see source data for the template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/invoice-template.docx>`_
+         
+          .. image:: ../../_static/img/document-generation/invoice-template.png
+                :alt: invoice template
+        - `Download result document <../../_static/files/document-generation/demos/invoice-final-document.docx>`_
+         
+          .. image:: ../../_static/img/document-generation/invoice-final-document.png
+                :alt: invoice result                    
+
+.. rubric:: Template data
+
+.. code:: json
+
+    {
+        "invoiceNumber": "432",
+        "company": {
+            "email": "sales@sample.com",
+            "address": "3 Main St.New York NY 97203 USA",
+            "phone": "202-555-0131"
+        },
+        "date": "2018-05-21",
+        "items": [
+            {
+                "product": {
+                    "name": "Templater",
+                    "price": 99,
+                    "description": "Minimal reporting library"
+                },
+                "quantity": 10,
+                "cost": 990
+            },
+            {
+                "product": {
+                    "name": "Hammer",
+                    "price": 12.44,
+                    "description": "Handy tool"
+                },
+                "quantity": 1000,
+                "cost": 12440
+            },
+            {
+                "product": {
+                    "name": "Fridge",
+                    "price": 4219.99,
+                    "description": "Keeps the food cold"
+                },
+                "quantity": 1,
+                "cost": 4219.99
+            },
+            {
+                "product": {
+                    "name": "Monitor",
+                    "price": 99.99,
+                    "description": "Universal display device"
+                },
+                "quantity": 5,
+                "cost": 499.95
+            },
+            {
+                "product": {
+                    "name": "Chair",
+                    "price": 7.23,
+                    "description": "RESTful place"
+                },
+                "quantity": 100,
+                "cost": 723
+            }
+        ],
+        "total": 18872.94
+    }
+
+To refer properties inside objects or collections we just use a dot operator:
+
+- The :code:`{{company.address}}`, :code:`{{company.email}}`, :code:`{{company.phone}}` tags let the engine know that we want to render properties of the :code:`company` object.
+- The :code:`{{invoiceNumber}}`, :code:`{{date}}` tags let the engine know that we want to render the invoice number and its date.
+
+As you can see, the :code:`items` object is a two-dimensional array. 
+It is important because the array is required to create table columns dynamically. A new column will be created for each item of the array.
+The :code:`{{items.product.name}}`, :code:`{{items.product.description}}`, :code:`{{items.product.price}}` tags get the name, description and price properties in each item's :code:`product` object.
+
