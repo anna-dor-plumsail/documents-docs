@@ -45,7 +45,7 @@ Let us assume we have information about customer names. JSON representation of t
         }        
     ]
 
-The template on the left side will result in the document on the left side:
+The template on the left side will result in the document on the right side:
 
 .. image:: ../../_static/img/document-generation/simple-bullet-list-template-result.png
    :alt: Simple table template
