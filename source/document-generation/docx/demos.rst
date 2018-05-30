@@ -416,6 +416,55 @@ Scroll down to see source data for the template in JSON format.
         }
     ]
 
+
+    .. _external-links:
+
+External Links
+--------------
+
+This demo shows how to add external links to your document. You can find the description of this case in the `external links <external-links.html>`_ section of the documentation.
+
+Scroll down to see source data for the template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/external-links-template.docx>`_
+
+          .. image:: ../../_static/img/document-generation/external-links-template-demo.png
+                :alt: Table template
+        - `Download result document <../../_static/files/document-generation/demos/external-links-result.docx>`_
+
+          .. image:: ../../_static/img/document-generation/external-links-result-demo.png
+                :alt: Table template result
+
+.. rubric:: Template data
+
+.. code:: json
+
+    [
+        {
+            "name": "The Open University",
+            "description": "Distance and online courses. Qualifications range from certificates, diplomas and short courses to undergraduate and postgraduate degrees.",
+            "link_name": "Go to the site",
+            "link_url": "http://www.openuniversity.edu/courses"
+        },
+        {
+            "name": "Coursera",
+            "description": "Online courses from top universities like Yale, Michigan, Stanford, and leading companies like Google and IBM.",
+            "link_name": "Go to the site",
+            "link_url": "https://plato.stanford.edu/"
+        },
+        {
+            "name": "edX",
+            "description": "Flexible learning on your schedule. Access more than 1900 online courses from 100+ leading institutions including Harvard, MIT, Microsoft, and more.",
+            "link_name": "Go to the site",
+            "link_url": "https://www.edx.org/"
+        }
+    ]
+
 .. _conditionally-hide-blocks:
 
 Conditionally hide blocks

@@ -11,6 +11,7 @@ Word DOCX templates
             How it works <how-it-works>
             Lists <lists>
             Tables <tables>
+            External links <external-links>
             Loops and nesting <loops-and-nesting>
             Conditionally hide blocks <conditionally-hide-blocks>
             Value formatters <formatters>
