@@ -7,6 +7,7 @@ Documents connector
 
       Fill merge fields in DOCX document <fill-docx-merge-fields>    
       Create HTML from template <create-html-from-template>
+      Create DOCX document from template <create-docx-from-template>
       Create text document from template <create-text-from-template>      
       Create PDF from DOCX template <create-pdf-from-docx-template>
       Create PDF from HTML template <create-pdf-from-html-template>      
