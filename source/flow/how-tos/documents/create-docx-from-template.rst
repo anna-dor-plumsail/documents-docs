@@ -14,7 +14,18 @@ This is how the final document will look in our case:
 
 |invoice-result-document|
 
-You can store your file anywhere. We also have a `SharePoint connector`_ which might help you to manage your files. In this example, we will store our documents in SharePoint. 
+Our template and result document have to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
+
+- SharePoint
+- Salesforce
+- Box
+- OneDrive
+- Google Drive
+- Dropbox
+- SFTP
+- File System
+
+In this example, we will store our documents in SharePoint. 
 Our flow will use JSON object as a source data for the template, but you can get data from other sources. For example query list items from SharePoint.
 
 This is how the flow looks like:
@@ -37,23 +48,92 @@ You can use any other connector to get files from your system.
 Create DOCX Document from Template
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This is the action from `Plumasail Documents connector <https://plumsail.com/actions/documents/>`_. This action is suitable for creating documents from a template. 
-You can find more information about this action by visiting `this page`_.
+You can find more information about this action by visiting `this page <../../actions/document-processing.html#create-docx-document-from-template>`_.
 
 There are two parameters:
 
 1. Document content
 2. Template data
 
-In the first parameter 'Document content' you can put the raw text of a template or a template’s content from some other action. We specified the output of the previous action as a template.
+In the first parameter 'Document content' you can put template’s content from some other action. In our case we specified the output of the previous action as a template.
+You can download a template that we are using in this article `here <../../../_static/files/document-generation/demos/invoice-template.docx>`_.
 
-In the second parameter, we specified data to apply to the template in JSON format.
+|invoice-template|
 
-You can download the template we are using, the result file, as well as get the JSON from `this documentation page`_.
+Plumsail Word DOCX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
+You can visit `this page <../../../document-generation/docx/how-it-works.html>`_ to get familiar with the templating engine.
 
-The :code:`{{company.address}}`, :code:`{{company.email}}`, :code:`{{company.phone}}` tags let the engine know that we want to render properties of the company object.
-The :code:`{{invoiceNumber}}`, :code:`{{date}}` tags let the engine know that we want to render the invoice number and its date.
-As you can see, the items object is a two-dimensional array. It is important because the array is required to create table columns dynamically. A new column will be created for each item of the array. 
-The :code:`{{items.product.name}}`, :code:`{{items.product.price}}` tags get the name, description and price properties in each item's product object.
+In short, templating engine thinks that everything between these :code:`{{ }}` brackets is basically variables where it will write the data you specified in 'Template data'.
+In our case the most basic example would be: :code:`{{invoiceNumber}}` and :code:`{{date}}` tags, they let the engine know that we want to render the invoice number and its date.
+
+But of course, we can implement more complex scenario, in our template we are referring properties inside simple objects and collections, as well as properties in nested constructions. 
+To select properties of our objects inside of the array (in JSON data) we are using a dot operator:
+
+- The :code:`{{company.address}}`, :code:`{{company.email}}`, :code:`{{company.phone}}` tags let the engine know that we want to render properties of the company object.
+- The :code:`{{items.product.name}}`, :code:`{{items.product.price}}` tags get the name, description and price properties in each item's product object.
+
+The templating engine is smart enough to understand what content needs to be duplicated. It will iterate through all objects in the array to render them and add the rows automatically.
+
+As you can see in the JSON below, the :code:`items` object is a two-dimensional array. It is important because the array is required to create table columns dynamically. A new column will be created for each item of the array. 
+
+You can learn more about table rendering by visiting `this page <../../../document-generation/docx/tables.html>`_.
+
+In the second parameter, we specified data that is being applied to the template in JSON format:
+
+.. code:: json
+
+    {
+        "invoiceNumber": "432",
+        "company": {
+            "email": "sales@sample.com",
+            "address": "3 Main St.New York NY 97203 USA",
+            "phone": "202-555-0131"
+        },
+        "date": "2018-05-21",
+        "items": [
+            {
+                "product": {
+                    "name": "Monitor",
+                    "price": 99
+                },
+                "quantity": 10,
+                "cost": 990
+            },
+            {
+                "product": {
+                    "name": "Stepler",
+                    "price": 12.44
+                },
+                "quantity": 1000,
+                "cost": 12440
+            },
+            {
+                "product": {
+                    "name": "Fridge",
+                    "price": 4219.99
+                },
+                "quantity": 1,
+                "cost": 4219.99
+            },
+            {
+                "product": {
+                    "name": "Microwave",
+                    "price": 99.99
+                },
+                "quantity": 5,
+                "cost": 499.95
+            },
+            {
+                "product": {
+                    "name": "Pen",
+                    "price": 7.23
+                },
+                "quantity": 100,
+                "cost": 723
+            }
+        ],
+        "total": 18872.94
+    }
 
 Create file
 ~~~~~~~~~~~
@@ -75,11 +155,11 @@ If you haven’t used it yet, `registering an account`_ would be the first step.
 .. _Create DOCX Document from Template: ../../actions/document-processing.html#create-docx-document-from-template
 .. _Plumsail Documents connector: https://plumsail.com/actions/documents/
 .. _SharePoint connector: https://plumsail.com/actions/sharepoint/
-.. _this page: ../../actions/document-processing.html#create-docx-document-from-template
 .. _this documentation page: ../../../document-generation/docx/demos.html#sales-invoice
 .. _registering an account: ../../../getting-started/sign-up.html
 
 .. |invoice-result-document| image:: ../../../_static/img/flow/how-tos/invoice-result-document.png
+.. |invoice-template| image:: ../../../_static/img/flow/how-tos/invoice-template.png
 .. |invoice-flow| image:: ../../../_static/img/flow/how-tos/create-docx-from-template-flow.png
 .. |invoice-flow-get-file-content| image:: ../../../_static/img/flow/how-tos/create-docx-from-template-get-file-content.png
 .. |invoice-flow-create-file| image:: ../../../_static/img/flow/how-tos/create-docx-from-template-create-file.png
