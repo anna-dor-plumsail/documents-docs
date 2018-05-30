@@ -33,21 +33,21 @@ JSON representation of the object:
                 "jobTitle": "Marketing director",
                 "department": "Marketing Department",
                 "office": "Room 18",
-                "phone": "(206) 854-9798",
+                "phone": "(206) 854-9798"
             },
             {
                 "name": "Xue Li",
                 "jobTitle": "Financial director",
                 "department": "Financial Department",
                 "office": "Room 19",
-                "phone": "(206) 598-1259",
+                "phone": "(206) 598-1259"
             },
             {
                 "name": "Jessica Adams",
                 "jobTitle": "Marketing manager",
                 "department": "Marketing Department",
                 "office": "Room 23",
-                "phone": "(206) 789-1598",
+                "phone": "(206) 789-1598"
             },
             {
                 "name": "Katsuko Kawakami",
