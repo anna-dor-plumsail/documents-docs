@@ -15,7 +15,7 @@ JSON representation of the object:
 .. code:: json
 
     {
-        name: "Mark Nigma"
+        "name": "Mark Nigma"
     }
 
 And we want to include the name in the generated document. We need to surround the property with braces. The template is on the left side, the result is on the right side:

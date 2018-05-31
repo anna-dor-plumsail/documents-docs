@@ -1,7 +1,9 @@
-Value formatters in DOCX templates
-===================================
+Value formatters in DOCX and XLSX templates
+==================================
 
 You can use formatters to add complex logic to values rendered in your templates. For example, you can change value format, hide content, join arrays, etc.
+
+This article covers formatters for both DOCX and XLSX templates.
 
 .. contents:: List of formatters
    :local:
@@ -332,6 +334,8 @@ merge-nulls
 
 :code:`merge-nulls` - use this formatter to merge table cells horizontally if there is null value.
 
+.. note:: This formatter can be used for both DOCX and XLSX templates. But Excel doesn't support merging cells in table ranges. Thus, if you want to use this formatter, apply it to regular Excel cells instead.
+
 Examples
 ~~~~~~~~
 
@@ -341,8 +345,17 @@ Examples
     *   - Template
         - Data
         - Result
-    *   - .. image:: ../../_static/img/document-generation/merge-nulls-template.png
-            :alt: merge nulls formatter template
+    *   - 
+    
+            DOCX template:
+        
+            .. image:: ../../_static/img/document-generation/merge-nulls-template.png
+                :alt: merge nulls formatter template
+
+            XLSX template:
+
+            .. image:: ../../_static/img/document-generation/merge-nulls-template.png
+                :alt: merge nulls formatter template
 
         - .. code-block:: json
 
@@ -373,15 +386,67 @@ Examples
 
         - 
         
-            Cells with null values were merged:
+            Cells with null values were merged.
+
+            DOCX result:
         
             .. image:: ../../_static/img/document-generation/merge-nulls-result.png
                 :alt: merge nulls fortammer result
 
+            XLSX result:
+        
+            .. image:: ../../_static/img/document-generation/merge-nulls-result.png
+                :alt: merge nulls fortammer result
+
+horizontal-resize
+-----------------
+
+:code:`horizontal-resize` - it can be used to repeat collections horizontally instead of vertically in Excel. See the example below.
+
+.. important:: This formatter can be used in XLSX templates only.
+
+Examples
+~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. image:: ../../_static/img/document-generation/horizontal-resize-template.png
+            :alt: horizontal-resize formatter template
+
+        - .. code-block:: json
+
+            {                     
+                "collection": [
+                    {
+                        "name": "Derek Clark"                        
+                    },
+                    {
+                        "name": "Jessica Adams"                        
+                    },
+                    {
+                        "name": "Xue Li"
+                    }
+                ]
+            }         
+
+        - 
+        
+            New columns are added instead of new rows:
+        
+            .. image:: ../../_static/img/document-generation/horizontal-resize-result.png
+                :alt: horizontal-resize formatter result
+
+
 page
 ----
 
-:code:`page` - it can be used for changing the logic of repeating collections. When a tag is placed inside the table and you want to repeat entire page instead of a table cell, use page to override default repeating logic.
+:code:`page` - it can be used for changing the logic of repeating collections. When a tag is placed inside the table and you want to repeat entire page instead of a table row, use :code:`page` to override default repeating logic.
+
+.. important:: This formatter can be used in DOCX templates only.
 
 Examples
 ~~~~~~~~
@@ -420,3 +485,48 @@ Examples
         
             .. image:: ../../_static/img/document-generation/page-formatter-result.png
                 :alt: page formatter result
+
+sheet
+-----
+
+:code:`sheet` - it can be used for changing the logic of repeating collections. When a tag is placed inside the table and you want to create a separate sheet for each collection item instead of a table row, use :code:`sheet` to override default repeating logic.
+
+.. important:: This formatter can be used in XLSX templates only.
+
+Examples
+~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. image:: ../../_static/img/document-generation/sheet-formatter-template.png
+            :alt: sheet formatter template
+
+        - .. code-block:: json
+
+            {                     
+                "collection": [
+                    {
+                        "name": "Derek Clark",
+                        "sold": 10000
+                    },
+                    {
+                        "name": "Jessica Adams",
+                        "sold": 14000
+                    },
+                    {
+                        "name": "Xue Li",
+                        "sold": 9400
+                    }
+                ]
+            }         
+
+        - 
+        
+            New sheets are added instead of new table rows:
+        
+            .. image:: ../../_static/img/document-generation/sheet-formatter-result.png
+                :alt: sheet formatter result

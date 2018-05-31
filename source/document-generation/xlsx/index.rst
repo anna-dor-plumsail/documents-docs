@@ -1,4 +1,4 @@
-Word XLSX templates
+Excel XLSX templates
 ===================
 
 .. container:: pl-left-column
@@ -9,13 +9,17 @@ Word XLSX templates
             :maxdepth: 1
                   
             How it works <how-it-works>            
+            Tables <tables>            
+            Loops and nesting <loops-and-nesting>
+            Conditionally hide blocks <conditionally-hide-blocks>
+            Value formatters <../common-docx-xlsx/formatters>
+            Value properties <../common-docx-xslx/value-properties>
       
 
 .. container:: pl-right-column
 
-      .. toctree::  
-            :caption: Demos
+      .. toctree::              
             :name: toc-demos
-            :maxdepth: 1
-                  
-            demos
+            :maxdepth: 2            
+
+            Demos <demos>

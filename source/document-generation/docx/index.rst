@@ -13,9 +13,9 @@ Word DOCX templates
             Tables <tables>
             Links and endnotes <external-links>
             Loops and nesting <loops-and-nesting>
-            Conditionally hide blocks <conditionally-hide-blocks>
-            Value formatters <formatters>
-            Value properties <value-properties>
+            Conditionally hide blocks <conditionally-hide-blocks>            
+            Value formatters <../common-docx-xlsx/formatters>
+            Value properties <../common-docx-xlsx/value-properties>
 
 .. container:: pl-right-column
 
