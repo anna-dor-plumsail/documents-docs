@@ -216,13 +216,13 @@ Examples
 collapse
 --------
 
-:code:`collapse` - if a value in the tag is null, empty or empty array, it will hide block that contains this tag (table rows or bullet list item). 
+:code:`collapse` - it can be used to conditionally hide blocks of a document. If a value in the tag is null, empty or empty array, it will hide block that contains this tag.
 
-It can be used to conditionally hide blocks of a document. Read the article describing `how to hide content blocks <conditionally-hide-blocks.html>`_ for additional information.
+Read the article below for more information:
 
-.. note:: The formatter searches for table rows or bullet list items to hide. If there are not any table rows, bullet list items or chapters around this tag, you can wrap it into a table cell with invisible borders. Thus, you define borders of your block to hide.
+`How to hide content blocks in DOCX template <../docx/conditionally-hide-blocks.html>`_
 
-The example below shows how to hide table row if employee job title is empty.
+The simple example below shows how to hide table row if employee job title is empty.
 
 Examples
 ~~~~~~~~
@@ -334,7 +334,7 @@ merge-nulls
 
 :code:`merge-nulls` - use this formatter to merge table cells horizontally if there is null value.
 
-.. note:: This formatter can be used for both DOCX and XLSX templates. But Excel doesn't support merging cells in table ranges. Thus, if you want to use this formatter, apply it to regular Excel cells instead.
+.. note:: This formatter can be used in both DOCX and XLSX templates. However, Excel doesn't support merging cells in table ranges. Thus, if you want to use this formatter, apply it to regular Excel cells instead. See the example below.
 
 Examples
 ~~~~~~~~
@@ -352,9 +352,9 @@ Examples
             .. image:: ../../_static/img/document-generation/merge-nulls-template.png
                 :alt: merge nulls formatter template
 
-            XLSX template:
+            XLSX template (`download <../../_static/files/document-generation/demos/merge-nulls-template.xlsx>`_):
 
-            .. image:: ../../_static/img/document-generation/merge-nulls-template.png
+            .. image:: ../../_static/img/document-generation/xlsx-merge-nulls-template.png
                 :alt: merge nulls formatter template
 
         - .. code-block:: json
@@ -393,10 +393,73 @@ Examples
             .. image:: ../../_static/img/document-generation/merge-nulls-result.png
                 :alt: merge nulls fortammer result
 
-            XLSX result:
+            XLSX result (`download <../../_static/files/document-generation/demos/merge-nulls-result.xlsx>`_):
         
-            .. image:: ../../_static/img/document-generation/merge-nulls-result.png
+            .. image:: ../../_static/img/document-generation/xlsx-merge-nulls-result.png
                 :alt: merge nulls fortammer result
+
+span-nulls
+-----------
+
+:code:`span-nulls` - use this formatter to merge table cells vertically if there is null value.
+
+.. important:: This formatter can be used in DOCX templates only.
+
+Examples
+~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - 
+
+            `Download template document <../../_static/files/document-generation/demos/span-nulls-template.docx>`_                
+        
+            .. image:: ../../_static/img/document-generation/span-nulls-template.png
+                :alt: span nulls formatter template
+
+
+        - .. code-block:: json
+
+            {
+                "collection": [
+                    {
+                        "name": "Derek Clark",
+                        "sold": null,
+                        "period": "Jan 2018"
+                    },
+                    {
+                        "name": "Jessica Adams",
+                        "sold": 14000,
+                        "period": "Feb 2018"
+                    },
+                    {
+                        "name": "Xue Li",
+                        "sold": null,
+                        "period": "Mar 2018"
+                    },
+                    {
+                        "name": "Martin Huston",
+                        "sold": 9400,
+                        "period": "May 2018"
+                    },
+                    {
+                        "name": "Anton Frolov",
+                        "sold": null,
+                        "period": "Jun 2018"
+                    }        
+                ]
+            }       
+
+        - 
+        
+            `Download result document <../../_static/files/document-generation/demos/span-nulls-result.docx>`_
+        
+            .. image:: ../../_static/img/document-generation/span-nulls-result.png
+                :alt: span nulls fortammer result            
 
 horizontal-resize
 -----------------

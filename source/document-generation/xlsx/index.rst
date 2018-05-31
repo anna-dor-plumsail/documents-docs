@@ -10,10 +10,9 @@ Excel XLSX templates
                   
             How it works <how-it-works>            
             Tables <tables>            
-            Loops and nesting <loops-and-nesting>
-            Conditionally hide blocks <conditionally-hide-blocks>
+            Loops and nesting <loops-and-nesting>            
             Value formatters <../common-docx-xlsx/formatters>
-            Value properties <../common-docx-xslx/value-properties>
+            Value properties <../common-docx-xlsx/value-properties>
       
 
 .. container:: pl-right-column
