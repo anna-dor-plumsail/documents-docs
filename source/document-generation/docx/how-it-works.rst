@@ -15,7 +15,7 @@ JSON representation of the object:
 .. code:: json
 
     {
-        name: "Mark Nigma"
+        "name": "Mark Nigma"
     }
 
 And we want to include the name in the generated document. We need to surround the property with braces. The template is on the left side, the result is on the right side:
@@ -68,4 +68,4 @@ Now, when you know how to create basic templates, it is time to review more adva
 - `Tables <tables.html>`_
 - `Loops and nesting <loops-and-nesting.html>`_
 - `Conditionally hide blocks <conditionally-hide-blocks.html>`_
-- `Value formatters <formatters.html>`_
+- `Value formatters <../common-docx-xlsx/formatters.html>`_

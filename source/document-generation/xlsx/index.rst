@@ -1,4 +1,4 @@
-Word XLSX templates
+Excel XLSX templates
 ===================
 
 .. container:: pl-left-column
@@ -8,14 +8,6 @@ Word XLSX templates
             :name: toc-templating-syntax
             :maxdepth: 1
                   
-            How it works <how-it-works>            
-      
-
-.. container:: pl-right-column
-
-      .. toctree::  
-            :caption: Demos
-            :name: toc-demos
-            :maxdepth: 1
-                  
-            demos
+            How it works <how-it-works>                                    
+            Value formatters <../common-docx-xlsx/formatters>
+            Value properties <../common-docx-xlsx/value-properties>      

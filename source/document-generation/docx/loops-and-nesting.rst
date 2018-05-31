@@ -1,7 +1,7 @@
 Loops and nesting in DOCX templates
 ===================================
 
-You can learn how to create simple `bullet lists <./lists.html>`_ and `tables <./tables.html>`_ in other sections of this documentation. Here we will learn how to implement more complex scenarios with nesting. 
+You can learn how to create `bullet lists <./lists.html>`_ and `tables <./tables.html>`_ in other sections of this documentation. Here we will learn how to implement more complex scenarios with nesting. 
 
 The templating engine allows you to create following repeating objects:
 

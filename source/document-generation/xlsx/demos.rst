@@ -1,8 +1,5 @@
-Demos
-=====
+Demos for XLSX templates
+========================
 
-Loops and nesting 
+Loops and nesting
 -----------------
-
-
-
