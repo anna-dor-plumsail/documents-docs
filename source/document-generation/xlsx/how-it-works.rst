@@ -50,10 +50,14 @@ The same approach as above works for tables:
 .. image:: ../../_static/img/document-generation/xlsx-simple-table-template-result.png
    :alt: Simple table template
 
+Review `Tables <./tables.html>`_ for more complex scenarios.
+
 Advanced scenarios
 ------------------
 
 Now, when you know how to create basic templates, it is time to review more advanced scenarios:
                               
+- `Tables <tables.html>`_
+- `Loops and nesting <loops-and-nesting.html>`_
 - `Conditionally hide blocks <conditionally-hide-blocks.html>`_
 - `Value formatters <../common-docx-xlsx/formatters.html>`_
