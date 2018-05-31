@@ -8,17 +8,6 @@ Excel XLSX templates
             :name: toc-templating-syntax
             :maxdepth: 1
                   
-            How it works <how-it-works>            
-            Tables <tables>            
-            Loops and nesting <loops-and-nesting>            
+            How it works <how-it-works>                                    
             Value formatters <../common-docx-xlsx/formatters>
-            Value properties <../common-docx-xlsx/value-properties>
-      
-
-.. container:: pl-right-column
-
-      .. toctree::              
-            :name: toc-demos
-            :maxdepth: 2            
-
-            Demos <demos>
+            Value properties <../common-docx-xlsx/value-properties>      
