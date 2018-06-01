@@ -5,6 +5,85 @@ Demos for DOCX templates
    :local:
    :depth: 1
 
+Sales invoice
+-------------
+This demo demonstrates how to create a template for an invoice document.
+
+You can find the description  of this case in the `create DOCX document from template in Microsoft Flow <../../flow/how-tos/documents/create-docx-from-template.html>`_ article.
+
+Scroll down to see source data for the template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/invoice-template.docx>`_
+         
+          .. image:: ../../_static/img/document-generation/invoice-template.png
+                :alt: invoice template
+        - `Download result document <../../_static/files/document-generation/demos/invoice-result-document.docx>`_
+         
+          .. image:: ../../_static/img/document-generation/invoice-result-document.png
+                :alt: invoice result                    
+
+.. rubric:: Template data
+
+.. code:: json
+
+    {
+        "invoiceNumber": "432",
+        "company": {
+            "email": "sales@sample.com",
+            "address": "3 Main St.New York NY 97203 USA",
+            "phone": "202-555-0131"
+        },
+        "date": "2018-05-21",
+        "items": [
+            {
+                "product": {
+                    "name": "Monitor",
+                    "price": 99
+                },
+                "quantity": 10,
+                "cost": 990
+            },
+            {
+                "product": {
+                    "name": "Stepler",
+                    "price": 12.44
+                },
+                "quantity": 1000,
+                "cost": 12440
+            },
+            {
+                "product": {
+                    "name": "Fridge",
+                    "price": 4219.99
+                },
+                "quantity": 1,
+                "cost": 4219.99
+            },
+            {
+                "product": {
+                    "name": "Microwave",
+                    "price": 99.99
+                },
+                "quantity": 5,
+                "cost": 499.95
+            },
+            {
+                "product": {
+                    "name": "Pen",
+                    "price": 7.23
+                },
+                "quantity": 100,
+                "cost": 723
+            }
+        ],
+        "total": 18872.94
+    }
+
 .. _tables:
 
 Regular table
@@ -513,82 +592,3 @@ Scroll down to see source data for the template in JSON format.
         }
     ]
 }
-
-Sales invoice
---------------------------
-This demo demonstrates how to create a template for an invoice document using some of the techniques from the previous sections.
-
-Scroll down to see source data for the template in JSON format.
-
-.. list-table::
-    :header-rows: 1
-
-    *   - Template
-        - Result
-    *   - `Download template document <../../_static/files/document-generation/demos/invoice-template.docx>`_
-         
-          .. image:: ../../_static/img/document-generation/invoice-template.png
-                :alt: invoice template
-        - `Download result document <../../_static/files/document-generation/demos/invoice-result-document.docx>`_
-         
-          .. image:: ../../_static/img/document-generation/invoice-result-document.png
-                :alt: invoice result                    
-
-.. rubric:: Template data
-
-.. code:: json
-
-    {
-        "invoiceNumber": "432",
-        "company": {
-            "email": "sales@sample.com",
-            "address": "3 Main St.New York NY 97203 USA",
-            "phone": "202-555-0131"
-        },
-        "date": "2018-05-21",
-        "items": [
-            {
-                "product": {
-                    "name": "Monitor",
-                    "price": 99
-                },
-                "quantity": 10,
-                "cost": 990
-            },
-            {
-                "product": {
-                    "name": "Stepler",
-                    "price": 12.44
-                },
-                "quantity": 1000,
-                "cost": 12440
-            },
-            {
-                "product": {
-                    "name": "Fridge",
-                    "price": 4219.99
-                },
-                "quantity": 1,
-                "cost": 4219.99
-            },
-            {
-                "product": {
-                    "name": "Microwave",
-                    "price": 99.99
-                },
-                "quantity": 5,
-                "cost": 499.95
-            },
-            {
-                "product": {
-                    "name": "Pen",
-                    "price": 7.23
-                },
-                "quantity": 100,
-                "cost": 723
-            }
-        ],
-        "total": 18872.94
-    }
-
-
