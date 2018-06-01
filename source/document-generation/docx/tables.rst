@@ -92,7 +92,7 @@ You can create dynamic tables from two-dimensional arrays by just adding a singl
 
 Use a two-dimensional array as a source object. If the engine encounters a two-dimensional array it is able to render the whole table automatically. 
 
-download the source document and the result document for this example in `the dynamic table demo <./demos.html#dynamic-table>`_. Description of the example is below.
+Download the source document and the result document for this example in `the dynamic table demo <./demos.html#dynamic-table>`_. Description of the example is below.
 
 Example of the object in JSON format:
 
@@ -252,7 +252,7 @@ Repeat multiple table rows
 
 You already learned how to create different kinds of tables. In the examples above we always repeated a single table row for a single object from a source object. But you can actually occupy multiple table rows by a single object and repeat those rows for each object of your source array.
 
-download the source document and the result document for this example in `the repeat multiple table rows demo <./demos.html#repeat-multiple-table-rows>`_. Description of the example is below.
+Download the source document and the result document for this example in `the repeat multiple table rows demo <./demos.html#repeat-multiple-table-rows>`_. Description of the example is below.
 
 Let us assume we have a list of employees:
 

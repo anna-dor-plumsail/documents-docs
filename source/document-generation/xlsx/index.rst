@@ -8,9 +8,11 @@ Excel XLSX templates
             :name: toc-templating-syntax
             :maxdepth: 1
                   
-            How it works <how-it-works>            
-            Tables <tables>            
-            Loops and nesting <loops-and-nesting>            
+            How it works <how-it-works>
+            Tables <tables>
+            Links <external-links>
+            Loops and nesting <loops-and-nesting>
+            Conditionally hide blocks <conditionally-hide-blocks>
             Value formatters <../common-docx-xlsx/formatters>
             Value properties <../common-docx-xlsx/value-properties>
       
