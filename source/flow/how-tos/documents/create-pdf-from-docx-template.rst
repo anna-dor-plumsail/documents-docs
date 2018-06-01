@@ -51,7 +51,7 @@ There are two parameters:
 
 In the first parameter *'DOCX document content'* we specified file content of a template from the output of the previous action. Use `this link <../../../_static/files/document-generation/demos/invoice-template.docx>`_ to download it.
 
-Please visit `this page <create-docx-from-template.html#create-docx-document-from-template>`_ to find out how our templating engine works and how to use it.
+Read `Create DOCX from template <create-docx-from-template.html#create-docx-document-from-template>`_ article to understand how the templating engine works.
 
 In the second parameter, we specified data to apply to the template in JSON format. This is information about a sample employee. You can actually request this information from an external system with the help of another Microsoft Flow action.
 
