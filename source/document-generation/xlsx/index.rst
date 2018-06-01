@@ -9,7 +9,8 @@ Excel XLSX templates
             :maxdepth: 1
                   
             How it works <how-it-works>            
-            Tables <tables>            
+            Tables <tables>
+            Links <external-links>
             Loops and nesting <loops-and-nesting>
             Conditionally hide blocks <conditionally-hide-blocks>
             Value formatters <../common-docx-xlsx/formatters>
