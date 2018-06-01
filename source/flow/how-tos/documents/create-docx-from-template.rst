@@ -1,14 +1,13 @@
 How to create DOCX document from template in Microsoft Flow, Azure Logic Apps and PowerApps
 ===========================================================================================
-Let’s suppose you want to automate the generation of invoices in your company. 
-By going through this article you will learn how to create a DOCX document from a template using `Create DOCX Document from Template`_ action from `Plumsail Documents connector`_ in  Microsoft Flow and Azure Logic Apps.
+Let’s suppose you want to automate the generation of invoices in your company. By going through this article you will learn how to create a DOCX document from a template using `Create DOCX Document from Template`_ action from `Plumsail Documents connector`_ in  Microsoft Flow and Azure Logic Apps.
 
 .. important:: 
 
   This action is not available in public connector in Microsoft Flow yet. It will become available soon. 
   If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
 
-Let us assume that you have some third party system, where you create date for invoices. Then you get this data in Microsoft Flow, apply it to our invoice template and generate a new document.
+Probably you have some third party system, where you create data for invoices. Then you get this data in Microsoft Flow, apply it to our invoice template and generate a new document.
 
 This is how the final document will look in our case:
 
@@ -17,7 +16,6 @@ This is how the final document will look in our case:
 Our template and result document have to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
 
 - SharePoint
-- Salesforce
 - Box
 - OneDrive
 - Google Drive
@@ -55,13 +53,15 @@ There are two parameters:
 1. Document content
 2. Template data
 
-In the first parameter 'Document content' you can put template’s content from some other action. In our case we specified the output of the previous action as a template.
-You can download a template that we are using in this article `here <../../../_static/files/document-generation/demos/invoice-template.docx>`_.
+In the first parameter 'Document content' you can put template’s content from some other action. In our case, we specified the output of the previous action as a template.
+
+`Download the template file <../../../_static/files/document-generation/demos/invoice-template.docx>`_ that we will use in this article.
 
 |invoice-template|
 
 Plumsail Word DOCX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
-You can visit `this page <../../../document-generation/docx/how-it-works.html>`_ to get familiar with the templating engine.
+
+Read `this article <../../../document-generation/docx/how-it-works.html>`_ to get familiar with the templating engine.
 
 In short, templating engine thinks that everything between these :code:`{{ }}` brackets is basically variables where it will write the data you specified in 'Template data'.
 In our case the most basic example would be: :code:`{{invoiceNumber}}` and :code:`{{date}}` tags, they let the engine know that we want to render the invoice number and its date.
@@ -74,9 +74,7 @@ To select properties of our objects inside of the array (in JSON data) we are us
 
 The templating engine is smart enough to understand what content needs to be duplicated. It will iterate through all objects in the array to render them and add the rows automatically.
 
-As you can see in the JSON below, the :code:`items` object is a two-dimensional array. It is important because the array is required to create table columns dynamically. A new column will be created for each item of the array. 
-
-You can learn more about table rendering by visiting `this page <../../../document-generation/docx/tables.html>`_.
+You can learn more about table rendering in `the tables section <../../../document-generation/docx/tables.html>`_ of the documentation.
 
 In the second parameter, we specified data that is being applied to the template in JSON format:
 

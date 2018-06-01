@@ -16,10 +16,12 @@ And we want to include the name in the generated document. We need to surround t
 .. image:: ../../_static/img/document-generation/xlsx-tag-template.png
    :alt: Simple document template
 
-Simple table
-------------
+.. _repeating-rows-and-tables:
 
-You don't need to declare any loops, the templating engine is smart enough to understand the structure of source object applied to your document. Thus, if you refer property of object inside a collection, it understands that we need to iterate it.
+Repeating rows and tables
+-------------------------
+
+You can easily display collections of items in Excel document. You don't need to declare any loops, the templating engine is smart enough to understand the structure of source object applied to your document. Thus, if you refer property of object inside a collection, it understands that we need to iterate it.
 
 Let us assume we have information about customer names. JSON representation of the object:
 
@@ -40,6 +42,11 @@ Let us assume we have information about customer names. JSON representation of t
 
 The template on the left side will result in the document on the right side:
 
+.. image:: ../../_static/img/document-generation/xlsx-repeating-rows-template-result.png
+   :alt: Simple table template
+
+The same approach as above works for tables:
+
 .. image:: ../../_static/img/document-generation/xlsx-simple-table-template-result.png
    :alt: Simple table template
 
@@ -53,4 +60,4 @@ Now, when you know how to create basic templates, it is time to review more adva
 - `Tables <tables.html>`_
 - `Loops and nesting <loops-and-nesting.html>`_
 - `Conditionally hide blocks <conditionally-hide-blocks.html>`_
-- `Value formatters <formatters.html>`_
+- `Value formatters <../common-docx-xlsx/formatters.html>`_
