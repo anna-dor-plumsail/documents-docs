@@ -167,7 +167,153 @@ Scroll down to see source data for the template in JSON format.
         }
     ]
 
-.. _links-and-endnotes:
+.. _loops-and-nesting:
+
+Loops and nesting
+-----------------
+
+This demo demonstrates how to create complex nested documents based on nested objects and collections. You can find the description of this case in the `loops and nesting <loops-and-nesting.html>`_ documentation.
+
+Scroll down to see source data for the template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/loops-and-nesting-template.xlsx>`_
+
+          .. image:: ../../_static/img/document-generation/xlsx-loops-and-nesting-template.png
+                :alt: Loops and nesting template
+        - `Download result document <../../_static/files/document-generation/demos/loops-and-nesting-result.xlsx>`_
+
+          .. image:: ../../_static/img/document-generation/xlsx-loops-and-nesting-result.png
+                :alt: Loops and nesting result
+
+.. _loops-and-nesting-data:
+
+.. rubric:: Template data
+
+.. code:: json
+
+    {
+        "reports":[
+            {
+                "quarter": "Q1",
+                "sales": [
+                    {
+                        "month": "Jan",
+                        "products": [
+                            {
+                                "name": "Television set", 
+                                "total": 63225.81
+                            },
+                            {
+                                "name": "Fridge",                            
+                                "total": 15500
+                            },
+                            {
+                                "name": "Microwave",                            
+                                "total": 29032.26
+                            }
+                        ]
+                    },
+                    {
+                        "month": "Feb",
+                        "products": [
+                            {
+                                "name": "Television set", 
+                                "total": 47419.35
+                            },
+                            {
+                                "name": "Fridge",                            
+                                "total": 20500
+                            },
+                            {
+                                "name": "Microwave",                            
+                                "total": 23467.74
+                            }
+                        ]
+                    },
+                    {
+                        "month": "Mar",
+                        "products": [
+                            {
+                                "name": "Television set", 
+                                "total": 48548.39
+                            },
+                            {
+                                "name": "Fridge",                            
+                                "total": 12500
+                            },
+                            {
+                                "name": "Microwave",                            
+                                "total": 19354.83
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "quarter": "Q2",
+                "sales": [
+                    {
+                        "month": "Apr",
+                        "products": [
+                            {
+                                "name": "Television set", 
+                                "total": 54193.55
+                            },
+                            {
+                                "name": "Fridge",                            
+                                "total": 14500
+                            },
+                            {
+                                "name": "Microwave",                          
+                                "total": 35080.65
+                            }
+                        ]
+                    },
+                    {
+                        "month": "May",
+                        "products": [
+                            {
+                                "name": "Television set", 
+                                "total": 44032.25
+                            },
+                            {
+                                "name": "Fridge",                            
+                                "total": 17500
+                            },
+                            {
+                                "name": "Microwave",                            
+                                "total": 24435.48
+                            }
+                        ]
+                    },
+                    {
+                        "month": "Jun",
+                        "products": [
+                            {
+                                "name": "Television set", 
+                                "total": 42903.23
+                            },
+                            {
+                                "name": "Fridge",                            
+                                "total": 11500
+                            },
+                            {
+                                "name": "Microwave",                            
+                                "total": 36290.32
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+
+.. _links:
 
 Links
 -----
@@ -184,11 +330,11 @@ Scroll down to see source data for the template in JSON format.
     *   - `Download template document <../../_static/files/document-generation/demos/external-links-template.xlsx>`_
 
           .. image:: ../../_static/img/document-generation/external-links-template-xlsx.png
-                :alt: Table template
+                :alt: Links template
         - `Download result document <../../_static/files/document-generation/demos/external-links-result.xlsx>`_
 
           .. image:: ../../_static/img/document-generation/external-links-result-xlsx.png
-                :alt: Table template result
+                :alt: Links result
 
 .. rubric:: Template data
 
@@ -217,4 +363,3 @@ Scroll down to see source data for the template in JSON format.
             "linkURL": "https://www.futurelearn.com/"
         }
     ]
-
