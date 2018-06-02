@@ -12,7 +12,7 @@ Excel XLSX templates
             Tables <tables>
             Links <external-links>
             Loops and nesting <loops-and-nesting>
-            Conditionally hide blocks <conditionally-hide-blocks>
+            Conditionally hide cells <conditionally-hide-cells>
             Value formatters <../common-docx-xlsx/formatters>
             Value properties <../common-docx-xlsx/value-properties>
       

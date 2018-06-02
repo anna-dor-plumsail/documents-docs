@@ -493,22 +493,22 @@ Scroll down to see source data for the template in JSON format.
 
 .. code:: json    
 
-    {       
-    "companyName": "Plumsail",    
-    "site": "http://plumsail.com",
-    "contacts": null,
-    "employees": [
-        {
-            "name": "Derek Clark",
-            "hireDate": "2012-04-21T18:25:43-05:00"
-        },
-        {
-            "name": "Jessica Adams",
-            "hireDate": null
-        },
-        {
-            "name": "Anil Mittal",
-            "hireDate": "2016-04-11T14:22:13-02:00"         
-        }
-    ]
-}
+    {
+        "companyName": "Plumsail",
+        "site": "http://plumsail.com",
+        "contacts": null,
+        "employees": [
+            {
+                "name": "Derek Clark",
+                "hireDate": "2012-04-21T18:25:43-05:00"
+            },
+            {
+                "name": "Jessica Adams",
+                "hireDate": null
+            },
+            {
+                "name": "Anil Mittal",
+                "hireDate": "2016-04-11T14:22:13-02:00"
+            }
+        ]
+    }

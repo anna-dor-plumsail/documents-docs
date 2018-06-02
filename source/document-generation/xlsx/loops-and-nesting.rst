@@ -13,24 +13,14 @@ The templating engine allows you to create following repeating objects in Excel:
 Named ranges
 ------------
 
-Excel allows you select cells and assign some name to them. You can learn about names in `the Excel documentation <https://support.office.com/en-us/article/define-and-use-names-in-formulas-4d0f13ac-53b7-422e-afd2-abd7ff379c64>`_.
-
-The templating engine uses named ranges extensively. Here is how you can create one:
-
-.. image:: ../../_static/img/document-generation/named-range-creation.png
-   :alt: Named range creation
-
-Then it will appear in the dropdown like this:
-
-.. image:: ../../_static/img/document-generation/named-range-selection.png
-   :alt: Named range selection
-
-You can create nested constructions by putting one named range inside another or by putting a table inside a named range.
+.. include:: named-ranges.rst
 
 Loops and nesting example
 --------------------------
 
 First of all, review the `loops and nesting demo <./demos.html#loops-and-nesting>`_. There is a template for the case that we describe here.
+
+You can create nested constructions by putting one named range inside another or by putting a table inside a named range.
 
 Let us create a document with following nested structure:
 

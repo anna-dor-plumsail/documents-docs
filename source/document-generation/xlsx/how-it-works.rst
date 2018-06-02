@@ -59,5 +59,5 @@ Now, when you know how to create basic templates, it is time to review more adva
                               
 - `Tables <tables.html>`_
 - `Loops and nesting <loops-and-nesting.html>`_
-- `Conditionally hide blocks <conditionally-hide-blocks.html>`_
+- `Conditionally hide cells <conditionally-hide-cells.html>`_
 - `Value formatters <../common-docx-xlsx/formatters.html>`_
