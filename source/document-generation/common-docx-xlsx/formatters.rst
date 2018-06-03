@@ -218,9 +218,10 @@ collapse
 
 :code:`collapse` - it can be used to conditionally hide blocks of a document. If a value in the tag is null, empty or empty array, it will hide block that contains this tag.
 
-Read the article below for more information:
+The formatter can be used in both DOCX and XLSX templates. However, it behaves differently for them. Read the articles below for more information:
 
-`How to hide content blocks in DOCX template <../docx/conditionally-hide-blocks.html>`_
+- `How to hide content blocks in DOCX templates <../docx/conditionally-hide-blocks.html>`_
+- `How to hide cells in XLSX templates <../xlsx/conditionally-hide-cells.html>`_
 
 The simple example below shows how to hide table row if employee job title is empty.
 
