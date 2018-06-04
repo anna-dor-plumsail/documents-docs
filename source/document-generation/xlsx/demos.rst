@@ -313,6 +313,103 @@ Scroll down to see source data for the template in JSON format.
         ]
     }
 
+ .. _multiple-worksheets:
+
+Multiple worksheets
+--------------------------
+
+This demo shows how to create multiple worksheets in one file. You can find the description of this case in the `multiple worksheets <multiple-worksheets.html>`_ section of the documentation.
+
+Scroll down to see source data for the template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/multiple-worksheets-template.xlsx>`_
+
+          .. image:: ../../_static/img/document-generation/multiple-worksheets-template.png
+                :alt: Multiple worksheets template
+        - `Download result document <../../_static/files/document-generation/demos/multiple-worksheets-result.xlsx>`_
+
+          .. image:: ../../_static/img/document-generation/multiple-worksheets-result.png
+                :alt: Multiple worksheets result
+
+.. rubric:: Template data
+
+.. code:: json
+
+    [
+        {
+            "name": "Jessica Adams",
+            "jobInfo": {
+                "title": "Marketing manager",
+                "department": "Marketing Department",
+                "manager": "Derek Clark",
+                "telephone": "(206) 789-1598",
+                "dateOfHire": "2012-04-21T00:00:00"
+            },
+            "personalInfo": {
+                "address": "132, My Street, Kingston, New York 12401",
+                "cell": "(123) 555-5551",
+                "dateOfBirth": "1983-08-22",
+                "SIN": "046 454 286"
+            },
+            "inCaseOfEmergency": {
+                "name": "Sarah Adams",
+                "relationship": "Mom",
+                "telephone": "(123) 987-6541",
+                "cell": "(123) 444-4441"
+            }
+        },
+        {
+            "name": "Katsuko Kawakami",
+            "jobInfo": {
+                "title": "Analyst",
+                "department": "Financial Department",
+                "manager": "Xue Li",
+                "telephone": "(206) 784-1258",
+                "dateOfHire": "2016-03-06T00:00:00"
+            },
+            "personalInfo": {
+                "address": "257, My Street, East Village, New York 12401",
+                "cell": "(123) 555-5552",
+                "dateOfBirth": "1979-09-19",
+                "SIN": "073 454 287"
+            },
+            "inCaseOfEmergency": {
+                "name": "Jane Smith",
+                "relationship": "Friend",
+                "telephone": "(123) 987-6542",
+                "cell": "(123) 333-3332"
+            }
+        },
+        {
+            "name": "Brenda Coel",
+            "jobInfo": {
+                "title": "Marketing director",
+                "department": "Marketing Department",
+                "manager": "Derek Clark",
+                "telephone": "(206) 854-9798",
+                "dateOfHire": "2011-11-05T00:00:00"
+            },
+            "personalInfo": {
+                "address": "87, My Street, Lower East Side, New York 12401",
+                "cell": "(123) 555-5553",
+                "dateOfBirth": "1975-12-01",
+                "SIN": "051 454 288"
+            },
+            "inCaseOfEmergency": {
+                "name": "John Smith",
+                "relationship": "Husband",
+                "telephone": "(123) 987-6543",
+                "cell": "(123) 222-2223"
+            }
+        }
+    ]
+
+
 .. _links:
 
 Links
