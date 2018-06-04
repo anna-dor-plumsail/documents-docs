@@ -96,11 +96,10 @@ Now, let us take a look at the source template for this structure:
 .. image:: ../../_static/img/document-generation/multiple-worksheets-template.png
     :alt: Multiple worksheets template
 
-You can refer a property inside collection in your template. You can even refer a property inside collection nested in another collection. The templating engine understands that it needs to render all items of a collection. It is smart enough to understand what content needs to be duplicated.
+Just type the :code:`{{name}}` tag into the tab name field. The templating engine is smart enough to understand that it needs to render a separate sheet for each employee. The same tag is also used at the top of the sheet. There it just displays regular bold Excel cell with larger font size.
 
-Examples:
+To display employees information we refer objects properties using the dot operator:
 
-- The :code:`{{name}}` tag lets the engine know that we want to render the employees name property. It will result in the worksheet name and a title in the top of the page.
-- The :code:`{{jobInfo.title}}` tag lets the engine know that we want to render the job title property of *jobInfo* object.
+- The :code:`{{jobInfo.title}}` tag lets the engine know that we want to render the  title property of the *jobInfo* object.
 - The :code:`{{jobInfo.dateOfHire}:format(d MMMM yyyy)}` tag lets the engine know that we want to render the Date of Hire property and change its format. For more information about value formatting please have a look at the `value formatters  <../common-docx-xlsx/formatters.html>`_ section of the documentation.
-- The :code:`{{personalInfo.address}}`, :code:`{{inCaseOfEmergency.name}}` lets the engine know that we want to render an employee address and emergency contact name properties of *personalInfo* and *inCaseOfEmergency* objects.
+- The :code:`{{personalInfo.address}}`, :code:`{{inCaseOfEmergency.name}}` tags let the engine know that we want to render the employee address and the emergency contact name properties of the *personalInfo* and *inCaseOfEmergency* objects.
