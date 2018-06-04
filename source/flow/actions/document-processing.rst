@@ -12,6 +12,8 @@ Create DOCX document from template
 
 Created Word DOCX document from template. Review `Word DOCX templates <../../document-generation/docx/index.html>`_ section for more information about template syntax.
 
+We have `an article <../how-tos/documents/create-docx-from-template.html>`_ describing how to work with this action in case of managing documents.
+
 .. rubric:: Output Parameters
 
 .. list-table::
