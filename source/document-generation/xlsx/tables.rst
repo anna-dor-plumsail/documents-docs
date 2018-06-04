@@ -130,6 +130,10 @@ You may want to make the rows banded. Just design a table with the corresponding
 .. image:: ../../_static/img/document-generation/design-xlsx-table.png
     :alt: Design a table
 
+To remove the header row please uncheck the "Header row" checkbox in the table design settings:
+
+.. image:: ../../_static/img/document-generation/remove-header-row.png
+    :alt: Remove the header row
 
 The template on the top will result in the document at the bottom:
 
