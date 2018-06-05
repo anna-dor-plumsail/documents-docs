@@ -12,6 +12,7 @@ Excel XLSX templates
             Tables <tables>
             Links <external-links>
             Loops and nesting <loops-and-nesting>
+            Charts <charts>
             Conditionally hide cells <conditionally-hide-cells>
             Multiple worksheets <multiple-worksheets>
             Value formatters <../common-docx-xlsx/formatters>

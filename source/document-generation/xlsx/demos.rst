@@ -313,6 +313,78 @@ Scroll down to see source data for the template in JSON format.
         ]
     }
 
+.. _pie-and-clustered-columns-charts:
+
+Pie and clustered columns charts
+--------------------------------
+
+This demo shows how to create charts in your document. You can find the description of this cases in the `pie charts <./charts.html#pie-charts>`_ and `clustered columns charts <./charts.html#clustered-columns-charts>`_ sections of the documentation.
+
+Scroll down to see source data for the template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/charts-template.xlsx>`_
+
+          .. image:: ../../_static/img/document-generation/charts-template.png
+                :alt: Table template
+        - `Download result document <../../_static/files/document-generation/demos/charts-result.xlsx>`_
+
+          .. image:: ../../_static/img/document-generation/charts-result.png
+                :alt: Table template result
+
+.. rubric:: Template data
+
+.. code:: json
+
+    [
+        {
+            "title": "Countries by coffee production",
+            "description": "Production in thousand kilogram bags",
+            "prod": [
+                {
+                    "country": "Brazil",
+                    "value2015": 37600,
+                    "value2016": 43200,
+                    "value2017": 51500
+                },
+                {
+                    "country": "Vietnam",
+                    "value2015": 22000,
+                    "value2016": 27500,
+                    "value2017": 28500
+                },
+                {
+                    "country": "Colombia",
+                    "value2015": 11300,
+                    "value2016": 13500,
+                    "value2017": 14000
+                },
+                {
+                    "country": "Indonesia",
+                    "value2015": 14000,
+                    "value2016": 11000,
+                    "value2017": 10800
+                },
+                {
+                    "country": "Honduras",
+                    "value2015": 7500,
+                    "value2016": 5800,
+                    "value2017": 8349
+                },
+                {
+                    "country": "Other countries",
+                    "value2015": 37358
+                    "value2016": 44229,
+                    "value2017": 51000,
+                }
+            ]
+        }
+    ]
+
  .. _multiple-worksheets:
 
 Multiple worksheets

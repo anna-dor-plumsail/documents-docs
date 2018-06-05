@@ -415,7 +415,6 @@ Scroll down to see source data for the template in JSON format.
         }
     ]
 
-
 .. _links-and-endnotes:
 
 Links and endnotes
