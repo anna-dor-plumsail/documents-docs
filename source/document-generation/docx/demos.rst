@@ -5,6 +5,85 @@ Demos for DOCX templates
    :local:
    :depth: 1
 
+Sales invoice
+-------------
+This demo demonstrates how to create a template for an invoice document.
+
+You can find the description  of this case in the `create DOCX document from template in Microsoft Flow <../../flow/how-tos/documents/create-docx-from-template.html>`_ article.
+
+Scroll down to see source data for the template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/invoice-template.docx>`_
+         
+          .. image:: ../../_static/img/document-generation/invoice-template.png
+                :alt: invoice template
+        - `Download result document <../../_static/files/document-generation/demos/invoice-result-document.docx>`_
+         
+          .. image:: ../../_static/img/document-generation/invoice-result-document.png
+                :alt: invoice result                    
+
+.. rubric:: Template data
+
+.. code:: json
+
+    {
+        "invoiceNumber": "432",
+        "company": {
+            "email": "sales@sample.com",
+            "address": "3 Main St.New York NY 97203 USA",
+            "phone": "202-555-0131"
+        },
+        "date": "2018-05-21",
+        "items": [
+            {
+                "product": {
+                    "name": "Monitor",
+                    "price": 99
+                },
+                "quantity": 10,
+                "cost": 990
+            },
+            {
+                "product": {
+                    "name": "Stepler",
+                    "price": 12.44
+                },
+                "quantity": 1000,
+                "cost": 12440
+            },
+            {
+                "product": {
+                    "name": "Fridge",
+                    "price": 4219.99
+                },
+                "quantity": 1,
+                "cost": 4219.99
+            },
+            {
+                "product": {
+                    "name": "Microwave",
+                    "price": 99.99
+                },
+                "quantity": 5,
+                "cost": 499.95
+            },
+            {
+                "product": {
+                    "name": "Pen",
+                    "price": 7.23
+                },
+                "quantity": 100,
+                "cost": 723
+            }
+        ],
+        "total": 18872.94
+    }
+
 .. _tables:
 
 Regular table
@@ -125,86 +204,6 @@ Scroll down to see source data for the template in JSON format.
             ]
         ]
     }
-
-.. _dynamic-table-columns:
-
-Dynamic table columns
----------------------
-
-This demo shows how to dynamically add based on arrays columns to a table. You can find the description of this case in the `tables <tables.html#dynamic-table-columns>`_ documentation.
-
-Scroll down to see source data for the template in JSON format.
-
-.. list-table::
-    :header-rows: 1
-
-    *   - Template
-        - Result
-    *   - `Download template document <../../_static/files/document-generation/demos/table-columns-from-array-template.docx>`_
-
-          .. image:: ../../_static/img/document-generation/table-columns-from-array-template.png
-                :alt: Table columns from array template
-        - `Download result document <../../_static/files/document-generation/demos/table-columns-from-array-result.docx>`_
-
-          .. image:: ../../_static/img/document-generation/table-columns-from-array-result.png
-                :alt: Table columns from array result
-
-.. rubric:: Template data
-
-.. code:: json
-
-    {
-        "company": "Plumsail",
-        "contacts": {
-            "website": "http://plumsail.com",
-            "support": "contacts@plumsail.com",
-            "sales": "sales@plumsail.com"
-        },
-        "employees": [
-            {
-                "name": "Derek Clark",
-                "metadata": [
-                    [
-                        "Marketing director",
-                        "Room 18",
-                        "(206) 854-9798"
-                    ]
-                ]
-            },
-            {
-                "name": "Xue Li",
-                "metadata": [
-                    [
-                        "Financial director",
-                        "Room 19",
-                        "(206) 598-1259"
-                    ]
-                ]
-            },
-            {
-                "name": "Jessica Adams",
-                "metadata": [
-                    [
-                        "Marketing manager",
-                        "Room 23",
-                        "(206) 789-1598"
-                    ]
-                ]
-            },
-            {
-                "name": "Katsuko Kawakami",
-                "metadata": [
-                    [
-                        "Analyst",
-                        "Room 26",
-                        "(206) 784-1258"
-                    ]
-                ]
-            }
-        ]
-    }
-
-.. _dynamic-table-columns:
 
 Repeat multiple table rows
 --------------------------
@@ -416,13 +415,12 @@ Scroll down to see source data for the template in JSON format.
         }
     ]
 
-
 .. _links-and-endnotes:
 
 Links and endnotes
 --------------
 
-This demo shows how to add external links to your document. You can find the description of this case in the `external links <external-links.html>`_ section of the documentation.
+This demo shows how to add external links and endnotes to your document. You can find the description of this case in the `links and endnotes <external-links.html>`_ section of the documentation.
 
 Scroll down to see source data for the template in JSON format.
 
@@ -494,101 +492,22 @@ Scroll down to see source data for the template in JSON format.
 
 .. code:: json    
 
-    {       
-    "companyName": "Plumsail",    
-    "site": "http://plumsail.com",
-    "contacts": null,
-    "employees": [
-        {
-            "name": "Derek Clark",
-            "hireDate": "2012-04-21T18:25:43-05:00"
-        },
-        {
-            "name": "Jessica Adams",
-            "hireDate": null
-        },
-        {
-            "name": "Anil Mittal",
-            "hireDate": "2016-04-11T14:22:13-02:00"         
-        }
-    ]
-}
-
-Sales invoice
---------------------------
-This demo demonstrates how to create a template for an invoice document using some of the techniques from the previous sections.
-
-Scroll down to see source data for the template in JSON format.
-
-.. list-table::
-    :header-rows: 1
-
-    *   - Template
-        - Result
-    *   - `Download template document <../../_static/files/document-generation/demos/invoice-template.docx>`_
-         
-          .. image:: ../../_static/img/document-generation/invoice-template.png
-                :alt: invoice template
-        - `Download result document <../../_static/files/document-generation/demos/invoice-result-document.docx>`_
-         
-          .. image:: ../../_static/img/document-generation/invoice-result-document.png
-                :alt: invoice result                    
-
-.. rubric:: Template data
-
-.. code:: json
-
     {
-        "invoiceNumber": "432",
-        "company": {
-            "email": "sales@sample.com",
-            "address": "3 Main St.New York NY 97203 USA",
-            "phone": "202-555-0131"
-        },
-        "date": "2018-05-21",
-        "items": [
+        "companyName": "Plumsail",
+        "site": "http://plumsail.com",
+        "contacts": null,
+        "employees": [
             {
-                "product": {
-                    "name": "Monitor",
-                    "price": 99
-                },
-                "quantity": 10,
-                "cost": 990
+                "name": "Derek Clark",
+                "hireDate": "2012-04-21T18:25:43-05:00"
             },
             {
-                "product": {
-                    "name": "Stepler",
-                    "price": 12.44
-                },
-                "quantity": 1000,
-                "cost": 12440
+                "name": "Jessica Adams",
+                "hireDate": null
             },
             {
-                "product": {
-                    "name": "Fridge",
-                    "price": 4219.99
-                },
-                "quantity": 1,
-                "cost": 4219.99
-            },
-            {
-                "product": {
-                    "name": "Microwave",
-                    "price": 99.99
-                },
-                "quantity": 5,
-                "cost": 499.95
-            },
-            {
-                "product": {
-                    "name": "Pen",
-                    "price": 7.23
-                },
-                "quantity": 100,
-                "cost": 723
+                "name": "Anil Mittal",
+                "hireDate": "2016-04-11T14:22:13-02:00"
             }
-        ],
-        "total": 18872.94
+        ]
     }
-
-

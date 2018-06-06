@@ -7,7 +7,7 @@ Before starting, ensure that you `added Plumsail Documents connector to Microsof
 
 We will firstly generate DOCX document from a template. Then we will convert it to PDF. In this article, we will generate PDF invoice based on some data. This is how our final PDF file looks:
 
-.. image:: ../../../_static/img/flow/how-tos/docx-sample-doc.png
+.. image:: ../../../_static/img/flow/how-tos/create-pdf-from-docx-result.png
    :alt: PDF sample document
 
 Our template and result document have to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
@@ -23,27 +23,25 @@ Our template and result document have to be stored somewhere. Microsoft Flow has
 
 You can store your source file anywhere. In this example, we will store our documents in SharePoint. Our Flow will get a template from a SharePoint document library, generate a new document based on this template and on some data. The resulting document will be stored back to SharePoint document library.
 
-Firstly, we have to prepare the template file. Please follow `this instruction to prepare your template <../../../advanced/create-docx-template.html>`_.
-
 Now we need to create a Microsoft Flow that will get the template from the SharePoint document library, apply data to this template, convert a document to PDF and save it back to the document library. This is how complete flow looks:
 
-.. image:: ../../../_static/img/flow/how-tos/flow-create-pdf-from-docx-template.png
+.. image:: ../../../_static/img/flow/how-tos/create-pdf-from-docx-tempalte-flow.png
    :alt: Flow create PDF from DOCX template
 
 Here is the step by step description for the flow.
 
-**Flow trigger**
-
+Flow trigger
+~~~~~~~~~~~~
 You can actually pick any trigger. For example, you can start Flow on file creation in a SharePoint document library. We use "Manually trigger a flow" trigger here to simplify the Flow.
 
-**Get file content**
-
+Get file content
+~~~~~~~~~~~~~~~~
 This action gets file content of the specified file from a SharePoint document library. You just specify SharePoint site URL and path to your file. We use this action to read .docx template.
 
 You can use any other connector to get files from your system.
 
-**Create document from DOCX template**
-
+Create document from DOCX template
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This is an action from Plumasail Documents connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
 There are two parameters:
@@ -51,39 +49,81 @@ There are two parameters:
 1. DOCX document content
 2. Template data
 
-In the first parameter *'DOCX document content'* we specified file content of a template from the output of the previous action. Use `this link <../../../_static/files/flow/how-tos/Hiring%20Contract%20Template.docx>`_ to download it.
+In the first parameter *'DOCX document content'* we specified file content of a template from the output of the previous action. Use `this link <../../../_static/files/document-generation/demos/invoice-template.docx>`_ to download it.
+
+Read `Create DOCX from template <create-docx-from-template.html#create-docx-document-from-template>`_ article to understand how the templating engine works.
 
 In the second parameter, we specified data to apply to the template in JSON format. This is information about a sample employee. You can actually request this information from an external system with the help of another Microsoft Flow action.
 
 This is our sample data:
 
-.. code:: JSON
+.. code:: json
 
     {
-        "EmployerFullName": "David Navarro",
-        "EmployeeFullName": "Anil Mittal",
-        "CompanyName": "Contoso LLC",
-        "Position": "Marketing manager",
-        "SalaryAmount": "5000",
-        "ListOfBenefits": "list of any benefits that come with employment, including healthcare, retirement, gym membership, etc",
-        "BonusesPolicyDescription": "annual evaluation",
-        "EffectiveDate": "10/27/2017",
-        "TerminationDate": "10/27/2018",
-        "State": "New York"
+        "invoiceNumber": "432",
+        "company": {
+            "email": "sales@sample.com",
+            "address": "3 Main St.New York NY 97203 USA",
+            "phone": "202-555-0131"
+        },
+        "date": "2018-05-21",
+        "items": [
+            {
+                "product": {
+                    "name": "Monitor",
+                    "price": 99
+                },
+                "quantity": 10,
+                "cost": 990
+            },
+            {
+                "product": {
+                    "name": "Stepler",
+                    "price": 12.44
+                },
+                "quantity": 1000,
+                "cost": 12440
+            },
+            {
+                "product": {
+                    "name": "Fridge",
+                    "price": 4219.99
+                },
+                "quantity": 1,
+                "cost": 4219.99
+            },
+            {
+                "product": {
+                    "name": "Microwave",
+                    "price": 99.99
+                },
+                "quantity": 5,
+                "cost": 499.95
+            },
+            {
+                "product": {
+                    "name": "Pen",
+                    "price": 7.23
+                },
+                "quantity": 100,
+                "cost": 723
+            }
+        ],
+        "total": 18872.94
     }
 
-You can find more information about this action `here <../../actions/document-processing.html#create-document-from-docx-template>`_.
+You can find more information about this action `here <../../actions/document-processing.html#create-docx-document-from-template>`_.
 
-**Convert DOCX to PDF**
-
+Convert DOCX to PDF
+~~~~~~~~~~~~~~~~~~~
 This is also an action from Plumasail Documents connector.
 
 Just put DOCX file content from the output of the previous action and receive PDF file content as an output of this action.
 
-You can find more information about this action `here <../../actions/document-processing.html#convert-docx-document-to-pdf>`_.
+You can find more information about this action `here <../../actions/document-processing.html#convert-docx-to-pdf>`_.
 
-**Create file**
-
+Create file
+~~~~~~~~~~~
 Once the result document is generated, we need to store the Word file somewhere. In our example, we use "Create file" action from SharePoint connector to store the document in SharePoint document library.
 
 .. image:: ../../../_static/img/flow/how-tos/generated-pdf-from-docx-template-sp-library.png

@@ -53,7 +53,7 @@ To refer properties of the objects we just used the names of the properties:
 
 :code:`{{name}}`, :code:`{{description}}`, :code:`{{linkName}}`, :code:`{{linkURL}}`.
 
-To create a hyperlink to a location on the web we select the text that we want to display as a hyperlink, on the **Insert** tab in MS Word, click **Link**, navigate to the **Existing File or Web Page** tab and add a tag into the **Address** field:
+To create a hyperlink to a location on the web we select the text that we want to display as a hyperlink, in the **Insert** tab in MS Word, click **Link**, navigate to the **Existing File or Web Page** tab and add a tag into the **Address** field:
 
 .. image:: ../../_static/img/document-generation/insert-hyperlink-url.png
     :alt: Insert hyperlink: URL
