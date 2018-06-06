@@ -1,7 +1,7 @@
 Charts in XLSX templates
 ========================
 
-With help of **Create XLSX document from template** action, you can create different types of charts based on differently structured data. Let us check a few examples.
+With help of the templating engine, you can create different types of charts based on differently structured data. Let us check a few examples.
 
 .. contents:: Content
     :local:

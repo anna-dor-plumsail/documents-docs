@@ -5,7 +5,7 @@ Tables in XLSX templates
     :local:
     :depth: 1
 
-With help of **Create XLSX document from template** action, you can create rich tables based on templates with a minimal amount of syntax. In the templates, you can refer properties inside simple objects and collections, as well as properties in nested constructions. Let us check a few examples.
+With help of the templating engine, you can create rich tables based on templates with a minimal amount of syntax. In the templates, you can refer properties inside simple objects and collections, as well as properties in nested constructions. Let us check a few examples.
 
 .. _tables:
 

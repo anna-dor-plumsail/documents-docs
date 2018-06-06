@@ -7,7 +7,7 @@ Multiple worksheets
 
 .. _multiple-worksheets:
 
-With help of **Create XLSX document from template** action, you can create multiple worksheets in one file.
+With help of the templating engine, you can create multiple worksheets in one file.
 
 You can download the source document and the result document for the example described below in `multiple worksheets demo <./demos.html#multiple-worksheets>`_.
 

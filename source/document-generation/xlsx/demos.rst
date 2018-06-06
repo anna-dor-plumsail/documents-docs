@@ -626,6 +626,56 @@ Scroll down to see source data for the template in JSON format.
         }
     ]
 
+.. _links:
+
+Links
+-----
+
+This demo shows how to add external links to your document. You can find the description of this case in the `links <external-links.html>`_ section of the documentation.
+
+Scroll down to see source data for the template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/external-links-template.xlsx>`_
+
+          .. image:: ../../_static/img/document-generation/external-links-template-xlsx.png
+                :alt: Links template
+        - `Download result document <../../_static/files/document-generation/demos/external-links-result.xlsx>`_
+
+          .. image:: ../../_static/img/document-generation/external-links-result-xlsx.png
+                :alt: Links result
+
+.. rubric:: Template data
+
+.. code:: json
+
+    [
+        {
+            "name": "Coursera",
+            "type": "Commercial",
+            "headquarters": "USA",
+            "linkName": "Go to the site",
+            "linkURL": "https://plato.stanford.edu/"
+        },
+        {
+            "name": "edX",
+            "type": "Non-profit",
+            "headquarters": "USA",
+            "linkName": "Go to the site",
+            "linkURL": "https://www.edx.org/"
+        },
+        {
+            "name": "FutureLearn",
+            "type": "Commercial",
+            "headquarters": "UK",
+            "linkName": "Go to the site",
+            "linkURL": "https://www.futurelearn.com/"
+        }
+    ]
 
 .. _clear-cells:
 
@@ -644,11 +694,11 @@ Scroll down to see source data for the template in JSON format.
     * - `Download template document <../../_static/files/document-generation/demos/conditionally-clear-cells-template.xlsx>`_
 
         .. image:: ../../_static/img/document-generation/conditionally-clear-cells-template.png
-            :alt: Links template
+            :alt: Clear cells template
       - `Download result document <../../_static/files/document-generation/demos/conditionally-clear-cells-result.xlsx>`_
 
         .. image:: ../../_static/img/document-generation/conditionally-clear-cells-result.png
-            :alt: Links result
+            :alt: Clear cells result
 
 .. rubric:: Template data
 

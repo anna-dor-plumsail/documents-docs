@@ -1,7 +1,7 @@
 Links
 =====
 
-**Create DOCX document from template** action allows you to add dynamic hyperlinks to a location on the web.
+The templating engine allows you to add dynamic hyperlinks to a location on the web.
 
 You can download the source document and the result document for the example described below in `links demo <./demos.html#links>`_.
 
