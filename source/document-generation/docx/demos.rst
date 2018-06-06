@@ -468,7 +468,7 @@ Scroll down to see source data for the template in JSON format.
 Conditionally hide blocks
 -------------------------
 
-This demo shows how hide table rows, bullet lists items and arbitrary sections of document if there is empty value in a tag.
+This demo shows how to hide table rows, bullet lists items and arbitrary sections of document if there is empty value in a tag.
 
 You can find the description  of this case in the `conditionally hide blocks <conditionally-hide-blocks.html>`_ documentation.
 
@@ -511,3 +511,34 @@ Scroll down to see source data for the template in JSON format.
             }
         ]
     }
+
+Watermarks
+----------
+
+This demo shows how to add a watermark to a document.
+
+JSON representation of the object:
+
+.. rubric:: Template data
+
+.. code:: json
+
+    {
+       watermark: "Classified"
+    }
+
+To add a watermark please navigate to the *Design* tab in MS Word, click *Watermark*, then *Custom watermark*, choose *Text watermark* option and simply add :code:`{{watermark}}` tag into the *Text* field.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/watermark-template.docx>`_
+
+          .. image:: ../../_static/img/document-generation/watermark-template.png
+                :alt: hide blocks template
+        - `Download result document <../../_static/files/document-generation/demos/watermark-result.docx>`_
+
+          .. image:: ../../_static/img/document-generation/watermark-result.png
+                :alt: hide blocks result
