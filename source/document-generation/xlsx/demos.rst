@@ -627,53 +627,39 @@ Scroll down to see source data for the template in JSON format.
     ]
 
 
-.. _links:
+.. _clear-cells:
 
-Links
------
+Conditionally clear cells
+------------------------
 
-This demo shows how to add external links to your document. You can find the description of this case in the `links <external-links.html>`_ section of the documentation.
+This demo shows how to to conditionally clear content in Excel cells or named ranges. You can find the description of this case in the `conditionally clear cells <conditionally-clear-cells.html>`_ section of the documentation.
 
 Scroll down to see source data for the template in JSON format.
 
 .. list-table::
     :header-rows: 1
 
-    *   - Template
-        - Result
-    *   - `Download template document <../../_static/files/document-generation/demos/external-links-template.xlsx>`_
+    * - Template
+      - Result
+    * - `Download template document <../../_static/files/document-generation/demos/conditionally-clear-cells-template.xlsx>`_
 
-          .. image:: ../../_static/img/document-generation/external-links-template-xlsx.png
-                :alt: Links template
-        - `Download result document <../../_static/files/document-generation/demos/external-links-result.xlsx>`_
+        .. image:: ../../_static/img/document-generation/conditionally-clear-cells-template.png
+            :alt: Links template
+      - `Download result document <../../_static/files/document-generation/demos/conditionally-clear-cells-result.xlsx>`_
 
-          .. image:: ../../_static/img/document-generation/external-links-result-xlsx.png
-                :alt: Links result
+        .. image:: ../../_static/img/document-generation/conditionally-clear-cells-result.png
+            :alt: Links result
 
 .. rubric:: Template data
 
 .. code:: json
 
-    [
-        {
-            "name": "Coursera",
-            "type": "Commercial",
-            "headquarters": "USA",
-            "linkName": "Go to the site",
-            "linkURL": "https://plato.stanford.edu/"
-        },
-        {
-            "name": "edX",
-            "type": "Non-profit",
-            "headquarters": "USA",
-            "linkName": "Go to the site",
-            "linkURL": "https://www.edx.org/"
-        },
-        {
-            "name": "FutureLearn",
-            "type": "Commercial",
-            "headquarters": "UK",
-            "linkName": "Go to the site",
-            "linkURL": "https://www.futurelearn.com/"
-        }
-    ]
+  {
+    "companyName": "Plumsail",
+    "site": "http://plumsail.com",
+    "contacts": null,  
+    "hideConfNotice": true
+  }
+
+
+    

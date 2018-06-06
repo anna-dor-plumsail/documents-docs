@@ -13,7 +13,7 @@ Excel XLSX templates
             Links <external-links>
             Loops and nesting <loops-and-nesting>
             Charts <charts>
-            Conditionally hide cells <conditionally-hide-cells>
+            Conditionally hide cells <conditionally-clear-cells>
             Multiple worksheets <multiple-worksheets>
             Value formatters <../common-docx-xlsx/formatters>
             Value properties <../common-docx-xlsx/value-properties>
