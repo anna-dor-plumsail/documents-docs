@@ -96,7 +96,7 @@ Then, we open **Data Label** settings, check the *Percentage* checkbox and unche
 .. image:: ../../_static/img/document-generation/pie-chart-data-label-settings.png
     :alt: Data Label settings
 
-Let us have a look the result of rendering another time. The templating engine automatically created rows with production data and built a chart based on it:
+Let us have a look at the result of rendering another time. The templating engine automatically created rows with production data and built a chart based on it:
 
 .. image:: ../../_static/img/document-generation/pie-chart-result.png
     :alt: Pie chart result
@@ -106,7 +106,7 @@ Let us have a look the result of rendering another time. The templating engine a
 Clustered columns charts
 ------------------------
 
-In this section, using the data from the same JSON object as we used in the previous `pie chart example <./charts.html#pie-charts>`_ we will create a table with countries coffee production by years and build a clustered columns chart.
+In this section, using the data from the same JSON object as we used in the previous `pie charts example <./charts.html#pie-charts>`_ we will create a table with countries coffee production by years and build a clustered columns chart.
 
 This is how our result document will look like:
 
@@ -188,7 +188,6 @@ Then, we edit the horizontal axis labels to display there the text from the firs
 .. image:: ../../_static/img/document-generation/clustered-columns-label.png
     :alt: Adding clustered columns labels
 
-
 In general, the template is ready. We just want to change the colors and add a legend under the chart:
 
 .. image:: ../../_static/img/document-generation/clustered-columns-legend.png
@@ -204,42 +203,164 @@ Let us have a look the result of rendering another time. The templating engine a
 Charts on multiple worksheets
 -----------------------------
 
-You already learned how to create different kinds of tables. In the examples above we always repeated a single table row for a single object from a source object. But you can actually occupy multiple table rows by a single object and repeat those rows for each object of your source array.
+In the examples above, we created a single chart from a single array. In this section, we will see how to create charts on multiple worksheets in one file.
 
-Download the source document and the result document for this example in `the repeat multiple table rows demo <./demos.html#repeat-multiple-table-rows>`_. Description of the example is below.
+You can download the source document and the result document for the example described below in `charts on multiple worksheets demo <./demos.html#charts-on-multiple-worksheets>`_.
 
-Let us assume we have a list of employees:
+Let us take an object containing information about a few countries production of coffee, cocoa and another product. Nested objects contain information about yearly production of a certain commodity by country and some general data. We want to display information about each product in a line chart on a separate worksheet.
+
+The result document will look like this:
+
+.. image:: ../../_static/img/document-generation/chart-worksheets-result-small.png
+    :alt: Chart worksheet result
+
+JSON representation of the object:
 
 .. code:: json
 
     [
         {
-            "name": "David Navarro",
-            "phone": "(206) 854-9798",
-            "title": "Head of Marketing"
+            "title": "Coffee production by country",
+            "description": "Production in thousand kilogram bags",
+            "prod": [
+                {
+                    "Brazil": {
+                        "value1": 25600,
+                        "value2": 32200,
+                        "value3": 34500
+                    },
+                    "Vietnam": {
+                        "value1": 28500,
+                        "value2": 18500,
+                        "value3": 17500
+                    },
+                    "Colombia": {
+                        "value1": 11300,
+                        "value2": 13500,
+                        "value3": 14000
+                    },
+                    "Indonesia": {
+                        "value1": 14000,
+                        "value2": 11000,
+                        "value3": 19800
+                    },
+                    "IvoryCoast": {
+                        "value1": 4100,
+                        "value2": 1600,
+                        "value3": 8000
+                    },
+                    "OtherCountries": {
+                        "value1": 37358,
+                        "value2": 44229,
+                        "value3": 51000
+                    }
+                }
+            ]
         },
         {
-            "name": "Jessica Adams",
-            "phone": "(206) 789-1598",
-            "title": "Financial director"
+            "title": "Cocoa production by country",
+            "description": "Production in 1000 tonnes",
+            "prod": [
+                {
+                    "Brazil": {
+                        "value1": 256,
+                        "value2": 140,
+                        "value3": 180
+                    },
+                    "Vietnam": {
+                        "value1": 34,
+                        "value2": 12,
+                        "value3": 6
+                    },
+                    "Colombia": {
+                        "value1": 0,
+                        "value2": 0,
+                        "value3": 0
+                    },
+                    "Indonesia": {
+                        "value1": 777,
+                        "value2": 600,
+                        "value3": 500
+                    },
+                    "IvoryCoast": {
+                        "value1": 1345,
+                        "value2": 1200,
+                        "value3": 1448
+                    },
+                    "OtherCountries": {
+                        "value1": 1834,
+                        "value2": 1789,
+                        "value3": 1085
+                    }
+                }
+            ]
         },
         {
-            "name": "Anil Mittal",
-            "phone": "(206) 784-1258",
-            "title": "Sales manager"
+            "title": "Another commodity production",
+            "description": "Production in some units",
+            "prod": [
+                {
+                    "Brazil": {
+                        "value1": 106,
+                        "value2": 158,
+                        "value3": 80
+                    },
+                    "Vietnam": {
+                        "value1": 34,
+                        "value2": 56,
+                        "value3": 10
+                    },
+                    "Colombia": {
+                        "value1": 33,
+                        "value2": 48,
+                        "value3": 65
+                    },
+                    "Indonesia": {
+                        "value1": 98,
+                        "value2": 105,
+                        "value3": 80
+                    },
+                    "IvoryCoast": {
+                        "value1": 23,
+                        "value2": 30,
+                        "value3": 41
+                    },
+                    "OtherCountries": {
+                        "value1": 151,
+                        "value2": 184,
+                        "value3": 216
+                    }
+                }
+            ]
         }
     ]
 
-We want to put a name and a phone in the first table row and a job title in the second row. Then we want to repeat both lines for each employee.
+Now, let us take a look at the source template:
 
-This is how our source template will look in this case:
+.. image:: ../../_static/img/document-generation/chart-worksheets-template-small.png
+    :alt: Chart on multiple worksheets template
 
-.. image:: ../../_static/img/document-generation/repeat-multiple-table-rows-template-xlsx.png
-    :alt: Repeat multiple table rows template
+Just type the :code:`{{title}}` tag into the tab name field. The templating engine is smart enough to understand that it needs to render a separate sheet for each table of data and a chart based on it. The same :code:`{{title}}` tag is also used at the top of the sheet. There it just displays regular bold Excel cell with larger font size.
 
-And this is the result document:
+We created a table containing information about yearly production of a product by country.
 
-.. image:: ../../_static/img/document-generation/repeat-multiple-table-rows-result-xlsx.png
-    :alt: Repeat multiple table rows result
+In our template, we can refer properties inside simple objects and collections, as well as properties in nested constructions. To select properties of our objects inside of the array we just used a dot operator. The :code:`{{prod.Brazil.value1}}`, :code:`{{prod.Colombia.value2}}`, :code:`{{prod.Indonesia.value3}}` tags let the engine know that we want to render countries properties.
 
-The templating engine understands that we used tags for properties of the same object in both table rows. Thus, it knows that it needs to repeat both rows.
+The templater engine will automatically create a separate table for each product and display each table on a separate sheet.
+
+Now, we select our template table, navigate to the **Insert** tab in the top ribbon and choose a line chart:
+
+.. image:: ../../_static/img/document-generation/line-chart.png
+    :alt: Adding a line chart
+
+We need to edit the data that will be visible in our chart. To do that we select the chart, click the *Filer* icon and click *Select data* link:
+
+.. image:: ../../_static/img/document-generation/chart-worksheets-settings.png
+    :alt: Chart settings
+
+Basically, the template is ready. We just change the colors and add a legend to the right side the chart.
+
+Let us have a look at the result document another time. The templating engine automatically created tables and charts on separate worksheets:
+
+.. image:: ../../_static/img/document-generation/chart-worksheets-result-small.png
+    :alt: Chart worksheet result

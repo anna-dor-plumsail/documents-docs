@@ -318,7 +318,7 @@ Scroll down to see source data for the template in JSON format.
 Pie and clustered columns charts
 --------------------------------
 
-This demo shows how to create charts in your document. You can find the description of this cases in the `pie charts <./charts.html#pie-charts>`_ and `clustered columns charts <./charts.html#clustered-columns-charts>`_ sections of the documentation.
+This demo shows how to create charts in your document. You can find a description of these cases in the `pie charts <./charts.html#pie-charts>`_ and `clustered columns charts <./charts.html#clustered-columns-charts>`_ sections of the documentation.
 
 Scroll down to see source data for the template in JSON format.
 
@@ -380,6 +380,151 @@ Scroll down to see source data for the template in JSON format.
                     "value2015": 37358
                     "value2016": 44229,
                     "value2017": 51000,
+                }
+            ]
+        }
+    ]
+
+
+.. _charts-on-multiple-worksheets:
+
+Charts on multiple worksheets
+--------------------------------
+
+This demo shows how to create charts on multiple worksheets in one file. You can find a description of this case in the `charts on multiple worksheets <./charts.html#charts-on-multiple-worksheets>`_ section of the documentation.
+
+Scroll down to see source data for the template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/charts-multiple-sheets-template.xlsx>`_
+
+          .. image:: ../../_static/img/document-generation/chart-worksheets-template-small.png
+                :alt: Charts on multiple worksheets template
+        - `Download result document <../../_static/files/document-generation/demos/charts-multiple-sheets-result.xlsx>`_
+
+          .. image:: ../../_static/img/document-generation/chart-worksheets-result-small.png
+                :alt: Charts on multiple worksheets result
+
+.. rubric:: Template data
+
+.. code:: json
+
+    [
+        {
+            "title": "Coffee production by country",
+            "description": "Production in thousand kilogram bags",
+            "prod": [
+                {
+                    "Brazil": {
+                        "value1": 25600,
+                        "value2": 32200,
+                        "value3": 34500
+                    },
+                    "Vietnam": {
+                        "value1": 28500,
+                        "value2": 18500,
+                        "value3": 17500
+                    },
+                    "Colombia": {
+                        "value1": 11300,
+                        "value2": 13500,
+                        "value3": 14000
+                    },
+                    "Indonesia": {
+                        "value1": 14000,
+                        "value2": 11000,
+                        "value3": 19800
+                    },
+                    "IvoryCoast": {
+                        "value1": 4100,
+                        "value2": 1600,
+                        "value3": 8000
+                    },
+                    "OtherCountries": {
+                        "value1": 37358,
+                        "value2": 44229,
+                        "value3": 51000
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Cocoa production by country",
+            "description": "Production in 1000 tonnes",
+            "prod": [
+                {
+                    "Brazil": {
+                        "value1": 256,
+                        "value2": 140,
+                        "value3": 180
+                    },
+                    "Vietnam": {
+                        "value1": 34,
+                        "value2": 12,
+                        "value3": 6
+                    },
+                    "Colombia": {
+                        "value1": 0,
+                        "value2": 0,
+                        "value3": 0
+                    },
+                    "Indonesia": {
+                        "value1": 777,
+                        "value2": 600,
+                        "value3": 500
+                    },
+                    "IvoryCoast": {
+                        "value1": 1345,
+                        "value2": 1200,
+                        "value3": 1448
+                    },
+                    "OtherCountries": {
+                        "value1": 1834,
+                        "value2": 1789,
+                        "value3": 1085
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Another commodity production",
+            "description": "Production in some units",
+            "prod": [
+                {
+                    "Brazil": {
+                        "value1": 106,
+                        "value2": 158,
+                        "value3": 80
+                    },
+                    "Vietnam": {
+                        "value1": 34,
+                        "value2": 56,
+                        "value3": 10
+                    },
+                    "Colombia": {
+                        "value1": 33,
+                        "value2": 48,
+                        "value3": 65
+                    },
+                    "Indonesia": {
+                        "value1": 98,
+                        "value2": 105,
+                        "value3": 80
+                    },
+                    "IvoryCoast": {
+                        "value1": 23,
+                        "value2": 30,
+                        "value3": 41
+                    },
+                    "OtherCountries": {
+                        "value1": 151,
+                        "value2": 184,
+                        "value3": 216
+                    }
                 }
             ]
         }
