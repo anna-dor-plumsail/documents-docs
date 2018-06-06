@@ -30,16 +30,16 @@ Let us create a document with following nested structure:
         - Regular rows
         - Tables
 
-Let us assume we have data for quarterly sales report. We will display report for each quarter on a separate sheet. The result document will look like this:
+Let us assume we have data for a quarterly sales report. We will display the report for each quarter on a separate sheet. The resulting document will look like this:
 
 .. image:: ../../_static/img/document-generation/xlsx-loops-and-nesting-result.png
     :alt: Loops and nesting result
 
-As you can see, there are multiple sheets. Each sheet has header with period name. Then sales table with month name displayed for each month.
+As you can see, there are multiple sheets. Each sheet has a header with the name of a period. Then sales table with month name displayed for each month.
 
 Before we started researching our template, review `the source data in JSON format <./demos.html#loops-and-nesting-data>`_. 
 
-Here is general structure of the data from demo. Most of content is omited by ":code:`...`" symbols:
+Here is general structure of the data from the demo. Most of the content is omitted by ":code:`...`" symbols:
 
 .. code:: json
 

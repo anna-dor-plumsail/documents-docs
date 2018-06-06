@@ -1,7 +1,7 @@
 Charts in XLSX templates
 ========================
 
-With help of **Create XLSX document from template** action, you can create different type of charts based on differently structured data. Let us check a few examples.
+With help of **Create XLSX document from template** action, you can create different types of charts based on differently structured data. Let us check a few examples.
 
 .. contents:: Content
     :local:
@@ -14,14 +14,14 @@ Pie charts
 
 In this section, we will see how to render an array of objects into a table and build a chart based on this table.
 
-Let us take an object containing a list of coffee production countries and annual production of each country. We want to display a simple table with countries coffee production in 2017 and build a pie chart with  percentage value for each country.
+Let us take an object containing a list of coffee producing countries and annual production of each country. We want to display a simple table with countries coffee production in 2017 and build a pie chart with  percentage value for each country.
 
 This is how our result document will look like:
 
 .. image:: ../../_static/img/document-generation/pie-chart-result-small.png
     :alt: Pie chart result
 
-You can download the source document and the result document for this example in `pie and clustered columns charts demo <./demos.html#tables>`_. Description of the example is below.
+You can download the source document and the result document for this example in the `pie and clustered columns charts demo <./demos.html#tables>`_. Description of the example is below.
 
 JSON representation of the object:
 
@@ -81,7 +81,7 @@ As we want to display production from 2017 only, we create a simple table and us
 
 We also add :code:`{{title}}` and :code:`{{description}}` tags to the top of the page to let the engine know that we want to render corresponding properties.
 
-To crate a chart we select our table, navigate to the **Insert** tab in the top ribbon and choose a 3-D pie chart:
+To create a chart we select our table, navigate to the **Insert** tab in the top ribbon and choose a 3-D pie chart:
 
 .. image:: ../../_static/img/document-generation/3-D-pie-chart.png
     :alt: Adding 3-D pie chart template
@@ -113,7 +113,7 @@ This is how our result document will look like:
 .. image:: ../../_static/img/document-generation/clustered-columns-chart-result-small.png
     :alt: Clustered columns result
 
-You can download the source document and the result document for this example in `pie and clustered columns charts demo <./demos.html#tables>`_. Description of the example is below.
+You can download the source document and the result document for this example in the `pie and clustered columns charts demo <./demos.html#tables>`_. Description of the example is below.
 
 JSON representation of the object:
 
@@ -173,7 +173,7 @@ To display production by years, we create a table and add :code:`{{prod.country}
 
 We also add :code:`{{title}}` and :code:`{{description}}` tags to the top of the page to let the engine know that we want to render corresponding properties.
 
-To crate a chart we select our table, navigate to the **Insert** tab in the top ribbon and choose a clustered columns chart:
+To create a chart we select our table, navigate to the **Insert** tab in the top ribbon and choose a clustered columns chart:
 
 .. image:: ../../_static/img/document-generation/clustered-columns-chart.png
     :alt: Adding clustered columns chart template
@@ -207,9 +207,9 @@ In the examples above, we created a single chart from a single array. In this se
 
 You can download the source document and the result document for the example described below in `charts on multiple worksheets demo <./demos.html#charts-on-multiple-worksheets>`_.
 
-Let us take an object containing information about a few countries production of coffee, cocoa and another product. Nested objects contain information about yearly production of a certain commodity by country and some general data. We want to display information about each product in a line chart on a separate worksheet.
+Let us take an object containing information about a few countries production of coffee, cocoa, and another product. Nested objects contain information about the yearly production of a certain commodity by country and some general data. We want to display information about each product in a line chart on a separate worksheet.
 
-The result document will look like this:
+The resulting document will look like this:
 
 .. image:: ../../_static/img/document-generation/chart-worksheets-result-small.png
     :alt: Chart worksheet result
@@ -338,11 +338,11 @@ JSON representation of the object:
 Now, let us take a look at the source template:
 
 .. image:: ../../_static/img/document-generation/chart-worksheets-template-small.png
-    :alt: Chart on multiple worksheets template
+    :alt: The chart on multiple worksheets template
 
 Just type the :code:`{{title}}` tag into the tab name field. The templating engine is smart enough to understand that it needs to render a separate sheet for each table of data and a chart based on it. The same :code:`{{title}}` tag is also used at the top of the sheet. There it just displays regular bold Excel cell with larger font size.
 
-We created a table containing information about yearly production of a product by country.
+We created a table containing information about the yearly production of a product by country.
 
 In our template, we can refer properties inside simple objects and collections, as well as properties in nested constructions. To select properties of our objects inside of the array we just used a dot operator. The :code:`{{prod.Brazil.value1}}`, :code:`{{prod.Colombia.value2}}`, :code:`{{prod.Indonesia.value3}}` tags let the engine know that we want to render countries properties.
 

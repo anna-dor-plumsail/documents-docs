@@ -216,50 +216,15 @@ Examples
 collapse
 --------
 
-:code:`collapse` - it can be used to conditionally hide blocks of a document. If a value in the tag is null, empty or empty array, it will hide block that contains this tag.
-
-The formatter can be used in both DOCX and XLSX templates. However, it behaves differently for them. Read the articles below for more information:
-
-- `How to hide content blocks in DOCX templates <../docx/conditionally-hide-blocks.html>`_
-- `How to hide cells in XLSX templates <../xlsx/conditionally-hide-cells.html>`_
-
-The simple example below shows how to hide table row if employee job title is empty.
+:code:`collapse` - it can be used to conditionally hide blocks of a Word document or to clear cells in an Excel document. If a value in the tag is :code:`null`, :code:`true`, empty or empty array, it will be applied.
 
 Examples
 ~~~~~~~~
 
-.. list-table::
-    :header-rows: 1
+The formatter can be used in both DOCX and XLSX templates. However, it behaves differently for them. Read the articles below for more information:
 
-    *   - Template
-        - Data
-        - Result
-    *   - .. image:: ../../_static/img/document-generation/collapse-formatter-template.png
-            :alt: collapse formatter template
-
-        - .. code-block:: json
-
-            {                     
-                "employees": [
-                    {
-                        "name": "Derek Clark",
-                        "title": "Manager"            
-                    },
-                    {
-                        "name": "Jessica Adams",
-                        "title": ""            
-                    },
-                    {
-                        "name": "Anil Mittal",
-                        "title": "Developer"            
-                    }
-                ]
-            }         
-
-        -                     
-        
-            .. image:: ../../_static/img/document-generation/collapse-formatter-result.png
-                :alt: collapse formatter result
+- `How to hide content blocks in DOCX templates <../docx/conditionally-hide-blocks.html>`_
+- `How to clear cells in XLSX templates <../xlsx/conditionally-clear-cells.html>`_
 
 bool
 ----

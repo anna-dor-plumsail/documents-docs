@@ -11,7 +11,7 @@ With help of **Create XLSX document from template** action, you can create multi
 
 You can download the source document and the result document for the example described below in `multiple worksheets demo <./demos.html#multiple-worksheets>`_.
 
-Let us take an object containing information about employees working in a company. Each employee has a list of properties. We want to display information about each employee in a separate worksheet. The result document will look like this:
+Let us take an object containing information about employees working in a company. Each employee has a list of properties. We want to display information about each employee in a separate worksheet. The resulting document will look like this:
 
 .. image:: ../../_static/img/document-generation/multiple-worksheets-result.png
     :alt: Multiple worksheets result

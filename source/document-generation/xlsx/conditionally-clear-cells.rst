@@ -1,11 +1,11 @@
 Conditionally clear cells in XLSX templates
 ===========================================
 
-You can use `collapse formatter <../common-docx-xlsx/formatters.html#collapse>`_ to clear cells of an Excel document if some value or collection of values is null, empty or :code:`true`.
+You can use `collapse formatter <../common-docx-xlsx/formatters.html#collapse>`_ to clear cells of an Excel document. 
 
 First of all, review the `conditionally clear cells demo <./demos.html#clear-cells>`_. There is a template for the case that we describe here.
 
-The formatter checks if a value for current tag is empty or :code:`true`, then clears content of cells.
+The formatter checks if a value for current tag is empty or :code:`true`, then clears the content of cells.
 
 .. contents:: Two cases when you can use it:
     :local:
@@ -26,7 +26,7 @@ Les us assume that we have data about some company, but contacts data may be mis
     "contacts": null    
   }
 
-We want to clear content of all cells with information about contacts if the :code:`contacts` property is null. To do it we need to put tag with `collapse formatter <../common-docx-xlsx/formatters.html#collapse>`_ to each cell that we want to clear. In our case we will apply formatter to :code:`contacts` property like this:
+We want to clear content of all cells with information about contacts if the :code:`contacts` property is null. To do it we need to put a tag with `collapse formatter <../common-docx-xlsx/formatters.html#collapse>`_ to each cell that we want to clear. In our case we will apply formatter to :code:`contacts` property like this:
 
 .. image:: ../../_static/img/document-generation/xlsx-clear-single-cell-template.png
   :alt: Clear single cell template
