@@ -1,9 +1,14 @@
 How Word DOCX templates work
 =======================
 
-Plumsail Word DOCX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done. Let us start with basics and move to more advanced scenarios.
+Word DOCX templates in Plumsail Actions use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done. Let us start with basics and move to more advanced scenarios.
 
-Templating syntax described here can be used in `Create DOCX document from template <../../flow/actions/document-processing.html#create-docx-document-from-template>`_ action for Microsoft Flow or in `REST API <../../getting-started/use-as-rest-api.html>`_.
+First of all, pick how you will apply templates:
+
+- Use Microsoft Flow action `Create DOCX document from template <../../flow/actions/document-processing.html#create-docx-document-from-template>`_
+- User rich `REST API <../../getting-started/use-as-rest-api.html>`_.
+
+If you decide to use Microsoft Flow, learn `how to create your first flow <../../getting-started/use-from-flow.html>`_.
 
 Basic syntax
 ------------
