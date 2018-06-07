@@ -75,6 +75,9 @@ Scroll down to see source data for the template in JSON format.
 Dynamic table
 -------------
 
+Dynamic table from an array
+~~~~~~~~~~~~~~~~~~~~~~
+
 This demo shows how to create dynamic tables from arrays by just adding a single tag into the template document. You can find the description of this case in the `tables <tables.html#dynamic-table>`_ documentation.
 
 Scroll down to see source data for the template in JSON format.
@@ -123,6 +126,84 @@ Scroll down to see source data for the template in JSON format.
     }
 
 .. _dynamic-table-columns:
+
+Dynamic table from a number of arrays
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This demo shows how to create dynamic tables from several objects with nested arrays. You can find the description of this case in the `tables <tables.html#dynamic-table-columns>`_ documentation.
+
+Scroll down to see source data for the template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/dynamic-table-columns-template.xlsx>`_
+
+          .. image:: ../../_static/img/document-generation/dynamic-table-from-a-number-of-arrays-template-full.png
+                :alt: Dynamic table from a number of arrays template
+        - `Download result document <../../_static/files/document-generation/demos/dynamic-table-columns-result.xlsx>`_
+
+          .. image:: ../../_static/img/document-generation/dynamic-table-from-a-number-of-arrays-result.png
+                :alt: Dynamic table from a number of arrays result
+
+.. rubric:: Template data
+
+.. code:: json
+
+    {
+        "company": "Plumsail",
+        "contacts": {
+            "website": "http://plumsail.com",
+            "support": "contacts@plumsail.com",
+            "sales": "sales@plumsail.com"
+        },
+        "employees": [
+            {
+                "name": "Derek Clark",
+                "metadata": [
+                    [
+                        "Marketing director",
+                        "Room 18",
+                        "(206) 854-9798"
+                    ]
+                ]
+            },
+            {
+                "name": "Xue Li",
+                "metadata": [
+                    [
+                        "Financial director",
+                        "Room 19",
+                        "(206) 598-1259"
+                    ]
+                ]
+            },
+            {
+                "name": "Jessica Adams",
+                "metadata": [
+                    [
+                        "Marketing manager",
+                        "Room 23",
+                        "(206) 789-1598"
+                    ]
+                ]
+            },
+            {
+                "name": "Katsuko Kawakami",
+                "metadata": [
+                    [
+                        "Analyst",
+                        "Room 26",
+                        "(206) 784-1258"
+                    ]
+                ]
+            }
+        ]
+    }
+
+.. _repeat-multiple-table-rows:
 
 Repeat multiple table rows
 --------------------------
