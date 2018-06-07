@@ -14,6 +14,7 @@ Excel XLSX templates
             Loops and nesting <loops-and-nesting>
             Charts <charts>
             Conditionally hide cells <conditionally-clear-cells>
+            Merge cells vertically <merge-cells-vertically>
             Multiple worksheets <multiple-worksheets>
             Value formatters <../common-docx-xlsx/formatters>
             Value properties <../common-docx-xlsx/value-properties>

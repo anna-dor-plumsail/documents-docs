@@ -164,7 +164,7 @@ Dynamic table columns
 
 You can create table columns dynamically from arrays by just adding a single tag into the template document. The templating engine is smart enough to understand what content needs to be duplicated.
 
-download the source document and the result document for this example in `the dynamic table columns demo <./demos.html#dynamic-table-columns>`_. Description of the example is below.
+Download the source document and the result document for this example in `the dynamic table columns demo <./demos.html#dynamic-table-columns>`_. Description of the example is below.
 
 Let us take an object containing information about a company and a list of employees working there. Each employee object contains a name and an array of detailed information about the employee.
 
