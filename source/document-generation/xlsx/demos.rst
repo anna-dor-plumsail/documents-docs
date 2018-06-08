@@ -475,6 +475,99 @@ Scroll down to see source data for the template in JSON format.
         ]
     }
 
+.. _formulas:
+
+Formulas
+--------------------------------
+
+This demo shows how to use formulas to your document. You can find a description of these case in the `formulas <./formulas.html>`_ section of the documentation.
+
+Scroll down to see source data for the template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/formulas-template.xlsx>`_
+
+          .. image:: ../../_static/img/document-generation/formulas-template.png
+                :alt: Formulas template
+        - `Download result document <../../_static/files/document-generation/demos/formulas-result.xlsx>`_
+
+          .. image:: ../../_static/img/document-generation/formulas-result.png
+                :alt: Formulas result
+
+.. rubric:: Template data
+
+.. code:: json
+
+    {
+        "currentWeek": [
+            {
+                "description": "May, 14 - May, 18",
+                "currentRate": "1.1767",
+                "fruits": [
+                    {
+                        "type": "Apples",
+                        "number": {
+                            "Monday": 15,
+                            "Tuesday": 8,
+                            "Wednesday": 1,
+                            "Thursday": 17,
+                            "Friday": 7
+                        },
+                        "price": 0.5
+                    },
+                    {
+                        "type": "Oranges",
+                        "number": {
+                            "Monday": 14,
+                            "Tuesday": 20,
+                            "Wednesday": 22,
+                            "Thursday": 8,
+                            "Friday": 19
+                        },
+                        "price": 0.5
+                    },
+                    {
+                        "type": "Bananas",
+                        "number": {
+                            "Monday": 17,
+                            "Tuesday": 24,
+                            "Wednesday": 31,
+                            "Thursday": 9,
+                            "Friday": 22
+                        },
+                        "price": 0.4
+                    },
+                    {
+                        "type": "Pears",
+                        "number": {
+                            "Monday": 11,
+                            "Tuesday": 25,
+                            "Wednesday": 6,
+                            "Thursday": 18,
+                            "Friday": 13
+                        },
+                        "price": 0.6
+                    },
+                    {
+                        "type": "Peaches",
+                        "number": {
+                            "Monday": 27,
+                            "Tuesday": 19,
+                            "Wednesday": 23,
+                            "Thursday": 17,
+                            "Friday": 5
+                        },
+                        "price": 0.3
+                    }
+                ]
+            }
+        ]
+    }
+
 .. _pie-and-clustered-columns-charts:
 
 Pie and clustered columns charts

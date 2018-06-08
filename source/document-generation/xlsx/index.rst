@@ -12,6 +12,7 @@ Excel XLSX templates
             Tables <tables>
             Links <external-links>
             Loops and nesting <loops-and-nesting>
+            Formulas <formulas>
             Charts <charts>
             Conditionally hide cells <conditionally-clear-cells>
             Merge cells vertically <merge-cells-vertically>
