@@ -5,6 +5,87 @@ Demos for XLSX templates
    :local:
    :depth: 1
 
+Purchase Order
+--------------
+This demo demonstrates how to create a template for a Purchase Order document.
+
+You can find description of this case in `Create XLSX from template <../../flow/how-tos/documents/create-xlsx-from-template.html>`_ article.
+
+Scroll down to see source data for the template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/purchase-order-template.xlsx>`_
+         
+          .. image:: ../../_static/img/document-generation/purchase-order-template.png
+                :alt: purchase order template
+        - `Download result document <../../_static/files/document-generation/demos/purchase-order-result.xlsx>`_
+         
+          .. image:: ../../_static/img/document-generation/purchase-order-result.png
+                :alt: purchase order result
+
+.. rubric:: Template data
+
+.. code:: json
+
+    {
+      "Order": {
+        "Date": "2018-05-21",
+        "Number": "432"
+      },
+      "Vendor": {
+        "CompanyName": "Acme Corp",
+        "Address": "123 James Street, Miami, USA",
+        "Email": "sample@acme.com",
+        "Phone": "555-777-9999"
+      },
+      "ShipTo": {
+        "CompanyName": "Contoso Inc.",
+        "Address": "1234 North Expressway, Arizona, USA",
+        "Email": "sample@contoso.com",
+        "Phone": "111-222-8900"
+      },
+      "items": [
+        {
+          "product": {
+            "name": "Monitor",
+            "price": 99
+          },
+          "quantity": 10
+        },
+        {
+          "product": {
+            "name": "Stepler",
+            "price": 12.44
+          },
+          "quantity": 1000
+        },
+        {
+          "product": {
+            "name": "Fridge",
+            "price": 4219.99
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "name": "Microwave",
+            "price": 99.99
+          },
+          "quantity": 5
+        },
+        {
+          "product": {
+            "name": "Pen",
+            "price": 7.23
+          },
+          "quantity": 100
+        }
+      ]
+    }
 
 .. _tables:
 
