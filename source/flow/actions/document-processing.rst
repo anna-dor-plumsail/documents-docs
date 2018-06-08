@@ -301,7 +301,7 @@ Creates .docx document by filling merge fields in a .docx document with the help
 
        -  You can find insturctions about creation of a document with merge fields in `this article <../../document-generation/docx/create-docx-with-merge-fields.html>`_. 
        
-          Use `this link <../../_static/files/flow/how-tos/Hiring%20Contract%20Template.docx>`_ to download the sample document.
+          Use `this link <../../_static/files/flow/how-tos/Hiring%20Contract%20Template%20(merge%20fields).docx>`_ to download the sample document.
 
     *  -  Template data
        -  Data in JSON format that will be used to fill merge fields in the source document. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
