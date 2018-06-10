@@ -3,7 +3,7 @@ Conditionally hide blocks in DOCX templates
 
 You can use `collapse formatter <../common-docx-xlsx/formatters.html#collapse>`_ to hide parts of a document if some value or collection of values is null or empty.
 
-The formatter checks if a value for current tag is empty, then finds closes collapsible block and hides it:
+The formatter checks if a value for current tag is empty, then finds closest collapsible block and hides it:
 
 - Table row
 - Bullet list item

@@ -52,7 +52,7 @@ Now let us take a look at the source template for this structure:
 .. image:: ../../_static/img/document-generation/loops-nesting-template.png
    :alt: Loops and nesting template
 
-You can refer a property inside collection in your template. You can even refer a property inside collection nested in another collection.
+You can refer a property inside collection in your template. You can even refer a property inside a collection nested in another collection.
 
 Examples:
 

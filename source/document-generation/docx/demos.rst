@@ -463,6 +463,139 @@ Scroll down to see source data for the template in JSON format.
         }
     ]
 
+.. _pie-charts:
+
+Pie charts
+----------
+
+This demo shows how to build a pie chart in a MS Word document. You can find the description  of this case in the `pie charts <charts.html#pie-charts>`_ documentation.
+
+Scroll down to see source data for the template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/pie-chart-template.docx>`_
+
+          .. image:: ../../_static/img/document-generation/pie-chart-template-small-docx.png
+                :alt: Pie charts template
+        - `Download result document <../../_static/files/document-generation/demos/pie-chart-result.docx>`_
+
+          .. image:: ../../_static/img/document-generation/pie-chart-result-small-docx.png
+                :alt: Pie charts result
+
+.. rubric:: Template data
+
+.. code:: json
+
+    [
+        {
+            "title": "Countries by coffee production",
+            "description": "Production in thousand kilogram bags",
+            "prod": [
+                {
+                    "country": "Brazil",
+                    "value2017": 51500
+                },
+                {
+                    "country": "Vietnam",
+                    "value2017": 28500
+                },
+                {
+                    "country": "Colombia",
+                    "value2017": 14000
+                },
+                {
+                    "country": "Indonesia",
+                    "value2017": 10800
+                },
+                {
+                    "country": "Honduras",
+                    "value2017": 8349
+                },
+                {
+                    "country": "Other countries",
+                    "value2017": 61000
+                }
+            ]
+        }
+    ]
+
+
+.. _clustered-column-charts:
+
+Clustered column charts
+-----------------------
+
+This demo shows how to build a clustered column chart in a MS Word document. You can find the description of this case in the `clustered column charts <charts.html#clustered-column-charts>`_ documentation.
+
+Scroll down to see source data for the template in JSON format.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/clustered-column-template.docx>`_
+
+          .. image:: ../../_static/img/document-generation/clustered-columns-template-small-docx.png
+                :alt: Pie charts template
+        - `Download result document <../../_static/files/document-generation/demos/clustered-column-result.docx>`_
+
+          .. image:: ../../_static/img/document-generation/clustered-columns-result-small-docx.png
+                :alt: Pie charts result
+
+.. rubric:: Template data
+
+.. code:: json
+
+    [
+        {
+            "title": "Countries by coffee production",
+            "description": "Production in thousand kilogram bags",
+            "prod": [
+                {
+                    "country": "Brazil",
+                    "value2015": 37600,
+                    "value2016": 43200,
+                    "value2017": 51500
+                },
+                {
+                    "country": "Vietnam",
+                    "value2015": 22000,
+                    "value2016": 27500,
+                    "value2017": 28500
+                },
+                {
+                    "country": "Colombia",
+                    "value2015": 11300,
+                    "value2016": 13500,
+                    "value2017": 14000
+                },
+                {
+                    "country": "Indonesia",
+                    "value2015": 14000,
+                    "value2016": 11000,
+                    "value2017": 10800
+                },
+                {
+                    "country": "Honduras",
+                    "value2015": 7500,
+                    "value2016": 5800,
+                    "value2017": 8349
+                },
+                {
+                    "country": "Other countries",
+                    "value2015": 37358,
+                    "value2016": 44229,
+                    "value2017": 61000
+                }
+            ]
+        }
+    ]
+
 .. _conditionally-hide-blocks:
 
 Conditionally hide blocks

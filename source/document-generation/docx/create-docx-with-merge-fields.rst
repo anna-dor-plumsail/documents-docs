@@ -21,3 +21,4 @@ After adding all required placeholders, the document should look like this:
    :alt: Sample document
 
 Use `this link <../../_static/files/flow/how-tos/Hiring%20Contract%20Template%20(merge%20fields).docx>`_ to download it.
+
