@@ -568,12 +568,12 @@ Scroll down to see source data for the template in JSON format.
         ]
     }
 
-.. _pie-and-clustered-columns-charts:
+.. _pie-and-clustered-column-charts:
 
-Pie and clustered columns charts
+Pie and clustered column charts
 --------------------------------
 
-This demo shows how to create charts in your document. You can find a description of these cases in the `pie charts <./charts.html#pie-charts>`_ and `clustered columns charts <./charts.html#clustered-columns-charts>`_ sections of the documentation.
+This demo shows how to create charts in your document. You can find a description of these cases in the `pie charts <./charts.html#pie-charts>`_ and `clustered column charts <./charts.html#clustered-column-charts>`_ sections of the documentation.
 
 Scroll down to see source data for the template in JSON format.
 
@@ -785,7 +785,8 @@ Scroll down to see source data for the template in JSON format.
         }
     ]
 
- .. _multiple-worksheets:
+
+.. _multiple-worksheets:
 
 Multiple worksheets
 --------------------------

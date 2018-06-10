@@ -276,7 +276,7 @@ Let us assume we have a list of employees:
         } 
     ]
 
-We want to put name and job title in the first table row and the "about me" information in the second row. Then we want to repeat both lines for each employee.
+We want to put the name and the job title in the first table row and the "about me" information in the second row. Then we want to repeat both lines for each employee.
 
 This is how our source template will look in this case:
 

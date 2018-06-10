@@ -21,7 +21,7 @@ This is how our result document will look like:
 .. image:: ../../_static/img/document-generation/pie-chart-result-small.png
     :alt: Pie chart result
 
-You can download the source document and the result document for this example in the `pie and clustered columns charts demo <./demos.html#tables>`_. Description of the example is below.
+You can download the source document and the result document for this example in the `pie and clustered column charts demo <./demos.html#pie-and-clustered-column-charts>`_. Description of the example is below.
 
 JSON representation of the object:
 
@@ -64,9 +64,9 @@ JSON representation of the object:
                 },
                 {
                     "country": "Other countries",
-                    "value2015": 37358
+                    "value2015": 37358,
                     "value2016": 44229,
-                    "value2017": 51000,
+                    "value2017": 51000
                 }
             ]
         }
@@ -77,7 +77,7 @@ Now, let us take a look at the source template:
 .. image:: ../../_static/img/document-generation/pie-chart-template.png
     :alt: Pie chart template
 
-As we want to display production from 2017 only, we create a simple table and use :code:`{{prod.country}}` and :code:`{{prod.value2017}}` tags to refer needed properties inside our objects. To learn how to build a chart based on multiple columns of data please review the next `clustered columns <./charts.html#clustered-columns-charts>`_ section.
+As we want to display production from 2017 only, we create a simple table and use :code:`{{prod.country}}` and :code:`{{prod.value2017}}` tags to refer needed properties inside our objects. To learn how to build a chart based on multiple columns of data please review the next `clustered column <./charts.html#clustered-column-charts>`_ section.
 
 We also add :code:`{{title}}` and :code:`{{description}}` tags to the top of the page to let the engine know that we want to render corresponding properties.
 
@@ -101,19 +101,19 @@ Let us have a look at the result of rendering another time. The templating engin
 .. image:: ../../_static/img/document-generation/pie-chart-result.png
     :alt: Pie chart result
 
-.. _clustered-columns-charts:
+.. _clustered-column-charts:
 
-Clustered columns charts
+Clustered column charts
 ------------------------
 
-In this section, using the data from the same JSON object as we used in the previous `pie charts example <./charts.html#pie-charts>`_ we will create a table with countries coffee production by years and build a clustered columns chart.
+In this section, using the data from the same JSON object as we used in the previous `pie charts example <./charts.html#pie-charts>`_ we will create a table with countries coffee production by years and build a clustered column chart.
 
 This is how our result document will look like:
 
 .. image:: ../../_static/img/document-generation/clustered-columns-chart-result-small.png
-    :alt: Clustered columns result
+    :alt: clustered column result
 
-You can download the source document and the result document for this example in the `pie and clustered columns charts demo <./demos.html#tables>`_. Description of the example is below.
+You can download the source document and the result document for this example in the `pie and clustered column charts demo <./demos.html#pie-and-clustered-column-charts>`_. Description of the example is below.
 
 JSON representation of the object:
 
@@ -156,7 +156,7 @@ JSON representation of the object:
                 },
                 {
                     "country": "Other countries",
-                    "value2015": 37358
+                    "value2015": 37358,
                     "value2016": 44229,
                     "value2017": 51000,
                 }
@@ -167,36 +167,36 @@ JSON representation of the object:
 Now, let us take a look at the source template:
 
 .. image:: ../../_static/img/document-generation/clustered-columns-chart-template.png
-    :alt: Clustered columns chart template
+    :alt: clustered column chart template
 
 To display production by years, we create a table and add :code:`{{prod.country}}` and :code:`{{prod.value2015}}`, :code:`{{prod.value2016}}`, :code:`{{prod.value2017}}` tags to refer the properties inside our objects.
 
 We also add :code:`{{title}}` and :code:`{{description}}` tags to the top of the page to let the engine know that we want to render corresponding properties.
 
-To create a chart we select our table, navigate to the **Insert** tab in the top ribbon and choose a clustered columns chart:
+To create a chart we select our table, navigate to the **Insert** tab in the top ribbon and choose a clustered column chart:
 
 .. image:: ../../_static/img/document-generation/clustered-columns-chart.png
-    :alt: Adding clustered columns chart template
+    :alt: Adding clustered column chart template
 
-Now, we need to edit the data that will be visible in our chart. We select the chart, click the *Filer* icon and click *Select data* link. Here we need to add entries for production in 2015 and 2016. We may use *Production in 2017* entry as a reference:
+Now, we need to edit the data that will be visible in our chart. We select the chart, click the *Filter* icon and click *Select data* link. Here we need to add entries for production in 2015 and 2016. We may use *Production in 2017* entry as a reference:
 
 .. image:: ../../_static/img/document-generation/clustered-columns-series.png
-    :alt: Adding clustered columns series
+    :alt: Adding clustered column series
 
 Then, we edit the horizontal axis labels to display there the text from the first column only:
 
 .. image:: ../../_static/img/document-generation/clustered-columns-label.png
-    :alt: Adding clustered columns labels
+    :alt: Adding clustered column labels
 
 In general, the template is ready. We just want to change the colors and add a legend under the chart:
 
 .. image:: ../../_static/img/document-generation/clustered-columns-legend.png
-    :alt: Adding clustered columns legend
+    :alt: Adding clustered column legend
 
 Let us have a look the result of rendering another time. The templating engine automatically created rows with production data and built a chart based on it:
 
 .. image:: ../../_static/img/document-generation/clustered-columns-chart-result.png
-    :alt: Clustered columns result
+    :alt: clustered column result
 
 .. _charts-on-multiple-worksheets:
 

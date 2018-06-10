@@ -31,7 +31,7 @@ And we want to include the name in the generated document. We need to surround t
 Simple bullet list and table
 ----------------------------
 
-You don't need to declare any loops, the templating engine is smart enough to understand the structure of source object applied to your document. Thus, if you refer property of object inside a collection, it understands that we need to iterate it.
+You don't need to declare any loops, the templating engine is smart enough to understand the structure of source object applied to your document. Thus, if you refer a property of an object inside a collection, it understands that we need to iterate it.
 
 Let us assume we have information about customer names. JSON representation of the object:
 
