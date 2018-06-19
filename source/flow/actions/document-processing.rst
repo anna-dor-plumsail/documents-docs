@@ -89,6 +89,8 @@ Create XLSX document from template
 
 Created Word XLSX document from template. Review `Excel XLSX templates <../../document-generation/xlsx/index.html>`_ section for more information about template syntax.
 
+Also there is `an article <../how-tos/documents/create-xlsx-from-template.html>`_ describing how to work with this action in case of managing documents.
+
 .. rubric:: Output Parameters
 
 .. list-table::
