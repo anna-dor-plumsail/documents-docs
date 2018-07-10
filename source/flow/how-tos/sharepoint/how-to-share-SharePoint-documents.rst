@@ -1,4 +1,4 @@
-How to share a SharePoint document with external user in Microsoft Flow and Azure Logic Apps
+How to share a SharePoint document with external users in Microsoft Flow and Azure Logic Apps
 ===================================================================================
 
 In this article, we will demonstrate how to share SharePoint documents with external users with help of Microsoft Flow. This approach works in SharePoint Online (Office 365).
@@ -25,9 +25,15 @@ We proceed to *Compling a custom action for the selected item* and simply *Invit
 .. image:: ../../../_static/img/flow/how-tos/invite-user-to-an-item.jpg
     :alt: Completed flow
 
-We set up the Target field as **Item**, fill in the Library Name, pick **ID** variable from Get Items section on the right side to fill in the Item ID field and **Email** variable to fill in the Email Addresses field.
+We set up the Target field as **Item**, fill in the Library Name, pick **ID** variable from Get Items section on the right side to fill in the Item ID field and **Email** variable to fill in the Email Addresses field:
 
-The flow is ready. To start it on a particular document go to the library, select a document, click Flow, pick and run the flow.
+.. image:: ../../../_static/img/flow/how-tos/email-variable.jpg
+    :alt: Email
+
+The flow is ready. To start it on a particular document go to the library, select a document, click Flow, pick and run the flow:
+
+.. image:: ../../../_static/img/flow/how-tos/run-flow-on-an-item.jpg
+    :alt: Run flow on an item
 
 Conclusion
 -----------
