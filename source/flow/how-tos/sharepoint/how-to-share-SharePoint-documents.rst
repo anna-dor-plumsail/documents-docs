@@ -3,24 +3,24 @@ How to share a SharePoint document with external users in Microsoft Flow and Azu
 
 In this article, we will demonstrate how to share SharePoint documents with external users with help of Microsoft Flow. This approach works in SharePoint Online (Office 365).
 
-Let us imagine the the following use case: there is created a contract in a SharePoint library on our site and we want to send the document for a review to a customer (an external user). 
+Let us imagine the following use case: there is created a contract in a SharePoint library on our site and we want to send the document for a review to a customer (an external user). 
 
-We added an additional column **Email** to  the documents library to store information about customers email. We will use this information to send invitations to the clients. This is how our document library looks like:
+We added an additional column **Email** to  the documents library to store information about customers emails. We will use this information to send invitations to the clients. This is how our document library looks like:
 
 .. image:: ../../../_static/img/flow/how-tos/documents-library.jpg
     :alt: Completed flow
 
-To create a flow that will simplify invitation process, we click Flow, Create a flow:
+We are going to create a flow that will simplify invitation process. To do it we click **Flow**, **Create a flow**:
 
 .. image:: ../../../_static/img/flow/how-tos/documents-library-create-a-flow.jpg
     :alt: Create a flow
 
-Then we pick *Complete a custom action for the selected item* template in the list of template on the right:
+Then we pick **Complete a custom action for the selected item** template in the list of template on the right:
 
 .. image:: ../../../_static/img/flow/how-tos/Complete-a-custom-action-for-the-selected-item.jpg
     :alt: Choosing a template
 
-We proceed to *Compling a custom action for the selected item* and simply *Invite External User to SharePoint actions* from `Plumasail SP <https://plumsail.com/actions/sharepoint/>`_ connector to the flow:
+We proceed to **Compling a custom action for the selected item** and simply add to the flow *Invite External User to SharePoint* actions from `Plumasail SP <https://plumsail.com/actions/sharepoint/>`_ connector:
 
 .. image:: ../../../_static/img/flow/how-tos/invite-user-to-an-item.jpg
     :alt: Completed flow
@@ -30,7 +30,7 @@ We set up the Target field as **Item**, fill in the Library Name, pick **ID** va
 .. image:: ../../../_static/img/flow/how-tos/email-variable.jpg
     :alt: Email
 
-The flow is ready. To start it on a particular document go to the library, select a document, click Flow, pick and run the flow:
+The flow is ready. To start it on a particular document go to the library, **select a document**, click **Flow**, **pick and run the flow**:
 
 .. image:: ../../../_static/img/flow/how-tos/run-flow-on-an-item.jpg
     :alt: Run flow on an item
