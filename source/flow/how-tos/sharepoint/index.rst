@@ -11,3 +11,5 @@ SharePoint connector
       Copy or move documents cross-site <copy-or-move-documents-cross-site>
       How to check-in multiple documents <how-to-check-in-multiple-documents>
       Copy document set to another library <copy-document-set-to-another-library>
+	  How to share a SharePoint site with external user in Microsoft Flow and Azure Logic Apps <how-to-share-SharePoint-sites>
+	  How to share a SharePoint document with external user in Microsoft Flow and Azure Logic Apps <how-to-share-SharePoint-documents>
