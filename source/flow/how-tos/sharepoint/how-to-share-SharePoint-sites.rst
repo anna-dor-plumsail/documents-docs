@@ -9,6 +9,9 @@ We will use Create Modern SharePoint Site and Invite External User to SharePoint
 
 This is how our complete flow will look like:
 
+.. image:: ../../../_static/img/flow/how-tos/invite-user-to-a-site.jpg
+    :alt: Completed flow
+
 Trigger a flow
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -27,6 +30,9 @@ We specify the target of the operation as a Site, enter the URL of the newly cre
 That is all, the flow is configured.
 
 You may also use an alternative approach, where you can add external user to a SharePoint group that has access to site instead of adding users directly to the site:
+
+.. image:: ../../../_static/img/flow/how-tos/invite-user-to-a-group.jpg
+    :alt: Completed flow
 
 On the last step n the screenshot above, we add the uses into an automatically created Visitors group that has Read permissions level.
 

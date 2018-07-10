@@ -7,11 +7,23 @@ Let us imagine the the following use case: there is created a contract in a Shar
 
 We added an additional column Email to  the documents library to store information about customers email. We will use this information to send invitations to the clients. This is how our document library looks like:
 
+.. image:: ../../../_static/img/flow/how-tos/documents-library.jpg
+    :alt: Completed flow
+
 To create a flow that will simplify invitation process, we click Flow, Create a flow:
+
+.. image:: ../../../_static/img/flow/how-tos/documents-library-create-a-flow.jpg
+    :alt: Create a flow
 
 Then we pick Complete a custom action for the selected item template in the list of template on the right:
 
+.. image:: ../../../_static/img/flow/how-tos/Complete-a-custom-action-for-the-selected-item.jpg
+    :alt: Choosing a template
+
 We proceed to Compling a custom action for the selected item and simply Invite External User to SharePoint actions from Plumasail SP connector to the flow:
+
+.. image:: ../../../_static/img/flow/how-tos/invite-user-to-an-item.jpg
+    :alt: Completed flow
 
 We set up the Target field as Item, fill in the Library Name, pick ID variable from Get Items section on the right side to fill in the Item ID field and Email variable to fill in the Email Addresses field.
 
