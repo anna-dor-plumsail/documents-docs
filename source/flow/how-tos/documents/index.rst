@@ -5,6 +5,7 @@ Documents connector
       :name: toc-documents-examples
       :maxdepth: 1
       
+      Automatically populate fillable PDF <fill-pdf-form>
       Create DOCX document from template <create-docx-from-template>
       Create XLSX document from template <create-xlsx-from-template>
       Create HTML from template <create-html-from-template>      
