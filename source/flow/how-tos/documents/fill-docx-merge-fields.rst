@@ -46,7 +46,7 @@ There are two parameters:
 1. DOCX document content
 2. Template data
 
-In the first parameter *'DOCX document content'* we specified file content of the source document from the output of the previous action. Use `this link <../../../_static/files/flow/how-tos/Hiring%20Contract%20Template.docx>`_ to download it.
+In the first parameter *'DOCX document content'* we specified file content of the source document from the output of the previous action. Use `this link <../../../_static/files/flow/how-tos/Hiring%20Contract%20Template%20(merge%20fields).docx>`_ to download it.
 
 In the second parameter, we specified data in JSON format that will be used to fill merge fields. This is information about a sample employee. You can actually request this information from an external system with the help of another Microsoft Flow action.
 

@@ -1012,6 +1012,9 @@ You can find the documentation for all operations included in "Create Modern Sha
 - :ref:`invite-external-user-group`
 
 
+Also, you can find examples how to share a site with external users in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-share-SharePoint-sites.html>`_ and how to share documents in `this one <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-share-SharePoint-documents.html>`_.
+
+
 .. _invite-external-user-site:
 
 Invite External User to SharePoint Site
