@@ -79,13 +79,15 @@ In the first parameter 'Content of the PDF document', you can put file content f
 
 In the second parameter ‘JSON data’ you can put a JSON object as a source data to fill in your form. Please make sure that you specified the same property names as you used in your fillable PDF. Thus, the action will match properties to fields in PDF and fill them.
 
-Create file action
+Send an Email action
 ~~~~~~~~~~~~~~~~~~
-Now you need to store the PDF file with filled in form somewhere. In our example, we used 'Create file' action from the SharePoint connector to store the PDF file in the SharePoint document library.
+Now you need to send the PDF file with filled in form. In our example, we used 'Send an Email' action from Office 365 Outlook connector.
+
+Please notice how we specified the PDF file. It is essential to specify attachment name with the correct extension.
 
 |fill-in-pdf-form-flow-create-file|
 
-You can use any other connector to store documents into your system.
+You can use any other connector to send or store documents in your system.
 
 Conclusion
 ~~~~~~~~~~
@@ -110,4 +112,4 @@ Now you should have an idea how to use Fill in PDF form action from `Plumsail Do
 .. |fill-in-pdf-form-template| image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-template.png
 .. |fill-in-pdf-form-flow| image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-flow.png
 .. |fill-in-pdf-form-flow-get-file| image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-flow-get-file.png
-.. |fill-in-pdf-form-flow-create-file| image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-flow-create-file.png
+.. |fill-in-pdf-form-flow-create-file| image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-flow-send-email.png
