@@ -14,3 +14,5 @@ SharePoint connector
 	  Share a SharePoint site with external users <how-to-share-SharePoint-sites>
 	  Share a SharePoint document with external users <how-to-share-SharePoint-documents>
 	  Copy or move SharePoint list items with attachments cross-site <move-SharePoint-list-items-with-attachments-cross-site>
+
+

@@ -50,5 +50,5 @@ In the end, we also click *Show advanced options* and pick **Yes** to move the i
 Conclusion
 ------------------------
 
-That is it. These few simple steps can help ease the work with tasks for users. The flow will start every day at 9:30 AM and old tasks will be automatically moved to the archive list in another site collection.
+That is it. These few simple steps can help ease the work with tasks for users. The flow will start every day at 9:30 AM and old tasks will be automatically moved to the archive list in another site collection..
 
