@@ -2409,9 +2409,7 @@ Copy List Item to SharePoint List
 -----------------------------------------
 Copies the specified list item to another SharePoint list with the help of Microsoft Flow.
 
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
+You may find an example how to copy or move SharePoint list items with attachments cross-site in `this article <../../flow/how-tos/sharepoint/move-SharePoint-list-items-with-attachments-cross-site.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -2465,9 +2463,8 @@ Move List Item to SharePoint List
 -----------------------------------------
 Moves the specified list item to another SharePoint list with the help of Microsoft Flow.
 
-.. important:: 
+You may find an example how to copy or move SharePoint list items with attachments cross-site in `this article <../../flow/how-tos/sharepoint/move-SharePoint-list-items-with-attachments-cross-site.html>`_.
 
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
 
 .. rubric:: Output Parameters
 
