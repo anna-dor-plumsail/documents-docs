@@ -13,6 +13,6 @@ SharePoint connector
       Copy document set to another library <copy-document-set-to-another-library>
 	  Share a SharePoint site with external users <how-to-share-SharePoint-sites>
 	  Share a SharePoint document with external users <how-to-share-SharePoint-documents>
-	  Copy or move SharePoint list items with attachments cross-site <move-SharePoint-list-items-with-attachments-cross-site>
+	  Copy or move SharePoint list items with attachments Cross-Site <move-SharePoint-list-items-with-attachments-cross-site>
 
 
