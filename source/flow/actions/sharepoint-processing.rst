@@ -1012,7 +1012,7 @@ You can find the documentation for all operations included in "Create Modern Sha
 - :ref:`invite-external-user-group`
 
 
-Also, you can find examples how to share a site with external users in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-share-SharePoint-sites.html>`_ and how to share documents in `this one <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-share-SharePoint-documents.html>`_.
+Also, you can find examples how to share a site with external users in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-share-sharepoint-sites.html>`_ and how to share documents in `this one <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-share-sharepoint-documents.html>`_.
 
 
 .. _invite-external-user-site:
@@ -2409,7 +2409,7 @@ Copy List Item to SharePoint List
 -----------------------------------------
 Copies the specified list item to another SharePoint list with the help of Microsoft Flow.
 
-You may find an example how to copy or move SharePoint list items with attachments cross-site in `this article <../../flow/how-tos/sharepoint/move-SharePoint-list-items-with-attachments-cross-site.html>`_.
+You may find an example how to copy or move SharePoint list items with attachments cross-site in `this article <../../flow/how-tos/sharepoint/move-sharepoint-list-items-with-attachments-cross-site.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -2463,7 +2463,7 @@ Move List Item to SharePoint List
 -----------------------------------------
 Moves the specified list item to another SharePoint list with the help of Microsoft Flow.
 
-You may find an example how to copy or move SharePoint list items with attachments cross-site in `this article <../../flow/how-tos/sharepoint/move-SharePoint-list-items-with-attachments-cross-site.html>`_.
+You may find an example how to copy or move SharePoint list items with attachments cross-site in `this article <../../flow/how-tos/sharepoint/move-sharepoint-list-items-with-attachments-cross-site.html>`_.
 
 
 .. rubric:: Output Parameters

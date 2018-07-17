@@ -41,5 +41,5 @@ Conclusion
 That is it. These few simple steps can help you to ease communication with your clients.
 
 .. hint::
-  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-share-SharePoint-sites.html>`_ explaining how to share SharePoint sites with external users in Microsoft Flow and Azure Logic Apps.
+  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-share-sharepoint-sites.html>`_ explaining how to share SharePoint sites with external users in Microsoft Flow and Azure Logic Apps.
 
