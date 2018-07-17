@@ -15,6 +15,7 @@ Documents connector
       Convert HTML to PDF <convert-html-to-pdf>      
       Convert email message to PDF <convert-email-to-pdf>
       Automatically populate fillable PDF <fill-pdf-form>
+      Collect data from fillable PDF <collect-data-pdf-form>
       Split PDF files <split-pdf-files>
       Merge PDF files <merge-pdf-files>      
       Use regular expression match <use-regex-match-to-extract-values>
