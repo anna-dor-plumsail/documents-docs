@@ -108,10 +108,13 @@ Conclusion
 ~~~~~~~~~~
 Now you should have an idea how to use `Get Form from PDF`_ action from `Plumsail Documents connector`_ for Microsoft Flow. If you haven’t used it yet, `registering an account`_ would be the first step. It is quite easy to get started.
 
+.. hint:: There is also `Fill in PDF Form`_ action available. You can use it to `automatically populate fillable PDF`_.
 
 .. _Get Form from PDF: ../../actions/document-processing.html#get-form-from-pdf
 .. _Plumsail Documents connector: https://plumsail.com/actions/documents/
 .. _registering an account: ../../../getting-started/sign-up.html
+.. _Fill in PDF Form: ../../actions/document-processing.html#fill-in-pdf-form
+.. _automatically populate fillable PDF: fill-pdf-form.html
 
 .. |pdf-file| image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-result.png
 .. |collect-data-flow| image:: ../../../_static/img/flow/how-tos/collect-data-form-flow.png

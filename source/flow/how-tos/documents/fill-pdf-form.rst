@@ -93,7 +93,7 @@ Conclusion
 ~~~~~~~~~~
 Now you should have an idea how to use Fill in PDF form action from `Plumsail Documents connector`_ for Microsoft Flow. If you haven’t used it yet, `registering an account`_ would be the first step. It is quite easy to get started.
 
-
+.. hint:: There is also `Get Form from PDF`_ action available. You can use it to `collect data from fillable PDF`_.
 
 .. _Fill in PDF form: ../../actions/document-processing.html#fill-in-pdf-form
 .. _Plumsail Documents connector: https://plumsail.com/actions/documents/
@@ -103,6 +103,8 @@ Now you should have an idea how to use Fill in PDF form action from `Plumsail Do
 .. _Nitro Pro: https://www.gonitro.com/nps/pro/create-pdf-creator
 .. _Download the template file: ../../../_static/files/flow/how-tos/fill-in-pdf-form-template.pdf
 .. _registering an account: ../../../getting-started/sign-up.html
+.. _Get Form from PDF: ../../actions/document-processing.html#get-form-from-pdf
+.. _collect data from fillable PDF: collect-data-pdf-form.html
 
 .. |fill-in-pdf-form-result| image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-result.png
 .. |nitro-pro-new-file| image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-nitro-new.png
