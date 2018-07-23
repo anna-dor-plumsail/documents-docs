@@ -680,10 +680,6 @@ Create Modern SharePoint Site
 ---------------------------------------
 Creates a modern SharePoint Team or Communication site with the help of Microsoft Flow.
 
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
-
 "Create Modern SharePoint Site" is a complex action that includes 2 different operations for creating Team's or Communication's sites.
 
 Once you added this action to your Flow, you need to specify the initial parameter:
@@ -989,10 +985,6 @@ Deletes the SharePoint site by a specific URL with the help of Microsoft Flow.
 Invite External User to SharePoint
 ---------------------------------------
 Invites external users with specific permission to a SharePoint site, a specific SharePoint group or an item in a SharePoint list with the help of Microsoft Flow.
-
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
 
 "Invite External User to SharePoint" is a complex action that includes 3 different operations for inviting external users to a SharePoint site, a SharePoint list item or a SharePoint group.
 
@@ -1792,10 +1784,6 @@ Create SharePoint Group
 -----------------------------------------
 Creates the SharePoint group with a specified name with the help of Microsoft Flow.
 
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
-
 .. rubric:: Input Parameters
 
 .. list-table::
@@ -1829,10 +1817,6 @@ Creates the SharePoint group with a specified name with the help of Microsoft Fl
 Update SharePoint Group Properties
 -----------------------------------------
 Updates SharePoint group properties with the help of Microsoft Flow.
-
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
 
 .. rubric:: Input Parameters
 
@@ -1893,10 +1877,6 @@ Remove SharePoint Group
 -----------------------------------------
 Removes the SharePoint group by a specified name with the help of Microsoft Flow.
 
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
-
 .. rubric:: Input Parameters
 
 .. list-table::
@@ -1923,10 +1903,6 @@ Removes the SharePoint group by a specified name with the help of Microsoft Flow
 Add User to SharePoint Group
 -----------------------------------------
 Adds a user to a specific SharePoint group with the help of Microsoft Flow.
-
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
 
 .. rubric:: Input Parameters
 
@@ -1958,10 +1934,6 @@ Adds a user to a specific SharePoint group with the help of Microsoft Flow.
 Is User Member of SharePoint Group
 -----------------------------------------
 Checks if a user is a member of a specifed SharePoint group with the help of Microsoft Flow.
-
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -2006,10 +1978,6 @@ Checks if a user is a member of a specifed SharePoint group with the help of Mic
 Get Members of SharePoint Group
 -----------------------------------------
 Gets members of a specific SharePoint group with the help of Microsoft Flow.
-
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -2061,10 +2029,6 @@ Remove User from SharePoint Group
 -----------------------------------------
 Removes a user from a specific SharePoint group with the help of Microsoft Flow.
 
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
-
 .. rubric:: Input Parameters
 
 .. list-table::
@@ -2095,10 +2059,6 @@ Removes a user from a specific SharePoint group with the help of Microsoft Flow.
 Get SharePoint Items By CAML Query
 -----------------------------------------
 Executes a CAML query on a list or on a document library and returns the collection of elements with the help of Microsoft Flow.
-
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -2180,10 +2140,6 @@ Get SharePoint Item Versions History
 -----------------------------------------
 Returns the changes history for the specific field from the SharePoint list item with the help of Microsoft Flow.
 
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
-
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -2248,10 +2204,6 @@ Copy SharePoint Item Attachments to URL
 -----------------------------------------
 Copies attachments from the SharePoint list item to the library using the specified folder URL with the help of Microsoft Flow.
 
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
-
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -2309,10 +2261,6 @@ Move SharePoint Item Attachments to URL
 -----------------------------------------
 Moves attachments from the SharePoint list item to the library using the specified folder URL with the help of Microsoft Flow.
 
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
-
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -2369,10 +2317,6 @@ Moves attachments from the SharePoint list item to the library using the specifi
 Add Content Type to SharePoint List
 -----------------------------------------
 Adds the specified content type to a SharePoint list with the help of Microsoft Flow.
-
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
 
 .. rubric:: Input Parameters
 
@@ -2518,10 +2462,6 @@ Start SharePoint Site Workflow (2013)
 -----------------------------------------
 Starts a SharePoint site level workflow and pass input parameters, if they were specified. The action can run only 2013 workflows with the help of Microsoft Flow.
 
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
-
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -2571,9 +2511,6 @@ Start SharePoint List Workflow (2013)
 -----------------------------------------
 Starts a SharePoint list level workflow and pass input parameters, if they were specified. The action can run only 2013 workflows with the help of Microsoft Flow.
 
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
 
 .. rubric:: Output Parameters
 
