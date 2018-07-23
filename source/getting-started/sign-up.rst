@@ -21,29 +21,30 @@ You need to navigate to the "API Keys" section and click "Add new". Then select 
 API Key for Documents actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you want to use `Plumsail Documents connector <../flow/actions/document-processing.html>`_ in Microsoft Flow or `Documents processing REST API <../rest-api/index.html>`_, you need to select "Basic" type of API key and click "Submit":
+If you want to use `Plumsail Documents connector <https://plumsail.com/actions/documents/>`_ in Microsoft Flow or `Documents processing REST API <../rest-api/index.html>`_, you need to select "Documents" type of API key and click "Submit".
+You can also specify the name of the key:
 
-.. image:: ../_static/img/getting-started/add-basic-api-key.png
+.. image:: ../_static/img/getting-started/add-documents-key.png
    :alt: API keys
 
 API Key for SharePoint actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you want to use `Plumsail SharePoint connector <../flow/actions/sharepoint-processing.html>`_ in Microsoft Flow or `SharePoint processing REST API <../rest-api/index.html>`_, you have two options:
+If you want to use `Plumsail SharePoint connector <https://plumsail.com/actions/sharepoint/>`_ in Microsoft Flow or `SharePoint processing REST API <../rest-api/index.html>`_, you have two options:
 
-- SharePoint Admin
-- SharePoint Credentials
+- SharePoint - App auth
+- SharePoint - Custom credentials
 
 |
 
-**SharePoint Admin** authenticates Actions as an app in your SharePoint tennant. You need to fill domain of your SharePoint Online, click "Grant permissions" and then click "Accept" in the opened window. You may need to allow your browser to open popup windows. Then, don't forget to click "Submit" to save the key.
+**SharePoint - App auth** authenticates Actions as an app in your SharePoint tennant. You need to fill domain of your SharePoint Online, click "Submit" and then click "Accept" in the opened window. You may need to allow your browser to open popup windows.
 
-.. image:: ../_static/img/getting-started/add-sp-admin-api-key.png
+.. image:: ../_static/img/getting-started/add-app-auth-api-key.png
    :alt: API keys
 
 |
 
-**SharePoint Credentials** allows SharePoint actions to work under account of specific user. You need to fill account name and password for your user:
+**SharePoint - Custom credentials** allows SharePoint actions to work under account of specific user. You need to fill account name and password for your user:
 
 .. image:: ../_static/img/getting-started/add-sp-credentials-api-key.png
    :alt: API keys
@@ -51,7 +52,7 @@ If you want to use `Plumsail SharePoint connector <../flow/actions/sharepoint-pr
 Copy and use API key
 --------------------
 
-Once you created and API key, you can see your key right in the "Secret" column:
+Once you created an API key, you can see your key right in the "Secret" column. You can also change a name of a key by clicking on it in the "Name" column:
 
 .. image:: ../_static/img/getting-started/copy-api-key.png
    :alt: API keys
