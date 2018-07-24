@@ -93,4 +93,4 @@ That is all, the flow is configured.
 .. hint:: You are may using actions for setting variables with your site URL and the name of the list and then use it in Plumsail Actions in *‘SharePoint Site URL‘* and *‘List Name‘* fields for more convenient using of actions.
 
 .. hint::
-You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-modern-SharePoint-site.html>`_ explaining how to create a modern team or communication SharePoint site in Microsoft Flow and Azure Logic Apps.
+You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-modern-sharepoint-site.html>`_ explaining how to create a modern team or communication SharePoint site in Microsoft Flow and Azure Logic Apps.

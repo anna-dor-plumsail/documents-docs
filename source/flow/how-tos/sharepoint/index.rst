@@ -7,7 +7,7 @@ SharePoint connector
       
       Set item level permissions (break role inheritance and assign permissions) <set-item-level-permissions>
       Create site by custom template and grant permissions <create-site-by-custom-template-and-grant-permissions>
-      Create modern SharePoint team or communication site <create-modern-SharePoint-site>
+      Create modern SharePoint team or communication site <create-modern-sharepoint-site>
       Create, copy, move and remove folders cross-site <create-copy-move-remove-folders-cross-site>
       Copy or move documents cross-site <copy-or-move-documents-cross-site>
       How to check-in multiple documents <how-to-check-in-multiple-documents>
