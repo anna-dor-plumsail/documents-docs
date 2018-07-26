@@ -3,8 +3,6 @@ How to split PDF files in Microsoft Flow and Azure Logic Apps
 
 This article demonstrates how to split a PDF file with the help of `Microsoft Flow <https://emea.flow.microsoft.com/>`_.
 
-Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <https://plumsail.com/docs/actions/v1.x/getting-started/use-from-flow.html>`_.
-
 In this example, we will read a PDF file, split the file to get a specific page and send this page by email. 
 
 This approach can be used to extract a page or a section of a document. For example, you may extract specific pages from a contract and send it for approval to the responsible person.

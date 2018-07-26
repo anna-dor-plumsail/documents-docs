@@ -3,8 +3,6 @@ Create PDF from HTML template in Microsoft Flow and Azure Logic Apps
 
 This article demonstrates how to generate PDF document from an HTML template with the help of `Microsoft Flow <https://flow.microsoft.com>`_.
 
-Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../../getting-started/use-from-flow.html>`_.
-
 We will firstly generate HTML document from a template. Then we will convert it to PDF. In this article, we will generate PDF invoice based on some data. This is how our final PDF file looks:
 
 .. image:: ../../../_static/img/flow/how-tos/html-and-pdf-result.png

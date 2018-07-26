@@ -2,11 +2,6 @@ How to create DOCX document from template in Microsoft Flow, Azure Logic Apps an
 ===========================================================================================
 Let’s suppose you want to automate the generation of invoices in your company. By going through this article you will learn how to create a DOCX document from a template using `Create DOCX Document from Template`_ action from `Plumsail Documents connector`_ in  Microsoft Flow and Azure Logic Apps.
 
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. 
-  If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
-
 Probably you have some third party system, where you create data for invoices. Then you get this data in Microsoft Flow, apply it to our invoice template and generate a new document.
 
 This is how the final document will look in our case:

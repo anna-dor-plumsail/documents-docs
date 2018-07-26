@@ -5,8 +5,6 @@ This article will show how to use Microsoft Flow to create a new site by the cus
 
 In this case, I'm using *‘Create Site from Template’* and *‘Change Permissions’* actions from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
-So, before starting, ensure that you `added Plumsail SP connector to Microsoft Flow <../../../getting-started/use-from-flow.html>`_.
-
 This example will show a simple case of project management system when an administrator can create a new list item for a project in SharePoint list, specify project participants and URL for a new project workspace. Once it is done, the flow has to create the project workspace (SharePoint site). It will automatically break permissions inheritance for the new site and include the site to the top navigation. Then you can grant permissions to sensitive information in the project for any SharePoint group. To simplify this use case I have one Sharepoint group and contributors role only.
 
 This article is divided to stages:

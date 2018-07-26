@@ -9,8 +9,6 @@ Then he needs to get approval from some approver and then copy this document set
 
 For this case, I will use `Send approval email <https://docs.microsoft.com/en-us/connectors/office365connector/#Send_approval_email>`_ from Office 365 Outlook Connector for sending the approval message. I will also use `Copy SharePoint document set <../../actions/sharepoint-processing.html#copy-sharepoint-document-set>`_ from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_ for copying approved document set to the "Matters" library on the site.
 
-Before starting, ensure that you `added Plumsail SP connector to Microsoft Flow <../../../getting-started/use-from-flow.html>`_.
-
 The complete flow is below. You can find step by step description of the flow next to the picture.
 
 .. image:: ../../../_static/img/flow/how-tos/sharepoint/copy-document-set-with-approve.png

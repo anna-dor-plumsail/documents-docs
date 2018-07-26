@@ -8,8 +8,6 @@ It will show how to set up the periodical archival process that will start every
 I will use *‘Get files (properties only)‘* from SharePoint Connector for getting properties of documents that have to be moved in the archive and `Move SharePoint Document from Library <../../actions/sharepoint-processing.html#move-sharepoint-document-from-library>`_ from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_. I will apply it to each document that will be found on the first step for moving it to "Archive" folder to a different site.
 This flow will be scheduled with "Recurrence" trigger from "Schedule" connector to run every day.
 
-Before starting, ensure that you `added Plumsail SP connector to Microsoft Flow <../../../getting-started/use-from-flow.html>`_.
-
 The complete flow is below. You can find step by step description next to the picture.
 
 .. image:: ../../../_static/img/flow/how-tos/sharepoint/move-documents-to-archive.png

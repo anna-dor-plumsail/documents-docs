@@ -13,8 +13,6 @@ For the second folder, I will use `Create SharePoint Folder in List <../../actio
 
 All these actions are from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
-Before starting, ensure that you `added Plumsail SP connector to Microsoft Flow <../../../getting-started/use-from-flow.html>`_.
-
 This article is divided into cases:
 
 - :ref:`createMove`

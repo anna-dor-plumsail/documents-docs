@@ -3,8 +3,6 @@ Convert email message to PDF in Microsoft Flow and Azure Logic Apps
 
 This article demonstrates how to convert an email message to PDF with the help of  `Microsoft Flow <https://flow.microsoft.com>`_. 
 
-Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../../getting-started/use-from-flow.html>`_.
-
 We will take a hiring contract text as a body of our message:
 
 .. image:: ../../../_static/img/flow/how-tos/email-to-pdf-example.png

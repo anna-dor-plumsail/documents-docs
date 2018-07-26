@@ -2,11 +2,6 @@ How to use regular expression match to extract values from text in Microsoft Flo
 #########################################################################################################
 In this article we will be talking about using `Regular Expression Match`_ action from our `Actions`_ product for `Microsoft Flow`_ and `Azure Logic Apps`_.
 
-.. important:: 
-
-  This action is not available in public connector in Microsoft Flow yet. It will become available soon. 
-  If you want to use this action right now, you can `add this connector as a custom connector <../create-custom-connector.html>`_.
-
 Let’s suppose you are getting a new email after someone made a purchase and you need to extract information from this email and create a new item in your orders SharePoint list.
 
 Your email might look like this:

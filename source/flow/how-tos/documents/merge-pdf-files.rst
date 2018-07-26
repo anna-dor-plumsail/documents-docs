@@ -3,8 +3,6 @@ How to merge PDF files in Microsoft Flow, Azure Logic Apps and PowerApps
 
 This article demonstrates how to merge PDF files with the help of `Microsoft Flow <https://emea.flow.microsoft.com/>`_.
 
-Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <https://plumsail.com/docs/actions/v1.x/getting-started/use-from-flow.html>`_.
-
 In this example, we will read three DOCX files from a specific folder, convert these files to PDF, merge them and send the result PDF file by email.
 
 For instance, it may be useful  in a situation when a few employees prepare different sections of a contract at the same time. They load the parts of the contract to a folder, then all files from this folder are merged to form the final document.

@@ -3,8 +3,6 @@ Create text document from template in Microsoft Flow and Azure Logic Apps
 
 This article demonstrates how to generate text document from a template with the help of `Microsoft Flow <https://flow.microsoft.com>`_.
 
-Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../../getting-started/use-from-flow.html>`_.
-
 This approach is suitable  for text files generation as well as for plain text generation. In this article, we will generate a simple text file with the list based on some data. This is how our final file looks:
 
 .. image:: ../../../_static/img/flow/how-tos/result-text-file.png

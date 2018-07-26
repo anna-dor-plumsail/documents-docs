@@ -3,8 +3,6 @@ Convert HTML to PDF in Microsoft Flow and Azure Logic Apps
 
 This article demonstrates how to convert an HTML document or an HTML string to PDF with the help of `Microsoft Flow <https://flow.microsoft.com>`_. 
 
-Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../../getting-started/use-from-flow.html>`_.
-
 We will take an invoice as a sample HTML document:
 
 .. image:: ../../../_static/img/flow/how-tos/pdf-file-from-html-example.png
