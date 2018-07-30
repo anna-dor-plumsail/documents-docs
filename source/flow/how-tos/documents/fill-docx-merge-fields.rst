@@ -1,5 +1,5 @@
 Fill merge fields in DOCX document in Microsoft Flow and Azure Logic Apps
-========================================================================
+=========================================================================
 
 This article demonstrates how to fill merge fields in a DOCX Word document with the help of `Microsoft Flow <https://flow.microsoft.com>`_. This approach allows you to create simple DOCX template with merge fields and generate new documents by filling those fields.
 

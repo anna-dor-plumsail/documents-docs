@@ -1,5 +1,5 @@
 How to merge PDF files in Microsoft Flow, Azure Logic Apps and PowerApps
-==========================================================================
+========================================================================
 
 This article demonstrates how to merge PDF files with the help of `Microsoft Flow <https://emea.flow.microsoft.com/>`_.
 
@@ -22,12 +22,12 @@ In this example, we will store our source DOCX files in SharePoint in a library 
 
 
 Merging PDF files
--------------------
+-----------------
 
 Here, we will guide you step by step through creating the flow. You also will find a screenshot of the complete flow at the end of the article.
 
 Flow trigger
-~~~~~~~~~~~~~
+~~~~~~~~~~~~
 
 You can actually pick any trigger. For example, you can start Flow on file creation in a SharePoint document library. We use *Manually trigger a flow* trigger here to simplify the Flow.
 
@@ -35,7 +35,7 @@ You can actually pick any trigger. For example, you can start Flow on file creat
    :alt: Flow trigger
 
 Get files (properties only)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We start with getting properties of all our DOCX files stored in a specific folder  - * Source Files Library*. In the next step, we will iterate through the output from this action to get those files contents.
 
@@ -45,7 +45,7 @@ We start with getting properties of all our DOCX files stored in a specific fold
 You can use any other connector to get files from your system.
 
 Initialize variable
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 We need to prepare an array of files, that we will put in *Plumsail Documents  -  Merge PDF action* when composing the final document.
 
@@ -55,7 +55,7 @@ Add a new action and search for *Variables  -  Initialize variable* action. 
    :alt: Initialize variable
 
 Get file content using path
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Now, you need to add *Get file content using path* action to get source DOCX files contents.
 
@@ -65,7 +65,7 @@ Click **File Path** field and add there **Folder Path** and **File name with ext
    :alt: Get file content using path
 
 Convert DOCX to PDF
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 This is an action from `Plumsail Documents connector <https://plumsail.com/docs/actions/v1.x/flow/actions/document-processing.html>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
@@ -77,7 +77,7 @@ Put here **File content** from the output of the previous action.
 You can find more detailed information about *Convert DOCX to PDF* action `here <You can find more detailed information about Convert DOCX to PDF action here.>`_.
 
 Append to array variable
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Now, add *Variables  -  Append to array variable* action. Into the **Value** field, put **Result file** from the output of the previous operation:
 
@@ -87,7 +87,7 @@ Now, add *Variables  -  Append to array variable* action. Into the **Value**
 The array of PDF files is ready, now we can move to the  main step  -  merging PDFs into the final document.
 
 Merge PDF
-~~~~~~~~~~~~
+~~~~~~~~~
 
 This is an action from `Plumsail Documents connector <https://plumsail.com/docs/actions/v1.x/flow/actions/document-processing.html>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
@@ -97,7 +97,7 @@ Click a small array icon on the right to switch to the view where you can input 
    :alt: Merge PDF
 
 Send an Email
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
 
 Once the result file is generated, we send an email using *Office 365 Outlook  -  Send email action*. In the **Attachments** section, we add **a name** and **the extension** for the merged PDF file and choose **Result file** output from the previous *Merge PDF* action.
 
@@ -110,7 +110,7 @@ So, here is the complete flow:
    :alt: Complete flow
 
 Conclusion
--------------------
+----------
 
 That is all, the flow is configured. Hope, these steps will help to ease the work with documents.
 

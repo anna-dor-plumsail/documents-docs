@@ -1,5 +1,5 @@
 How to create a modern team or communication SharePoint site in Microsoft Flow or Azure Logic Apps
-=================================================================================================
+==================================================================================================
 
 In this article, we will demonstrate how to configure a Microsoft Flow that will automatically create a new site in SharePoint on an item creation. This approach works in SharePoint Online (Office 365).
 
@@ -20,7 +20,7 @@ Create a modern SharePoint site
 -------------------------------
 
 Create a Projects List
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 First of all, let us create a new *Projects* SharePoint list with the following structure:
 
@@ -36,7 +36,7 @@ This is how looks the form to add a list item:
 Now, we are ready to create the flow.
 
 Create a modern team site
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We configure a flow that starts on an item creation in *Projects* list. To do that, we just add *When an item is created* action from SharePoint connector and specify **Site Address** and **the name** of our Projects **list**.
 
@@ -52,7 +52,7 @@ We defined our Office 365 group as public, but you can choose to make the group 
 We simplified this example to keep it clear. You may add more fields to the projects list to work with your projects. For example, you can add fields **Classification** or **Is Public** to use this information in the action.
 
 Create a modern communication site
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You may use a similar approach to create communication sites with help of  the same `Create Modern SharePoint site <../../actions/sharepoint-processing.html#create-modern-sharepoint-site>`_ action.
 
@@ -62,7 +62,7 @@ Please see an example of a configured flow below:
     :alt: Create a modern communication site
 
 Conclusion
--------------------
+----------
 
 That is it. These few simple steps can help you to manage your company's projects more effectively.
 

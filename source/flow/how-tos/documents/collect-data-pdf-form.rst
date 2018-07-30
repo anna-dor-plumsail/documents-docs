@@ -1,5 +1,5 @@
 How to collect data from fillable PDF and save it into your system in Microsoft Flow, Azure Logic Apps or Power Apps
-=====================================================================================================================
+====================================================================================================================
 In this article, you will learn how to collect data from fillable PDF form in Microsoft Flow or Azure Logic Apps. We will use `Get Form from PDF`_ action from `Plumsail Documents connector`_.
 
 In our case, we will collect data from Application for Employment form, we will get this PDF file via email using When a new email arrives trigger from Office 365 Outlook connector. However, you can get the file from any other source.
@@ -43,7 +43,7 @@ In the parameter ‘Content of the PDF document’ we specified the attachment�
 In the parameter ‘Password’ you can specify a password to decrypt the source document. If it was encrypted earlier.
 
 Parse JSON action
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 We are using this action to parse JSON response from the previous step. 
 
 To parse JSON you need to build a schema for it so you could use the output from this action later in the flow. To generate a schema you should click on 'Use sample payload to generate schema' at the bottom of the action. There you can insert a sample of the JSON object that you might receive:

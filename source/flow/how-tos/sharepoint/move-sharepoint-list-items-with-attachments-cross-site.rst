@@ -1,5 +1,5 @@
 How to copy or move SharePoint list items with attachments cross-site in Microsoft Flow or Azure Logic Apps
-===========================================================================================================================
+===========================================================================================================
 
 In this article, we will demonstrate how to archive SharePoint list items with help of Microsoft Flow. This approach works in SharePoint Online (Office 365).
 
@@ -13,12 +13,12 @@ This is how our complete flow will look like:
     :alt: Archive items flow
 
 Configure Microsoft Flow:
-------------------------
+-------------------------
 
 Below, we will guide you step by step through creating the flow.
 
 Schedule flow to start every day
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We schedule our flow to start every day at 9:30 AM Moscow time. You can choose any recurrence.
 
@@ -37,7 +37,7 @@ The complete expression is: **Created lt 'addDays(utcnow('yyyy-MM-ddTHH:mm:ssZ')
 As the output, we only have items that are more than 30 days old.
 
 Move the queried items in a loop
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We proceed to the last step and simply add to the flow `Move List Item to SharePoint List action <../../../flow/actions/sharepoint-processing.html#move-list-item-to-sharepoint-list>`_ actions from `Plumasail SP connector <https://plumsail.com/actions/sharepoint/>`_.
 
@@ -48,7 +48,7 @@ We specify the Destination **list name**, **list URL** as well as **SharePoint S
 In the end, we also click *Show advanced options* and pick **Yes** to move the items with the attachments.
 
 Conclusion
-------------------------
+----------
 
 That is it. These few simple steps can help ease the work with tasks for users. The flow will start every day at 9:30 AM and old tasks will be automatically moved to the archive list in another site collection.
 

@@ -1,5 +1,5 @@
 SharePoint connector
-=====================
+====================
 
 .. toctree::      
       :name: toc-sharepoint-examples

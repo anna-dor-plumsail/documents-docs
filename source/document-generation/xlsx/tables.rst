@@ -84,7 +84,7 @@ Dynamic table
 -------------
 
 Dynamic table from an array
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can create dynamic tables from two-dimensional arrays by just adding a single tag into the template document. The templating engine is smart enough to understand what content needs to be duplicated.
 

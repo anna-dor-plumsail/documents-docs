@@ -1,5 +1,5 @@
 Create, copy, move and remove SharePoint folders cross-site in Microsoft Flow and Azure Logic Apps
-=================================================================================================
+==================================================================================================
 
 This article will show how to use Microsoft Flow to create SharePoint folders in two ways, copy, move these folders to another site and remove the source folder after copying.
 
@@ -21,7 +21,7 @@ This article is divided into cases:
 .. _createMove:
 
 Creating a folder by URL and moving it to another site
----------------------------------------------------------
+------------------------------------------------------
 In this case, I created the flow based on *‘Create SharePoint Folder by URL‘* and *‘Move SharePoint Folder from Library‘* actions and configured it to start manually.
 
 You can find more information about specific parameters of the flow actions in `the documentation <https://plumsail.com/docs/actions/v1.x>`_ .
@@ -32,12 +32,12 @@ The complete flow is below:
    :alt: Creating folder by URL and moving it to another site
 
 Manually trigger a flow
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
 For this case, I used the trigger to manually start the flow. You can use any other triggers available in Microsoft Flow.
 
 Create SharePoint Folder by URL
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this action, I specified the following parameters:
 
@@ -50,7 +50,7 @@ For this simple case, I used raw link, but you can get it dynamically based on y
 
 
 Move SharePoint Folder from Library
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For the *‘Source URL‘* parameter I used the value of the *‘Folder URL‘* parameter from *‘Create SharePoint Folder by URL‘* response:
 
@@ -77,7 +77,7 @@ The complete flow is below. You can find step by step description next to the pi
    :alt: Creating a folder in a list, copying it to another site and remove the source folder
 
 Manually trigger a flow
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
 For this case, I used the trigger for manually start the flow. You can use any other triggers availalbe in Microsoft Flow.
 
@@ -96,7 +96,7 @@ In this action, I specified the following parameters:
 
 
 Copy SharePoint Folder from Library
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As in the previous case, I used the value of *‘Folder URL‘* parameter from *‘Create SharePoint Folder in List‘* response as the value for *‘Source URL‘*:
 
@@ -110,7 +110,7 @@ As in the previous case, I used the value of *‘Folder URL‘* parameter from *
 *‘SharePoint Site URL‘* as :code:`"https://contoso.sharepoint.com/sites/firstSubSite"` - The URL of the site for the **source** folder.
 
 Remove SharePoint Folder by URL
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this action, I also used the value of *‘Folder URL‘* parameter from *‘Create SharePoint Folder in List‘* response as the value for *‘Source URL‘*:
 

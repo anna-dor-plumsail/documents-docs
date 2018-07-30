@@ -1,5 +1,5 @@
 How to use regular expression match to extract values from text in Microsoft Flow and Azure Logic Apps
-#########################################################################################################
+######################################################################################################
 In this article we will be talking about using `Regular Expression Match`_ action from our `Actions`_ product for `Microsoft Flow`_ and `Azure Logic Apps`_.
 
 Let’s suppose you are getting a new email after someone made a purchase and you need to extract information from this email and create a new item in your orders SharePoint list.
@@ -47,7 +47,7 @@ So your flow might look like this:
 For this case, I'm using the trigger to manual start of the flow. You can use any other trigger available in Microsoft Flow.
 
 Receive email
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
 First, we receive an email in Outlook, you can specify Subject Filter field so this trigger will be working only the ones that have ‘Order’ in their subject.
 
 |regex-match-receive-email|

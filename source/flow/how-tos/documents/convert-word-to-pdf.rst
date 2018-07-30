@@ -1,5 +1,5 @@
 Convert DOCX to PDF in Microsoft Flow and Azure Logic Apps
-=========================================================
+==========================================================
 
 This article demonstrates how to convert DOCX Word document to PDF with the help of `Microsoft Flow <https://flow.microsoft.com>`_. 
 

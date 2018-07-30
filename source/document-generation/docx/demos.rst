@@ -418,7 +418,7 @@ Scroll down to see source data for the template in JSON format.
 .. _links-and-endnotes:
 
 Links and endnotes
---------------
+------------------
 
 This demo shows how to add external links and endnotes to your document. You can find the description of this case in the `links and endnotes <external-links.html>`_ section of the documentation.
 

@@ -1,5 +1,5 @@
 Copy or move SharePoint documents cross-site in Microsoft Flow and Azure Logic Apps
-==================================================================================
+===================================================================================
 
 This article will show how to move documents using Microsoft Flow. As a proof of concept, I will implement the logic of the flow for archiving documents. It moves documents from one document library to another, but you can modify it a little and use to copy documents or folders cross-site.
 
@@ -14,7 +14,7 @@ The complete flow is below. You can find step by step description next to the pi
    :alt: Move Documents To Archive
 
 Recurrence
------------
+----------
 As mentioned above, I use this trigger to scheduling the flow to run every day. I specified following parameters for running every day:
 
 *‘Interval‘* - 1
@@ -24,7 +24,7 @@ As mentioned above, I use this trigger to scheduling the flow to run every day. 
 .. _getFiles:
 
 Get files (properties only)
-------------------------------
+---------------------------
 
 On this step, I get all documents that are older than 30 days from the source folder.
 
@@ -41,7 +41,7 @@ The action uses `OData filter <http://www.odata.org/documentation/odata-version-
    :alt: Get Files Preporties With Expression
 
 Move SharePoint Document from Library
----------------------------------------
+-------------------------------------
 
 The `Move SharePoint Document from Library <../../actions/sharepoint-processing.html#move-sharepoint-document-from-library>`_ action is used in "each" cycle. It is executed on results of :ref:`getFiles` action.
 
@@ -59,7 +59,7 @@ As value for *‘Source URL‘* I use the value of *‘Link to item‘* paramete
 And finally, *‘SharePoint Site URL‘* I specified as :code:`"https://contoso.sharepoint.com/sites/firstSubSite"` - The URL of the site for the **source** folder.
 
 Conclusion
------------
+----------
 
 That's all! These few steps can help you to create a simple archive system that moves old documents from a source folder to your archive.
 

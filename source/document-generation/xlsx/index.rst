@@ -1,5 +1,5 @@
 Excel XLSX templates
-===================
+====================
 
 .. container:: pl-left-column
 

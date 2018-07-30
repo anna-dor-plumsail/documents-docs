@@ -1,5 +1,5 @@
 Create text document from template in Microsoft Flow and Azure Logic Apps
-========================================================================
+=========================================================================
 
 This article demonstrates how to generate text document from a template with the help of `Microsoft Flow <https://flow.microsoft.com>`_.
 

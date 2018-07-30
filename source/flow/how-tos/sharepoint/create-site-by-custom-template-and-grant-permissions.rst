@@ -1,5 +1,5 @@
 Create SharePoint site by custom template and grant permissions in Microsoft Flow and Azure Logic Apps
-=====================================================================================================
+======================================================================================================
 
 This article will show how to use Microsoft Flow to create a new site by the custom template and then grant permissions to this site for specific SharePoint group. As an example I configured the flow for SharePoint list to automatically create new sites.
 
@@ -17,6 +17,7 @@ This article is divided to stages:
 
 Create SharePoint list
 ----------------------
+
 At this stage it was created the new SharePoint list *‘Projects’*  with following structure:
 
 * Title – Text field. The title of a project.
@@ -33,6 +34,7 @@ As I mentioned above I simplified this example to keep it clear. You can add mor
 
 Save site as template
 ---------------------
+
 For demo purposes was customized SharePoint team site to use it as a project workspace. I added some web parts to the main page and changed style of the site. You can see my project site below:
  
 .. image:: ../../../_static/img/flow/how-tos/sharepoint/create-site-template.png
@@ -45,7 +47,7 @@ The template is called *‘ProjectSite’*. I will use this template in the flow
 .. _configureMicrosoftFlow:
 
 Configure Microsoft Flow
------------------------------
+------------------------
 At this stage was created a flow and configured it to start on list item creation for *‘Projects’* list. Thus, new SharePoint sites will be created automatically after creation of a list item.
 
 You can find more information about specific parameters of the flow actions in `the documentation <https://plumsail.com/docs/actions/v1.x>`_ .
@@ -58,12 +60,12 @@ The complete flow is below:
 As you can see I used *‘When an item is created’* trigger from *‘SharePoint’* connector and two actions: *‘Create Site from Template’* and *‘Change Permissions’*
 
 When an item is created
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
 At this step I specify values for *‘Site Address’* and *‘List Name’* fields to bind the flow to the *‘Project‘* list.
 
 Create Site from Template
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this flow action I used *‘Title’* field of current list item as the title for SharePoint site.
 
@@ -78,7 +80,7 @@ Additionally in the setting of the flow action was switched *‘Inherit Permissi
 Also, pay attention to the property *‘On top navigation‘*, it has *‘Yes’*  value by default. It allows to add new sites to the top navigation of the parent site automatically. Thus, you will be able to start working with project site without adding it to navigation manually.
 
 Change Permissions
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 
 In the *‘Change permissions’* action, I firstly choose *‘Grant’* value for *‘Action type’* field and *‘Site’* value for *‘Target’* field.
 

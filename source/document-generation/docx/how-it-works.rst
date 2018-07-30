@@ -1,5 +1,5 @@
 How Word DOCX templates work
-=======================
+============================
 
 Word DOCX templates in Plumsail Actions use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done. Let us start with basics and move to more advanced scenarios.
 

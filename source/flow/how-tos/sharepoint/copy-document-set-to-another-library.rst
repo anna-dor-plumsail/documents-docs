@@ -1,5 +1,5 @@
 Copy SharePoint document set to another library in Microsoft Flow and Azure Logic Apps
-=====================================================================================
+======================================================================================
 
 This article will show how to copy a document set to another library on a SharePoint site using Microsoft Flow.
 
@@ -19,7 +19,7 @@ Manually trigger a flow
 For this case, I'm using the trigger to manual start of the flow, you can use any other trigger available in Microsoft Flow.
 
 Initialization of variables
-------------------------------
+---------------------------
 On this step, I set variables with the site URL and the URL of the document set for more convenient using of actions below.
 
 *‘Site URL‘* as :code:`https://contoso.sharepoint.com/sites/subSite`
@@ -29,13 +29,13 @@ On this step, I set variables with the site URL and the URL of the document set 
 You may replace this part by your custom logic of getting URL of source document set.
 
 Send approval email
-----------------------
+-------------------
 The action `Send approval email <https://docs.microsoft.com/en-us/connectors/office365connector/#Send_approval_email>`_ sends the approval message to an approver. He\she gets this message on email (:code:`"approver@contoso.com"` in the example) and can approve or reject the request. 
 
 In email's body I'm using one of my variables for sending the link on the document set.
 
 Copy SharePoint Document Set
-------------------------------
+----------------------------
 If the request was approved then I call `Copy SharePoint Document Set <../../actions/sharepoint-processing.html#copy-sharepoint-document-set>`_ action for copying document set to another library.
 
 As value for *‘Source URL‘* I'm using the value of *‘Document Set URL‘* variable.
@@ -47,6 +47,6 @@ As value for *‘Source URL‘* I'm using the value of *‘Document Set URL‘* 
 And finally, *‘SharePoint Site URL‘* I specified as the value of *‘Site URL‘* variable - The URL of the site.
 
 Conclusion
------------
+----------
 
 That's all! These few steps can help you to create a simple system for copying approved document set.

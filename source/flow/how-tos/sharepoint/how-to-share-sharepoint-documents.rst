@@ -1,5 +1,5 @@
 How to share a SharePoint document with external users in Microsoft Flow and Azure Logic Apps
-===================================================================================
+=============================================================================================
 
 In this article, we will demonstrate how to share SharePoint documents with external users with help of Microsoft Flow. This approach works in SharePoint Online (Office 365).
 
@@ -36,7 +36,7 @@ The flow is ready. To start it on a particular document go to the library, **sel
     :alt: Run flow on an item
 
 Conclusion
------------
+----------
 
 That is it. These few simple steps can help you to ease communication with your clients.
 

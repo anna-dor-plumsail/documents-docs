@@ -1,5 +1,5 @@
 Create PDF from HTML template in Microsoft Flow and Azure Logic Apps
-===================================================================
+====================================================================
 
 This article demonstrates how to generate PDF document from an HTML template with the help of `Microsoft Flow <https://flow.microsoft.com>`_.
 

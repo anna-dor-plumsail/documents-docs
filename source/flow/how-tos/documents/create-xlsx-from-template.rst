@@ -39,7 +39,7 @@ This action gets file content of the specified file from a SharePoint document l
 You can use any other connector to get files from your system.
 
 Create XLSX  Document from Template
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 `Create XLSX document from template`_ is the action from `Plumsail Documents connector`_. This action is suitable for creating documents from a template.
 
 There are two parameters:

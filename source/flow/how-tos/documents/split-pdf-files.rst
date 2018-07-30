@@ -30,15 +30,15 @@ This is how our flow looks:
 Below is a step by step description of the flow.
 
 Splitting a PDF file
--------------------
+--------------------
 
 Flow trigger
-~~~~~~~~~~~~~
+~~~~~~~~~~~~
 
 You can actually pick any trigger. For example, you can start Flow on file creation in a SharePoint document library. We use *Manually trigger a flow* trigger here to simplify the Flow.
 
 Get file content
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 This action gets file content of the specified file from a SharePoint document library. You just specify **SharePoint site URL** and **path** to your file. We use this action to read our sample PDF file.
 
@@ -47,7 +47,7 @@ You can use any other connector to get files from your system.
 You may use `this link <../../../_static/files/flow/how-tos/file-to-split.pdf>`_ to download our sample 10 pages PDF file.
 
 Split PDF
-~~~~~~~~~~~~~~~~
+~~~~~~~~~
 
 This is an action from `Plumsail Documents connector <https://plumsail.com/docs/actions/v1.x/flow/actions/document-processing.html>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
@@ -61,12 +61,12 @@ As an output of this action, we receive an array of Result files. In our case, w
 You can find more detailed information about *Split PDF* action `here <https://plumsail.com/docs/actions/v1.x/flow/actions/document-processing.html#split-pdf>`_.
 
 Send an email
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
 
 Once the result file is generated, we send an email  using Send email action from Office 365 Outlook connector. We fill in the **email fields**; in the **Attachments** section, we add a name for the new PDF file and choose **ResultFileContents - Item** as an output from previous steps. This will automatically transform this action into repeating one which will be performed for each Result file. In our case, there is just one file.
 
 Conclusion
--------------------
+----------
 
 That is all, the flow is configured. These few simple steps can help to ease the work with documents.
 

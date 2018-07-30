@@ -1,5 +1,5 @@
 Set SharePoint item level permissions (break role inheritance and assign permissions) in Microsoft Flow and Azure Logic Apps
-===========================================================================================================================
+============================================================================================================================
 
 This article will show how to use Microsoft Flow to break role inheritance and grant permissions on the list item for the user and for specific SharePoint group.
 
@@ -32,7 +32,7 @@ This is how the new form looks like:
 .. _configureFlow:
 
 Configure Microsoft Flow
------------------------------
+------------------------
 At this stage was created a flow and configured it to start on list item creation for *‘Business Travel Requests’* list.
 
 You can find more information about specific parameters of the flow actions in `the documentation <https://plumsail.com/docs/actions/v1.x>`_ .
@@ -45,12 +45,12 @@ The complete flow is below:
 As you can see I used *‘When an item is created’* trigger from *‘SharePoint’* connector and three *‘Change Permissions’* actions.
 
 When an item is created
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
 At this step I specify values for *‘Site Address’* and *‘List Name’* fields to bind the flow to the *‘Business Travel Requests‘* list.
 
 Remove all permissions from item
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 It is a *‘Change Permissions’* action.
 
@@ -61,7 +61,7 @@ Then others fields of the form generated automatically based on my parameters.
 After that, I specified value of *‘Item ID‘* field as *‘ID‘* parameter from *‘When an item is created‘*, *‘List name’* as the name of my list with business travel requests (*‘Business Travel Requests‘*) and specify the URL of the site as the value for *‘SharePoint Site URL‘* field.
 
 Grant permissions on item for Requester
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 It is another *‘Change Permissions’* action for granting permissions on the new item for user that was specified as the requester.
 
@@ -73,7 +73,7 @@ After that, I specified value of *‘Item ID‘* field as *‘ID‘* parameter f
 Next, I specified *‘Role type‘* field as *‘Contribute’* and the value of the parameter *‘Requester Email’* from *‘When an item is created‘* as the value of *‘User or group’* field. Also, I specified the URL of the site as the value for *‘SharePoint Site URL‘* field.
 
 Grant permissions on item to "Travel Managers" group
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 It is another *‘Change Permissions’* action for granting permissions on the new item for *‘Travel Managers‘* SharePoint group that contains managers who response for business trips.
 

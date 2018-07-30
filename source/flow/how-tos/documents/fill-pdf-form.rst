@@ -80,7 +80,7 @@ In the first parameter 'Content of the PDF document', you can put file content f
 In the second parameter ‘JSON data’ you can put a JSON object as a source data to fill in your form. Please make sure that you specified the same property names as you used in your fillable PDF. Thus, the action will match properties to fields in PDF and fill them.
 
 Send an Email action
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 Now you need to send the PDF file with filled in form. In our example, we used 'Send an Email' action from Office 365 Outlook connector.
 
 Please notice how we specified the PDF file. It is essential to specify attachment name with the correct extension.

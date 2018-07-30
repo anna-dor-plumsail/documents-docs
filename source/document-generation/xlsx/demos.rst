@@ -157,7 +157,7 @@ Dynamic table
 -------------
 
 Dynamic table from an array
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This demo shows how to create dynamic tables from arrays by just adding a single tag into the template document. You can find the description of this case in the `tables <tables.html#dynamic-table>`_ documentation.
 
@@ -478,7 +478,7 @@ Scroll down to see source data for the template in JSON format.
 .. _formulas:
 
 Formulas
---------------------------------
+--------
 
 This demo shows how to use formulas to your document. You can find a description of these case in the `formulas <./formulas.html>`_ section of the documentation.
 
@@ -571,7 +571,7 @@ Scroll down to see source data for the template in JSON format.
 .. _pie-and-clustered-column-charts:
 
 Pie and clustered column charts
---------------------------------
+-------------------------------
 
 This demo shows how to create charts in your document. You can find a description of these cases in the `pie charts <./charts.html#pie-charts>`_ and `clustered column charts <./charts.html#clustered-column-charts>`_ sections of the documentation.
 
@@ -644,7 +644,7 @@ Scroll down to see source data for the template in JSON format.
 .. _charts-on-multiple-worksheets:
 
 Charts on multiple worksheets
---------------------------------
+-----------------------------
 
 This demo shows how to create charts on multiple worksheets in one file. You can find a description of this case in the `charts on multiple worksheets <./charts.html#charts-on-multiple-worksheets>`_ section of the documentation.
 
@@ -789,7 +789,7 @@ Scroll down to see source data for the template in JSON format.
 .. _multiple-worksheets:
 
 Multiple worksheets
---------------------------
+-------------------
 
 This demo shows how to create multiple worksheets in one file. You can find the description of this case in the `multiple worksheets <multiple-worksheets.html>`_ section of the documentation.
 
@@ -936,7 +936,7 @@ Scroll down to see source data for the template in JSON format.
 .. _clear-cells:
 
 Conditionally clear cells
-------------------------
+-------------------------
 
 This demo shows how to to conditionally clear content in Excel cells or named ranges. You can find the description of this case in the `conditionally clear cells <conditionally-clear-cells.html>`_ section of the documentation.
 

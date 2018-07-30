@@ -1,5 +1,5 @@
 How to check-in multiple SharePoint documents in Microsoft Flow and Azure Logic Apps
-===================================================================================
+====================================================================================
 
 This article will show how to check-in multiple documents using Microsoft Flow. 
 
@@ -20,7 +20,7 @@ For this case, I'm using the trigger to manual start of the flow. You can use an
 .. _getFilesProperties:
 
 Get files (properties only)
-------------------------------
+---------------------------
 
 .. image:: ../../../_static/img/flow/how-tos/sharepoint/get-files-preporties-check-in.png
    :alt: Get Files Properties
@@ -48,6 +48,6 @@ As value for *Document URL‘* I'm using the value of *‘Link to item‘* param
 *‘Comment‘* as :code:`"Comment"` - The comment to accompany document check in.
 
 Conclusion
------------
+----------
 
 That's all! These few simple steps can help ease the work with documents for users.

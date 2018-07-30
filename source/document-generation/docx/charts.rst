@@ -1,5 +1,5 @@
 Charts in DOCX templates
-=======================
+========================
 
 With help of the templating engine, you can create different types of charts based on differently structured data.
 

@@ -1,5 +1,5 @@
 Value formatters in DOCX and XLSX templates
-==================================
+===========================================
 
 You can use formatters to add complex logic to values rendered in your templates. For example, you can change value format, hide content, join arrays, etc.
 
