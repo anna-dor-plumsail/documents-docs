@@ -74,7 +74,7 @@ Put here **File content** from the output of the previous action.
 .. image:: ../../../_static/img/flow/how-tos/convert-DOCX-to-PDF.png
    :alt: Convert DOCX to PDF
 
-You can find more detailed information about *Convert DOCX to PDF* action `here <You can find more detailed information about Convert DOCX to PDF action here.>`_.
+You can find more detailed information about *Convert DOCX to PDF* action `here <./convert-word-to-pdf.html>`_.
 
 Append to array variable
 ~~~~~~~~~~~~~~~~~~~~~~~~

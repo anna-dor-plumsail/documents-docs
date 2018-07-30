@@ -1,5 +1,5 @@
 Documents connector
-==================================
+===================
 
 This connector helps you to automatically generate and convert documents with the help of Microsoft Flow. Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../getting-started/use-from-flow.html>`_.
 
@@ -162,7 +162,7 @@ Also there is `an article <../how-tos/documents/create-xlsx-from-template.html>`
    :alt: Create document from XLSX template Example
 
 Create HTML from template
-----------------------------------
+-------------------------
 
 Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/create-html-from-template.html>`_.
 
@@ -328,7 +328,7 @@ Creates .docx document by filling merge fields in a .docx document with the help
    :alt: Create document from DOCX template Example
 
 Convert DOCX to PDF
-----------------------------
+-------------------
 
 Converts .docx document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-word-to-pdf.html>`_.
 
@@ -376,7 +376,7 @@ Converts .docx document to PDF document with the help of Microsoft Flow. You can
    :alt: Convert DOCX document to PDF Example
 
 Convert HTML to PDF
-----------------------------
+-------------------
 
 Converts HTML document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-html-to-pdf.html>`_.
 
@@ -474,7 +474,7 @@ Converts HTML document to PDF document with the help of Microsoft Flow. You can 
    :alt: Convert HTML document to PDF Example
 
 Split PDF
-----------------------------
+---------
 
 Split PDF document with the help of Microsoft Flow. You can find more examples in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/split-pdf-files.html>`_.
 
@@ -505,7 +505,7 @@ Split PDF document with the help of Microsoft Flow. You can find more examples i
 
        -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
 
-          You may use `this link <../../_static/img/flow/how-tos/file-to-split.pdf>`_ to download a sample 10 pages PDF file.
+          You may use `this link <../../_static/files/flow/how-tos/file-to-split.pdf>`_ to download a sample 10 pages PDF file.
 
     *  -  Start Page
        -  Index of the first page to start split from (indexes start from 1).
@@ -529,7 +529,7 @@ Split PDF document with the help of Microsoft Flow. You can find more examples i
    :alt: Split PDF Example
 
 Merge PDF
-----------------------------
+---------
 
 Merge PDF document with the help of Microsoft Flow.
 
@@ -566,7 +566,7 @@ Merge PDF document with the help of Microsoft Flow.
    :alt: Merge PDF Example
 
 Extract text from PDF document
----------------------------------
+------------------------------
 
 Extracts text from PDF document to Raw or HTML format with the help of Microsoft Flow.
 
@@ -665,7 +665,7 @@ Extracts text from PDF document to Raw or HTML format with the help of Microsoft
    :alt: Extract text from PDF Example
 
 Convert PDF to Image
-----------------------------
+--------------------
 
 Converts PDF document to image (jpeg, png, gif, bmp) with the help of Microsoft Flow.
 
@@ -731,7 +731,7 @@ Converts PDF document to image (jpeg, png, gif, bmp) with the help of Microsoft 
    :alt: Convert PDF to Image Example
 
 Fill in PDF Form
-----------------------------
+----------------
 
 Fills in PDF form by provided data with the help of Microsoft Flow.
 
@@ -779,7 +779,7 @@ Fills in PDF form by provided data with the help of Microsoft Flow.
    :alt: Fill in PDF Form Example
 
 Get Form from PDF
-----------------------------
+-----------------
 
 Returns data from fillable PDF as JSON with the help of Microsoft Flow.
 
@@ -827,7 +827,7 @@ Returns data from fillable PDF as JSON with the help of Microsoft Flow.
    :alt: Get Form from PDF Example  
 
 Protect PDF document
-----------------------------
+--------------------
 
 Protects PDF by adding passwords, copy-, printing-, and other protections to PDF file with the help of Microsoft Flow.
 
@@ -927,7 +927,7 @@ You can find more examples in `this article <../how-tos/documents/use-regex-matc
     *  -  Pattern
        -  Regular expression pattern. This pattern can contain inline options to modify behavior of the regular expression. Such options have to be placed in the beginning of the expression inside brackets with question mark: ``(?YOUR_OPTIONS)``. For example options ``(?mi)`` will allow to process multi line text with case insensitivity.   
           You can find additional information about inline options in the `MSDN article <http://msdn.microsoft.com/en-us/library/yd1hzczs%28v=vs.110%29.aspx>`_.
-          Also you can find an example in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/How%20to%20use%20regex%20match%20to%20extract%20values%20from%20text%20in%20Microsoft%20Flow%20and%20Azure%20Logic%20Apps.html>`_.
+          Also you can find an example in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/use-regex-match-to-extract-values.html>`_.
        -  ``Task (?<TaskId>\d+):(?<status>Approve|Reject)``
 
     *  -  Text
@@ -940,7 +940,7 @@ You can find more examples in `this article <../how-tos/documents/use-regex-matc
    :alt: Regular Expression Match Example     
 
 Regular Expression Replace
-----------------------------
+--------------------------
 
 In a specified input string, replaces all strings that match a regular expression pattern with a specified replacement string. We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
 
