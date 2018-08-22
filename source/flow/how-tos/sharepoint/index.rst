@@ -5,7 +5,6 @@ SharePoint connector
       :name: toc-sharepoint-examples
       :maxdepth: 1
       
-      Get items from SharePoint lists and libraries using CAML query <get-items-using-CAML>
       Set item level permissions (break role inheritance and assign permissions) <set-item-level-permissions>
       Create site by custom template and grant permissions <create-site-by-custom-template-and-grant-permissions>
       Create modern SharePoint team or communication site <create-modern-sharepoint-site>
@@ -16,5 +15,6 @@ SharePoint connector
 	  Share a SharePoint site with external users <how-to-share-sharepoint-sites>
 	  Share a SharePoint document with external users <how-to-share-sharepoint-documents>
 	  Copy or move SharePoint list items with attachments Cross-Site <move-sharepoint-list-items-with-attachments-cross-site>
+    Get items from SharePoint lists and libraries using CAML query <get-items-using-CAML>
 
 
