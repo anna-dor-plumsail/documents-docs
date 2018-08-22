@@ -5,6 +5,7 @@ SharePoint connector
       :name: toc-sharepoint-examples
       :maxdepth: 1
       
+      Get items from SharePoint lists and libraries using CAML query <get-items-using-CAML>
       Set item level permissions (break role inheritance and assign permissions) <set-item-level-permissions>
       Create site by custom template and grant permissions <create-site-by-custom-template-and-grant-permissions>
       Create modern SharePoint team or communication site <create-modern-sharepoint-site>
