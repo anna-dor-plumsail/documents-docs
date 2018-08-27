@@ -1,7 +1,7 @@
 Documentation for Plumsail Actions
 ##################################
 
-Plumsail HelpDesk official page: `https://plumsail.com/actions`
+Plumsail Actions official page: `https://plumsail.com/actions`
 
 Automatically generate and convert documents with the help of Microsoft Flow, Logic Apps or REST API
 
