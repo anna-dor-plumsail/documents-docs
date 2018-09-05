@@ -16,5 +16,7 @@ SharePoint connector
 	  Share a SharePoint document with external users <how-to-share-sharepoint-documents>
 	  Copy or move SharePoint list items with attachments Cross-Site <move-sharepoint-list-items-with-attachments-cross-site>
     Get items from SharePoint lists and libraries using CAML query <get-items-using-CAML>
+    Create SharePoint group and add users <create-sp-group-add-users>
+
 
 
