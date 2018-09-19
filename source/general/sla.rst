@@ -59,3 +59,8 @@ This SLA is not applicable to any performance or availability issues:
 7. For not paid license. For example, for trial or partner licenses.
 
 This SLA applies to the "Whale" plan of the Actions but does not apply to the rest of plans.
+
+Version history
+~~~~~~~~~~~~~~~
+
+Last updated: 19 September 2018
