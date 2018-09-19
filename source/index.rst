@@ -50,7 +50,8 @@ Plumsail Actions Documentation
     general/version-history
     general/licensing-details
     general/upgrade-renew
-    general/security-policy      
+    general/sla
+    general/security-policy
     Privacy policy <https://plumsail.com/privacy-policy/actions-privacy-policy/>
 
   .. toctree::
