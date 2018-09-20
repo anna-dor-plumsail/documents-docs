@@ -1,7 +1,7 @@
-Documentation for Plumsail Actions
-##################################
+Documentation for Plumsail Documents
+####################################
 
-Plumsail Actions official page: `https://plumsail.com/actions`
+Plumsail Documents official page: `https://plumsail.com/documents`
 
 Automatically generate and convert documents with the help of Microsoft Flow, Logic Apps or REST API
 
@@ -14,7 +14,7 @@ Or just convert them to PDF.
 Publishing locations
 --------------------
 
-`Plumsail Actions documentation <https://plumsail.com/docs/actions/v1.x/index.html>`_
+`Plumsail Actions documentation <https://plumsail.com/docs/documents/v1.x/index.html>`_
 
 Copyright
 ---------
