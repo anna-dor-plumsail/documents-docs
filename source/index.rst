@@ -21,23 +21,24 @@ Plumsail Actions Documentation
     getting-started/sign-up
     getting-started/use-from-flow
     getting-started/use-as-rest-api
-    getting-started/license-activation
+    getting-started/license-activation  
 
   .. toctree::
-    :caption: REST API
-    :name: toc-test-api
-    :maxdepth: 2
+    :caption: Document generation
+    :name: toc-document-generation
+    :maxdepth: 1
     
-    rest-api/index
+    document-generation/docx/index
+    document-generation/xlsx/index
+    document-generation/html/index       
       
-
-  .. toctree::
-    :caption: Microsoft Flow actions
-    :name: toc-microsoft-flow-actions
-    :maxdepth: 2
-    
-    flow/actions/document-processing
-    flow/actions/sharepoint-processing      
+  .. rst-class:: single-page-nav
+  
+    .. toctree::    
+      :name: toc-microsoft-flow-actions
+      :maxdepth: 2
+      
+      flow/actions/document-processing    
 
 .. container:: pl-right-column
 
@@ -52,16 +53,14 @@ Plumsail Actions Documentation
     general/upgrade-renew
     general/sla
     general/security-policy
-    Privacy policy <https://plumsail.com/privacy-policy/actions-privacy-policy/>
+    Privacy policy <https://plumsail.com/privacy-policy/actions-privacy-policy/>  
 
   .. toctree::
-    :caption: Document generation
-    :name: toc-document-generation
-    :maxdepth: 1
+    :caption: REST API
+    :name: toc-test-api
+    :maxdepth: 2
     
-    document-generation/docx/index
-    document-generation/xlsx/index
-    document-generation/html/index                  
+    REST API Reference <https://api.plumsail.com/swagger>           
 
   .. toctree::                          
     :name: toc-document-generation-hidden
@@ -71,10 +70,10 @@ Plumsail Actions Documentation
     document-generation/common-docx-xlsx/formatters
     document-generation/common-docx-xlsx/value-properties            
 
-  .. toctree::
-    :caption: Microsoft Flow examples
-    :name: toc-microsoft-flow-examples
-    :maxdepth: 2
-    
-    flow/how-tos/documents/index 
-    flow/how-tos/sharepoint/index
+  .. rst-class:: single-page-nav
+  
+    .. toctree::      
+      :name: toc-microsoft-flow-examples
+      :maxdepth: 2
+      
+      flow/how-tos/documents/index 

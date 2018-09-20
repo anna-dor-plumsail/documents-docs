@@ -23,6 +23,8 @@ Excel XLSX templates
 
 .. container:: pl-right-column
 
+      .. rst-class:: single-page-nav
+
       .. toctree::              
             :name: toc-demos
             :maxdepth: 2            

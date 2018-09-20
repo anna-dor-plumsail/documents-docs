@@ -1,5 +1,5 @@
-Documents connector
-===================
+Microsoft Flow examples
+=======================
 
 .. toctree::      
       :name: toc-documents-examples

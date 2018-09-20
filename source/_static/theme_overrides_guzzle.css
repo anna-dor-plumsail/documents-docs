@@ -159,22 +159,22 @@ a:hover, a:focus {
     border: 1px solid #eee;
 }
 
-#toc-demos .toctree-l1:before{
+.single-page-nav .toctree-l1:before{
     content: none;
 }
 
-#toc-demos > ul {
+.single-page-nav > ul {
     padding-left: 0px;
 }
 
-#toc-demos .toctree-l1 > a{
+.single-page-nav .toctree-l1 > a{
     font-size: 24px;
     display: inline-block;
     margin-bottom: 30px;
     font-weight: 200;
 }
 
-#toc-demos .toctree-l1 > ul{    
+.single-page-nav .toctree-l1 > ul{    
     margin-top: 0;
 }
 

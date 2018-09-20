@@ -20,10 +20,12 @@ Word DOCX templates
 
 .. container:: pl-right-column
 
-      .. toctree::              
-            :name: toc-demos
-            :maxdepth: 2            
+      .. rst-class:: single-page-nav
+      
+        .. toctree::              
+              :name: toc-demos
+              :maxdepth: 2            
 
-            Demos <demos>
+              Demos <demos>
                   
             
