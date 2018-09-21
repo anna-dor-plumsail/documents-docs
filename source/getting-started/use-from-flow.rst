@@ -20,7 +20,7 @@ Once you clicked *'Create'* you can use Plumsail Actions in your Microsoft Flows
 
 .. toctree::      
   :name: toc-microsoft-flow-examples
-  :maxdepth: 2
+  :maxdepth: 2 
         
   ../flow/how-tos/sharepoint/index
   ../flow/how-tos/documents/index
