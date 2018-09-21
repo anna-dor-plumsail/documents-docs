@@ -1,5 +1,9 @@
-Security policy
-###############
+Data protection and security
+############################
+
+Privacy Policy
+--------------
+General information about privacy protection can be found in the `Plumsail Documents Privacy Policy <https://plumsail.com/privacy-policy/actions-privacy-policy/>`_.
 
 Application security
 --------------------

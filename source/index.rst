@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Plumsail Actions Documentation
-==============================
+Plumsail Documents Documentation
+================================
       
 .. toctree::
   :hidden:
@@ -46,14 +46,12 @@ Plumsail Actions Documentation
     :caption: General 
     :name: generaltoc
     :maxdepth: 1
-
-    Support <https://plumsail.com/actions/support/>      
+    
     general/version-history
     general/licensing-details
-    general/upgrade-renew
-    general/sla
     general/security-policy
-    Privacy policy <https://plumsail.com/privacy-policy/actions-privacy-policy/>  
+    general/upgrade-renew
+    general/sla    
 
   .. toctree::
     :caption: REST API

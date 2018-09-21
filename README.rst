@@ -14,7 +14,7 @@ Or just convert them to PDF.
 Publishing locations
 --------------------
 
-`Plumsail Actions documentation <https://plumsail.com/docs/documents/v1.x/index.html>`_
+`Plumsail Documents documentation <https://plumsail.com/docs/documents/v1.x/index.html>`_
 
 Copyright
 ---------

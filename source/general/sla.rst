@@ -1,24 +1,24 @@
-Service Level Agreement
+Service level agreement
 =======================
 
-.. note:: For Actions running on "Whale" plan, we guarantee that the uptime will be 99% of the time.
+.. note:: For Plumsail Documents running on "Enterprise" plan, we guarantee that the uptime will be 99% of the time.
 
 Terms
 ~~~~~
 
-This Service Level Agreement for Plumsail Actions (this “SLA”) is a part of `Plumsail License Agreement <https://plumsail.com/license-agreement/>`_ (the “Agreement”). This SLA applies to the "Whale" plan of the Plumsail Actions listed herein (an “Actions”) but does not apply to the rest of pricing plans.
+This Service Level Agreement for Plumsail Documents (this “SLA”) is a part of `Plumsail License Agreement <https://plumsail.com/license-agreement/>`_ (the “Agreement”). This SLA applies to the "Enterprise" plan of the Plumsail Documents listed herein (an “Documents”) but does not apply to the rest of pricing plans.
 
-If we do not achieve and maintain the Service Levels for Actions as described in this SLA, then you may be eligible for a credit towards a portion of your monthly service fees. We will not change the terms of your SLA during your subscription period. If you renew the subscription, the current version of SLA will be applied at the time of renewal.
+If we do not achieve and maintain the Service Levels for Documents as described in this SLA, then you may be eligible for a credit towards a portion of your monthly service fees. We will not change the terms of your SLA during your subscription period. If you renew the subscription, the current version of SLA will be applied at the time of renewal.
 
 *Error Code* means an indication that an operation has failed, such as an HTTP status code in the 5xx range.
 
-*Downtime* is the time during which the Actions is unavailable to be triggered within a given Actions subscription. Actions is considered unavailable for a given Actions subscription when calls to Actions return Error Codes 5xx or an Error Code 404.
+*Downtime* is the time during which the Documents is unavailable to be triggered within a given Documents subscription. Documents is considered unavailable for a given Documents subscription when calls to Documents return Error Codes 5xx or an Error Code 404.
 
 *Incident* means any event or events that result in Downtime.
 
 *SLA Credit* is the percentage of the Monthly Subscription Fees credited to you following Plumsail’s claim approval.
 
-*Monthly Subscription Fees* means the total fees paid by you for Actions that are applied to the month in which an SLA Credit is owed.
+*Monthly Subscription Fees* means the total fees paid by you for Documents that are applied to the month in which an SLA Credit is owed.
 
 In order for Plumsail to consider a claim, you must submit the claim to Plumsail customer support including all information necessary for Plumsail to verify the claim. It includes, but not restricted to: 
 
@@ -48,9 +48,9 @@ This SLA is not applicable to any performance or availability issues:
 
 2. That result from the use of services, hardware, or software not provided by us, including, but not limited to, issues resulting from inadequate bandwidth or related to third-party software or services;
 
-3. Caused by your use of a Actions after we advised you to change your use of the Actions if you did not change your use as we advised;
+3. Caused by your use of a Documents after we advised you to change your use of the Documents if you did not change your use as we advised;
 
-4. That result from your rejection to follow to any required configurations, use supported platforms, follow any policies for acceptable use, or your use of the Actions in a manner inconsistent with the features and functionality of the Actions. For example, attempts to perform operations that are not supported or inconsistent with our published documentation;
+4. That result from your rejection to follow to any required configurations, use supported platforms, follow any policies for acceptable use, or your use of the Documents in a manner inconsistent with the features and functionality of the Documents. For example, attempts to perform operations that are not supported or inconsistent with our published documentation;
 
 5. That result from your attempts to perform operations that exceed assigned quotas or that resulted from our throttling of suspected abusive behavior;
 
@@ -58,7 +58,7 @@ This SLA is not applicable to any performance or availability issues:
 
 7. For not paid license. For example, for trial or partner licenses.
 
-This SLA applies to the "Whale" plan of the Actions but does not apply to the rest of plans.
+This SLA applies to the "Enterprise" plan of the Documents but does not apply to the rest of plans.
 
 Version history
 ~~~~~~~~~~~~~~~

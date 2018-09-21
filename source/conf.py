@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Plumsail Actions documentation build configuration file, created by
+# Plumsail Documents documentation build configuration file, created by
 # sphinx-quickstart on Tue Apr 12 16:52:35 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -51,8 +51,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Plumsail Actions'
-copyright = '2017, Plumsail'
+project = 'Plumsail Documents'
+copyright = '2018, Plumsail'
 author = 'Plumsail'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -141,13 +141,13 @@ extensions.append("guzzle_sphinx_theme")
 # Guzzle theme options (see theme.conf for more information)
 html_theme_options = {
     # Set the name of the project to appear in the sidebar
-    "project_nav_name": "Plumsail Actions",
+    "project_nav_name": "Plumsail Documents",
      # Set your Disqus short name to enable comments
     "disqus_comments_shortname": "plumsail",
 
     # Set you GA account ID to enable tracking
     "google_analytics_account": "UA-36215023-2",
-    "base_url": "https://plumsail.com/docs/actions/v1.x/" #for sitemap
+    "base_url": "https://plumsail.com/docs/documents/v1.x/" #for sitemap
 }
 #-----
 
@@ -161,7 +161,7 @@ html_theme_options = {
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
-#html_title = 'Plumsail Actions'
+#html_title = 'Plumsail Documents'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -249,7 +249,7 @@ html_show_sphinx = False
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'PlumsailActions'
+htmlhelp_basename = 'PlumsailDocuments'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -271,7 +271,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'PlumsailActions.tex', 'Plumsail Actions Documentation',
+    (master_doc, 'PlumsailDocuments.tex', 'Plumsail Documents Documentation',
      'Plumsail', 'manual'),
 ]
 
@@ -301,7 +301,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'actions', 'Plumsail Actions Documentation',
+    (master_doc, 'documents', 'Plumsail Documents Documentation',
      [author], 1)
 ]
 
@@ -315,8 +315,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'actions', 'Plumsail Actions Documentation',
-     author, 'actions', 'Oneline description of project.',
+    (master_doc, 'documents', 'Plumsail Documents Documentation',
+     author, 'documents', 'Oneline description of project.',
      'Miscellaneous'),
 ]
 
