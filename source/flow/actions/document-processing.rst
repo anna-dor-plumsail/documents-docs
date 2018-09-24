@@ -78,6 +78,9 @@ We have `an article <../how-tos/documents/create-docx-from-template.html>`_ desc
                     ]
                 }
             ]
+    *  -  Locale
+       -  An optional parameter that allow to specify the desired regional culture format. You can pick the value from predefined list. If you don`t specify value, default value will be "en-US" (english, USA). All allowable regional culture formats you can find `here <../../document-generation/common-docx-xlsx/allowableCultures.html>`_ 
+       -
 
 .. rubric:: Example
 
@@ -155,6 +158,10 @@ Also there is `an article <../how-tos/documents/create-xlsx-from-template.html>`
                     ]
                 }
             ]
+    *  -  Locale
+       -  An optional parameter that allow to specify the desired regional culture format. You can pick the value from predefined list. If you don`t specify value, default value will be "en-US" (english, USA). All allowable regional culture formats you can find `here <../../document-generation/common-docx-xlsx/allowableCultures.html>`_ 
+       -
+          
 
 .. rubric:: Example
 
@@ -253,6 +260,9 @@ Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You
                     }
                 ]
             }  
+    *  -  Locale
+       -  An optional parameter that allow to specify the desired regional culture format. You can pick the value from predefined list. If you don`t specify value, default value will be "en-US" (english, USA). All allowable regional culture formats you can find `here <../../document-generation/common-docx-xlsx/allowableCultures.html>`_ 
+       -
 
 .. rubric:: Example
 
