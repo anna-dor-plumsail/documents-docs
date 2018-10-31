@@ -22,7 +22,8 @@ Word DOCX templates
 
       .. rst-class:: single-page-nav
       
-        .. toctree::              
+        .. toctree::      
+              :caption: Demos        
               :name: toc-demos
               :maxdepth: 2            
 
