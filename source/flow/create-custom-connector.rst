@@ -30,7 +30,7 @@ And this color:
 
 ::
 
-  #ce2d7d
+  #7d4bcd
 
 Then click *'Continue'*. You should see authentication type screen:
 
