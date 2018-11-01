@@ -49,7 +49,7 @@ You may use `this link <../../../_static/files/flow/how-tos/file-to-split.pdf>`_
 Split PDF
 ~~~~~~~~~
 
-This is an action from `Plumsail Documents connector <https://plumsail.com/docs/actions/v1.x/flow/actions/document-processing.html>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+This is an action from `Plumsail Documents connector <https://plumsail.com/documents/>`_.
 
 Put PDF file content from the output of the previous action. In the **Start Page** field, specify the first page to start the split, in the **End Page** field, specify the last page to split (inclusive) and enter a number of pages per partition into the **Split At Page** field. In our example, we extract just one page of the document, to do that we set the fields as shown in the screenshot below:
 

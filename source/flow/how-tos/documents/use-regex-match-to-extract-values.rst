@@ -1,6 +1,6 @@
 How to use regular expression match to extract values from text in Microsoft Flow and Azure Logic Apps
 ######################################################################################################
-In this article we will be talking about using `Regular Expression Match`_ action from our `Actions`_ product for `Microsoft Flow`_ and `Azure Logic Apps`_.
+In this article we will be talking about using `Regular Expression Match`_ action `Plumsail Documents connector <https://plumsail.com/documents/>`_ for `Microsoft Flow`_ and `Azure Logic Apps`_.
 
 Let’s suppose you are getting a new email after someone made a purchase and you need to extract information from this email and create a new item in your orders SharePoint list.
 
@@ -122,7 +122,7 @@ If you haven’t used it yet, registering an account would be the first step, yo
 .. _Azure Logic Apps: https://azure.microsoft.com/en-us/services/logic-apps/
 .. _Plumsail Documents connector to Microsoft Flow: ../../../flow/create-custom-connector.html
 .. _named groups: https://www.regular-expressions.info/named.html
-.. _Plumsail Documents connector for Microsoft Flow: https://plumsail.com/actions/documents/
+.. _Plumsail Documents connector for Microsoft Flow: https://plumsail.com/documents/
 .. _here: ../../../getting-started/sign-up.html
 .. _on this page: https://www.regular-expressions.info/named.html
 

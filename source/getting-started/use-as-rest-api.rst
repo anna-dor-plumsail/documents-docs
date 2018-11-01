@@ -1,7 +1,7 @@
 Use as REST API
 =======================================
 
-This tutorial shows how to use Plumsail Actions API. There are just a few steps to get started:
+This tutorial shows how to use Plumsail Documents API. There are just a few steps to get started:
 
 1. :ref:`create-api-key`
 2. :ref:`review-api-reference`
@@ -20,7 +20,7 @@ Just follow the steps described in `this topic <sign-up.html#generate-api-key>`_
 Review reference for API that you want to call
 ----------------------------------------------
 
-You can find links to references fro all Actions APIs on `this page <../rest-api/index.html>`_.
+You can find links to references fro all Actions APIs on `this page <https://api.plumsail.com/swagger/index.html?urls.primaryName=Documents>`_.
 
 .. _use-own-language:
 
@@ -42,8 +42,6 @@ There are a lot of ready to use helper REST API clients for those languages. Her
 Learn two ways to call API
 ----------------------------
 
-In this section we will show examples for `Documents processing API <../rest-api/index.html>`_, but it is actual for other our APIs as well.
-
 There are two ways to work with API:
 
 1. :ref:`call-a-method-and-get-the-result`
@@ -53,7 +51,7 @@ The first way is good for light operations. When execution of method doesn't tak
 
 The second way is good if you want to perform a long-running operation. For example, convert a large file. You just start a conversion job and then download the result once the job is finished.
 
-You can find descriptions of all available methods in `API reference <https://api.plumsail.com/swagger/#!/DocumentsAPI>`_
+You can find descriptions of all available methods in `API reference`_
 
 .. _call-a-method-and-get-the-result:
 
@@ -64,7 +62,7 @@ This approach is good for processing of a small amount of data and for testing p
 
 Some of the methods in the API are not mirrored in jobs. Those methods are designed to work with quick operations. They just don't need any jobs.
 
-All jobs are placed under *'/jobs/'* path. You may notice it in `API reference <https://api.plumsail.com/swagger/#!/DocumentsAPI>`_. The rest of methods return results right in the response.
+All jobs are placed under *'/jobs/'* path. You may notice it in `API reference`_. The rest of methods return results right in the response.
 
 This is an example of a raw request to convert DOCX to PDF:
 
@@ -104,7 +102,7 @@ You will receive results of conversion in the response for your request. It will
 Start a job and get the result once the job is finished
 ````````````````````````````````````````````````````````
 
-You may notice that some methods in `API reference <https://api.plumsail.com/swagger/#!/DocumentsAPI>`_ are located under *'/jobs/'* path. For example, the method below starts DOCX to PDF conversion job:
+You may notice that some methods in `API reference`_ are located under *'/jobs/'* path. For example, the method below starts DOCX to PDF conversion job:
 
 ::
 
@@ -158,3 +156,5 @@ A URL with the result is usually the same as URL of the original job plus identi
 Where *'0HL80VGO2DC6N'* is an ID of the job.
 
 All you need to do now is to execute GET request for the URL from the *'Location'* header. If the result is not ready yet, it returns *'Accepted'* message and *'202'* code again with the same "'Location'" header.
+
+.. _API reference: https://api.plumsail.com/swagger/index.html?urls.primaryName=Documents

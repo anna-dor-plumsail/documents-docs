@@ -37,7 +37,7 @@ You can use any other connector to get files from your system.
 
 **Fill Merge Fields in DOCX document**
 
-This is an action from Plumasail Documents connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+This is an action from `Plumasail Documents connector <https://plumsail.com/documents>`_.
 
 There are two parameters:
 
