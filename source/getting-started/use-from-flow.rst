@@ -10,7 +10,7 @@ When you add an action for the first time you will be asked for *'Connection Nam
 
 Then `create an API key in your Plumsail Account page <sign-up.html>`_ and paste it to *'Access Key'* input. 
 
-.. image:: ../_static/img/getting-started/sp-create-flow-connection.png
+.. image:: ../_static/img/getting-started/create-flow-connection.png
    :alt: Screen of Plumsail Documents
 
 Examples of Flows
