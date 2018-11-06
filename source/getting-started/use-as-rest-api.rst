@@ -20,7 +20,7 @@ Just follow the steps described in `this topic <sign-up.html#generate-api-key>`_
 Review reference for API that you want to call
 ----------------------------------------------
 
-You can find links to references fro all Actions APIs on `this page <https://api.plumsail.com/swagger/index.html?urls.primaryName=Documents>`_.
+You can find API reference on `this page <https://api.plumsail.com/swagger/index.html?urls.primaryName=Documents>`_.
 
 .. _use-own-language:
 
