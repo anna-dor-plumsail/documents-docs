@@ -224,7 +224,7 @@ Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
 
-       -  You can find description of template syntax in `this article <../../advanced/html-template-syntax.html>`_. 
+       -  You can find description of template syntax in `this article <../../document-generation/html/index.html>`_. 
        
           .. code-block:: html
 
