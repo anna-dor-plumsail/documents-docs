@@ -575,6 +575,43 @@ Merge PDF document with the help of Microsoft Flow.
 .. image:: ../../_static/img/flow/documents/merge-pdf-example.png
    :alt: Merge PDF Example
 
+Merge DOCX
+---------
+
+Merge DOCX document with the help of Microsoft Flow.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  Raw content of the result file.
+       -  It is a Base64 encoded content of the result file.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  DOCX Documents Content
+       -  The array of raw content of DOCX documents.       
+
+       -  You may get the content of the source DOCX file by "Get file content" action from "SharePoint" connector or from some other connector.
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/merge-docx-example.png
+   :alt: Merge DOCX Example
+
 Extract text from PDF document
 ------------------------------
 
