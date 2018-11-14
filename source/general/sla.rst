@@ -1,12 +1,12 @@
 Service level agreement
 =======================
 
-.. note:: For Plumsail Documents running on "Enterprise" plan, we guarantee that the uptime will be 99% of the time.
+.. note:: For Plumsail Documents running on "Cabinet" plan, we guarantee that the uptime will be 99% of the time.
 
 Terms
 ~~~~~
 
-This Service Level Agreement for Plumsail Documents (this “SLA”) is a part of `Plumsail License Agreement <https://plumsail.com/license-agreement/>`_ (the “Agreement”). This SLA applies to the "Enterprise" plan of the Plumsail Documents listed herein (an “Documents”) but does not apply to the rest of pricing plans.
+This Service Level Agreement for Plumsail Documents (this “SLA”) is a part of `Plumsail License Agreement <https://plumsail.com/license-agreement/>`_ (the “Agreement”). This SLA applies to the "Cabinet" plan of the Plumsail Documents listed herein (an “Documents”) but does not apply to the rest of pricing plans.
 
 If we do not achieve and maintain the Service Levels for Documents as described in this SLA, then you may be eligible for a credit towards a portion of your monthly service fees. We will not change the terms of your SLA during your subscription period. If you renew the subscription, the current version of SLA will be applied at the time of renewal.
 
@@ -58,7 +58,7 @@ This SLA is not applicable to any performance or availability issues:
 
 7. For not paid license. For example, for trial or partner licenses.
 
-This SLA applies to the "Enterprise" plan of the Documents but does not apply to the rest of plans.
+This SLA applies to the "Cabinet" plan of the Documents but does not apply to the rest of plans.
 
 Version history
 ~~~~~~~~~~~~~~~
