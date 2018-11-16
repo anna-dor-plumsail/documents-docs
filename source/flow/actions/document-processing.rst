@@ -385,6 +385,54 @@ Converts .docx document to PDF document with the help of Microsoft Flow. You can
 .. image:: ../../_static/img/flow/documents/convert-docx-to-pdf-example.png
    :alt: Convert DOCX document to PDF Example
 
+Convert XLSX to PDF
+-------------------
+
+Converts .xlsx document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-word-to-pdf.html>`_.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  The content of the result PDF file.
+       -  It is a Base64 encoded content of the result file.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document content
+       -  The raw content of the source .docx file. You can extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+
+       -  It is a Base64 encoded content of the source template file.          
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/convert-docx-to-pdf-example.png
+   :alt: Convert DOCX document to PDF Example
+
 Convert HTML to PDF
 -------------------
 
