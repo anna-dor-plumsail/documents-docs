@@ -502,7 +502,7 @@ Converts HTML document to PDF document with the help of Microsoft Flow. You can 
             </body>
             </html>
 
-    *  -  Papper Size
+    *  -  Paper Size
        -  Paper size for output PDF file.
        -  
 
