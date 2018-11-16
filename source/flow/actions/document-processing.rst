@@ -430,7 +430,7 @@ Converts .xlsx document to PDF document with the help of Microsoft Flow. You can
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/documents/convert-docx-to-pdf-example.png
+.. image:: ../../_static/img/flow/documents/convert-xlsx-to-pdf-example.png
    :alt: Convert DOCX document to PDF Example
 
 Convert HTML to PDF
