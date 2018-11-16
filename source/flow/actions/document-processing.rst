@@ -389,6 +389,7 @@ Convert XLSX to PDF
 -------------------
 
 Converts .xlsx document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-xlsx-to-pdf.html>`_.
+
 Note: At this moment the action is only available in custom connector. Please read `here <../flow/create-custom-connector.html>`_ how to create one.
 
 .. rubric:: Output Parameters
