@@ -388,7 +388,7 @@ Converts .docx document to PDF document with the help of Microsoft Flow. You can
 Convert XLSX to PDF
 -------------------
 
-Converts .xlsx document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-xlsx-to-pdf.html>`_.
+Converts .xlsx document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-excel-to-pdf.html>`_.
 
 Note: At this moment the action is only available in custom connector. Please read `here <../flow/create-custom-connector.html>`_ how to create one.
 
@@ -466,6 +466,86 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
        -  Example
     *  -  Source HTML
        -  HTML content of a source file. You can specify raw HTML here or extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System          
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
+
+       -  .. code-block:: html
+
+            <!doctype html>
+            <html>
+
+            <head>
+                <meta charset="utf-8">
+                <title>HTML to PDF example
+                <style>
+                    div {
+                        border: 1px solid lightgray;
+                        padding: 5px;
+                        float: left;            
+                    }
+                </style>
+            </head>
+            <body>
+                <div>
+                    Text in box1
+                </div>
+                <div>
+                    Text in box2
+                </div>    
+            </body>
+            </html>
+
+    *  -  Header HTML
+       -  HTML markup that should be added as a Header
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System          
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
+
+       -  .. code-block:: html
+
+            <!doctype html>
+            <html>
+
+            <head>
+                <meta charset="utf-8">
+                <title>HTML to PDF example
+                <style>
+                    div {
+                        border: 1px solid lightgray;
+                        padding: 5px;
+                        float: left;            
+                    }
+                </style>
+            </head>
+            <body>
+                <div>
+                    Text in box1
+                </div>
+                <div>
+                    Text in box2
+                </div>    
+            </body>
+            </html>
+
+    *  -  Footer HTML
+       -  HTML markup that should be added as a Footer
 
           - SharePoint
           - Salesforce
