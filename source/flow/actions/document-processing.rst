@@ -554,7 +554,7 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
        -  The page margins that separated ' '.
        -  
 
-          margin-top: 100px;
+          margin-top: 50px;
                   
 
 .. rubric:: Example
