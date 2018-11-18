@@ -505,18 +505,7 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
             </html>
 
     *  -  Header HTML
-       -  HTML markup that should be added as a Header
-
-          - SharePoint
-          - Salesforce
-          - Box
-          - OneDrive
-          - Google Drive
-          - Dropbox
-          - SFTP
-          - File System          
-
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
+       -  HTML markup that should be added as a Header     
 
        -  .. code-block:: html
 
@@ -545,18 +534,7 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
             </html>
 
     *  -  Footer HTML
-       -  HTML markup that should be added as a Footer
-
-          - SharePoint
-          - Salesforce
-          - Box
-          - OneDrive
-          - Google Drive
-          - Dropbox
-          - SFTP
-          - File System          
-
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
+       -  HTML markup that should be added as a Footer          
 
        -  .. code-block:: html
 
