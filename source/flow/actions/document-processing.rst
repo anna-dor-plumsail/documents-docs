@@ -509,29 +509,10 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
 
        -  .. code-block:: html
 
-            <!doctype html>
-            <html>
-
-            <head>
-                <meta charset="utf-8">
-                <title>HTML to PDF example
-                <style>
-                    div {
-                        border: 1px solid lightgray;
-                        padding: 5px;
-                        float: left;            
-                    }
-                </style>
-            </head>
-            <body>
-                <div>
-                    Text in box1
-                </div>
-                <div>
-                    Text in box2
-                </div>    
-            </body>
-            </html>
+            <header>
+              <h1>Header</h1>
+              <p>additional information</p>
+            </header>
 
     *  -  Footer HTML
        -  HTML markup that should be added as a Footer          
@@ -567,7 +548,14 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
        -  
 
           - Portrait
-          - Landscape          
+          - Landscape
+
+    *  -  Margins
+       -  The page margins that separated ''
+       -  
+
+          - Example
+          - Example          
 
 .. rubric:: Example
 
