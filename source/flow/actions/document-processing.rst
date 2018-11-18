@@ -505,7 +505,7 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
             </html>
 
     *  -  Header HTML
-       -  HTML markup that should be added as a Header     
+       -  HTML markup that should be added as a Header. 
 
        -  .. code-block:: html
 
@@ -515,7 +515,7 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
             </header>
 
     *  -  Footer HTML
-       -  HTML markup that should be added as a Footer          
+       -  HTML markup that should be added as a Footer.          
 
        -  .. code-block:: html
 
@@ -551,7 +551,7 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
           - Landscape
 
     *  -  Margins
-       -  The page margins that separated ''
+       -  The page margins that separated ' '.
        -  
 
           - Example
