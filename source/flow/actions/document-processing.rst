@@ -538,29 +538,10 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
 
        -  .. code-block:: html
 
-            <!doctype html>
-            <html>
-
-            <head>
-                <meta charset="utf-8">
-                <title>HTML to PDF example
-                <style>
-                    div {
-                        border: 1px solid lightgray;
-                        padding: 5px;
-                        float: left;            
-                    }
-                </style>
-            </head>
-            <body>
-                <div>
-                    Text in box1
-                </div>
-                <div>
-                    Text in box2
-                </div>    
-            </body>
-            </html>
+           <footer>
+            <p>email: <a href="mailto:contact@plumsail.com">
+             contact@plumsail.com</a>.</p>
+           </footer>
 
     *  -  Paper Size
        -  Paper size for output PDF file.
