@@ -19,7 +19,7 @@ Local storage
 We may collect and store information (including personal information) locally on your device using mechanisms such as browser web storage. Local storage is located in client web browsers. We don’t transfer any data from local storage to our servers. It is used for performance optimization and caching. Like cookies, you can control how local storage works on your browser settings on a global or website specific manner. You can disable local storage or clear it manually at any time.
 
 What happens to data when Documents has been uninstalled?
--------------------------------------------------------
+---------------------------------------------------------
 
 When you uninstall Documents, logs are removed permanently. Local storage data can be cleared manually in your browser. Information about Documents sign ups is still stored on our servers and can be removed by request. You can send a request to support@plumsail.com.
 

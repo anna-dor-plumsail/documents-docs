@@ -58,8 +58,9 @@ Plumsail Documents Documentation
     
     general/version-history
     general/licensing-details
-    general/security-policy
     general/upgrade-renew
+    general/architecture
+    general/security-policy
     general/sla    
 
   .. toctree::
