@@ -1,7 +1,7 @@
 Register account and get API key
 =======================================
 
-First of all, you need to `register Plumsail Account <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/intro>`_. This account is used to manage your Plumsail products including Plumsail Documents.
+First of all, you need to `register Plumsail Account <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/intro/reg>`_. This account is used to manage your Plumsail products including Plumsail Documents.
 
 If you already have an account, just sign in to `account.plumsail.com <https://auth.plumsail.com/account/login?returnUrl=https://account.plumsail.com/documents/intro>`_.
 
