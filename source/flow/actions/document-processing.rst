@@ -415,7 +415,7 @@ Note: At this moment the action is only available in custom connector. Please re
        -  Description
        -  Example
     *  -  Document content
-       -  The raw content of the source .docx file. You can extract file content from other connectors like:
+       -  The raw content of the source .xlsx file. You can extract file content from other connectors like:
 
           - SharePoint
           - Salesforce
