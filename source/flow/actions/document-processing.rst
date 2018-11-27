@@ -415,7 +415,7 @@ Note: At this moment the action is only available in custom connector. Please re
        -  Description
        -  Example
     *  -  Document content
-       -  The raw content of the source .docx file. You can extract file content from other connectors like:
+       -  The raw content of the source .xlsx file. You can extract file content from other connectors like:
 
           - SharePoint
           - Salesforce
@@ -504,6 +504,26 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
             </body>
             </html>
 
+    *  -  Header HTML
+       -  HTML markup that should be added as a Header. 
+
+       -  .. code-block:: html
+
+            <header>
+              <h1>Header</h1>
+              <p>additional information</p>
+            </header>
+
+    *  -  Footer HTML
+       -  HTML markup that should be added as a Footer.          
+
+       -  .. code-block:: html
+
+           <footer>
+            <p>email: <a href="mailto:contact@plumsail.com">
+             contact@plumsail.com</a>.</p>
+           </footer>
+
     *  -  Paper Size
        -  Paper size for output PDF file.
        -  
@@ -528,7 +548,14 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
        -  
 
           - Portrait
-          - Landscape          
+          - Landscape
+
+    *  -  Margins
+       -  The page margins that separated ' '.
+       -  
+
+          50;
+                  
 
 .. rubric:: Example
 
