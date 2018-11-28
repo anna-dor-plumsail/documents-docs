@@ -205,18 +205,19 @@ Examples
         - .. code-block:: json
 
             {                     
-                "val1" "Derek Clark",
-                "val2" "Jessica Adams"
+                "val1":"Derek Clark",
+                "val2":"Jessica Adams"
             }         
 
         - .. code-block:: json
     
             Derek Clark
 
-collapse
---------
 
-:code:`collapse` - it can be used to conditionally hide blocks of a Word document or to clear cells in an Excel document. If a value in the tag is :code:`null`, :code:`true`, empty or empty array, it will be applied.
+hide-block-if
+----
+
+:code:`hide-block-if(val)` - it can be used to conditionally hide blocks of a document. If a value in the tag is equal to a value of the parameter, it will be applied.
 
 Examples
 ~~~~~~~~
@@ -225,6 +226,82 @@ The formatter can be used in both DOCX and XLSX templates. However, it behaves d
 
 - `How to hide content blocks in DOCX templates <../docx/conditionally-hide-blocks.html>`_
 - `How to clear cells in XLSX templates <../xlsx/conditionally-clear-cells.html>`_
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+
+    *   - .. code-block:: json
+    
+            {{value}:hide-block-if(1)}
+
+            {{value}:hide-block-if(Jessica)}
+
+            {{value}:hide-block-if([1, 2])}
+
+            {{value}:hide-block-if(Jessica, John)}
+
+        - .. code-block:: json
+
+            {                     
+                "value": 1
+            }         
+
+            {                     
+                "value": "Jessica"
+            }  
+
+            {                     
+                "value": [1, 2]
+            }  
+
+            {                     
+                "value": [Jessica, John]
+            }  
+
+        - .. code-block:: json
+
+hide-block-if-empty
+----
+
+:code:`hide-block-if-empty` - it can be used to conditionally hide blocks of a document. If a value in the tag is null, empty or empty array, it will be applied.
+
+Examples
+~~~~~~~~
+
+This is a special case of `hide-block-if(val)` where a value is null, empty or empty array.
+Read the articles below for more information about hiding blocks in DOCX templates and cells in XLSX templates:
+
+- `How to hide content blocks in DOCX templates <../docx/conditionally-hide-blocks.html>`_
+- `How to clear cells in XLSX templates <../xlsx/conditionally-clear-cells.html>`_
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+
+    *   - .. code-block:: json
+    
+            {{value}:hide-block-if-empty}
+
+        - .. code-block:: json
+
+            {                     
+                "value": null
+            }         
+
+            {                     
+                "value": ""
+            }  
+
+            {                     
+                "value": []
+            }  
+
+        - .. code-block:: json
 
 bool
 ----
@@ -559,3 +636,37 @@ Examples
         
             .. image:: ../../_static/img/document-generation/sheet-formatter-result.png
                 :alt: sheet formatter result
+                
+                
+picture
+----
+
+:code:`picture` - it resolves URL or base64 string and converts it to an image.
+
+Examples
+~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. code-block:: json
+    
+            {{value}:picture}
+
+        - .. code-block:: json
+
+            {                     
+                "value": "https://picturesite.com/pics/picture.png"
+            }         
+
+
+            {                     
+                "value": "iVBORw0KGgoAAAANSUhEUgAAAIAAAAA9CAYAAABlamFgAAAACXBIWXMAAA7EAAAOxAGV
+            }    
+
+        - .. code-block:: json
+    
+           the image
