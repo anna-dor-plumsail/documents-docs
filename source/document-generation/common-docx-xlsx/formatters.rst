@@ -260,8 +260,6 @@ The formatter can be used in both DOCX and XLSX templates. However, it behaves d
                 "value": [Jessica, John]
             }  
 
-        - .. code-block:: json
-
 hide-block-if-empty
 ----
 
