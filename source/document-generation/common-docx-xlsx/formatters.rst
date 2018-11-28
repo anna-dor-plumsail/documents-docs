@@ -279,7 +279,6 @@ Read the articles below for more information about hiding blocks in DOCX templat
 
     *   - Template
         - Data
-
     *   - .. code-block:: json
     
             {{value}:hide-block-if-empty}
@@ -297,8 +296,6 @@ Read the articles below for more information about hiding blocks in DOCX templat
             {                     
                 "value": []
             }  
-
-        - .. code-block:: json
 
 bool
 ----
