@@ -655,7 +655,7 @@ Merge PDF document with the help of Microsoft Flow.
    :alt: Merge PDF Example
 
 Merge DOCX
----------
+----------
 
 Merge DOCX document with the help of Microsoft Flow.
 
