@@ -232,7 +232,6 @@ The formatter can be used in both DOCX and XLSX templates. However, it behaves d
 
     *   - Template
         - Data
-
     *   - .. code-block:: json
     
             {{value}:hide-block-if(1)}
