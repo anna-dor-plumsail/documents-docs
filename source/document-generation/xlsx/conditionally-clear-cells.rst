@@ -5,7 +5,7 @@ You can use `hide-block-if-empty formatter <../common-docx-xlsx/formatters.html#
 
 First of all, review the `conditionally clear cells demo <./demos.html#clear-cells>`_. There is a template for the case that we describe here.
 
-The formatter checks if a value for current tag is empty or :code:`true`, then clears the content of cells.
+The formatter checks if a value for current tag is null, empty or empty array, then clears the content of cells.
 
 .. contents:: Two cases when you can use it:
     :local:
@@ -31,7 +31,7 @@ We want to clear content of all cells with information about contacts if the :co
 .. image:: ../../_static/img/document-generation/xlsx-clear-single-cell-template.png
   :alt: Clear single cell template
 
-As you can see, there are tags with :code:`hide-block-if-empty` formatter inside each that we want to clear. You may notice that we also use :code:`hide` formatter with :code:`hide-block-if-empty` formatter together. It hides the value current tag.
+As you can see, there are tags with :code:`hide-block-if-empty` formatter inside each that we want to clear.
 
 The generated document will look like this:
 
