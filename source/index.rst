@@ -67,7 +67,7 @@ Plumsail Documents Documentation
     :name: toc-test-api
     :maxdepth: 2
     
-    REST API Reference <https://api.plumsail.com/swagger>                      
+    REST API Reference <https://api.plumsail.com/swagger/index.html?urls.primaryName=Documents>                      
 
   .. rst-class:: single-page-nav
   

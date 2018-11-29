@@ -42,7 +42,7 @@ You can use any other connector to get files from your system.
 
 **Convert DOCX to PDF**
 
-This is an action from Plumasail Documents connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+This is an action from `Plumasail Documents connector <https://plumsail.com/documents>`_.
 
 Just put DOCX file content from the output of the previous action and receive PDF file content as an output of this action.
 

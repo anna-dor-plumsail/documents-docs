@@ -29,7 +29,7 @@ Firstly you need to add a trigger to start Flow when a new email arrives. We use
 
 **Convert HTML to PDF**
 
-This is an action from Plumasail Documents connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+This is an action from `Plumasail Documents connector <https://plumsail.com/actions>`_.
 
 Just put body variable from trigger output into "Source HTML" parameter of the action. You can use email subject as a file name. Then you can receive PDF file content as an output of the action.
 

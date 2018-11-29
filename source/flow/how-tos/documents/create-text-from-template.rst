@@ -36,7 +36,7 @@ You can actually pick any trigger. For example, you can start Flow on file creat
 
 **Create HTML from template**
 
-This is an action from Plumasail Documents connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_. This action is suitable for generation of HTML and text documents.
+This is an action from `Plumasail Documents connector <https://plumsail.com/documents>`_. This action is suitable for generation of HTML and text documents.
 
 You can find more information about this action `here <../../actions/document-processing.html#create-html-from-template>`_.
 
@@ -53,7 +53,7 @@ In the first parameter *'Source HTML'* you can put raw HTML/text of a template o
     {{#each departments}} - {{name}} 
     {{/each}}
 
-This action supports rich templates with conditions, iterators and nested placeholders. Please read `syntax description <../../../advanced/html-template-syntax.html>`_ for more information.
+This action supports rich templates with conditions, iterators and nested placeholders. Please read `syntax description <../../../document-generation/html/index.html>`_ for more information.
 
 In the second parameter, we specified data to apply to the template in JSON format. This is a list of department names:
 

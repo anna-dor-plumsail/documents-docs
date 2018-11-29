@@ -111,7 +111,7 @@ Now you should have an idea how to use `Get Form from PDF`_ action from `Plumsai
 .. hint:: There is also `Fill in PDF Form`_ action available. You can use it to `automatically populate fillable PDF`_.
 
 .. _Get Form from PDF: ../../actions/document-processing.html#get-form-from-pdf
-.. _Plumsail Documents connector: https://plumsail.com/actions/documents/
+.. _Plumsail Documents connector: https://plumsail.com/documents/
 .. _registering an account: ../../../getting-started/sign-up.html
 .. _Fill in PDF Form: ../../actions/document-processing.html#fill-in-pdf-form
 .. _automatically populate fillable PDF: fill-pdf-form.html

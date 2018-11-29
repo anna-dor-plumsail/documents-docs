@@ -138,7 +138,7 @@ You can use any other connector to store documents into your system.
 
 Conclusion
 ~~~~~~~~~~
-Now you should have an idea how to use Create DOCX Document from Template action from `Plumsail Documents connector <https://plumsail.com/actions/documents/>`_ for Microsoft Flow. 
+Now you should have an idea how to use Create DOCX Document from Template action from `Plumsail Documents connector`_ for Microsoft Flow. 
 If you haven’t used it yet, `registering an account`_ would be the first step. It is quite easy to get started.
 
 
@@ -146,7 +146,7 @@ If you haven’t used it yet, `registering an account`_ would be the first step.
 
 
 .. _Create DOCX Document from Template: ../../actions/document-processing.html#create-docx-document-from-template
-.. _Plumsail Documents connector: https://plumsail.com/actions/documents/
+.. _Plumsail Documents connector: https://plumsail.com/documents/
 .. _SharePoint connector: https://plumsail.com/actions/sharepoint/
 .. _this documentation page: ../../../document-generation/docx/demos.html#sales-invoice
 .. _registering an account: ../../../getting-started/sign-up.html

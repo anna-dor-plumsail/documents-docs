@@ -96,7 +96,7 @@ Now you should have an idea how to use Fill in PDF form action from `Plumsail Do
 .. hint:: There is also `Get Form from PDF`_ action available. You can use it to `collect data from fillable PDF`_.
 
 .. _Fill in PDF form: ../../actions/document-processing.html#fill-in-pdf-form
-.. _Plumsail Documents connector: https://plumsail.com/actions/documents/
+.. _Plumsail Documents connector: https://plumsail.com/documents/
 .. _Plumsail Form: https://plumsail.com/forms/public-forms/
 .. _form submission: https://plumsail.com/docs/forms/microsoft-flow.html
 .. _extract data from incoming email messages: use-regex-match-to-extract-values.html

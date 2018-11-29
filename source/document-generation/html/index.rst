@@ -9,7 +9,7 @@ Template syntax is quite similar to syntax of popular JavaScript framework `Hand
 
     {{Customer.Address.ZipCode}}
 
-Template syntax supported in Plumsail Actions is geared towards building text and HTML documents. You can explicitly indicate when you want newlines. Example: 
+Template syntax supported in Plumsail Documents is geared towards building text and HTML documents. You can explicitly indicate when you want newlines. Example: 
 
 .. code:: html
 

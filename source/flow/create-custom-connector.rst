@@ -22,7 +22,7 @@ Once you clicked *'Continue'* you will see *'General'* step of connector configu
 
 You may want to differentiate this connector from others. In this case, you can assign a custom icon and custom color for it. We suggest this icon:
 
-.. image:: ../_static/img/getting-started/actions-connector-icon.png
+.. image:: ../_static/img/getting-started/documents-connector-icon.png
    :alt: Connector icon
    :target: ../_static/img/getting-started/actions-connector-icon.png
 
@@ -30,7 +30,7 @@ And this color:
 
 ::
 
-  #ce2d7d
+  #7d4bcd
 
 Then click *'Continue'*. You should see authentication type screen:
 

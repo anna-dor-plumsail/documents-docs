@@ -67,7 +67,7 @@ Click **File Path** field and add there **Folder Path** and **File name with ext
 Convert DOCX to PDF
 ~~~~~~~~~~~~~~~~~~~
 
-This is an action from `Plumsail Documents connector <https://plumsail.com/docs/actions/v1.x/flow/actions/document-processing.html>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+This is an action from `Plumsail Documents connector <https://plumsail.com/documents>`_.
 
 Put here **File content** from the output of the previous action.
 
@@ -89,7 +89,7 @@ The array of PDF files is ready, now we can move to the  main step  -  mergi
 Merge PDF
 ~~~~~~~~~
 
-This is an action from `Plumsail Documents connector <https://plumsail.com/docs/actions/v1.x/flow/actions/document-processing.html>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+This is an action from `Plumsail Documents connector <https://plumsail.com/documents>`_.
 
 Click a small array icon on the right to switch to the view where you can input an entire array. Add the **Array of the PDF files** you received in the loop to the **Content of PDF documents** field:
 
@@ -115,4 +115,4 @@ Conclusion
 That is all, the flow is configured. Hope, these steps will help to ease the work with documents.
 
 .. hint::
-  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/split-pdf-files.html>`_ explaining how to Split PDF files in Microsoft Flow and Azure Logic Apps.
+  You may also be interested in `this article <split-pdf-files.html>`_ explaining how to Split PDF files in Microsoft Flow and Azure Logic Apps.

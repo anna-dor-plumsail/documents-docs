@@ -224,7 +224,7 @@ Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
 
-       -  You can find description of template syntax in `this article <../../advanced/html-template-syntax.html>`_. 
+       -  You can find description of template syntax in `this article <../../document-generation/html/index.html>`_. 
        
           .. code-block:: html
 
@@ -385,10 +385,62 @@ Converts .docx document to PDF document with the help of Microsoft Flow. You can
 .. image:: ../../_static/img/flow/documents/convert-docx-to-pdf-example.png
    :alt: Convert DOCX document to PDF Example
 
+Convert XLSX to PDF
+-------------------
+
+Converts .xlsx document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-excel-to-pdf.html>`_.
+
+Note: At this moment the action is only available in custom connector. Please read `here <../flow/create-custom-connector.html>`_ how to create one.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  The content of the result PDF file.
+       -  It is a Base64 encoded content of the result file.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document content
+       -  The raw content of the source .xlsx file. You can extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+
+       -  It is a Base64 encoded content of the source template file.          
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/convert-xlsx-to-pdf-example.png
+   :alt: Convert DOCX document to PDF Example
+
 Convert HTML to PDF
 -------------------
 
 Converts HTML document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-html-to-pdf.html>`_.
+
+Note: At this moment options: Header HTML, Footer HTML and Margins are only available in custom connector. Please read `here <../flow/create-custom-connector.html>`_ how to create one.
 
 .. rubric:: Output Parameters
 
@@ -452,7 +504,27 @@ Converts HTML document to PDF document with the help of Microsoft Flow. You can 
             </body>
             </html>
 
-    *  -  Papper Size
+    *  -  Header HTML
+       -  HTML markup that should be added as a Header. 
+
+       -  .. code-block:: html
+
+            <header>
+              <h1>Header</h1>
+              <p>additional information</p>
+            </header>
+
+    *  -  Footer HTML
+       -  HTML markup that should be added as a Footer.          
+
+       -  .. code-block:: html
+
+           <footer>
+            <p>email: <a href="mailto:contact@plumsail.com">
+             contact@plumsail.com</a>.</p>
+           </footer>
+
+    *  -  Paper Size
        -  Paper size for output PDF file.
        -  
 
@@ -476,7 +548,14 @@ Converts HTML document to PDF document with the help of Microsoft Flow. You can 
        -  
 
           - Portrait
-          - Landscape          
+          - Landscape
+
+    *  -  Margins
+       -  The page margins that separated ' '.
+       -  
+
+          50;
+                  
 
 .. rubric:: Example
 
@@ -574,6 +653,43 @@ Merge PDF document with the help of Microsoft Flow.
 
 .. image:: ../../_static/img/flow/documents/merge-pdf-example.png
    :alt: Merge PDF Example
+
+Merge DOCX
+---------
+
+Merge DOCX document with the help of Microsoft Flow.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  Raw content of the result file.
+       -  It is a Base64 encoded content of the result file.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  DOCX Documents Content
+       -  The array of raw content of DOCX documents.       
+
+       -  You may get the content of the source DOCX file by "Get file content" action from "SharePoint" connector or from some other connector.
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/merge-docx-example.png
+   :alt: Merge DOCX Example
 
 Extract text from PDF document
 ------------------------------

@@ -154,7 +154,7 @@ If you haven’t used it yet, `registering an account`_ would be the first step.
 
 
 .. _Create XLSX document from template: ../../actions/document-processing.html#create-xlsx-document-from-template
-.. _Plumsail Documents connector: https://plumsail.com/actions/documents/
+.. _Plumsail Documents connector: https://plumsail.com/documents/
 .. _Download the template file: ../../../_static/files/flow/how-tos/create-xlsx-from-template.xlsx
 .. _this article: ../../../document-generation/xlsx/how-it-works.html
 .. _registering an account: ../../../getting-started/sign-up.html
