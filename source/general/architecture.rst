@@ -47,6 +47,7 @@ The data stored in Azure Storage is encrypted `by default`_.
 
 Related documents: 
 
+* `Plumsail disaster reovery <disaster-recovery.html>`_
 * `Azure SOC 1 Report <../_static/files/general/security/azure-soc-1-type-2-report-2017-10-01-to-2018-9-30.pdf>`_  
 * `Azure SOC 2 Report <../_static/files/general/security/azure-soc-2-type-2-report-2017-10-01-to-2018-9-30.pdf>`_  
 * `Azure SOC 3 Report <../_static/files/general/security/azure-soc-3-report-2017-10-01-to-2018-9-30.pdf>`_
