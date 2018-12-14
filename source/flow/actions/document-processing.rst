@@ -390,7 +390,7 @@ Convert XLSX to PDF
 
 Converts .xlsx document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-excel-to-pdf.html>`_.
 
-Note: At this moment the action is only available in custom connector. Please read `here <../flow/create-custom-connector.html>`_ how to create one.
+Note: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
 .. rubric:: Output Parameters
 
@@ -440,7 +440,7 @@ Convert HTML to PDF
 
 Converts HTML document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-html-to-pdf.html>`_.
 
-Note: At this moment options: Header HTML, Footer HTML and Margins are only available in custom connector. Please read `here <../flow/create-custom-connector.html>`_ how to create one.
+Note: At this moment options: Header HTML, Footer HTML and Margins are only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
 .. rubric:: Output Parameters
 
