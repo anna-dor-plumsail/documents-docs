@@ -576,6 +576,7 @@ You can find the documentation for all operations included in "Add watermark to 
 
 - :ref:`image-watermark-type`
 - :ref:`text-watermark-type`
+- :ref:`pdf-watermark-type`
 
 
 .. _image-watermark-type:
@@ -801,8 +802,73 @@ Add text watermark to PDF
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-text-type.png
-   :alt: Image watermark options
+   :alt: Text watermark options
 
+.. _pdf-watermark-type:
+
+Add pdf watermark to PDF
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  The content of the result PDF file.
+       -  It is a Base64 encoded content of the result file.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+
+    *  -  Document content
+       -  Raw content of PDF document.
+       -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
+
+          You may use `this link <../../_static/files/flow/how-tos/file-to-split.pdf>`_ to download a sample 10 pages PDF file.
+
+    *  -  Overlay pdf file content
+       -  The content of a file that will be overlayed
+       -  You may use `this link <../../_static/files/flow/how-tos/overlay.pdf>`_ to download a sample 10 pages PDF file.
+
+    *  -  Overlay position
+       -  You can select one of the predefined layer for overlay rendering position. Available preset positions:
+
+          - Background
+          - Foreground
+
+         
+            Default value is "Background".
+
+       -  Background
+
+    *  -  Start Page
+       -  Index of the first page from which the watermark will be added (indexes start from 1).
+       -  3
+
+    *  -  End Page
+       -  Index of the last page to adding watermark (inclusive). By default will use the last page of the source document.
+       -  7 
+
+    *  -  Page Range
+       -  The range of target pages delimeted by ;
+       -  1;3;5
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-pdf-type.png
+   :alt: PDF watermark options
 
 Split PDF
 ---------
