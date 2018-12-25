@@ -565,14 +565,14 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
 Add watermark to PDF
 -------------------
 
-"Add watermark to PDF" is a complex action that includes several operations for adding watermark to your pdf document.
+"Add watermark to PDF" action support a few types of watermarks: Text, Image, PDF.
 
 .. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-select-type.png
    :alt: Selection of the watermark type
 
-When you added this action to your Flow, you need to specify initial "Type" parameter - type of watermark: text, image.
+When you added this action to your Flow, you need to pick of those: text, image, pdf.
 
-You can find the documentation for all operations included in "Add watermark to PDF" action below:
+You can find the documentation for all watermark types included in "Add watermark to PDF" action below:
 
 - :ref:`image-watermark-type`
 - :ref:`text-watermark-type`
@@ -623,15 +623,15 @@ Add image watermark to PDF
     *  -  Watermark position
        -  You can select one of the predefined position of watermark on the page. Available preset positions on the document page:
 
-          - 1 - Top Left
-          - 2 - Top Middle
-          - 3 - Top Right
-          - 4 - Middle Left
-          - 5 - Center
-          - 6 - Middle Right
-          - 7 - Bottom Left
-          - 8 - Bottom Middle
-          - 9 - Bottom Right
+          1. Top Left
+          2. Top Middle
+          3. Top Right
+          4. Middle Left
+          5. Center
+          6. Middle Right
+          7. Bottom Left
+          8. Bottom Middle
+          9. Bottom Right
 
           .. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-content-positions.png
           
@@ -650,7 +650,7 @@ Add image watermark to PDF
        -  7 
 
     *  -  Pages
-       -  The range of target pages delimeted by ;
+       -  The range of target pages delimeted by ';'. If set then "Start Page" and "End Page" will be ignored.
        -  1;3;5
 
     *  -  Password
@@ -677,15 +677,17 @@ Add image watermark to PDF
 
     *  -  X coordinate
        -  Absolute X coordinate value.
-          If the preset positions (see "Watermark position") do not suit you, then you can set the desired location of the watermark using absolute coordinates
+          If the predefined positions (see "Watermark position") do not suit you, then you can set the desired location of the watermark using absolute coordinates.
           The origin in the bottom left corner. See the picture
 
           .. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-coordinates-start.png
 
+          If set - "Watermark position" parameter will be ignored
+
        -  50
 
     *  -  Y coordinate
-       -  Absolute Y coordinate value.
+       -  Absolute Y coordinate value. If set - "Watermark position" parameter will be ignored
        -  50
 
   
@@ -747,15 +749,15 @@ Add text watermark to PDF
     *  -  Watermark position
        -  You can select one of the predefined position of watermark on the page. Available preset positions on the document page:
 
-          - 1 - Top Left
-          - 2 - Top Middle
-          - 3 - Top Right
-          - 4 - Middle Left
-          - 5 - Center
-          - 6 - Middle Right
-          - 7 - Bottom Left
-          - 8 - Bottom Middle
-          - 9 - Bottom Right
+          1. Top Left
+          2. Top Middle
+          3. Top Right
+          4. Middle Left
+          5. Center
+          6. Middle Right
+          7. Bottom Left
+          8. Bottom Middle
+          9. Bottom Right
 
           .. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-content-positions.png
           
@@ -774,7 +776,7 @@ Add text watermark to PDF
        -  7 
 
     *  -  Pages
-       -  The range of target pages delimeted by ;
+       -  The range of target pages delimeted by ';'. If set then "Start Page" and "End Page" will be ignored.
        -  1;3;5
 
     *  -  Password
@@ -787,15 +789,17 @@ Add text watermark to PDF
 
     *  -  X coordinate
        -  Absolute X coordinate value.
-          If the preset positions (see "Watermark position") do not suit you, then you can set the desired location of the watermark using absolute coordinates
+          If the predefined positions (see "Watermark position") do not suit you, then you can set the desired location of the watermark using absolute coordinates.
           The origin in the bottom left corner. See the picture
 
           .. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-coordinates-start.png
 
+          If set - "Watermark position" parameter will be ignored
+
        -  50
 
     *  -  Y coordinate
-       -  Absolute Y coordinate value.
+       -  Absolute Y coordinate value. If set - "Watermark position" parameter will be ignored
        -  50
 
 
@@ -838,9 +842,9 @@ Add pdf watermark to PDF
 
           You may use `this link <../../_static/files/flow/how-tos/file-to-split.pdf>`_ to download a sample 10 pages PDF file.
 
-    *  -  Overlay pdf file content
-       -  The content of a file that will be overlayed
-       -  You may use `this link <../../_static/files/flow/how-tos/overlay.pdf>`_ to download a sample 10 pages PDF file.
+    *  -  PDF watermark document
+       -  Raw content of the PDF file that will be used as a watermark.
+       -  You may use `this link <../../_static/files/flow/how-tos/overlay.pdf>`_ to download a sample PDF file.
 
     *  -  Overlay position
        -  You can select one of the predefined layer for overlay rendering position. Available preset positions:
@@ -861,8 +865,8 @@ Add pdf watermark to PDF
        -  Index of the last page to adding watermark (inclusive). By default will use the last page of the source document.
        -  7 
 
-    *  -  Page Range
-       -  The range of target pages delimeted by ;
+    *  -  Pages
+       -  The range of target pages delimeted by ';'. If set then "Start Page" and "End Page" will be ignored.
        -  1;3;5
 
 .. rubric:: Example
