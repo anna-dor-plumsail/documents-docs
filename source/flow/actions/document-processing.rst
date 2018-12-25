@@ -649,7 +649,7 @@ Add image watermark to PDF
        -  Index of the last page to adding watermark (inclusive). By default will use the last page of the source document.
        -  7 
 
-    *  -  Page Range
+    *  -  Pages
        -  The range of target pages delimeted by ;
        -  1;3;5
 
@@ -773,7 +773,7 @@ Add text watermark to PDF
        -  Index of the last page to adding watermark (inclusive). By default will use the last page of the source document.
        -  7 
 
-    *  -  Page Range
+    *  -  Pages
        -  The range of target pages delimeted by ;
        -  1;3;5
 
