@@ -844,7 +844,7 @@ Add pdf watermark to PDF
 
     *  -  PDF watermark document
        -  Raw content of the PDF file that will be used as a watermark.
-       -  You may use `this link <../../_static/files/flow/how-tos/overlay.pdf>`_ to download a sample PDF file.
+       -  You may use `this link <../../_static/files/flow/how-tos/overlay.pdf>`_ to download a sample PDF file for using as PDF watermark.
 
     *  -  Overlay position
        -  You can select one of the predefined layer for overlay rendering position. Available preset positions:
