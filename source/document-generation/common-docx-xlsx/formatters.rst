@@ -658,9 +658,11 @@ Examples
 
 
             {                     
-                "value": "iVBORw0KGgoAAAANSUhEUgAAAIAAAAA9CAYAAABlamFgAAAACXBIWXMAAA7EAAAOxAGV
+                "value": "iVBORw0KGgoAAAANSUhEUgAAAIAAAAA9CAYAAABlamFgAA"
             }    
 
         - .. code-block:: json
     
            the image
+
+.. note:: Plumsail Docuuments support anonymous authentication only. To use a link to a picture stored in SharePoint, please, create a guest link and replace **guestacces.aspx** string with **download.aspx** one. Your link should look something like this: https://yourDomain.sharepoint.com/_layouts/15/download.aspx?docid=DocID&authkey=AuthKey
