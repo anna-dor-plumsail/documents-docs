@@ -39,7 +39,7 @@ Please find the description of all the actions from the flow below.
 Form is submitted
 ~~~~~~~~~~~~~~~~~
 
-We've already created a Plumsail form and we will use data from its submission in our flow. If you haven't created a form yet, you can learn how to design and publish a Plumsail Form `here <../../../../../docs/forms/design.html>`_.
+We've already created a Plumsail form and we will use data from its submission in our flow. If you haven't created a form yet, you can learn how to design and publish a Plumsail Form `here <../../../../../forms/design.html>`_.
 
 Below is a screenshot of our form. You may also download the form `here <../../../_static/files/flow/how-tos/Plumsail-Form.xfds>`_, import it into `Plumsail Forms <https://plumsail.com/forms/>`_ and use it as a template.
 
