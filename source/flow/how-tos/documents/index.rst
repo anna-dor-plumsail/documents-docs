@@ -20,3 +20,4 @@ Microsoft Flow examples
       Merge PDF files <merge-pdf-files>      
       Use regular expression match <use-regex-match-to-extract-values>
       Fill merge fields in DOCX document <fill-docx-merge-fields>
+      Create Word and PDF documents from Plumsail Forms <create-word-and-pdf-documents-from-plumsail-forms>

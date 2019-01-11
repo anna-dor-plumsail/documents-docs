@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FormsDesigner JavaScript="" Css="" SubmitToFlow="true" FormId="c20b0142-4b3b-4fbb-8933-729412073632" Theme="">
+  <PCView>
+    <Layout Version="1.0.0.0">
+      <Grid Stacked="Small" DefaultChildWidth="6">
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="FieldName1" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" TitleWidth="120" Width="480" Type="TextBox" InternalName="FieldName1" Required="False" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="FieldName2" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" TitleWidth="120" Width="480" Type="TextBox" InternalName="FieldName2" Required="False" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="FieldName3" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" TitleWidth="120" Width="480" Type="TextBox" InternalName="FieldName3" Required="False" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="FieldName4" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" TitleWidth="120" Width="480" Type="MultilineTextBox" InternalName="FieldName4" Required="False" Mode="Rich" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0" PaddingLeft="400">
+            <SaveButton OnClick="&quot;return fd.save();\n&quot;" Text="Submit" Width="200" InternalName="Button0" />
+          </Cell>
+        </Row>
+      </Grid>
+    </Layout>
+  </PCView>
+</FormsDesigner>
