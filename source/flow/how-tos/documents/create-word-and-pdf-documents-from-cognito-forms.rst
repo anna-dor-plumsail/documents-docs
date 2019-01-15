@@ -1,11 +1,11 @@
-How to create Word and PDF documents from Plumsail Forms in Microsoft Flow and Azure Logic Apps
+How to create Word and PDF documents from Cognito Forms in Microsoft Flow and Azure Logic Apps
 ===============================================================================================
 
-Let's suppose you want to automate the generation of documents in your company. For example, applications, orders, invoices, etc. By going through this article you will learn how to create a DOCX document from a template and convert it to PDF on Plumsail Forms submission with help of `Plumsail Documents <https://plumsail.com/documents/>`_ in Microsoft Flow and Azure Logic Apps.
+Let's suppose you want to automate the generation of documents in your company. For example, applications, orders, invoices, etc. By going through this article you will learn how to create a DOCX document from a template and convert it to PDF on a Cognito Form submission with help of `Plumsail Documents <https://plumsail.com/documents/>`_ in Microsoft Flow and Azure Logic Apps.
 
-`Plumsail Forms <https://plumsail.com/forms/>`_ allows you to design elegant, responsive and highly customizable forms for SharePoint Modern UI or any web page.
+`Cognito Forms <https://www.cognitoforms.com/>`_ is an online form builder that allows you to create powerful forms for your website.
 
-In our example, we will collect data from a Plumsail Form, apply the data to our template and generate a new PDF document.
+In our example, we will collect data from a Cognito Form, apply the data to our template and generate a new PDF document.
 
 
 Description
@@ -26,10 +26,10 @@ Microsoft Flow has a lot of connectors for different systems. Here are just a fe
 
 You can store your source file anywhere.
 
-We need to create a Microsoft Flow that will be triggered by a Plumail Form submission. The flow will get the template from OneDrive, apply data from a submitted Plumail form to this template, convert the generated document to PDF and save it to OneDrive. This is how our complete flow looks like:
+We need to create a Microsoft Flow that will be triggered by a Cognito Form submission. The flow will get the template from OneDrive, apply data from a submitted Cognito form to this template, convert the generated document to PDF and save it to OneDrive. This is how our complete flow looks like:
 
-.. image:: ../../../_static/img/flow/how-tos/Plumsail-Forms-DOCX-PDF-flow.png
-    :alt: Creating Word and PDF documents from Plumsail Forms flow
+.. image:: ../../../_static/img/flow/how-tos/Cognito-Forms-DOCX-PDF-flow.png
+    :alt: Creating Word and PDF documents from Cognito Forms flow
 
 Description of Microsoft Flow Actions
 -------------------------------------
@@ -39,18 +39,18 @@ Please find the description of all the actions from the flow below.
 Form is submitted
 ~~~~~~~~~~~~~~~~~
 
-We've already created a Plumsail form and we will use data from its submission in our flow. If you haven't created a form yet, you can learn how to design and publish a Plumsail Form `here <../../../../../forms/design.html>`_.
+We've already created a Cognito  form and we will use data from its submission in our flow. If you haven't created a form yet, you can learn how to do it `here <https://www.cognitoforms.com/support/15/building-forms/creating-forms>`_.
 
-Below is a screenshot of our form. You may also download the form `here <../../../_static/files/flow/how-tos/Plumsail-Form.xfds>`_, import it into `Plumsail Forms <https://plumsail.com/forms/>`_ and use it as a template.
+Below is a screenshot of our form:
 
-.. image:: ../../../_static/img/flow/how-tos/Plumsail-Form.png
-    :alt: Plumsail Form
+.. image:: ../../../_static/img/flow/how-tos/Cognito-Form.png
+    :alt: Cognito Form
 
-To start the flow on form submission we search for *Plumsail Forms* in MS Flow and add *Plumsail Forms  -  Form is submitted* trigger.
+To start the flow on form submission we search for *Cognito Forms* in MS Flow and add *Cognito Forms - When a new entry is created* trigger.
 
-If this is your first Flow with Plumsail Forms, at this point you'll need to Sign into `Plumsail Account <https://auth.plumsail.com/account/login>`_ from MS Flow, so you can start using your forms inside your flows.
+If this is your first Flow with Cognito Forms, at this point you'll need to Sign into Cognito Account from MS Flow, so you can start using your forms inside your flows.
 
-You'll need to add the ID of the form you want to track. Form ID can be found and copied in **Flow** settings in Forms Designer.
+You'll need to pick the form you want to track in the dropdown.
 
 Get file content
 ~~~~~~~~~~~~~~~~~
@@ -82,12 +82,12 @@ In the first parameter **Document content**, we specified the output of the prev
 
 In the second parameter **Template data**, we specified data to apply to the template in JSON format:
 
-.. image:: ../../../_static/img/flow/how-tos/Plumsail-Forms-DOCX-PDF-data.png
+.. image:: ../../../_static/img/flow/how-tos/Cognito-Forms-DOCX-PDF-data.png
     :alt: Template data in JSON format
 
-This object contains information from our form. We selected the content from the output of *Form is submitted* action in the menu on the right:
+This object contains information from our form. We selected the content from the output of *Cognito Forms - When a new entry is created* action in the menu on the right:
 
-.. image:: ../../../_static/img/flow/how-tos/Plumsail-Forms-DOCX-PDF-Dynamic-content.png
+.. image:: ../../../_static/img/flow/how-tos/Cognito-Forms-DOCX-PDF-Dynamic-content.png
     :alt: Menu on the right
 
 Convert DOCX to PDF
@@ -113,4 +113,4 @@ This is how the final document will look in our case:
 Conclusion
 ----------
 
-Now you should have an idea of how to use *Create DOCX Document from Template* and *Convert DOCX to PDF* actions from `Plumsail Documents <https://plumsail.com/documents/>`_ for Microsoft Flow to automatically create documents on Plumsail Forms submission. If you haven't used our actions yet, `registering an account <../../../getting-started/sign-up.html>`_ would be the first step. It is quite easy to get started.
+Now you should have an idea of how to use *Create DOCX Document from Template* and *Convert DOCX to PDF* actions from `Plumsail Documents <https://plumsail.com/documents/>`_ for Microsoft Flow to automatically create documents on a Cognito Form submission. If you haven't used our actions yet, `registering an account <../../../getting-started/sign-up.html>`_ would be the first step. It is quite easy to get started.
