@@ -562,6 +562,318 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
 .. image:: ../../_static/img/flow/documents/convert-html-to-pdf-example.png
    :alt: Convert HTML document to PDF Example
 
+Add watermark to PDF
+-------------------
+
+"Add watermark to PDF" action support a few types of watermarks: Text, Image, PDF.
+
+.. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-select-type.png
+   :alt: Selection of the watermark type
+
+When you added this action to your Flow, you need to pick of those: text, image, pdf.
+
+You can find the documentation for all watermark types included in "Add watermark to PDF" action below:
+
+- :ref:`image-watermark-type`
+- :ref:`text-watermark-type`
+- :ref:`pdf-watermark-type`
+
+
+.. _image-watermark-type:
+
+Add image watermark to PDF
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  The content of the result PDF file.
+       -  It is a Base64 encoded content of the result file.
+
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+
+    *  -  Document content
+       -  Raw content of PDF document.
+       -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
+
+          You may use `this link <../../_static/files/flow/how-tos/file-to-split.pdf>`_ to download a sample 10 pages PDF file.
+
+    *  -  Image content
+       -  Raw content of image source.
+          Available extensions: bmp, jpeg, png.
+
+       -  You may get the content of the source image file by "Get file content" action from "SharePoint" connector or from some other connector. 
+
+    *  -  Watermark position
+       -  You can select one of the predefined position of watermark on the page. Available preset positions on the document page:
+
+          1. Top Left
+          2. Top Middle
+          3. Top Right
+          4. Middle Left
+          5. Center
+          6. Middle Right
+          7. Bottom Left
+          8. Bottom Middle
+          9. Bottom Right
+
+          .. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-content-positions.png
+          
+       -  MiddleRight
+    
+    *  -  Opacity
+       -  The degree of transparency of the watermark image. This is a percentage value.
+       -  50
+
+    *  -  Start Page
+       -  Index of the first page from which the watermark will be added (indexes start from 1).
+       -  3
+
+    *  -  End Page
+       -  Index of the last page to adding watermark (inclusive). By default will use the last page of the source document.
+       -  7 
+
+    *  -  Pages
+       -  The range of target pages delimeted by ';'. If set then "Start Page" and "End Page" will be ignored.
+       -  1;3;5
+
+    *  -  Password
+       -  The password to decrypt the source document. If it was encrypted earlier.
+       -  PAs$word
+
+    *  -  PDF owner password
+       -  Enter an optional owner password here. This password can be used to disable document restrictions.
+       -  OwNEr_PAs$word
+
+    *  -  Watermark image width
+       -  A new width of the image that will be used for watermark. If set - source image will be resized
+       -  150
+
+    *  -  Watermark image height
+       -  A new height of the image that will be used for watermark. If set - source image will be resized
+       -  100
+    
+    *  -  Auto scale
+       -  If true, the image will be scaled as close as possible to the values given in Width and Height while maintaining the original proportions.
+          Otherwise, the image will be converted to the specified Height and Width without preserving the proportions.
+
+       -  true
+
+    *  -  X coordinate
+       -  Absolute X coordinate value.
+          If the predefined positions (see "Watermark position") do not suit you, then you can set the desired location of the watermark using absolute coordinates.
+          The origin in the bottom left corner. See the picture
+
+          .. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-coordinates-start.png
+
+          If set - "Watermark position" parameter will be ignored
+
+       -  50
+
+    *  -  Y coordinate
+       -  Absolute Y coordinate value. If set - "Watermark position" parameter will be ignored
+       -  50
+
+  
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-image-type.png
+   :alt: Image watermark options
+
+.. _text-watermark-type:
+
+Add text watermark to PDF
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  The content of the result PDF file.
+       -  It is a Base64 encoded content of the result file.
+
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+
+    *  -  Document content
+       -  Raw content of PDF document.
+       -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
+
+          You may use `this link <../../_static/files/flow/how-tos/file-to-split.pdf>`_ to download a sample 10 pages PDF file.
+
+    *  -  Text content
+       -  Text that will be used as watermark
+       -  watermark test
+
+    *  -  Angle
+       -  The rotation angle of the text. The value in degrees.
+       -  45
+
+    *  -  Color
+       -  Hex value of html color. You can select the desired color using this tool https://www.w3schools.com/colors/colors_picker.asp
+       -  
+          -  000000
+          -  FFFFFF
+
+    *  -  Watermark position
+       -  You can select one of the predefined position of watermark on the page. Available preset positions on the document page:
+
+          1. Top Left
+          2. Top Middle
+          3. Top Right
+          4. Middle Left
+          5. Center
+          6. Middle Right
+          7. Bottom Left
+          8. Bottom Middle
+          9. Bottom Right
+
+          .. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-content-positions.png
+          
+       -  MiddleRight
+    
+    *  -  Opacity
+       -  The degree of transparency of the watermark image. This is a percentage value.
+       -  50
+
+    *  -  Start Page
+       -  Index of the first page from which the watermark will be added (indexes start from 1).
+       -  3
+
+    *  -  End Page
+       -  Index of the last page to adding watermark (inclusive). By default will use the last page of the source document.
+       -  7 
+
+    *  -  Pages
+       -  The range of target pages delimeted by ';'. If set then "Start Page" and "End Page" will be ignored.
+       -  1;3;5
+
+    *  -  Password
+       -  The password to decrypt the source document. If it was encrypted earlier.
+       -  PAs$word
+
+    *  -  PDF owner password
+       -  Enter an optional owner password here. This password can be used to disable document restrictions.
+       -  OwNEr_PAs$word
+
+    *  -  X coordinate
+       -  Absolute X coordinate value.
+          If the predefined positions (see "Watermark position") do not suit you, then you can set the desired location of the watermark using absolute coordinates.
+          The origin in the bottom left corner. See the picture
+
+          .. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-coordinates-start.png
+
+          If set - "Watermark position" parameter will be ignored
+
+       -  50
+
+    *  -  Y coordinate
+       -  Absolute Y coordinate value. If set - "Watermark position" parameter will be ignored
+       -  50
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-text-type.png
+   :alt: Text watermark options
+
+.. _pdf-watermark-type:
+
+Add pdf watermark to PDF
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  The content of the result PDF file.
+       -  It is a Base64 encoded content of the result file.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+
+    *  -  Document content
+       -  Raw content of PDF document.
+       -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
+
+          You may use `this link <../../_static/files/flow/how-tos/file-to-split.pdf>`_ to download a sample 10 pages PDF file.
+
+    *  -  PDF watermark document
+       -  Raw content of the PDF file that will be used as a watermark.
+       -  You may use `this link <../../_static/files/flow/how-tos/overlay.pdf>`_ to download a sample PDF file for using as PDF watermark.
+
+    *  -  Overlay position
+       -  You can select one of the predefined layer for overlay rendering position. Available preset positions:
+
+          - Background
+          - Foreground
+
+         
+            Default value is "Background".
+
+       -  Background
+
+    *  -  Start Page
+       -  Index of the first page from which the watermark will be added (indexes start from 1).
+       -  3
+
+    *  -  End Page
+       -  Index of the last page to adding watermark (inclusive). By default will use the last page of the source document.
+       -  7 
+
+    *  -  Pages
+       -  The range of target pages delimeted by ';'. If set then "Start Page" and "End Page" will be ignored.
+       -  1;3;5
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-pdf-type.png
+   :alt: PDF watermark options
+
 Split PDF
 ---------
 
