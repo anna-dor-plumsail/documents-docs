@@ -217,7 +217,7 @@ Examples
 hide-block-if
 ----
 
-:code:`hide-block-if(val)` - it can be used to conditionally hide blocks of a document. If a value in the tag is equal to a value of the parameter, it will be applied. This formatter works for repeatable sections such as list items or table rows.
+:code:`hide-block-if(val)` - it can be used to conditionally hide blocks of a document. If a value in the tag is equal to a value of the parameter, it will be applied. This formatter works in repeatable sections such as list items or table rows.
 
 Examples
 ~~~~~~~~
@@ -263,7 +263,7 @@ The formatter can be used in both DOCX and XLSX templates. However, it behaves d
 hide-block-if-empty
 ----
 
-:code:`hide-block-if-empty` - it can be used to conditionally hide blocks of a document. If a value in the tag is null, empty or empty array, it will be applied.
+:code:`hide-block-if-empty` - it can be used to conditionally hide blocks of a document. If a value in the tag is null, empty or empty array, it will be applied. This formatter works in repeatable sections such as list items or table rows.
 
 Examples
 ~~~~~~~~
