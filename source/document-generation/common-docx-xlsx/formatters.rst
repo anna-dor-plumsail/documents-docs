@@ -217,7 +217,7 @@ Examples
 hide-block-if
 ----
 
-:code:`hide-block-if(val)` - it can be used to conditionally hide blocks of a document. If a value in the tag is equal to a value of the parameter, it will be applied. This formatter works for repeatable sections such as list or table rows.
+:code:`hide-block-if(val)` - it can be used to conditionally hide blocks of a document. If a value in the tag is equal to a value of the parameter, it will be applied. This formatter works for repeatable sections such as list items or table rows.
 
 Examples
 ~~~~~~~~
