@@ -31,6 +31,11 @@ We need to create a Microsoft Flow that will be triggered by a Cognito Form subm
 .. image:: ../../../_static/img/flow/how-tos/Cognito-Forms-DOCX-PDF-flow.png
     :alt: Creating Word and PDF documents from Cognito Forms flow
 
+**We prepared a Microsoft Flow Template that you can use right away.** It includes all the steps described in this article. To use the template just go to MS Flow, click *Templates* in the left navigation, type *Create Word and PDF documents from Plumsail Forms* and hit *Enter*. You will see the template. You may use it as-is or customize it to, for example, store documents in another storage platform.
+
+.. image:: ../../../_static/img/flow/how-tos/MS-Flow-template-cognito-docx.png
+    :alt: Microsoft Flow Template Create Word and PDF documents from Cognito Forms
+
 Description of Microsoft Flow Actions
 -------------------------------------
 
