@@ -217,11 +217,11 @@ Scroll down to see source data for the template in JSON format.
 
     *   - Template
         - Result
-    *   - `Download template document <../../_static/files/document-generation/demos/repeat-multiple-table-rows-result.docx>`_
+    *   - `Download template document <../../_static/files/document-generation/demos/repeat-multiple-table-rows-template.docx>`_
 
           .. image:: ../../_static/img/document-generation/repeat-multiple-table-rows-template.png
                 :alt: Repeat multiple table rows template
-        - `Download result document <../../_static/files/document-generation/demos/repeat-multiple-table-rows-template.docx>`_
+        - `Download result document <../../_static/files/document-generation/demos/repeat-multiple-table-rows-result.docx>`_
 
           .. image:: ../../_static/img/document-generation/repeat-multiple-table-rows-result.png
                 :alt: Repeat multiple table rows result
