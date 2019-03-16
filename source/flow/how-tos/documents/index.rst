@@ -24,3 +24,4 @@ Microsoft Flow examples
       Create Word and PDF documents from Plumsail Forms <create-word-and-pdf-documents-from-plumsail-forms>
       Create Word and PDF documents from Cognito Forms <create-word-and-pdf-documents-from-cognito-forms>
       Create Word and PDF documents from Typeform <create-word-and-pdf-documents-from-typeform>
+      Create Word and PDF documents from JotForm <create-word-and-pdf-documents-from-jotform>
