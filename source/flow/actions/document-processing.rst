@@ -529,20 +529,30 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
 
        -  .. code-block:: html
 
-            <header>
-              <h1>Header</h1>
-              <p>additional information</p>
-            </header>
+            <!DOCTYPE html>
+            <html>
+              <head>
+                <title></title>
+              </head>
+            <body>
+            This is header
+            </body>
+            </html>
 
     *  -  Footer HTML
        -  HTML markup that should be added as a Footer.          
 
        -  .. code-block:: html
 
-           <footer>
-            <p>email: <a href="mailto:contact@plumsail.com">
-             contact@plumsail.com</a>.</p>
-           </footer>
+           <!DOCTYPE html>
+            <html>
+              <head>
+                <title></title>
+              </head>
+            <body>
+            This is footer
+            </body>
+            </html>
 
     *  -  Paper Size
        -  Paper size for output PDF file.
