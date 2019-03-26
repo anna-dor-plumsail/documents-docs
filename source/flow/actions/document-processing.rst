@@ -58,7 +58,7 @@ We have `an article <../how-tos/documents/create-docx-from-template.html>`_ desc
              :alt: Simple table template         
 
     *  -  Template name
-       -  You can use predefined user templates. `See more <../../../html/document-generation/templates-feature.html>`_
+       -  You can use predefined user templates. `See more <../../document-generation/templates/index.html>`_
        -  .. code::
           invoice.docx
 
@@ -143,7 +143,7 @@ Also there is `an article <../how-tos/documents/create-xlsx-from-template.html>`
              :alt: Simple table template         
 
     *  -  Template name
-       -  You can use predefined user templates. `See more <../../../html/document-generation/templates-feature.html>`_
+       -  You can use predefined user templates. `See more <../../document-generation/templates/index.html>`_
        -  .. code::
           invoice.xlsx
 
@@ -254,7 +254,7 @@ Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You
             </html>
 
     *  -  Template name
-       -  You can use predefined user templates. `See more <../../../html/document-generation/templates-feature.html>`_
+       -  You can use predefined user templates. `See more <../../document-generation/templates/index.html>`_
        -  .. code::
           invoice.html
 
@@ -331,7 +331,7 @@ Creates .docx document by filling merge fields in a .docx document with the help
           Use `this link <../../_static/files/flow/how-tos/Hiring%20Contract%20Template%20(merge%20fields).docx>`_ to download the sample document.
 
     *  -  Template name
-       -  You can use predefined user templates. `See more <../../../html/document-generation/templates-feature.html>`_
+       -  You can use predefined user templates. `See more <../../document-generation/templates/index.html>`_
        -  .. code::
           invoice.docx
 
@@ -1231,7 +1231,7 @@ Fills in PDF form by provided data with the help of Microsoft Flow.
        -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
 
     *  -  Template name
-       -  You can use predefined user templates. `See more <../../../html/document-generation/templates-feature.html>`_
+       -  You can use predefined user templates. `See more <../../document-generation/templates/index.html>`_
        -  .. code::
           invoice.pdf
 
