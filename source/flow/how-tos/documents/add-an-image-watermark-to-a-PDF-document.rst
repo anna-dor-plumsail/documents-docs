@@ -13,7 +13,7 @@ This first article from our "How to use Watermarks in Plumsail Documents" series
 
 *Add watermark to PDF* action supports a few types of watermarks  —  Text, Image, and PDF:
 
-.. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-select-type.png
+.. image:: ../../../_static/img/flow/documents/add-a-watermark-to-pdf-select-type.png
     :alt: Selection of the watermark type
 
 So, let us have a look at how to add an image watermark to a document.
@@ -29,7 +29,7 @@ When a new file is added to a folder Files in OneDrive, we will add an image wat
 
 Here is how our flow will look like:
 
-.. image:: ../../_static/img/flow/how-tos/Watermark-new-files-in-a-folder.png
+.. image:: ../../../_static/img/flow/how-tos/Watermark-new-files-in-a-folder.png
     :alt: Use image type watermark to add a company logo flow
 
 Let us have a closer look at each step of the flow.
@@ -42,7 +42,7 @@ Flow trigger
 
 Please navigate to `MS Flow <https://emea.flow.microsoft.com>`_, create a flow and find *OneDrive  —  When a file is created* action. Using this trigger will allow you to start the flow on adding a file into a folder. Set the name of the source folder:
 
-.. image:: ../../_static/img/flow/how-tos/Watermark-new-files-in-a-folder-source-folder.png
+.. image:: ../../../_static/img/flow/how-tos/Watermark-new-files-in-a-folder-source-folder.png
     :alt: OneDrive  —  When a file is created action
 
 Get file content
@@ -50,7 +50,7 @@ Get file content
 
 Find *Get file content using path* action from *OneDrive* connector. Put here **File Path** from the output of the previous action:
 
-.. image:: ../../_static/img/flow/how-tos/Watermark-new-files-in-a-folder-get-file-content.png
+.. image:: ../../../_static/img/flow/how-tos/Watermark-new-files-in-a-folder-get-file-content.png
     :alt: OneDrive  —  Get file content using path
 
 Get watermark file content
@@ -58,7 +58,7 @@ Get watermark file content
 
 Get the file you are going to use as the watermark. We store it in SharePoint. You can use any other connector to get files from your system.
 
-.. image:: ../../_static/img/flow/how-tos/Watermark-new-files-in-a-folder-get-watermark-file-content.png
+.. image:: ../../../_static/img/flow/how-tos/Watermark-new-files-in-a-folder-get-watermark-file-content.png
     :alt: SharePoint  —  Get file content
 
 Add a watermark to PDF
@@ -70,7 +70,7 @@ Choose **Image** type of the watermark. Put **File content** from the output of 
 
 We set custom values for **Watermark position, Opacity, Watermark Image** width. You may check detailed information on how to use these and other settings `here <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#add-image-watermark-to-pdf>`_.
 
-.. image:: ../../_static/img/flow/how-tos/Watermark-new-files-in-a-folder-add-watermark.png
+.. image:: ../../../_static/img/flow/how-tos/Watermark-new-files-in-a-folder-add-watermark.png
     :alt: Plumsail Documents —  Add a watermark to PDF
 
 Create file
@@ -78,12 +78,12 @@ Create file
 
 Create a file in another folder. We used *Create file* action from *OneDrive* connector, but you can save your file in any other cloud service.
 
-.. image:: ../../_static/img/flow/how-tos/Watermark-new-files-in-a-folder-create-file.png
+.. image:: ../../../_static/img/flow/how-tos/Watermark-new-files-in-a-folder-create-file.png
     :alt: OneDrive —  Create file
 
 So, here is our result document watermarked with a large Plumsail logotype on the background:
 
-.. image:: ../../_static/img/flow/how-tos/InternalRulesAndRegulationsResult.png
+.. image:: ../../../_static/img/flow/how-tos/InternalRulesAndRegulationsResult.png
     :alt: Result document watermarked with an image type watermark
 
 Conclusion
