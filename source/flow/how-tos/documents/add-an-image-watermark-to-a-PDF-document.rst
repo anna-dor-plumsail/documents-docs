@@ -3,13 +3,13 @@ How to add an image watermark to a PDF document
 
 If you find yourself in a need to protect your PDF documents, you may decide to add a watermark to them. It can help you to identify the document owner, to maintain some level of traceability, to classify documents, and to assure confidentiality of the information both inside and outside the organization.
 
-This first article from our "How to use Watermarks in Plumsail Documents" series will let you get started with watermarking PDFs using `Plumsail Documents <https://plumsail.com/documents/>`_ in Microsoft Flow. Here is the list of all the articles in the series:
+We hope this **first article** from our "How to use Watermarks" series will let you get started with watermarking PDFs using `Plumsail Documents <https://plumsail.com/documents/>`_ in Microsoft Flow. Here is the list of all the articles in the series:
 
-  1. How to use **an image type** watermark to automatically add a company logo to PDF files and save them in a new folder.
+  1. How to use **an image type watermark** to automatically add a company logo to PDF files and save them in a new folder.
 
-  2. How to use **a text type** watermark to prevent documents dissemination.
+  2. How to use `a text type watermark <../../../flow/how-tos/documents/add-a-text-watermark-to-a-PDF-document.html>`_ to prevent documents dissemination.
 
-  3. How to use **a PDF type** watermark to add a watermark with a specific design to PDF documents generated on submitting a form.
+  3. How to use **a PDF type watermark** to add a watermark with a specific design to PDF documents generated on submitting a form.
 
 *Add watermark to PDF* action supports a few types of watermarks  —  Text, Image, and PDF:
 
@@ -68,7 +68,7 @@ This is an action from `Plumsail Documents connector <https://plumsail.com/docum
 
 Choose **Image** type of the watermark. Put **File content** from the output of the *Get file content using path* action into the **Document content** field, and the **File content** from the previous action into the **Image content** field.
 
-We set custom values for **Watermark position, Opacity, Watermark Image** width. You may check detailed information on how to use these and other settings `here <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#add-image-watermark-to-pdf>`_.
+We set custom values for **Watermark position, Opacity, Watermark Image** width. You may check detailed information on how to use these and other settings `here <../../../flow/actions/document-processing.html#add-image-watermark-to-pdf>`_.
 
 .. image:: ../../../_static/img/flow/how-tos/Watermark-new-files-in-a-folder-add-watermark.png
     :alt: Plumsail Documents —  Add a watermark to PDF

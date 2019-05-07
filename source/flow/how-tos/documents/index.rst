@@ -26,3 +26,4 @@ Microsoft Flow examples
       Create Word and PDF documents from Typeform <create-word-and-pdf-documents-from-typeform>
       Create Word and PDF documents from JotForm <create-word-and-pdf-documents-from-jotform>
       Add an image watermark to a PDF document <add-an-image-watermark-to-a-PDF-document>
+      Add a text watermark to a PDF document <add-a-text-watermark-to-a-PDF-document>
