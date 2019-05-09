@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Form JavaScript="" Css="" SubmitToFlow="true" FormId="43a84ee3-3fb6-475d-9b6d-af8898175318" Theme="">
+  <PCView>
+    <Layout Version="1.0.0.0">
+      <Grid Stacked="Small" DefaultChildWidth="6">
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="Name" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" TitleWidth="200" Width="400" Type="TextBox" InternalName="Name" Required="False" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="Surname" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" TitleWidth="200" Width="400" Type="TextBox" InternalName="Surname" Required="False" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="Phone" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" TitleWidth="200" Width="400" Type="TextBox" InternalName="Phone" Required="False" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="Email" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" TitleWidth="200" Width="400" Type="TextBox" InternalName="Email" Required="False" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="Position" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" TitleWidth="200" Width="400" Type="DropDown" InternalName="Position" Required="False" Items="[&quot;Designer&quot;,&quot;Support Specialist&quot;,&quot;Senior Developer&quot;]" IsMultiple="False" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="Additional Information" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" TitleWidth="200" Width="400" Type="MultilineTextBox" InternalName="AdditionalInfo" Required="False" Mode="Rich" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0" PaddingLeft="400">
+            <SaveButton OnClick="&quot;return fd.save();\n&quot;" Text="Submit" Width="200" InternalName="Button0" />
+          </Cell>
+        </Row>
+      </Grid>
+    </Layout>
+  </PCView>
+</Form>

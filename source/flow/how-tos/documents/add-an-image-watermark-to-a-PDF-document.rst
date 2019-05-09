@@ -3,13 +3,15 @@ How to add an image watermark to a PDF document
 
 If you find yourself in a need to protect your PDF documents, you may decide to add a watermark to them. It can help you to identify the document owner, to maintain some level of traceability, to classify documents, and to assure confidentiality of the information both inside and outside the organization.
 
-We hope this **first article** from our "How to use Watermarks" series will let you get started with watermarking PDFs using `Plumsail Documents <https://plumsail.com/documents/>`_ in Microsoft Flow. Here is the list of all the articles in the series:
+We hope this **first article** from our "How to use Watermarks" series will let you get started with watermarking PDFs using `Plumsail Documents <https://plumsail.com/documents/>`_ in Microsoft Flow.
+
+  **Here is the list of all the articles in the series:**
 
   1. How to use **an image type watermark** to automatically add a company logo to PDF files and save them in a new folder.
 
   2. How to use `a text type watermark <../../../flow/how-tos/documents/add-a-text-watermark-to-a-PDF-document.html>`_ to prevent documents dissemination.
 
-  3. How to use **a PDF type watermark** to add a watermark with a specific design to PDF documents generated on submitting a form.
+  3. How to use `a PDF type watermark <../../../flow/how-tos/documents/add-a-PDF-watermark-to-a-PDF-document.html>`_ to add a watermark with a specific design to PDF documents generated on submitting a form.
 
 *Add watermark to PDF* action supports a few types of watermarks  —  Text, Image, and PDF:
 
@@ -89,6 +91,6 @@ So, here is our result document watermarked with a large Plumsail logotype on th
 Conclusion
 ----------
 
-We hope this series of articles on using *Add watermark to PDF* action will help you to ascertain the proper use of your PDF documents.
+We hope this `series of articles <../../../flow/how-tos/documents/add-an-image-watermark-to-a-PDF-document.html#how-to-add-an-image-watermark-to-a-pdf-document>`_ on using *Add watermark to PDF* action will help you to ascertain the proper use of your PDF documents.
 
 .. Hint:: For more security options please have a look at `Protects PDF action <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#protect-pdf-document>`_. It allows you to add passwords, copy-, printing-, and other protections to PDF files with the help of Microsoft Flow and Azure Logic Apps.

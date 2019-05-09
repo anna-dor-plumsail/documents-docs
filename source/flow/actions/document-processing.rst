@@ -595,7 +595,7 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
 Add watermark to PDF
 -------------------
 
-"Add watermark to PDF" action support a few types of watermarks: Text, Image, PDF.
+"Add watermark to PDF" action support a few types of watermarks: Text, Image, PDF. You can find examples on how yo use the action `here <../how-tos/documents/add-an-image-watermark-to-a-PDF-document.html>`_.
 
 .. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-select-type.png
    :alt: Selection of the watermark type
@@ -612,7 +612,9 @@ You can find the documentation for all watermark types included in "Add watermar
 .. _image-watermark-type:
 
 Add image watermark to PDF
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please, see a detailed example `here <../how-tos/documents/add-an-image-watermark-to-a-PDF-document.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -730,7 +732,9 @@ Add image watermark to PDF
 .. _text-watermark-type:
 
 Add text watermark to PDF
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please, see a detailed example `here <../how-tos/documents/add-a-text-watermark-to-a-PDF-document.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -841,7 +845,9 @@ Add text watermark to PDF
 .. _pdf-watermark-type:
 
 Add pdf watermark to PDF
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please, see a detailed example `here <../how-tos/documents/add-a-PDF-watermark-to-a-PDF-document.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -962,7 +968,7 @@ Split PDF document with the help of Microsoft Flow. You can find more examples i
 Merge PDF
 ---------
 
-Merge PDF document with the help of Microsoft Flow.
+Merge PDF document with the help of Microsoft Flow. Please, see a detailed example `here <../how-tos/documents/merge-pdf-files.html>`_.
 
 .. rubric:: Output Parameters
 

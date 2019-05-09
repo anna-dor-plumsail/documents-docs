@@ -9,16 +9,16 @@ Before we dive in, here is where we are in our "How to use Watermarks" series:
 
   2. How to use **a text type watermark** to prevent documents dissemination.
 
-  3. How to use **a PDF type watermark** to add a watermark with a specific design to PDF documents generated on submitting a form.
+  3. How to use `a PDF type watermark <../../../flow/how-tos/documents/add-a-PDF-watermark-to-a-PDF-document.html>`_ to add a watermark with a specific design to PDF documents generated on submitting a form.
 
 *Add watermark to PDF* action supports a few types of watermarks  —  Text, Image, and PDF:
 
 .. image:: ../../../_static/img/flow/documents/add-a-watermark-to-pdf-select-type.png
     :alt: Selection of the watermark type
 
-So, let us have a look at how to add a text type watermark to a document.
+So, let us have a look at how to add a text watermark to a document.
 
-Use custom text type watermark
+Use custom text watermark
 ------------------------------
 
 Classify your documents 
@@ -71,7 +71,7 @@ Please navigate to `MS Flow <https://emea.flow.microsoft.com>`_, create a flow a
 Get item
 ~~~~~~~~
 
-Get item's data using *Get item* action from the SharePoint connector. Put here **ID** from the output of the *For a selected item* action:
+Get item data using *Get item* action from the SharePoint connector. Put here **ID** from the output of the *For a selected item* action:
 
 .. image:: ../../../_static/img/flow/how-tos/get-item-watermark-sent-doc.png
     :alt: Get item
@@ -111,6 +111,6 @@ That is it. The recipient will receive the price list with their email address a
 Conclusion
 ----------
 
-We hope this series of articles on using *Add watermark to PDF* action will help you to ascertain the proper use of your PDF documents.
+We hope this `series of articles <../../../flow/how-tos/documents/add-an-image-watermark-to-a-PDF-document.html#how-to-add-an-image-watermark-to-a-pdf-document>`_ on using *Add watermark to PDF* action will help you to ascertain the proper use of your PDF documents.
 
 .. Hint:: For more security options please have a look at `Protects PDF action <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#protect-pdf-document>`_. It allows you to add passwords, copy-, printing-, and other protections to PDF files with the help of Microsoft Flow and Azure Logic Apps.
