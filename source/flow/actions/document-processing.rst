@@ -502,7 +502,7 @@ Note: At this moment the action is only available in custom connector. Please re
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/documents/convert-docx-to-pdf-example.png
+.. image:: ../../_static/img/flow/documents/convert-doc-to-docx-example.png
    :alt: Convert DOC document to DOCX Example
 
 Convert HTML to PDF
