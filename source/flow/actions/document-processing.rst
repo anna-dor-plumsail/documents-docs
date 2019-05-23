@@ -1568,7 +1568,84 @@ Protects PDF by adding passwords, copy-, printing-, and other protections to PDF
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/documents/protect-pdf-example.png
-   :alt: Protect PDF Example  
+   :alt: Protect PDF Example
+
+
+Parse CSV
+-------------------
+
+Parses a CSV file and returns JSON.
+The second parameter is headers from CSV table. 
+Then values for those columns will be dynamically available in the Flow.
+
+Note: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  The content of the result JSON file.
+       .. code-block:: html
+          [
+            {
+              "Id": "12345",
+              "PurchaseDate": "2019-05-01",
+              "ExpirationDate": "2020-05-01",
+              "ProductName": "Product1",
+              "Quantity": "1",
+              "FirstName": "John",
+              "LastName": " Smith",
+              "Email": "smith@smith.com"
+              }
+          ]
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Source CSV file
+       -  The raw content of the source .csv file.. You can extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System          
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
+
+       -  It is a Base64 encoded content of the source template file.  
+
+    *  -  Headers
+       -  Comma separated list of columns. 
+          If you specify the option then values for those columns will be dynamically available in the Flow.
+
+    *  -  Delimiter
+       -  Delimiter of columns. By default it's a comma.          
+
+       -  You can select from the following default values: Comma, Semicolon, Tab
+          or specify a custom value.
+
+                  
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/parse-csv-example.png
+   :alt: Parse CSV file
+
 
 Regular Expression Match
 ----------------------------
