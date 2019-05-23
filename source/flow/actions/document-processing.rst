@@ -1575,8 +1575,6 @@ Parse CSV
 -------------------
 
 Parses a CSV file and returns JSON.
-The second parameter is headers from CSV table. 
-Then values for those columns will be dynamically available in the Flow.
 
 Note: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
@@ -1591,7 +1589,8 @@ Note: At this moment the action is only available in custom connector. Please re
        -  Example
     *  -  File Content
        -  The content of the result JSON file.
-       .. code-block:: html
+       - .. code-block:: html
+
           [
             {
               "Id": "12345",
@@ -1601,7 +1600,7 @@ Note: At this moment the action is only available in custom connector. Please re
               "Quantity": "1",
               "FirstName": "John",
               "LastName": " Smith",
-              "Email": "smith@smith.com"
+              "Email": "john@smith.com"
               }
           ]
 
@@ -1631,14 +1630,13 @@ Note: At this moment the action is only available in custom connector. Please re
        -  It is a Base64 encoded content of the source template file.  
 
     *  -  Headers
-       -  Comma separated list of columns. 
-          If you specify the option then values for those columns will be dynamically available in the Flow.
+       -  Comma separated list of columns.
+       -  If you specify the option then values for those columns will be dynamically available in the Flow. Ex.: Id,PurchaseDate,ExpirationDate
 
     *  -  Delimiter
-       -  Delimiter of columns. By default it's a comma.          
+       -  Delimiter of columns. By default it's a comma.
+       -  You can select from the following default values: Comma, Semicolon, Tab or specify a custom value.
 
-       -  You can select from the following default values: Comma, Semicolon, Tab
-          or specify a custom value.
 
                   
 .. rubric:: Example
