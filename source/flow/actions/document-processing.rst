@@ -558,7 +558,7 @@ Note: At this moment the action is only available in custom connector. Please re
 Convert PPT to PPTX
 -------------------
 
-Converts .ppt document to .xlsx document with the help of Microsoft Flow.
+Converts .ppt document to .pptx document with the help of Microsoft Flow.
 Note: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
 
