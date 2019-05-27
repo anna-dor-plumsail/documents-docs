@@ -398,7 +398,7 @@ Converts .docx document to PDF document with the help of Microsoft Flow. You can
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  It is a Base64 encoded content of the source template file.          
+       -  It is content of the source template file.          
 
 .. rubric:: Example
 
@@ -410,7 +410,7 @@ Convert XLSX to PDF
 
 Converts .xlsx document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-excel-to-pdf.html>`_.
 
-Note: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
 .. rubric:: Output Parameters
 
@@ -448,7 +448,7 @@ Note: At this moment the action is only available in custom connector. Please re
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  It is a Base64 encoded content of the source template file.          
+       -  It is content of the source template file.          
 
 .. rubric:: Example
 
@@ -459,7 +459,7 @@ Convert DOC to DOCX
 -------------------
 
 Converts .doc document to .docx document with the help of Microsoft Flow.
-Note: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
 
 .. rubric:: Output Parameters
@@ -498,7 +498,7 @@ Note: At this moment the action is only available in custom connector. Please re
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  It is a Base64 encoded content of the source template file.          
+       -  It is content of the source template file.          
 
 .. rubric:: Example
 
@@ -509,7 +509,7 @@ Convert XLS to XLSX
 -------------------
 
 Converts .xls document to .xlsx document with the help of Microsoft Flow.
-Note: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
 
 .. rubric:: Output Parameters
@@ -548,7 +548,7 @@ Note: At this moment the action is only available in custom connector. Please re
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  It is a Base64 encoded content of the source template file.          
+       -  It is content of the source template file.        
 
 .. rubric:: Example
 
@@ -559,7 +559,7 @@ Convert PPT to PPTX
 -------------------
 
 Converts .ppt document to .pptx document with the help of Microsoft Flow.
-Note: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
 
 .. rubric:: Output Parameters
@@ -598,7 +598,7 @@ Note: At this moment the action is only available in custom connector. Please re
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  It is a Base64 encoded content of the source template file.          
+       -  It is content of the source template file.          
 
 .. rubric:: Example
 
@@ -610,7 +610,7 @@ Convert PPTX to PDF
 
 Converts .pptx document to PDF document with the help of Microsoft Flow.
 
-Note: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
 .. rubric:: Output Parameters
 
@@ -648,7 +648,7 @@ Note: At this moment the action is only available in custom connector. Please re
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  It is a Base64 encoded content of the source template file.          
+       -  It is content of the source template file.          
 
 .. rubric:: Example
 
@@ -660,7 +660,7 @@ Convert HTML to PDF
 
 Converts HTML document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-html-to-pdf.html>`_.
 
-Note: At this moment options: Header HTML, Footer HTML and Margins are only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+.. note:: At this moment options: Header HTML, Footer HTML and Margins are only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
 .. rubric:: Output Parameters
 
@@ -1574,9 +1574,9 @@ Protects PDF by adding passwords, copy-, printing-, and other protections to PDF
 Parse CSV
 -------------------
 
-Parses a CSV file and returns JSON.
+Parses a CSV file into an array of objects with properties in Microsoft Flow.
 
-Note: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
 .. rubric:: Output Parameters
 
@@ -1587,22 +1587,24 @@ Note: At this moment the action is only available in custom connector. Please re
     *  -  Parameter
        -  Description
        -  Example
-    *  -  File Content
-       -  The content of the result JSON file.
-       - .. code-block:: html
+    *  -  Items
+       -  The JSON representation of the resulting items' array in Microsoft Flow
+       -  Each CSV header is represented by an output parameter. You can refer to a single item selecting it in MS Flow.
+          
+           .. code-block:: html
 
-          [
-            {
-              "Id": "12345",
-              "PurchaseDate": "2019-05-01",
-              "ExpirationDate": "2020-05-01",
-              "ProductName": "Product1",
-              "Quantity": "1",
-              "FirstName": "John",
-              "LastName": " Smith",
-              "Email": "john@smith.com"
-              }
-          ]
+             [
+               {
+                 "Id": "12345",
+                 "PurchaseDate": "2019-05-01",
+                 "ExpirationDate": "2020-05-01",
+                 "ProductName": "Product1",
+                }
+              ]
+
+          .. image:: ../../_static/img/flow/documents/parse-csv-output.png                 
+
+        
 
 .. rubric:: Input Parameters
 
@@ -1627,11 +1629,11 @@ Note: At this moment the action is only available in custom connector. Please re
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
 
-       -  It is a Base64 encoded content of the source template file.  
+       -  It is content of the source template file.
 
     *  -  Headers
        -  Comma separated list of columns.
-       -  If you specify the option then values for those columns will be dynamically available in the Flow. Ex.: Id,PurchaseDate,ExpirationDate
+       -  You need to specify the headers in the same order as in the CSV file. Ex.: Id, PurchaseDate, ExpirationDate, ProductName
 
     *  -  Delimiter
        -  Delimiter of columns. By default it's a comma.
