@@ -98,7 +98,7 @@ We set custom values for **Angle, Font Size, Color, Watermark position**, and **
 
 Send an email
 ~~~~~~~~~~~~~
-We used *Send an email* action from *Office 365 Outlook* connector, but you can choose another one. **Attachment content** is the output of from *Add watermark to PDF* action.
+We used *Send an email* action from *Office 365 Outlook* connector, but you can choose another one. **Attachment content** is the output of *Add watermark to PDF* action.
 
 .. image:: ../../../_static/img/flow/how-tos/send-email-watermark-sent-doc.png
     :alt: Send an email
