@@ -1,5 +1,5 @@
-How to add an image watermark to a PDF document
-===============================================
+How to add an image watermark to a PDF document using Microsoft Flow, Azure Logic Apps or PowerApps
+===================================================================================================
 
 If you find yourself in a need to protect your PDF documents, you may decide to add a watermark to them. It can help you to identify the document owner, to maintain some level of traceability, to classify documents, and to assure confidentiality of the information both inside and outside the organization.
 
@@ -91,6 +91,6 @@ So, here is our result document watermarked with a large Plumsail logotype on th
 Conclusion
 ----------
 
-We hope this `series of articles <../../../flow/how-tos/documents/add-an-image-watermark-to-a-PDF-document.html#how-to-add-an-image-watermark-to-a-pdf-document>`_ on using *Add watermark to PDF* action will help you to ascertain the proper use of your PDF documents.
+We hope this `series of articles <../../../flow/how-tos/documents/add-an-image-watermark-to-a-PDF-document.html#how-to-add-an-image-watermark-to-a-pdf-document>`_ on using *Add watermark to PDF* action will help you to ascertain the proper use of your PDF documents.  If you haven't used  `Plumsail Documents <https://plumsail.com/documents/>`_ yet, `registering an account <https://plumsail.com/docs/documents/v1.x/getting-started/sign-up.html>`_ would be the first step. It is quite easy to get started.
 
 .. Hint:: For more security options please have a look at `Protects PDF action <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#protect-pdf-document>`_. It allows you to add passwords, copy-, printing-, and other protections to PDF files with the help of Microsoft Flow and Azure Logic Apps.
