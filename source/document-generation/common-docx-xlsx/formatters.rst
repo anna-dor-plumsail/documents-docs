@@ -666,3 +666,41 @@ Examples
            the image
 
 .. note:: Plumsail Documents support anonymous authentication only. To use a link to a picture stored in SharePoint, please, create a guest link and replace **guestacces.aspx** string with **download.aspx** one. Your link should look something like this: https://yourDomain.sharepoint.com/_layouts/15/download.aspx?docid=DocID&authkey=AuthKey
+
+
+url
+----
+
+:code:`url` - it corrects an url to full qualified with HTTP scheme or checks correctness when a scheme is existing. When result URL is not correct - removes it from the document
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. code-block:: json
+    
+            {{value}:url}
+
+        - .. code-block:: json
+
+            {                     
+                "value": "picturesite.com/pics/picture.png"
+            }
+
+            {                     
+                "value": "ya.ru"
+            }    
+
+            {                     
+                "value": ".net"
+            }    
+
+        - .. code-block:: json
+    
+           http://picturesite.com/pics/picture.png
+
+           http://ya.ru
+
+           

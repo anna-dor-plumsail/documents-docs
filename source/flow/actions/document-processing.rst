@@ -58,7 +58,7 @@ We have `an article <../how-tos/documents/create-docx-from-template.html>`_ desc
              :alt: Simple table template         
 
     *  -  Template name
-       -  You can use predefined user templates. `See more <../../../html/document-generation/templates-feature.html>`_
+       -  You can use predefined user templates. `See more <../../document-generation/templates/index.html>`_
        -  .. code::
           invoice.docx
 
@@ -143,7 +143,7 @@ Also there is `an article <../how-tos/documents/create-xlsx-from-template.html>`
              :alt: Simple table template         
 
     *  -  Template name
-       -  You can use predefined user templates. `See more <../../../html/document-generation/templates-feature.html>`_
+       -  You can use predefined user templates. `See more <../../document-generation/templates/index.html>`_
        -  .. code::
           invoice.xlsx
 
@@ -254,7 +254,7 @@ Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You
             </html>
 
     *  -  Template name
-       -  You can use predefined user templates. `See more <../../../html/document-generation/templates-feature.html>`_
+       -  You can use predefined user templates. `See more <../../document-generation/templates/index.html>`_
        -  .. code::
           invoice.html
 
@@ -331,7 +331,7 @@ Creates .docx document by filling merge fields in a .docx document with the help
           Use `this link <../../_static/files/flow/how-tos/Hiring%20Contract%20Template%20(merge%20fields).docx>`_ to download the sample document.
 
     *  -  Template name
-       -  You can use predefined user templates. `See more <../../../html/document-generation/templates-feature.html>`_
+       -  You can use predefined user templates. `See more <../../document-generation/templates/index.html>`_
        -  .. code::
           invoice.docx
 
@@ -398,7 +398,7 @@ Converts .docx document to PDF document with the help of Microsoft Flow. You can
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  It is a Base64 encoded content of the source template file.          
+       -  It is content of the source template file.          
 
 .. rubric:: Example
 
@@ -410,7 +410,7 @@ Convert XLSX to PDF
 
 Converts .xlsx document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-excel-to-pdf.html>`_.
 
-Note: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
 .. rubric:: Output Parameters
 
@@ -448,19 +448,219 @@ Note: At this moment the action is only available in custom connector. Please re
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  It is a Base64 encoded content of the source template file.          
+       -  It is content of the source template file.          
 
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/documents/convert-xlsx-to-pdf-example.png
    :alt: Convert DOCX document to PDF Example
 
+Convert DOC to DOCX
+-------------------
+
+Converts .doc document to .docx document with the help of Microsoft Flow.
+.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  The content of the result DOCX file.
+       -  It is a Base64 encoded content of the result file.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document content
+       -  The raw content of the source .doc file. You can extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+
+       -  It is content of the source template file.          
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/convert-doc-to-docx-example.png
+   :alt: Convert DOC document to DOCX Example
+
+Convert XLS to XLSX
+-------------------
+
+Converts .xls document to .xlsx document with the help of Microsoft Flow.
+.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  The content of the result XLSX file.
+       -  It is a Base64 encoded content of the result file.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document content
+       -  The raw content of the source .xls file. You can extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+
+       -  It is content of the source template file.        
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/convert-xls-to-xlsx-example.png
+   :alt: Convert XLS document to XLSX Example
+
+Convert PPT to PPTX
+-------------------
+
+Converts .ppt document to .pptx document with the help of Microsoft Flow.
+.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  The content of the result PPTX file.
+       -  It is a Base64 encoded content of the result file.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document content
+       -  The raw content of the source .ppt file. You can extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+
+       -  It is content of the source template file.          
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/convert-ppt-to-pptx-example.png
+   :alt: Convert PPT document to PPTX Example
+
+Convert PPTX to PDF
+-------------------
+
+Converts .pptx document to PDF document with the help of Microsoft Flow.
+
+.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  The content of the result PDF file.
+       -  It is a Base64 encoded content of the result file.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document content
+       -  The raw content of the source .pptx file. You can extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+
+       -  It is content of the source template file.          
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/convert-pptx-to-pdf-example.png
+   :alt: Convert PPTX document to PDF Example
+
 Convert HTML to PDF
 -------------------
 
 Converts HTML document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-html-to-pdf.html>`_.
 
-Note: At this moment options: Header HTML, Footer HTML and Margins are only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+.. note:: At this moment options: Header HTML, Footer HTML and Margins are only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
 .. rubric:: Output Parameters
 
@@ -529,20 +729,30 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
 
        -  .. code-block:: html
 
-            <header>
-              <h1>Header</h1>
-              <p>additional information</p>
-            </header>
+            <!DOCTYPE html>
+            <html>
+              <head>
+                <title></title>
+              </head>
+            <body>
+            This is header
+            </body>
+            </html>
 
     *  -  Footer HTML
        -  HTML markup that should be added as a Footer.          
 
        -  .. code-block:: html
 
-           <footer>
-            <p>email: <a href="mailto:contact@plumsail.com">
-             contact@plumsail.com</a>.</p>
-           </footer>
+           <!DOCTYPE html>
+            <html>
+              <head>
+                <title></title>
+              </head>
+            <body>
+            This is footer
+            </body>
+            </html>
 
     *  -  Paper Size
        -  Paper size for output PDF file.
@@ -585,7 +795,7 @@ Note: At this moment options: Header HTML, Footer HTML and Margins are only avai
 Add watermark to PDF
 -------------------
 
-"Add watermark to PDF" action support a few types of watermarks: Text, Image, PDF.
+"Add watermark to PDF" action support a few types of watermarks: Text, Image, PDF. You can find examples on how yo use the action `here <../how-tos/documents/add-an-image-watermark-to-a-PDF-document.html>`_.
 
 .. image:: ../../_static/img/flow/documents/add-a-watermark-to-pdf-select-type.png
    :alt: Selection of the watermark type
@@ -602,7 +812,9 @@ You can find the documentation for all watermark types included in "Add watermar
 .. _image-watermark-type:
 
 Add image watermark to PDF
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please, see a detailed example `here <../how-tos/documents/add-an-image-watermark-to-a-PDF-document.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -720,7 +932,9 @@ Add image watermark to PDF
 .. _text-watermark-type:
 
 Add text watermark to PDF
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please, see a detailed example `here <../how-tos/documents/add-a-text-watermark-to-a-PDF-document.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -831,7 +1045,9 @@ Add text watermark to PDF
 .. _pdf-watermark-type:
 
 Add pdf watermark to PDF
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please, see a detailed example `here <../how-tos/documents/add-a-PDF-watermark-to-a-PDF-document.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -952,7 +1168,7 @@ Split PDF document with the help of Microsoft Flow. You can find more examples i
 Merge PDF
 ---------
 
-Merge PDF document with the help of Microsoft Flow.
+Merge PDF document with the help of Microsoft Flow. Please, see a detailed example `here <../how-tos/documents/merge-pdf-files.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -1221,7 +1437,7 @@ Fills in PDF form by provided data with the help of Microsoft Flow. Review `How 
        -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
 
     *  -  Template name
-       -  You can use predefined user templates. `See more <../../../html/document-generation/templates-feature.html>`_
+       -  You can use predefined user templates. `See more <../../document-generation/templates/index.html>`_
        -  .. code::
           invoice.pdf
 
@@ -1352,7 +1568,84 @@ Protects PDF by adding passwords, copy-, printing-, and other protections to PDF
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/documents/protect-pdf-example.png
-   :alt: Protect PDF Example  
+   :alt: Protect PDF Example
+
+
+Parse CSV
+-------------------
+
+Parses a CSV file into an array of objects with properties in Microsoft Flow.
+
+.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Items
+       -  The JSON representation of the resulting items' array in Microsoft Flow
+       -  Each CSV header is represented by an output parameter. You can refer to a single item selecting it in MS Flow.
+          
+           .. code-block:: html
+
+             [
+               {
+                 "Id": "12345",
+                 "PurchaseDate": "2019-05-01",
+                 "ExpirationDate": "2020-05-01",
+                 "ProductName": "Product1",
+                }
+              ]
+
+          .. image:: ../../_static/img/flow/documents/parse-csv-output.png                 
+
+        
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Source CSV file
+       -  The raw content of the source .csv file.. You can extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System          
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
+
+       -  It is content of the source template file.
+
+    *  -  Headers
+       -  Comma separated list of columns.
+       -  You need to specify the headers in the same order as in the CSV file. Ex.: Id, PurchaseDate, ExpirationDate, ProductName
+
+    *  -  Delimiter
+       -  Delimiter of columns. By default it's a comma.
+       -  You can select from the following default values: Comma, Semicolon, Tab or specify a custom value.
+
+
+                  
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/parse-csv-example.png
+   :alt: Parse CSV file
+
 
 Regular Expression Match
 ----------------------------
