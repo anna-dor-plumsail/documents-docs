@@ -7,8 +7,8 @@ Let's say a company has a CSV file with customers. They want to bulk generate in
 to a conference for all the customers and then print them and send them using postal service.
 
 In this example, we will read a CSV file and use the available headers to fill up the invitations.
-The invitation will be a result file of Create DOC document from template action. 
-To fill up the DOC template we're going to use Parse CSV output items.
+The invitation will be a result file of **Create DOC document from template** action. 
+To fill up the DOCX template we're going to use Parse CSV output items.
 
 Our source CSV file has to be stored somewhere. Microsoft Flow has a lot of connectors for different systems.
 
@@ -43,7 +43,7 @@ You can actually pick any trigger. For example, you can start Flow on file creat
 Get file content
 ~~~~~~~~~~~~~~~~
 
-This action gets file content of the specified file from a OneDrive foldery. 
+This action gets file content of the specified file from a OneDrive folder. 
 Just specify the  **path** to your file. We use this action to read our sample CSV file and the source DOCX template.
 
 You can use any other connector to get files from your system.
@@ -54,8 +54,8 @@ Parsing CSV
 This is an action from `Plumsail Documents connector <https://plumsail.com/documents/>`_.
 
 Put CSV file content from the output of the previous action. 
-In the **Headers** field, specify the CSV file headers, then you'll be able to select the headers in the dynamic content window
-In our example, we extract the customer first name and the customer ID to name the invitations:
+In the **Headers** field, specify the CSV file headers, then you'll be able to select the headers in the dynamic content window.
+In our example, we're going to use the customer first name, last name and the ID to name the invitations:
 
 .. image:: ../../../_static/img/flow/how-tos/parse-csv-action.png
    :alt: Parse CSV action
@@ -64,7 +64,7 @@ In our example, we extract the customer first name and the customer ID to name t
    :alt: Parse CSV dynamic content
 
 On the next steps we use Plumsail action *Create DOCX document from template*. 
-We select the dynamic content from *Parse CSV* and add it ot the JSON.
+We select the dynamic content from *Parse CSV* and add it to the JSON.
 And finally we convert the resulting DOCX file to PDF and save it to the OneDrive folder. We use ID header to name each invitation.
 
 .. image:: ../../../_static/img/flow/how-tos/create-invitation.png
