@@ -1,5 +1,14 @@
 How to collect data from fillable PDF and save it into your system in Microsoft Flow, Azure Logic Apps or Power Apps
 ====================================================================================================================
+
+.. note:: 
+
+  One of our customers voluntarily recorded an overview of a business case for collecting data from PDF forms and for automatic filling them. You can watch the video in addition to reading the article.
+
+  .. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7jTq-kRClhM" frameborder="0" allowfullscreen></iframe>
+
 In this article, you will learn how to collect data from fillable PDF form in Microsoft Flow or Azure Logic Apps. We will use `Get Form from PDF`_ action from `Plumsail Documents connector`_.
 
 In our case, we will collect data from Application for Employment form, we will get this PDF file via email using When a new email arrives trigger from Office 365 Outlook connector. However, you can get the file from any other source.

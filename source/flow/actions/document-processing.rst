@@ -1407,7 +1407,7 @@ Converts PDF document to image (jpeg, png, gif, bmp) with the help of Microsoft 
 Fill in PDF Form
 ----------------
 
-Fills in PDF form by provided data with the help of Microsoft Flow.
+Fills in PDF form by provided data with the help of Microsoft Flow. Review `How to automatically populate fillable PDF based on data from third party system <../how-tos/documents/fill-pdf-form.html>`_ article for more information.
 
 .. rubric:: Output Parameters
 
@@ -1460,7 +1460,7 @@ Fills in PDF form by provided data with the help of Microsoft Flow.
 Get Form from PDF
 -----------------
 
-Returns data from fillable PDF as JSON with the help of Microsoft Flow.
+Returns data from fillable PDF as JSON with the help of Microsoft Flow. Review `How to collect data from fillable PDF <../how-tos/documents/collect-data-pdf-form.html>`_ article for more information.
 
 .. rubric:: Output Parameters
 
