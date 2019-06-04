@@ -1575,6 +1575,7 @@ Parse CSV
 -------------------
 
 Parses a CSV file into an array of objects with properties in Microsoft Flow.
+Review `How to read a CSV file in Microsoft Flow and bulk generate documents <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/read-a-CSV-file-and-bulk-generate-documents.html>`_ article for more information.
 
 .. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
