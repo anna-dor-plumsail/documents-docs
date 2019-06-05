@@ -31,7 +31,7 @@ We need to create a Microsoft Flow that will be triggered by a JotForm submissio
 .. image:: ../../../_static/img/flow/how-tos/JotForms-DOCX-PDF-flow.png
     :alt: Creating Word and PDF documents from JotForms flow
 
-**We prepared a Microsoft Flow Template that you can use right away.** It includes all the steps described in this article. To use the template just go to MS Flow, click *Templates* in the left navigation, type *Create Word and PDF documents from JotForm* and hit *Enter*. You will see the template. You may use it as-is or customize it to, for example, store documents in another storage platform.
+**We prepared a Microsoft Flow Template that you can use right away.** It includes all the steps described in this article. To use the template just follow `this link <https://us.flow.microsoft.com/en-us/galleries/public/templates/c88d030ac7f042769c724e9c7f6a3826/create-word-and-pdf-documents-from-jotform/>`_ or go to MS Flow, click *Templates* in the left navigation, type *Create Word and PDF documents from JotForm* and hit *Enter*. You will see the template. You may use it as-is or customize it to, for example, store documents in another storage platform.
 
 .. image:: ../../../_static/img/flow/how-tos/MS-Flow-template-jotform-docx.png
     :alt: Microsoft Flow Template Create Word and PDF documents from JotForm
