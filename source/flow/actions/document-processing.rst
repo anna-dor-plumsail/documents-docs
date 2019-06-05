@@ -1589,7 +1589,7 @@ Review `How to read a CSV file in Microsoft Flow and bulk generate documents <ht
        -  Description
        -  Example
     *  -  Items
-       -  The JSON representation of the resulting items' array in Microsoft Flow
+       -  The collection of objects. Each object represents a CSV row and has properties corresponding to the CSV headers.
        -  Each CSV header is represented by an output parameter. You can refer to a single item selecting it in MS Flow.
           
            .. code-block:: html
