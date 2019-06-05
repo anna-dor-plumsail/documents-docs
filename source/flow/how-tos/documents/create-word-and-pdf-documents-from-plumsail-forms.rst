@@ -31,7 +31,7 @@ We need to create a Microsoft Flow that will be triggered by a Plumail Form subm
 .. image:: ../../../_static/img/flow/how-tos/Plumsail-Forms-DOCX-PDF-flow.png
     :alt: Creating Word and PDF documents from Plumsail Forms flow
 
-**We prepared a Microsoft Flow Template that you can use right away.** It includes all the steps described in this article. To use the template just go to MS Flow, click *Templates* in the left navigation, type *Create Word and PDF documents from Plumsail Forms* and hit *Enter*. You will see the template. You may use it as-is or customize it to, for example, store documents in another storage platform.
+**We prepared a Microsoft Flow Template that you can use right away.** It includes all the steps described in this article. To use the template just follow `this link <https://emea.flow.microsoft.com/en-us/galleries/public/templates/35bdf13afbad4ff29d3df49e7f288729/create-word-and-pdf-documents-from-plumsail-forms/>`_ or go to MS Flow, click *Templates* in the left navigation, type *Create Word and PDF documents from Plumsail Forms* and hit *Enter*. You will see the template. You may use it as-is or customize it to, for example, store documents in another storage platform.
 
 .. image:: ../../../_static/img/flow/how-tos/MS-Flow-template-plumsail-docx.png
     :alt: Microsoft Flow Template Create Word and PDF documents from Plumsail Forms
