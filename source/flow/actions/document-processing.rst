@@ -781,10 +781,12 @@ Converts HTML document to PDF document with the help of Microsoft Flow. You can 
           - Landscape
 
     *  -  Margins
-       -  The page margins that separated ' '.
+       -  The page margins. The syntax is the same as in CSS.
        -  
 
-          50;
+          - 25 50 75 100;
+
+          This will set top margin as 25px, right margin as 50px, bottom margin as 75px, left margin ias 100px.
                   
 
 .. rubric:: Example
