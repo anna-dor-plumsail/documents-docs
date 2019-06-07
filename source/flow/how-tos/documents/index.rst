@@ -25,6 +25,7 @@ Microsoft Flow examples
       Create Word and PDF documents from Cognito Forms <create-word-and-pdf-documents-from-cognito-forms>
       Create Word and PDF documents from Typeform <create-word-and-pdf-documents-from-typeform>
       Create Word and PDF documents from JotForm <create-word-and-pdf-documents-from-jotform>
+      Create Excel and PDF documents from Cognito Forms <create-Excel-and-pdf-documents-from-cognito-forms>
       Add an image watermark to a PDF document <add-an-image-watermark-to-a-PDF-document>
       Add a text watermark to a PDF document <add-a-text-watermark-to-a-PDF-document>
       Add a PDF watermark to a PDF document <add-a-PDF-watermark-to-a-PDF-document>
