@@ -31,15 +31,15 @@ This is JSON representation of employees data:
         "employees": [
             {
                 "name": "Derek Clark",
-                "department":"Marketing"
+                "department":"marketing"
             },
             {
                 "name": "Jessica Adams",
-                "department":"Sales"
+                "department":"sales"
             },
             {
                 "name": "Anil Mittal",
-                "department":"Development"        
+                "department":"development"        
             }
         ]
     }
