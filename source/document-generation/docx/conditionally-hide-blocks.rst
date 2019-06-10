@@ -49,14 +49,14 @@ We will use the template like this:
 .. image:: ../../_static/img/document-generation/hide-table-row-template.png
     :alt: hide table row template
 
-As you can see, we added this string to the template row: :code:`{{employees.hireDate}:hide-block-if(development)}`. The :code:`hide-block-if(development)` formatter checks if the department is development and hides table row that contains this tag.
+As you can see, we added this string to the template row: :code:`{{employees.department}:hide-block-if(development)}`. The :code:`hide-block-if(development)` formatter checks if the department is development and hides table row that contains this tag.
 
 The result table will look like this:
 
 .. image:: ../../_static/img/document-generation/hide-table-row-result.png
     :alt: hide table row result
 
-The employee with the name ""Anil Mittal" was hidden because he works in the development department.
+The employee with the name "Anil Mittal" was hidden because he works in the development department.
 
 
 Hide bullet list items
@@ -69,7 +69,7 @@ Our template will look like this:
 .. image:: ../../_static/img/document-generation/hide-bullet-list-item-template.png
     :alt: hide bullet list template
 
-As you can see, we added this string to the bullet list item template: :code:`{{employees.hireDate}:hide-block-if-empty}`. The :code:`hide-block-if-empty` formatter works the same way as in `the example for table rows <#hide-table-rows>`_ above.
+As you can see, we added this string to the bullet list item template: :code:`{{employees.name}} {{employees.department}} {{employees.department}:hide-block-if(development)}` formatter works the same way as in `the example for table rows <#hide-table-rows>`_ above.
 
 The result table will look like this:
 
@@ -81,7 +81,7 @@ Hide arbitrary block
 
 If you want to hide arbitrary section that is not a table row or a bullet list item, we recommend you to wrap it into a table cell with invisible borders.
 
-In this example, we will use information about a company as a source data for the template and a specific case of the formatter: hide-block-if-empty.
+In this example, we will use information about a company as a source data for the template and a specific case of the formatter: `hide-block-if-empty formatter <../common-docx-xlsx/formatters.html#hhide-block-if-empty>`_.
 The formatter hides parts of a document if some value or collection of values is null, empty or empty array.
 
 This is JSON representation of company data:
