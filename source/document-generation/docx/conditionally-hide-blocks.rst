@@ -1,9 +1,9 @@
 Conditionally hide blocks in DOCX templates
 ===========================================
 
-You can use `hide-block-if-empty formatter <../common-docx-xlsx/formatters.html#hhide-block-if-empty>`_ to hide parts of a document if some value or collection of values is null, empty or empty array.
+You can use `hide-block-if formatter <../common-docx-xlsx/formatters.html#hhide-block-if>`_ to hide blocks of a document. 
 
-The formatter checks if a value for current tag is empty, then finds closest collapsible block and hides it:
+The formatter checks if a value for current tag is equal to a value of the parameter,, then finds closest collapsible block and hides it:
 
 - Table row
 - Bullet list item
@@ -21,7 +21,7 @@ Here we will learn how it works:
 Hide table rows
 ---------------
 
-Let us assume we have a collection of employees. We want to render a table with information about them, but we want to hide employees without employment date (:code:`hireDate`).
+Let us assume we have a collection of employees. We want to render a table with information about them, but we want to hide employees from a specific department (:code:`development`).
 
 This is JSON representation of employees data:
 
@@ -31,15 +31,15 @@ This is JSON representation of employees data:
         "employees": [
             {
                 "name": "Derek Clark",
-                "hireDate": "2012-04-21T18:25:43-05:00"
+                "department":"Marketing"
             },
             {
                 "name": "Jessica Adams",
-                "hireDate": null
+                "department":"Sales"
             },
             {
                 "name": "Anil Mittal",
-                "hireDate": "2016-04-11T14:22:13-02:00"         
+                "department":"Development"        
             }
         ]
     }
@@ -49,14 +49,14 @@ We will use the template like this:
 .. image:: ../../_static/img/document-generation/hide-table-row-template.png
     :alt: hide table row template
 
-As you can see, we added this string to the template row: :code:`{{employees.hireDate}:hide-block-if-empty}`. The :code:`hide-block-if-empty` formatter checks if hire date is empty and hides table row that contains this tag. The :code:`hide` formatter hides the value of the tag if it is not empty.
+As you can see, we added this string to the template row: :code:`{{employees.hireDate}:hide-block-if(development)}`. The :code:`hide-block-if(development)` formatter checks if the department is development and hides table row that contains this tag.
 
 The result table will look like this:
 
 .. image:: ../../_static/img/document-generation/hide-table-row-result.png
     :alt: hide table row result
 
-The employee with the name "Jessica Adams" was hidden because of empty hire date.
+The employee with the name ""Anil Mittal" was hidden because he works in the development department.
 
 
 Hide bullet list items
@@ -81,7 +81,8 @@ Hide arbitrary block
 
 If you want to hide arbitrary section that is not a table row or a bullet list item, we recommend you to wrap it into a table cell with invisible borders.
 
-In this example, we will use information about a company as a source data for the template.
+In this example, we will use information about a company as a source data for the template and a specific case of the formatter: hide-block-if-empty.
+The formatter hides parts of a document if some value or collection of values is null, empty or empty array.
 
 This is JSON representation of company data:
 
