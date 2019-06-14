@@ -1,11 +1,11 @@
-How to create Word and PDF documents from JotForm in Microsoft Flow and Azure Logic Apps
+How to create Word and PDF documents from Microsoft Forms in Microsoft Flow and Azure Logic Apps
 ===============================================================================================
 
-Let's suppose you want to automate the generation of documents in your company. For example, applications, orders, invoices, etc. By going through this article you will learn how to create a DOCX document from a template and convert it to PDF on a JotForm submission with help of `Plumsail Documents <https://plumsail.com/documents/>`_ in Microsoft Flow and Azure Logic Apps.
+Let's suppose you want to automate the generation of documents in your company. For example, applications, orders, invoices, etc. By going through this article you will learn how to create a DOCX document from a template and convert it to PDF on a Microsoft form submission with help of `Plumsail Documents <https://plumsail.com/documents/>`_ in Microsoft Flow and Azure Logic Apps.
 
-`JotForm <https://www.jotform.com/>`_ is an online form builder that allows you to create forms with a drag and drop creation tool and an option to encrypt user data.
+`Microsoft Forms <https://forms.office.com/>`_ is an online form builder with themes and question branching that allows you to create surveys, quizzes, polls and collects other information.
 
-In our example, we will collect data from a JotForm, apply the data to our template and generate a new PDF document.
+In our example, we will collect data from a Microsoft form, apply the data to our template and generate a new PDF document.
 
 
 Description
@@ -26,15 +26,10 @@ Microsoft Flow has a lot of connectors for different systems. Here are just a fe
 
 You can store your source file anywhere.
 
-We need to create a Microsoft Flow that will be triggered by a JotForm submission. The flow will get the template from OneDrive, apply data from a submitted JotForm to this template, convert the generated document to PDF and save it to OneDrive. This is how our complete flow looks like:
+We need to create a Microsoft Flow that will be triggered by a Microsoft form submission. The flow will get the template from OneDrive, apply data from a submitted Microsoft form to this template, convert the generated document to PDF and save it to OneDrive. This is how our complete flow looks like:
 
-.. image:: ../../../_static/img/flow/how-tos/JotForms-DOCX-PDF-flow.png
-    :alt: Creating Word and PDF documents from JotForms flow
-
-**We prepared a Microsoft Flow Template that you can use right away.** It includes all the steps described in this article. To use the template just follow `this link <https://us.flow.microsoft.com/en-us/galleries/public/templates/c88d030ac7f042769c724e9c7f6a3826/create-word-and-pdf-documents-from-jotform/>`_ or go to MS Flow, click *Templates* in the left navigation, type *Create Word and PDF documents from JotForm* and hit *Enter*. You will see the template. You may use it as-is or customize it to, for example, store documents in another storage platform.
-
-.. image:: ../../../_static/img/flow/how-tos/MS-Flow-template-jotform-docx.png
-    :alt: Microsoft Flow Template Create Word and PDF documents from JotForm
+.. image:: ../../../_static/img/flow/how-tos/Microsoft-Forms-DOCX-PDF-flow.png
+    :alt: Creating Word and PDF documents from Microsoft Forms
 
 Description of Microsoft Flow Actions
 -------------------------------------
@@ -44,18 +39,18 @@ Please find the description of all the actions from the flow below.
 Form is submitted
 ~~~~~~~~~~~~~~~~~
 
-We've already created a JotForm and we will use data from its submission in our flow. If you haven't created a form yet, you can learn how to do it `here <https://www.jotform.com/help/2-How-to-Create-Your-First-Web-Form>`_.
+We've already created a Microsoft form and we will use data from its submission in our flow. If you haven't created a form yet, you can learn how to do it `here <https://support.office.com/en-gb/article/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d>`_.
 
 Below is a screenshot of our form:
 
-.. image:: ../../../_static/img/flow/how-tos/JotForm.png
+.. image:: ../../../_static/img/flow/how-tos/microsoft-form.png
     :alt: JotForm
 
-To start the flow on form submission we search for *JotForm* in MS Flow and add *JotForm - When a response is submitted* trigger.
+To start the flow on form submission we search for *Microsoft Forms* in MS Flow and add *Microsoft Forms - When a new response is submitted* trigger.
 
-If this is your first Flow with JotForm, at this point you'll need to Sign into JotForm Account from MS Flow, so you can start using your forms inside your flows.
+If this is your first Flow with Microsoft Forms, at this point you'll need to Sign into Microsoft Forms Account from MS Flow, so you can start using your forms inside your flows.
 
-You'll need to pick the form you want to track in the dropdown.
+Select the dropdown under **Form Id** and pick the form you want to monitor.
 
 Get file content
 ~~~~~~~~~~~~~~~~~
@@ -73,6 +68,18 @@ In short, the templating engine thinks that everything between these :code:`{{ }
 
 Read `this article <../../../document-generation/docx/how-it-works.html>`_ to get familiar with the templating engine.
 
+Get response details
+~~~~~~~~~~~~~~~~~~~~
+
+As we want to get the submitted data we need to add *Microsoft Forms - Get response details* action. On this action, we select the same **Form Id** that we used in the trigger. Then, we click in the **Response Id** text box and pick **List of response notifications - Response Id** in the Dynamic content menu on the right:
+
+.. image:: ../../../_static/img/flow/how-tos/Microsoft-Forms-Response-ID.png
+    :alt: Get response details
+
+As a result, we will get the response details for the responses that caused the trigger. There can be more than one response at the same time, so the **List of response notifications - Response Id** actually represents a list of responses. As a result, when we select this input we will get an *Apply to each* added around the action.
+
+Now, we can apply the data from each response to the template.
+
 Create DOCX Document from Template
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This is the action from `Plumasail Documents connector <https://plumsail.com/actions/documents/>`_. This action is suitable for creating documents from a template. You can find more information about the action by visiting `this page <../../actions/document-processing.html#create-docx-document-from-template>`_.
@@ -87,12 +94,12 @@ In the first parameter **Document content**, we specified the output of the prev
 
 In the second parameter **Template data**, we specified data to apply to the template in JSON format:
 
-.. image:: ../../../_static/img/flow/how-tos/JotForms-DOCX-PDF-data.png
+.. image:: ../../../_static/img/flow/how-tos/Microsoft-Forms-DOCX-PDF-data.png
     :alt: Template data in JSON format
 
-This object contains information from our form. We selected the content from the output of *JotForm  -  When a new entry is created* action in the menu on the right:
+This object contains information from our form. We selected the content from the output of *Microsoft Forms - Get response details* action in the menu on the right:
 
-.. image:: ../../../_static/img/flow/how-tos/JotForm-DOCX-PDF-Dynamic-content.png
+.. image:: ../../../_static/img/flow/how-tos/Microsoft-Forms-DOCX-PDF-Dynamic-content.png
     :alt: Menu on the right
 
 Convert DOCX to PDF
