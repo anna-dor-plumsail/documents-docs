@@ -2,7 +2,7 @@ How to read a CSV file in Microsoft Flow and bulk generate documents
 =============================================================
 
 This article demonstrates how to read CSV files in Microsoft Flow using **Parse CSV** action from Plumsail Documents connector. 
-We will use results from thisaction to bulk generate documents.
+We will use results from this action to bulk generate documents.
 
 Let's say a company has a CSV file with customers. They want to bulk generate invitations 
 to a conference for all the customers and then print them and send using postal service.

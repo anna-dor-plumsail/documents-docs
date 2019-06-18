@@ -781,10 +781,12 @@ Converts HTML document to PDF document with the help of Microsoft Flow. You can 
           - Landscape
 
     *  -  Margins
-       -  The page margins that separated ' '.
+       -  The page margins. The syntax is the same as in CSS.
        -  
 
-          50;
+          - 25 50 75 100;
+
+          This will set top margin as 25px, right margin as 50px, bottom margin as 75px, left margin ias 100px.
                   
 
 .. rubric:: Example
@@ -873,17 +875,13 @@ Please, see a detailed example `here <../how-tos/documents/add-an-image-watermar
        -  The degree of transparency of the watermark image. This is a percentage value.
        -  50
 
-    *  -  Start Page
-       -  Index of the first page from which the watermark will be added (indexes start from 1).
-       -  3
-
-    *  -  End Page
-       -  Index of the last page to adding watermark (inclusive). By default will use the last page of the source document.
-       -  7 
-
     *  -  Pages
-       -  The range of target pages delimeted by ';'. If set then "Start Page" and "End Page" will be ignored.
-       -  1;3;5
+       -  The range of target pages delimeted by ';'.
+       -  
+          - 1;3;5
+          - 1-5;7;9
+          - 1-3;9-11;5
+          - 1;3-7;10-20
 
     *  -  Password
        -  The password to decrypt the source document. If it was encrypted earlier.
@@ -1001,17 +999,13 @@ Please, see a detailed example `here <../how-tos/documents/add-a-text-watermark-
        -  The degree of transparency of the watermark image. This is a percentage value.
        -  50
 
-    *  -  Start Page
-       -  Index of the first page from which the watermark will be added (indexes start from 1).
-       -  3
-
-    *  -  End Page
-       -  Index of the last page to adding watermark (inclusive). By default will use the last page of the source document.
-       -  7 
-
     *  -  Pages
-       -  The range of target pages delimeted by ';'. If set then "Start Page" and "End Page" will be ignored.
-       -  1;3;5
+       -  The range of target pages delimeted by ';'.
+       -  
+          - 1;3;5
+          - 1-5;7;9
+          - 1-3;9-11;5
+          - 1;3-7;10-20
 
     *  -  Password
        -  The password to decrypt the source document. If it was encrypted earlier.
@@ -1093,17 +1087,13 @@ Please, see a detailed example `here <../how-tos/documents/add-a-PDF-watermark-t
 
        -  Background
 
-    *  -  Start Page
-       -  Index of the first page from which the watermark will be added (indexes start from 1).
-       -  3
-
-    *  -  End Page
-       -  Index of the last page to adding watermark (inclusive). By default will use the last page of the source document.
-       -  7 
-
     *  -  Pages
-       -  The range of target pages delimeted by ';'. If set then "Start Page" and "End Page" will be ignored.
-       -  1;3;5
+       -  The range of target pages delimeted by ';'.
+       -  
+          - 1;3;5
+          - 1-5;7;9
+          - 1-3;9-11;5
+          - 1;3-7;10-20
 
 .. rubric:: Example
 

@@ -31,7 +31,7 @@ We need to create a Microsoft Flow that will be triggered by a Plumail Form subm
 .. image:: ../../../_static/img/flow/how-tos/Plumsail-Forms-DOCX-PDF-flow.png
     :alt: Creating Word and PDF documents from Plumsail Forms flow
 
-**We prepared a Microsoft Flow Template that you can use right away.** It includes all the steps described in this article. To use the template just go to MS Flow, click *Templates* in the left navigation, type *Create Word and PDF documents from Plumsail Forms* and hit *Enter*. You will see the template. You may use it as-is or customize it to, for example, store documents in another storage platform.
+**We prepared a Microsoft Flow Template that you can use right away.** It includes all the steps described in this article. To use the template just follow `this link <https://emea.flow.microsoft.com/en-us/galleries/public/templates/35bdf13afbad4ff29d3df49e7f288729/create-word-and-pdf-documents-from-plumsail-forms/>`_ or go to MS Flow, click *Templates* in the left navigation, type *Create Word and PDF documents from Plumsail Forms* and hit *Enter*. You will see the template. You may use it as-is or customize it to, for example, store documents in another storage platform.
 
 .. image:: ../../../_static/img/flow/how-tos/MS-Flow-template-plumsail-docx.png
     :alt: Microsoft Flow Template Create Word and PDF documents from Plumsail Forms
@@ -69,7 +69,7 @@ Below is our template. You may download it `here <../../../_static/files/flow/ho
 
 *Plumsail Word DOCX templates* use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
 
-In short, templating engine thinks that everything between these :code:`{{ }}` brackets is variables where it will write the data you specified in **Template data**. 
+In short, the templating engine thinks that everything between these :code:`{{ }}` brackets is variables where it will write the data you specified in **Template data**. 
 
 Read `this article <../../../document-generation/docx/how-it-works.html>`_ to get familiar with the templating engine.
 
