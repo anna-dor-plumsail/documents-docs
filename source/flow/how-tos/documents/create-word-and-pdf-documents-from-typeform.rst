@@ -69,7 +69,7 @@ Below is our template. You may download it `here <../../../_static/files/flow/ho
 
 *Plumsail Word DOCX templates* use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
 
-In short, templating engine thinks that everything between these :code:`{{ }}` brackets is variables where it will write the data you specified in **Template data**. 
+In short, the templating engine thinks that everything between these :code:`{{ }}` brackets is variables where it will write the data you specified in **Template data**. 
 
 Read `this article <../../../document-generation/docx/how-it-works.html>`_ to get familiar with the templating engine.
 
