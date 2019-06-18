@@ -1,11 +1,11 @@
 Conditionally clear cells in XLSX templates
 ===========================================
 
-You can use `hide-block-if-empty formatter <../common-docx-xlsx/formatters.html#hide-block-if-empty>`_ to clear cells of an Excel document. 
+You can use `hide-block-if formatter <../common-docx-xlsx/formatters.html#hhide-block-if>`_  or `hide-block-if-empty formatter <../common-docx-xlsx/formatters.html#hhide-block-if-empty>`_ to clear cells of an Excel document. 
 
 First of all, review the `conditionally clear cells demo <./demos.html#clear-cells>`_. There is a template for the case that we describe here.
 
-The formatter checks if a value for current tag is null, empty or empty array, then clears the content of cells.
+The formatter checks if a value for current tag is equal to a value of the parameter, then clears the content of cells.
 
 .. contents:: Two cases when you can use it:
     :local:
@@ -45,7 +45,7 @@ Clear content of a named range
 
 Let us assume that sometimes we need to display confidentiality notice inside our document. Thus, sometimes we need to display it, sometimes we want to clear cells that contain it.
 
-In our case confidentiality notice occupies two cells. We can assign a named range to them and put :code:`hide-block-if-empty` formatter only inside one of them. The templating engine will see that there is a named range and clear all cells inside it.
+In our case confidentiality notice occupies two cells. We can assign a named range to them and put :code:`hide-block-if(true)` formatter only inside one of them. The templating engine will see that there is a named range and clear all cells inside it.
 
 .. note:: This approach works only if there is a single tag inside your named range. If there are multiple tags, the templating engine will switch to logic with `hiding content of a single cell <#clear-single-cell>`_
 
