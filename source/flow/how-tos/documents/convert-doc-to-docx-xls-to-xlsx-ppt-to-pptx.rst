@@ -1,9 +1,9 @@
 How to convert DOC, XLS, PPT documents to DOCX, XLSX, PPTX respectively using Microsoft Flow
 ============================================================================================
 
-In this article, you will find out how you can easily convert older formats of Microsoft Office documents into modern ones in bulk with the help of `Microsoft Flow`_ and `Plumsail Documents`_.  Since Microsoft developed new extensions, sooner or later everyone faces a necessity to convert doc to docx, xls to xlsx and ppt to pptx. Benefits of new formats are obvious, useful features were added and files weight less so it’s easier to use them online. 
+In this article, you will find out how you can easily convert older formats of Microsoft Office documents into modern ones in bulk with the help of `Microsoft Flow`_ and `Plumsail Documents`_.  Since Microsoft developed new extensions, sooner or later everyone faces a necessity to convert DOC to DOCX, XLS to XLSX and PPT to PPTX. Benefits of new formats are obvious, useful features were added and files weight less so it’s easier to use them online. 
 
-Imagine, you have a SharePoint library (or files storage in any other system) full of doc, xls, ppt files which you need to convert to modern extensions.
+Imagine, you have a SharePoint library (or files storage in any other system) full of DOC, XLS, PPT files which you need to convert to modern extensions.
 
 |lib1_lib2|
 
@@ -31,15 +31,15 @@ After setting a manual trigger for the flow, add *'A new action'* – for it, se
 
 Navigate to the SharePoint library you want to convert documents from. To get only DOC files from there, use a very convenient tool like an `ODATA filter`_ (in advanced options). `Here`_ you can read about its syntax and find some examples how to apply it to query concrete parameters.
 
-In our case, you need to set a value for the files format. SharePoint libraries have a column with extensions. Its name is File_x0020_Type. So the query will be File_x0020_Type equals (eq in ODATA syntax) 'doc' (value should be put between single quotes).
+In our case, you need to set a value for the files format. SharePoint libraries have a column with extensions. Its name is :code:`File_x0020_Type`. So the query will be :code:`File_x0020_Type` equals (:code:`eq` in ODATA syntax) :code:`'doc'` (value should be put between single quotes).
 
 |ODATA_filter|
 
-For the next steps set up Control **‘Apply to each’** and in the first field you’ll be asked to select an output from the previous step. Choose *'Value'* from a dynamic content.
+For the next steps set up Control **‘Apply to each’** and in the first field you’ll be asked to select an output from the previous step. Choose :code:`Value` from a dynamic content.
 
 **Get file content**
 
-Assign the ‘Get file content’ action for a SharePoint connector. It takes content of the specified files from a document library. Now you need to set a dynamic content *'Identifier'*.
+Assign the ‘Get file content’ action for a SharePoint connector. It takes content of the specified files from a document library. Now you need to set a dynamic content :code:`Identifier`.
 
 |identifier|
 
@@ -65,11 +65,11 @@ The flow is ready, run it and check the target SharePoint library.
 Convert XLS to XLSX
 -------------------
 
-To convert all your XLS files into XLSX just build the same flow, but type in *'File_x0020_Type eq 'xls''* in the ODATA filter query field to get all XLS files from the SharePoint library.
+To convert all your XLS files into XLSX just build the same flow, but type in :code:`File_x0020_Type eq 'xls'` in the ODATA filter query field to get all XLS files from the SharePoint library.
 
 |query_xls|
 
-Assign `Convert XLS to XLSX`_ instead of ‘DOC to DOCX’ in the Plumsail Documents action. And save the result files with .xlsx extension. 
+Assign `Convert XLS to XLSX`_ instead of ‘DOC to DOCX’ in the Plumsail Documents action. And save the result files with :code:`.xlsx` extension. 
 
 |saving_xls|
 
@@ -77,11 +77,11 @@ Assign `Convert XLS to XLSX`_ instead of ‘DOC to DOCX’ in the Plumsail Docum
 Convert PPT to PPTX
 -------------------
 
-The same flow works for converting PPT to PPTX. Query all PPT files by using ODATA filter just the same way, but the file type equals PPT – fill in a field with *'File_x0020_Type eq 'ppt'*.
+The same flow works for converting PPT to PPTX. Query all PPT files by using ODATA filter just the same way, but the file type equals PPT – fill in a field with :code:`File_x0020_Type eq 'ppt'`.
 
 |query_ppt|
 
-Assign  `Convert PPT to PPTX`_ in Plumsail Documents step. Save the result files with .pptx extension.
+Assign  `Convert PPT to PPTX`_ in Plumsail Documents step. Save the result files with :code:`.pptx` extension.
 
 |saving_ppt|
 
