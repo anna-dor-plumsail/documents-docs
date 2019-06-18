@@ -3,7 +3,7 @@ Conditionally hide blocks in DOCX templates
 
 You can use `hide-block-if formatter <../common-docx-xlsx/formatters.html#hhide-block-if>`_ to hide blocks of a document. 
 
-The formatter checks if a value for current tag is equal to a value of the parameter,, then finds closest collapsible block and hides it:
+The formatter checks if a value for current tag is equal to a value of the parameter, then finds closest collapsible block and hides it:
 
 - Table row
 - Bullet list item
@@ -51,7 +51,7 @@ We will use the template like this:
 
 As you can see, we added this string to the template row: :code:`{{employees.department}:hide-block-if(development)}`. The :code:`hide-block-if(development)` formatter checks if the department is development and hides table row that contains this tag.
 
-The result table will look like this:
+The result bullet list will look like this:
 
 .. image:: ../../_static/img/document-generation/hide-table-row-result.png
     :alt: hide table row result
