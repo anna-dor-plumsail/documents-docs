@@ -601,7 +601,7 @@ Scroll down to see source data for the template in JSON format.
 Conditionally hide blocks
 -------------------------
 
-This demo shows how to hide table rows, bullet lists items and arbitrary sections of document if there is empty value in a tag.
+This demo shows how to hide table rows, bullet lists items and arbitrary sections of document if there is a specific value in the tag or empty.
 
 You can find the description  of this case in the `conditionally hide blocks <conditionally-hide-blocks.html>`_ documentation.
 
