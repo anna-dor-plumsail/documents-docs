@@ -62,9 +62,7 @@ Below is our template. You may download it `here <../../../_static/files/flow/ho
 .. image:: ../../../_static/img/flow/how-tos/MS-Forms-XLSX-PDF-result.png
     :alt: Template
 
-*Plumsail Word XLSX templates* use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
-
-In short, the templating engine thinks that everything between these :code:`{{ }}` brackets is variables where it will write the data you specified in **Template data**. 
+The templating engine thinks that everything between these :code:`{{ }}` brackets is variables where it will write the data you specified in **Template data**. 
 
 Read `this article <../../../document-generation/xlsx/how-it-works.html>`_ to get familiar with the templating engine.
 
