@@ -1,7 +1,7 @@
 How to create Excel and PDF documents from Microsoft Forms in Microsoft Flow and Azure Logic Apps
 ===============================================================================================
 
-Let's suppose you want to automate the generation of documents in your company. For example, applications, orders, invoices, etc. By going through this article you will learn how to create a DOCX document from a template and convert it to PDF on a Microsoft form submission with help of `Plumsail Documents <https://plumsail.com/documents/>`_ in Microsoft Flow and Azure Logic Apps.
+Let's suppose you want to automate the generation of documents in your company. For example, applications, orders, invoices, etc. By going through this article you will learn how to create a XLSX document from a template and convert it to PDF on a Microsoft form submission with help of `Plumsail Documents <https://plumsail.com/documents/>`_ in Microsoft Flow and Azure Logic Apps.
 
 `Microsoft Forms <https://forms.office.com/>`_ is an online form builder with themes and question branching that allows you to create surveys, quizzes, polls and collects other information.
 
@@ -62,11 +62,11 @@ Below is our template. You may download it `here <../../../_static/files/flow/ho
 .. image:: ../../../_static/img/flow/how-tos/MS-Forms-XLSX-PDF-result.png
     :alt: Template
 
-*Plumsail Word DOCX templates* use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
+*Plumsail Word XLSX templates* use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
 
 In short, the templating engine thinks that everything between these :code:`{{ }}` brackets is variables where it will write the data you specified in **Template data**. 
 
-Read `this article <../../../document-generation/docx/how-it-works.html>`_ to get familiar with the templating engine.
+Read `this article <../../../document-generation/xlsx/how-it-works.html>`_ to get familiar with the templating engine.
 
 Get response details
 ~~~~~~~~~~~~~~~~~~~~
@@ -125,4 +125,4 @@ This is how the final document will look in our case:
 Conclusion
 ----------
 
-Now you should have an idea of how to use *Create DOCX Document from Template* and *Convert DOCX to PDF* actions from `Plumsail Documents <https://plumsail.com/documents/>`_ for Microsoft Flow to automatically create documents on a JotForm submission. If you haven't used our actions yet, `registering an account <../../../getting-started/sign-up.html>`_ would be the first step. It is quite easy to get started.
+Now you should have an idea of how to use *Create XLSX Document from Template* and *Convert XLSX to PDF* actions from `Plumsail Documents <https://plumsail.com/documents/>`_ for Microsoft Flow to automatically create documents on a JotForm submission. If you haven't used our actions yet, `registering an account <../../../getting-started/sign-up.html>`_ would be the first step. It is quite easy to get started.
