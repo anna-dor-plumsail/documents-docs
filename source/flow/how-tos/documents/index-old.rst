@@ -1,8 +1,8 @@
-Microsoft Flow examples
+All examples
 =======================
 
 .. toctree::      
-      :name: toc-documents-examples
+      :name: howtotoc
       :maxdepth: 1
             
       Create DOCX document from template <create-docx-from-template>

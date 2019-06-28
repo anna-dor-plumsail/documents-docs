@@ -1,7 +1,7 @@
 Conditionally clear cells in XLSX templates
 ===========================================
 
-You can use `hide-block-if formatter <../common-docx-xlsx/formatters.html#hhide-block-if>`_  or `hide-block-if-empty formatter <../common-docx-xlsx/formatters.html#hhide-block-if-empty>`_ to clear cells of an Excel document. 
+You can use `hide-block-if formatter <../common-docx-xlsx/formatters.html#hide-block-if>`_  or `hide-block-if-empty formatter <../common-docx-xlsx/formatters.html#hide-block-if-empty>`_ to clear cells of an Excel document. 
 
 First of all, review the `conditionally clear cells demo <./demos.html#clear-cells>`_. There is a template for the case that we describe here.
 
