@@ -40,7 +40,7 @@ You can use any other connector to get files from your system.
 
 Create DOCX Document from Template
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This is the action from `Plumasail Documents connector <https://plumsail.com/actions/documents/>`_. This action is suitable for creating documents from a template. 
+This is the action from `Plumsail Documents connector <https://plumsail.com/actions/documents/>`_. This action is suitable for creating documents from a template. 
 You can find more information about this action by visiting `this page <../../actions/document-processing.html#create-docx-document-from-template>`_.
 
 There are two parameters:

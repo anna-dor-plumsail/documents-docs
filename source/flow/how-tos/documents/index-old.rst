@@ -33,5 +33,10 @@ All examples
       Add a text watermark to a PDF document <add-a-text-watermark-to-a-PDF-document>
       Add a PDF watermark to a PDF document <add-a-PDF-watermark-to-a-PDF-document>
       Read a CSV file in Microsoft Flow and bulk generate documents <read-a-CSV-file-and-bulk-generate-documents>
+      Create a document from template and sign it using AdobeSign <create-document-from-template-and-adobesign>
+      Create a document from template and sign it using SignNow <create-document-from-template-and-SignNow>
+<<<<<<< Updated upstream:source/flow/how-tos/documents/index-old.rst
 
+
+=======
 
