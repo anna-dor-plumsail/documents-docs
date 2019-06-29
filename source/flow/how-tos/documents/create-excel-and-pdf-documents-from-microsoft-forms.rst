@@ -57,9 +57,9 @@ Get file content
 
 This action gets file content of the specified file from OneDrive. We use this action to read a .XLSX template. You can use any other connector to get files from your system.
 
-Below is our template. You may download it `here <../../../_static/files/flow/how-tos/Create-Excel-and-PDF-EmployeesData-template.xlsx>`_.
+Below is our template. You may download it `here <../../../_static/files/flow/how-tos/Create-Excel-and-PDF-EmployeesEvaluation-template.xlsx>`_.
 
-.. image:: ../../../_static/img/flow/how-tos/MS-Forms-XLSX-PDF-result.png
+.. image:: ../../../_static/img/flow/how-tos/MS-Forms-XLSX-PDF-template.png
     :alt: Template
 
 The templating engine thinks that everything between these :code:`{{ }}` brackets is variables where it will write the data you specified in **Template data**. 
