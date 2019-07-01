@@ -398,7 +398,7 @@ Converts .docx document to PDF document with the help of Microsoft Flow. You can
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  It is content of the source template file.          
+       -  It is content of the source file.          
 
 .. rubric:: Example
 
@@ -448,7 +448,7 @@ Converts .xlsx document to PDF document with the help of Microsoft Flow. You can
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  It is content of the source template file.          
+       -  It is content of the source file.          
 
 .. rubric:: Example
 
@@ -498,7 +498,7 @@ Converts .doc document to .docx document with the help of Microsoft Flow.
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  It is content of the source template file.          
+       -  It is content of the source file.          
 
 .. rubric:: Example
 
@@ -548,7 +548,7 @@ Converts .xls document to .xlsx document with the help of Microsoft Flow.
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  It is content of the source template file.        
+       -  It is content of the source file.        
 
 .. rubric:: Example
 
@@ -598,7 +598,7 @@ Converts .ppt document to .pptx document with the help of Microsoft Flow.
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  It is content of the source template file.          
+       -  It is content of the source file.          
 
 .. rubric:: Example
 
@@ -648,7 +648,7 @@ Converts .pptx document to PDF document with the help of Microsoft Flow.
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
-       -  It is content of the source template file.          
+       -  It is content of the source file.          
 
 .. rubric:: Example
 
@@ -1565,6 +1565,7 @@ Parse CSV
 -------------------
 
 Parses a CSV file into an array of objects with properties in Microsoft Flow.
+Review `How to read a CSV file in Microsoft Flow and bulk generate documents <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/read-a-CSV-file-and-bulk-generate-documents.html>`_ article for more information.
 
 .. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
@@ -1578,7 +1579,7 @@ Parses a CSV file into an array of objects with properties in Microsoft Flow.
        -  Description
        -  Example
     *  -  Items
-       -  The JSON representation of the resulting items' array in Microsoft Flow
+       -  The collection of objects. Each object represents a CSV row and has properties corresponding to the CSV headers.
        -  Each CSV header is represented by an output parameter. You can refer to a single item selecting it in MS Flow.
           
            .. code-block:: html
@@ -1619,7 +1620,7 @@ Parses a CSV file into an array of objects with properties in Microsoft Flow.
 
           `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
 
-       -  It is content of the source template file.
+       -  It is content of the source file.
 
     *  -  Headers
        -  Comma separated list of columns.
