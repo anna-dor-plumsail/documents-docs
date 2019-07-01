@@ -11,3 +11,5 @@ Integrations
       Create Word and PDF documents from JotForm <create-word-and-pdf-documents-from-jotform>
       Create Word and PDF documents from Microsoft Forms <create-word-and-pdf-documents-from-microsoft-forms>
       Create Excel and PDF documents from Cognito Forms <create-Excel-and-pdf-documents-from-cognito-forms>
+      Create Excel and PDF documents from Typeform <create-excel-and-pdf-documents-from-typeform>
+      Create Excel and PDF documents from Microsoft Forms <create-excel-and-pdf-documents-from-microsoft-forms>
