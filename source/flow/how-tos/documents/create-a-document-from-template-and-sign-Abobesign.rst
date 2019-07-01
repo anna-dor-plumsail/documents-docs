@@ -1,4 +1,4 @@
-How to create a document from a template and sign it using AdobeSign
+How to create a document from a template in Microsoft Flow and sign it using AdobeSign
 ####################################################################
 Nowadays many companies, regardless of their size, face a significant shift: more and more of their activities happen online. Whole businesses go online, teams raise their efficiency by changing their offline routines and communication into online ones. No wonder that document flow falls in line with the same trend. And using an electronic document flow system and e-signs is a common case.
 
