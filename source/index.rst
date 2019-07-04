@@ -82,6 +82,5 @@ Plumsail Documents Documentation
       flow/how-tos/documents/index-convert-documents
       flow/how-tos/documents/index-process-pdf
       flow/how-tos/documents/index-integrations
-      flow/how-tos/documents/index-other
       flow/how-tos/documents/index-E-signature
-      flow/how-tos/documents/index-old
+      flow/how-tos/documents/index-other
