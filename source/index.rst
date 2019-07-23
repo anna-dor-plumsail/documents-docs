@@ -71,16 +71,14 @@ Plumsail Documents Documentation
     
     REST API Reference <https://api.plumsail.com/swagger/index.html?urls.primaryName=Documents>                      
 
-  .. rst-class:: single-page-nav
-  
-    .. toctree::      
-      :caption: Microsoft Flow examples
-      :name: toc-microsoft-flow-examples
-      :maxdepth: 2
-      
-      flow/how-tos/documents/index-create-documents-from-template
-      flow/how-tos/documents/index-convert-documents
-      flow/how-tos/documents/index-process-pdf
-      flow/how-tos/documents/index-integrations
-      flow/how-tos/documents/index-E-signature
-      flow/how-tos/documents/index-other
+  .. toctree::    
+    :caption: Microsoft Flow examples
+    :name: toc-microsoft-flow-examples
+    :maxdepth: 2
+
+    flow/how-tos/documents/index-create-documents-from-template
+    flow/how-tos/documents/index-convert-documents
+    flow/how-tos/documents/index-process-pdf
+    flow/how-tos/documents/index-integrations
+    flow/how-tos/documents/index-E-signature
+    flow/how-tos/documents/index-other
