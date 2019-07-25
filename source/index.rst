@@ -62,7 +62,8 @@ Plumsail Documents Documentation
     general/upgrade-renew
     general/architecture
     general/security-policy
-    general/sla    
+    general/sla
+    general/manage-email-notifications   
 
   .. toctree::
     :caption: REST API
