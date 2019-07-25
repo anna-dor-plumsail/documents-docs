@@ -1,7 +1,7 @@
 Manage email notifications
 =========================
 
-You can manage email notifications about reaching limit of documents for Documents in the personal account on plumsail.com
+You can manage email notifications about reaching limit of documents for Documents in the `personal account on <https://account.plumsail.com/>`_.
 
 There are 3 options:
 
@@ -10,5 +10,6 @@ There are 3 options:
 - All documents were exhausted 
 
 .. image:: ../_static/img/general/documents-email-notifications.png
+   :alt: Documents email notifications
 
-You'll receive the notification to the account's email address, please make sure that the emails don't go to your spam folder.
+You'll receive the notifications to the account's email address, please make sure that the emails don't go to your spam folder.
