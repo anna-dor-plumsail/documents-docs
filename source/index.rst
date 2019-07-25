@@ -23,6 +23,15 @@ Plumsail Documents Documentation
     getting-started/use-as-rest-api
     getting-started/license-activation  
 
+.. toctree::
+    :caption: User guide
+    :name: toc-user-guide
+    :maxdepth: 1
+    
+    user-guide/api-keys
+    user-guide/manage-email-notifications
+    user-guide/reports
+
   .. toctree::
     :caption: Document generation
     :name: toc-document-generation
