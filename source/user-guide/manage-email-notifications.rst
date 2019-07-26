@@ -1,9 +1,8 @@
 License and notifications
 =========================
 
-License page provides information abut you current license, available documents.
+License page provides information about you current license and available documents.
 Also you can manage email notifications about reaching limit of documents for Plumsail Documents in the `personal account <https://account.plumsail.com/documents/license>`_.
-If you run out of documents you can buy extra credits.
 
 There are 3 notifications options:
 
