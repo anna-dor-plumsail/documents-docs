@@ -2,7 +2,7 @@ API Keys
 =========================
 
 API keys page contains all created API keys. 
-API key is needed to authenticate your  `REST <https://plumsail.com/docs/documents/v1.x/getting-started/use-as-rest-api.html>`_ and  `Microsoft Flow calls <https://plumsail.com/docs/documents/v1.x/getting-started/use-from-flow.html>`_ .
+API key is needed to authenticate your  `REST <https://plumsail.com/docs/actions/v1.x/getting-started/use-as-rest-api.html>`_ and  `Microsoft Flow calls <https://plumsail.com/docs/actions/v1.x/getting-started/use-from-flow.html>`_ .
 
 .. image:: ../_static/img/general/documents-api-keys.png
    :alt: Documents email notifications

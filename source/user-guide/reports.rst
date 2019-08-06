@@ -8,7 +8,7 @@ For example, to find out what Documents actions were used from June 01, 2019 unt
    :alt: Documents reports
 
 Reports show statistic for all Documents actions by default but you can disable some actions if it's needed.
-To disable an action just select it in the ctions list.
+To disable an action just select it in the actions list.
 
 .. image:: ../_static/img/general/documents-reports.png
    :alt: Documents reports
