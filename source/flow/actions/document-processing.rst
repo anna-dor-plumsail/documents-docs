@@ -876,7 +876,7 @@ Please, see a detailed example `here <../how-tos/documents/add-an-image-watermar
        -  50
 
     *  -  Pages
-       -  The range of target pages delimeted by ';'.
+       -  The range of pages or a list of page numbers delimited by ';'.
        -  
           - 1;3;5
           - 1-5;7;9
@@ -1000,7 +1000,7 @@ Please, see a detailed example `here <../how-tos/documents/add-a-text-watermark-
        -  50
 
     *  -  Pages
-       -  The range of target pages delimeted by ';'.
+       -  The range of pages or a list of page numbers delimited by ';'.
        -  
           - 1;3;5
           - 1-5;7;9
@@ -1088,7 +1088,7 @@ Please, see a detailed example `here <../how-tos/documents/add-a-PDF-watermark-t
        -  Background
 
     *  -  Pages
-       -  The range of target pages delimeted by ';'.
+       -  The range of pages or a list of page numbers delimited by ';'.
        -  
           - 1;3;5
           - 1-5;7;9
