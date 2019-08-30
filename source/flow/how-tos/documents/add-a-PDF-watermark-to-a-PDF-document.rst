@@ -81,7 +81,7 @@ Read `this article <https://plumsail.com/docs/documents/v1.x/document-generation
 Create DOCX Document from Template
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is the action from `Plumasail Documents connector <https://plumsail.com/actions/documents/>`_. This action is suitable for creating documents from a template. You can find more information about the action by visiting `this page <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-docx-document-from-template>`_.
+This is the action from `Plumsail Documents connector <https://plumsail.com/actions/documents/>`_. This action is suitable for creating documents from a template. You can find more information about the action by visiting `this page <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-docx-document-from-template>`_.
 
 .. image:: ../../../_static/img/flow/how-tos/application-form-create-DOCX-from-template.png
     :alt: Create DOCX Document from Template
@@ -124,7 +124,7 @@ Get the file you are going to use as the watermark. We store it in OneDrive. You
 Add a watermark to PDF
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-This is an action from `Plumasail Documents connector <https://plumsail.com/actions/documents/>`_.
+This is an action from `Plumsail Documents connector <https://plumsail.com/actions/documents/>`_.
 
 Choose **PDF** type of the watermark. Put **File content** from the output of the *Convert DOCX to PDF* action into the **Document content** field, and the **File content** from the previous action into the **Watermark PDf document** field.
 

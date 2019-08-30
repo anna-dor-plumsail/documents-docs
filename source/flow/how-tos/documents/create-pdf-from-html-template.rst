@@ -40,7 +40,7 @@ You can use any other connector to get files from your system.
 
 **Create HTML from template**
 
-This is an action from `Plumasail Documents connector <https://plumsail.com/documents>`_. This action is suitable for generation of HTML and text documents.
+This is an action from `Plumsail Documents connector <https://plumsail.com/documents>`_. This action is suitable for generation of HTML and text documents.
 
 You can find more information about this action `here <../../actions/document-processing.html#create-html-from-template>`_.
 
@@ -121,7 +121,7 @@ In the second parameter, we specified data to apply to the template in JSON form
 
 **Convert HTML to PDF**
 
-This is also an action from Plumasail Documents connector.
+This is also an action from Plumsail Documents connector.
 
 Just put HTML file content from the output of the previous action and receive PDF file content as an output of this action. You can also use raw HTML string as a source HTML.
 

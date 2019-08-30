@@ -82,7 +82,7 @@ Now, we can apply the data from each response to the template.
 
 Create DOCX Document from Template
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This is the action from `Plumasail Documents connector <https://plumsail.com/actions/documents/>`_. This action is suitable for creating documents from a template. You can find more information about the action by visiting `this page <../../actions/document-processing.html#create-docx-document-from-template>`_.
+This is the action from `Plumsail Documents connector <https://plumsail.com/actions/documents/>`_. This action is suitable for creating documents from a template. You can find more information about the action by visiting `this page <../../actions/document-processing.html#create-docx-document-from-template>`_.
 
 There are two parameters:
 
