@@ -1,6 +1,6 @@
 How to create DOCX document from template in Microsoft Flow, Azure Logic Apps and PowerApps
 ===========================================================================================
-Let’s suppose you want to automate the generation of invoices in your company. By going through this article you will learn how to create a DOCX document from a template using `Create DOCX Document from Template`_ action from `Plumsail Documents connector`_ in  Microsoft Flow and Azure Logic Apps.
+Let’s suppose you want to automate the generation of invoices in your company. By going through this article you will learn how to create a DOCX document from a template using `Create DOCX Document from Template`_ action from `Plumsail Documents connector <https://plumsail.com/documents/>`_ in  Microsoft Flow and Azure Logic Apps.
 
 Probably you have some third party system, where you create data for invoices. Then you get this data in Microsoft Flow, apply it to our invoice template and generate a new document.
 
@@ -40,7 +40,7 @@ You can use any other connector to get files from your system.
 
 Create DOCX Document from Template
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This is the action from `Plumsail Documents connector <https://plumsail.com/actions/documents/>`_. This action is suitable for creating documents from a template. 
+This is the action from `Plumsail Documents connector <https://plumsail.com/documents/>`_. This action is suitable for creating documents from a template. 
 You can find more information about this action by visiting `this page <../../actions/document-processing.html#create-docx-document-from-template>`_.
 
 There are two parameters:
@@ -146,7 +146,6 @@ If you haven’t used it yet, `registering an account`_ would be the first step.
 
 
 .. _Create DOCX Document from Template: ../../actions/document-processing.html#create-docx-document-from-template
-.. _Plumsail Documents connector: https://plumsail.com/documents/
 .. _SharePoint connector: https://plumsail.com/actions/sharepoint/
 .. _this documentation page: ../../../document-generation/docx/demos.html#sales-invoice
 .. _registering an account: ../../../getting-started/sign-up.html
