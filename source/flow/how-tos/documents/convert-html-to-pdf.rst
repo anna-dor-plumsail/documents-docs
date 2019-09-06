@@ -42,7 +42,7 @@ You can use any other connector to get files from your system.
 
 **Convert HTML to PDF**
 
-This is an action from `Plumasail Documents connector <https://plumsail.com/documents>`_.
+This is an action from `Plumsail Documents connector <https://plumsail.com/documents>`_.
 
 Just put HTML file content from the output of the previous action and receive PDF file content as an output of this action. You can also use raw HTML string as a source HTML.
 

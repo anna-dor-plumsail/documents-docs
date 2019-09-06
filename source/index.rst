@@ -24,6 +24,15 @@ Plumsail Documents Documentation
     getting-started/license-activation  
 
   .. toctree::
+    :caption: User guide
+    :name: toc-user-guide
+    :maxdepth: 1
+    
+    user-guide/api-keys
+    user-guide/reports
+    user-guide/manage-email-notifications
+
+  .. toctree::
     :caption: Document generation
     :name: toc-document-generation
     :maxdepth: 1
@@ -62,7 +71,8 @@ Plumsail Documents Documentation
     general/upgrade-renew
     general/architecture
     general/security-policy
-    general/sla    
+    general/sla
+    general/manage-email-notifications   
 
   .. toctree::
     :caption: REST API
@@ -71,17 +81,14 @@ Plumsail Documents Documentation
     
     REST API Reference <https://api.plumsail.com/swagger/index.html?urls.primaryName=Documents>                      
 
-  .. rst-class:: single-page-nav
-  
-    .. toctree::      
-      :caption: Microsoft Flow examples
-      :name: toc-microsoft-flow-examples
-      :maxdepth: 2
-      
-      flow/how-tos/documents/index-create-documents-from-template
-      flow/how-tos/documents/index-convert-documents
-      flow/how-tos/documents/index-process-pdf
-      flow/how-tos/documents/index-integrations
-      flow/how-tos/documents/index-other
-      flow/how-tos/documents/index-E-signature
-      flow/how-tos/documents/index-old
+  .. toctree::    
+    :caption: Microsoft Flow examples
+    :name: toc-microsoft-flow-examples
+    :maxdepth: 2
+
+    flow/how-tos/documents/index-create-documents-from-template
+    flow/how-tos/documents/index-convert-documents
+    flow/how-tos/documents/index-process-pdf
+    flow/how-tos/documents/index-integrations
+    flow/how-tos/documents/index-E-signature
+    flow/how-tos/documents/index-other

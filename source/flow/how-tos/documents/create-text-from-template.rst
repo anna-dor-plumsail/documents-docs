@@ -36,7 +36,7 @@ You can actually pick any trigger. For example, you can start Flow on file creat
 
 **Create HTML from template**
 
-This is an action from `Plumasail Documents connector <https://plumsail.com/documents>`_. This action is suitable for generation of HTML and text documents.
+This is an action from `Plumsail Documents connector <https://plumsail.com/documents>`_. This action is suitable for generation of HTML and text documents.
 
 You can find more information about this action `here <../../actions/document-processing.html#create-html-from-template>`_.
 

@@ -1,5 +1,5 @@
-Integrations
-============
+Forms integrations
+==================
 
 .. toctree::      
       :name: howtotoc

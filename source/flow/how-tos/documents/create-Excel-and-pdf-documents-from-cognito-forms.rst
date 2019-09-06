@@ -96,7 +96,7 @@ Here we append each product's data to the array created in the previous step. Ju
 
 Create XLSX Document from Template
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This is the action from `Plumasail Documents connector <https://plumsail.com/actions/documents/>`_. This action is suitable for creating documents from a template. You can find more information about the action by visiting `this page <../../actions/document-processing.html#create-xlsx-document-from-template>`_.
+This is the action from `Plumsail Documents connector <https://plumsail.com/actions/documents/>`_. This action is suitable for creating documents from a template. You can find more information about the action by visiting `this page <../../actions/document-processing.html#create-xlsx-document-from-template>`_.
 
 There are two parameters:
 

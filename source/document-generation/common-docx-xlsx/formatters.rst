@@ -635,7 +635,8 @@ Examples
 picture
 ----
 
-:code:`picture` - it resolves URL or base64 string and converts it to an image.
+:code:`picture` - it resolves URL or base64 string and converts it to an image. 
+:code:`picture` formatter can be used with resizing options, for example,  {{value}:picture(100,100)}.
 
 Examples
 ~~~~~~~~
@@ -648,7 +649,7 @@ Examples
         - Result
     *   - .. code-block:: json
     
-            {{value}:picture}
+            {{value}:picture}, {{value}:picture(100,100)}
 
         - .. code-block:: json
 

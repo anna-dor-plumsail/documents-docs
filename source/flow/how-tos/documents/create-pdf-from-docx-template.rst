@@ -40,7 +40,7 @@ You can use any other connector to get files from your system.
 
 Create document from DOCX template
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This is an action from `Plumasail Documents connector <https://plumsail.com/documents>`_.
+This is an action from `Plumsail Documents connector <https://plumsail.com/documents>`_.
 
 There are two parameters:
 
@@ -114,7 +114,7 @@ You can find more information about this action `here <../../actions/document-pr
 
 Convert DOCX to PDF
 ~~~~~~~~~~~~~~~~~~~
-This is also an action from Plumasail Documents connector.
+This is also an action from Plumsail Documents connector.
 
 Just put DOCX file content from the output of the previous action and receive PDF file content as an output of this action.
 
