@@ -1,7 +1,7 @@
-Documents Data Processing Agreement
-===================================
+Plumsail Documents Data Processing Agreement
+============================================
 
-.. important:: Updated 30 July, 2019
+.. Note:: Updated 30 July, 2019
 
 From the date of subscribing the Plumsail Documents (Service) by the Subscriber: (hereafter referred to as the "**Agreement**")
 
