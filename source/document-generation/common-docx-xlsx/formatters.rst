@@ -106,7 +106,7 @@ Examples
     *   - .. code-block:: json
     
             {{arr}:join(, )}
-            {{arr}:join(; )
+            {{arr}:join(; )}
             {{arr}:join(-)}
 
         - .. code-block:: json
