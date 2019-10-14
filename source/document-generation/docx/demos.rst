@@ -632,15 +632,18 @@ Scroll down to see source data for the template in JSON format.
         "employees": [
             {
                 "name": "Derek Clark",
-                "hireDate": "2012-04-21T18:25:43-05:00"
+                "hireDate": "2012-04-21T18:25:43-05:00",
+                "department":"marketing"
             },
             {
                 "name": "Jessica Adams",
-                "hireDate": null
+                "hireDate": null,
+                "department":"sales"
             },
             {
                 "name": "Anil Mittal",
-                "hireDate": "2016-04-11T14:22:13-02:00"
+                "hireDate": "2016-04-11T14:22:13-02:00",
+                "department":"development"
             }
         ]
     }
