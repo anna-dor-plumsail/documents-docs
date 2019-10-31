@@ -81,7 +81,7 @@ Examples
         - .. code-block:: json
 
             {                     
-                "stringVal" "Derek Clark"
+                "stringVal": "Derek Clark"
             }        
 
         - .. code-block:: json
@@ -112,7 +112,7 @@ Examples
         - .. code-block:: json
 
             {                     
-                "arr" [ 1, 2, 3]
+                "arr": [ 1, 2, 3]
             }        
 
         - .. code-block:: json
@@ -161,7 +161,7 @@ Examples
         - .. code-block:: json
 
             {                     
-                "date" "2012-04-21T18:25:43-05:00"
+                "date": "2012-04-21T18:25:43-05:00"
             }        
 
         - .. code-block:: json
