@@ -76,7 +76,7 @@ Examples
     *   - .. code-block:: json
     
             {{stringVal}:substring(6)}
-            {{stringVal}:substring(0, 5)}     
+            {{stringVal}:substring(0,5)}     
 
         - .. code-block:: json
 
