@@ -1,5 +1,5 @@
 
-Use the Plumsail Documents connection in PowerApps
+How to use Plumsail Documents flow in PowerApps
 ######################################################################################################
 
 When you're working on a solution or an app, `Microsoft Flow`_ can be a powerful tool to automate a chain of actions, transfer data between apps and services. Here’s how to use the Plumsail Microsoft Flow action in an app by the example of Microsoft PowerApps.  
