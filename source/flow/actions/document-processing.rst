@@ -662,6 +662,10 @@ Converts HTML document to PDF document with the help of Microsoft Flow. You can 
 
 .. note:: At this moment options: Header HTML, Footer HTML and Margins are only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
+.. note:: There could be an issue converting certain symbols such as £. Add the following line in the HTML head element
+
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 .. rubric:: Output Parameters
 
 .. list-table::
