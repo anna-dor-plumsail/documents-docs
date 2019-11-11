@@ -794,6 +794,11 @@ Converts HTML document to PDF document with the help of Microsoft Flow. You can 
 .. image:: ../../_static/img/flow/documents/convert-html-to-pdf-example.png
    :alt: Convert HTML document to PDF Example
 
+.. note:: There could be an issue converting certain symbols such as £. Add the following line in the HTML head element
+
+.. image:: <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
 Add watermark to PDF
 -------------------
 
