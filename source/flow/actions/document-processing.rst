@@ -796,7 +796,7 @@ Converts HTML document to PDF document with the help of Microsoft Flow. You can 
 
 .. note:: There could be an issue converting certain symbols such as £. Add the following line in the HTML head element
 
-.. code:: <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
 Add watermark to PDF
