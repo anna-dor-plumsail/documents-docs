@@ -260,6 +260,52 @@ The formatter can be used in both DOCX and XLSX templates. However, it behaves d
                 "value": [Jessica, John]
             }  
 
+hide-block-if-not
+----
+
+:code:`hide-block-if-not(val)` -  it can be used to conditionally hide all block of list or table except specified. If a value in the tag is equal to a value of the parameter, it will be applied. This formatter works in repeatable sections such as list items or table rows.
+
+Examples
+~~~~~~~~
+
+The formatter can be used in both DOCX and XLSX templates. However, it behaves differently for them. Read the articles below for more information:
+
+- `How to hide content blocks in DOCX templates <../docx/conditionally-hide-blocks.html>`_
+- `How to clear cells in XLSX templates <../xlsx/conditionally-clear-cells.html>`_
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+    *   - .. code-block:: json
+    
+            {{value}:hide-block-if-not(1)}
+
+            {{value}:hide-block-if-not(Jessica)}
+
+            {{value}:hide-block-if-not([1, 2])}
+
+            {{value}:hide-block-if-not(Jessica, John)}
+
+        - .. code-block:: json
+
+            {                     
+                "value": 1
+            }         
+
+            {                     
+                "value": "Jessica"
+            }  
+
+            {                     
+                "value": [1, 2]
+            }  
+
+            {                     
+                "value": [Jessica, John]
+            }
+
 hide-block-if-empty
 ----
 
