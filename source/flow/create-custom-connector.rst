@@ -24,7 +24,7 @@ You may want to differentiate this connector from others. In this case, you can 
 
 .. image:: ../_static/img/getting-started/documents-connector-icon.png
    :alt: Connector icon
-   :target: ../_static/img/getting-started/actions-connector-icon.png
+   :target: ../_static/img/getting-started/documents-connector-icon.png
 
 And this color:
 
