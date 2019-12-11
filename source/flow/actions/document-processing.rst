@@ -859,7 +859,7 @@ Please, see a detailed example `here <../how-tos/documents/add-an-image-watermar
 
     *  -  Image content
        -  Raw content of image source.
-          Available extensions: bmp, jpeg, png.
+          Available extensions: png, tiff, jpg, webp, gif, bmp, svg.
 
        -  You may get the content of the source image file by "Get file content" action from "SharePoint" connector or from some other connector. 
 
