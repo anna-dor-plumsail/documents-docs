@@ -18,6 +18,7 @@ Plumsail Documents Documentation
     :name: toc-getting-started
     :maxdepth: 1
     
+    Create documents from template <user-guide/processes/index>
     getting-started/sign-up
     getting-started/use-from-flow
     getting-started/use-as-rest-api
@@ -28,6 +29,7 @@ Plumsail Documents Documentation
     :name: toc-user-guide
     :maxdepth: 1
     
+    Processes <user-guide/processes/index>
     user-guide/api-keys
     user-guide/reports
     user-guide/manage-email-notifications
