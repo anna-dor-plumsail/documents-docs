@@ -1,2 +1,2 @@
-Test template with your data
-============================
+Test the template with your data
+================================
