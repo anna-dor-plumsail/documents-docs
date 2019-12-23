@@ -1,9 +1,9 @@
 Use Processes to create documents from templates
 ================================================
 
-First of all, `sign in <https://auth.plumsail.com/account/login?returnUrl=https://account.plumsail.com/documents/intro>`_  to Plumsail Account. If you don't have it yet, then  `sign up <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/intro/reg>`_.
+First of all, `sign in <https://auth.plumsail.com/account/login?returnUrl=https://account.plumsail.com/documents/intro>`_  to Plumsail Account. If you don't have an account yet, then  `sign up <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/intro/reg>`_.
 
-Processes is the easy way to automate creation of documents from templates. You can generate and deliver documents in a few simple steps:
+Processes are an easy way to automate the creation of documents from templates. You can generate and deliver documents in a few simple steps:
 
 .. We DO NOT use here toctree because we don't want to dublicate Processes navigation under Getting started section.
 
@@ -15,4 +15,4 @@ Processes is the easy way to automate creation of documents from templates. You 
 
 .. note::
 
-  Processes work for most of scenarios. If you want some advanced operations on documents, take a look at our `Microsoft Flow actions <use-from-flow.html>`_ and `REST API <use-as-rest-api.html>`_.
+  Processes work for most of the scenarios. If you want some advanced operations on documents, take a look at our `Microsoft Flow actions <use-from-flow.html>`_ and `REST API <use-as-rest-api.html>`_.
