@@ -30,8 +30,6 @@ The step has a few settings:
 - :ref:`add-watermark`
 - :ref:`protect-pdf`
 
-Once you finished configuration you can `test the template <test-template.html>`_.
-
 .. _process-mode: 
 
 Mode
@@ -96,3 +94,5 @@ You can see this option if you selected PDF as an output type. It allows you to 
 
 .. image:: ../../_static/img/user-guide/processes/protect-pdf-dialog.png
     :alt: Protect PDF dialog
+
+.. Note:: Once you finished configuration you can `test the template <test-template.html>`_.

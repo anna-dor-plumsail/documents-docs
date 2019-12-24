@@ -5,7 +5,7 @@ First of all, you need to prepare template for your document. Plumsail Documents
 
 .. contents:: :local:
 
-You can learn how to manage each type of template below. Once you prepared your template you can `create a new process <create-process.html>`_.
+You can learn how to manage each type of template below.
 
 DOCX template
 -------------
@@ -24,3 +24,7 @@ Text
 
 HTML template
 -------------
+
+Text
+
+.. Note:: Once you prepared your template you can `create a new process <create-process.html>`_.
