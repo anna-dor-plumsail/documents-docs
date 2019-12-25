@@ -10,7 +10,7 @@ Processes are an easy way to automate the creation of documents from templates. 
 - `Prepare a template for your document <../user-guide/processes/create-template.html>`_
 - `Create a new process <../user-guide/processes/create-process.html>`_
 - `Test the template with your data <../user-guide/processes/test-template.html>`_
-- `Configure how to deliver generated documents (email, OneDrive, etc.) <../user-guide/processes/create-delivery.html>`_
+- `Deliver generated documents (email, OneDrive, etc.) <../user-guide/processes/create-delivery.html>`_
 - `Start document generation using Plumsail Forms, Microsoft Flow or REST API <../user-guide/processes/start-process.html>`_
 
 .. note::
