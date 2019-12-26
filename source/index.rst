@@ -40,7 +40,6 @@ Plumsail Documents Documentation
     document-generation/docx/index
     document-generation/xlsx/index
     document-generation/html/index
-    document-generation/templates-feature
 
   .. toctree::     
     :name: toc-document-generation-hidden
