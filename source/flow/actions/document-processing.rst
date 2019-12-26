@@ -57,10 +57,6 @@ We have `an article <../how-tos/documents/create-docx-from-template.html>`_ desc
           .. image:: ../../_static/img/flow/documents/simple-table-template.png
              :alt: Simple table template         
 
-    *  -  Template name
-       -  You can use predefined user templates. `See more <../../document-generation/templates/index.html>`_
-       -  .. code::
-          invoice.docx
 
     *  -  Template data
        -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
@@ -142,10 +138,6 @@ Also there is `an article <../how-tos/documents/create-xlsx-from-template.html>`
           .. image:: ../../_static/img/flow/documents/simple-xlsx-table-template.png
              :alt: Simple table template         
 
-    *  -  Template name
-       -  You can use predefined user templates. `See more <../../document-generation/templates/index.html>`_
-       -  .. code::
-          invoice.xlsx
 
     *  -  Template data
        -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
@@ -253,10 +245,7 @@ Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You
             </body>
             </html>
 
-    *  -  Template name
-       -  You can use predefined user templates. `See more <../../document-generation/templates/index.html>`_
-       -  .. code::
-          invoice.html
+
 
     *  -  Template data
        -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
@@ -330,10 +319,6 @@ Creates .docx document by filling merge fields in a .docx document with the help
        
           Use `this link <../../_static/files/flow/how-tos/Hiring%20Contract%20Template%20(merge%20fields).docx>`_ to download the sample document.
 
-    *  -  Template name
-       -  You can use predefined user templates. `See more <../../document-generation/templates/index.html>`_
-       -  .. code::
-          invoice.docx
 
     *  -  Template data
        -  Data in JSON format that will be used to fill merge fields in the source document. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
@@ -1434,11 +1419,6 @@ Fills in PDF form by provided data with the help of Microsoft Flow. Review `How 
        -  Raw content of PDF document.       
 
        -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
-
-    *  -  Template name
-       -  You can use predefined user templates. `See more <../../document-generation/templates/index.html>`_
-       -  .. code::
-          invoice.pdf
 
     *  -  JSON Data
        -  The data that will be used to fill in the form.
